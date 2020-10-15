@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!--按鈕套入方式
+        1. 請複製body標籤所有內容
+        2. body結尾標籤前的
+            <script src="./js/bubbleBtn.js"></script>
+            記得連到正確位置，效果才會出來
+        3. sass也要正常運作，要有吃到common裡面的bubbleBtn.scss
+        4. 按鈕標籤為<div class="bubbleBtn">
+            要針對按鈕調整位置的話，舉例
+            ↓↓↓↓↓
+            .妳包住按鈕的div名 .bubbleBtn{
+                margin: 0 auto;
+            }
+        5. 想修改按鈕內文字，到底下"按鈕的名字"改成想要的即可
+        6. 刪掉我的註解
+     -->
+    <div class="bubbleBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                        result="goo" />
+                    <feComposite in="SourceGraphic" in2="goo" />
+                </filter>
+            </defs>
+        </svg>
+
+        <span class="button--bubble__container">
+            <a href="#campaign" class="button button--bubble">
+                按鈕的名字
+            </a>
+            <span class="button--bubble__effect-container">
+                <span class="circle top-left"></span>
+                <span class="circle top-left"></span>
+                <span class="circle top-left"></span>
+
+                <span class="button effect-button"></span>
+
+                <span class="circle bottom-right"></span>
+                <span class="circle bottom-right"></span>
+                <span class="circle bottom-right"></span>
+            </span>
+        </span>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>
+    <script src="./js/bubbleBtn.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+body{
+    background-image: url("../img/water_background_cut.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+header{
+    background-color: rgba(254, 254, 254, 0.15);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    img{
+        height:80px ;
+        padding: 5px 0;
+    }
+}
+
+.nav{
+
+    ul{
+        font-size: 0;
+    }
+
+    li{
+        font-size: $baseFz;
+        display: inline-block;
+        margin: 0 20px;
+    }
+
+    a{
+        display: inline-block;
+        text-decoration: none;
+        color: $keyWhite;
+        line-height: 25px;
+    }
+
+    a:hover{
+        color:$keyBlue;
+    }
+
+}
+
+.memCart{
+
+    li{
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    img{
+        width: 30px;
+    }
+
+}
+
+
+%iconBefore{
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: 7px;
+}
+
+.recommend_nav::before{
+    @extend %iconBefore;
+    background-image: url("../img/header/recmed.png");
+}
+
+.course_nav::before{
+    @extend %iconBefore;
+    background-image: url("../img/header/lesson.png");
+}
+
+.shop_nav::before{
+    @extend %iconBefore;
+    background-image: url("../img/header/shop.png");
+}
+
+.blog_nav::before{
+    @extend %iconBefore;
+    background-image: url("../img/header/blog.png");
+}
+
+.game_nav::before{
+    @extend %iconBefore;
+    background-image: url("../img/header/game.png");
+}
+
+
+// footer
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    background-color: $keyBlack;
+    color: $keyWhite;
+    font-size: $baseFz;
+}
