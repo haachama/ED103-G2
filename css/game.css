@@ -1,8 +1,18 @@
 @charset "UTF-8";
 body {
-  overflow: hidden;
   font-family: "Tahoma", sans-serif, "微軟正黑體", sans-serif;
   box-sizing: border-box;
+}
+
+h3 {
+  color: rgba(254, 254, 254, 0.75);
+}
+
+p {
+  font-size: 16px;
+  color: rgba(254, 254, 254, 0.75);
+  margin: 20px;
+  text-align: left;
 }
 
 .parent_container {
@@ -60,23 +70,12 @@ body {
 
 .rule {
   width: 375px;
-  position: absolute;
-  top: 80px;
+  position: fixed;
+  top: 100px;
   background-color: #16181D;
   padding: 20px;
   border-radius: 15px;
   text-align: center;
-}
-
-h3.h3Rule {
-  color: rgba(254, 254, 254, 0.75);
-}
-
-p.pRule {
-  font-size: 16px;
-  color: rgba(254, 254, 254, 0.75);
-  margin: 20px;
-  text-align: left;
 }
 
 .none {

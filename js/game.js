@@ -1,16 +1,14 @@
-var rule = document.getElementsById("ruleID");
-var BtnX = document.getElementById("ruleBtnX");
-var ruleBtn = document.getElementById("ruleBtn");
+var rulebtn = document.getElementById("rulebtn");
+var rulebtnX = document.getElementById("rulebtnX");
+var ruleD = document.getElementById("ruleD");
 
-BtnX.addEventListener("click", function(){
-  ruleD.style.display = "none";
+rulebtn.addEventListener("click", function(){
+    ruleD.style.display = "none";
 },false);
 
-var btn = document.getElementById("btn");
-        var ruleD = document.getElementById("ruleD");
-        btn.addEventListener("click", function(){
-            ruleD.style.display = "none";
-        },false)
+rulebtnX.addEventListener("click", function(){
+    ruleD.style.display = "none";
+},false);
 // canvas {
 //     border:1px solid #d3d3d3;
 //     background-color: #f1f1f1;
