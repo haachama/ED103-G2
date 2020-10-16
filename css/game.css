@@ -91,4 +91,8 @@ button.ruleBtnX {
   color: rgba(254, 254, 254, 0.75);
   background: none;
 }
+
+.start .bubbleBtn {
+  margin: 0 auto;
+}
 /*# sourceMappingURL=game.css.map */
