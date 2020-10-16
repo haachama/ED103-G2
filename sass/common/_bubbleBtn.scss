@@ -29,6 +29,7 @@ div {
     transition: all 0.1s ease-out;
 }
 
+//???
 .button:hover {
     background-color: #073977;
     color: #fff;
@@ -39,21 +40,24 @@ div {
     transform: scale(0.95);
 }
 
+//按鈕內文字顏色
 .button--bubble {
     position: relative;
     z-index: 2;
-    color: #073977;
+    color:#073977;
     background: none;
 }
 
+//按鈕hover文字顏色
 .button--bubble:hover {
     background: none;
 }
 
+//觸摸時泡泡顏色
 .button--bubble:hover+.button--bubble__effect-container .circle {
     background: #03162f;
 }
-
+//觸摸時背景顏色
 .button--bubble:hover+.button--bubble__effect-container .button {
     background: #03162f;
 }
@@ -68,6 +72,7 @@ div {
     display: inline-block;
 }
 
+//按鈕背景顏色
 .button--bubble__container .effect-button {
     position: absolute;
     width: 50%;
@@ -96,6 +101,7 @@ div {
     pointer-events: none;
 }
 
+//泡泡變形中顏色
 .button--bubble__effect-container .circle {
     position: absolute;
     width: 25px;

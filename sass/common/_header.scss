@@ -1,5 +1,5 @@
 body{
-    background-image: url("../img/insidepage.jpg");
+    background-image: url("../img/water_background.jpg");
     background-size: cover;
     height: 100vh;
 }
@@ -10,11 +10,14 @@ header{
     justify-content: space-around;
     align-items: center;
 }
-
+h1{
+    font-size: 0;
+}
 .logo{
     img{
         height:80px ;
         padding: 5px 0;
+        width: auto;
     }
 }
 
@@ -49,7 +52,6 @@ header{
         display: inline-block;
         margin: 0 10px;
     }
-
     img{
         width: 30px;
     }
