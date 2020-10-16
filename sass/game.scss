@@ -169,18 +169,23 @@ button.ruleBtnX{
 .parent_score img{
     width: 100px;
 }
-.score{
+.scoreDescribe{
     font-size: 60px;
     color: White;
     margin: 10px;
 }
+
+.resortRole{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
 .goShopBtn .bubbleBtn{
-    // position: absolute;
-    // right: 10px;
-    // bottom: 10px;
     text-align: right;
     margin: 10px;
 }
+
+
 .restartBtn .bubbleBtn{
     text-align: center;
     margin: 20px;

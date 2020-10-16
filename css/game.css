@@ -161,10 +161,16 @@ button.ruleBtnX {
   width: 100px;
 }
 
-.score {
+.scoreDescribe {
   font-size: 60px;
   color: White;
   margin: 10px;
+}
+
+.resortRole {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .goShopBtn .bubbleBtn {
