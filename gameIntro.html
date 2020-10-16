@@ -66,8 +66,8 @@
             <li class="equip"><img src="./img/game/shoe40.png"></li>
         </ul>
 
-        <div class="rule" id="rule">
-            <button id="ruleBtnX">X</button>
+        <!-- <div class="rule" id="ruleD">
+            <button id="btn">X</button>
             <h3 class="h3Rule">遊戲規則</h3>
 
             <p class="pRule">選擇你喜歡的角色，並在有限金額內搭配最適合的裝備。閃避各種障礙物，盡可能生存下去，並獲得紅利點數吧！<br>
@@ -76,6 +76,16 @@
             </p>
 
             <button id="ruleBtn">我知道了</button>
+        </div> -->
+
+        <div class="rule" id="ruleD">
+            <button id="rulebtnX" class="ruleBtnX">X</button>
+            <h3 class="h3Rule">遊戲規則</h3>
+            <p class="pRule">選擇你喜歡的角色，並在有限金額內搭配最適合的裝備。閃避各種障礙物，盡可能生存下去，並獲得紅利點數吧！<br>
+                <br>
+                ※訪客無法累積紅利點數，若要累積請登入會員。
+            </p>
+            <button id="rulebtn" class="knew">我知道了</button>
         </div>
     </div>
     </main>
@@ -84,6 +94,19 @@
             Copyright © 2020 Divein | 海中日子 All Rights Reserved.
         </div>
     </footer>
+    
+    <script>
+
+        var rulebtn = document.getElementById("rulebtn");
+        var rulebtnX = document.getElementById("rulebtnX");
+        var ruleD = document.getElementById("ruleD");
+        rulebtn.addEventListener("click", function(){
+            ruleD.style.display = "none";
+        },false)
+        rulebtnX.addEventListener("click", function(){
+            ruleD.style.display = "none";
+        },false)
+    </script>
 </body>
 
 </html>

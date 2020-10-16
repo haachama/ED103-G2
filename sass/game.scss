@@ -8,6 +8,7 @@
 
 body{
     overflow: hidden;
+    font-family:$en,$zh;
 }
 
 .parent_container {
@@ -81,7 +82,7 @@ h3.h3Rule{
 p.pRule{
     font-size: $baseFz;
     color: $transparentWhite;
-    margin: 10px;
+    margin: 20px;
     text-align: left;
 }
 
@@ -90,9 +91,11 @@ p.pRule{
 }
 
 
-#ruleBtnX{
-    border: 0;
+button.ruleBtnX{
     position: absolute;
     top: 10px;
     right: 10px;
+    border: 0;
+    color: $transparentWhite;
+    background: none;
 }

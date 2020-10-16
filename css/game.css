@@ -295,6 +295,7 @@ header {
 
 body {
   overflow: hidden;
+  font-family: "Tahoma", sans-serif, "微軟正黑體", sans-serif;
 }
 
 .parent_container {
@@ -367,7 +368,7 @@ h3.h3Rule {
 p.pRule {
   font-size: 16px;
   color: rgba(254, 254, 254, 0.75);
-  margin: 10px;
+  margin: 20px;
   text-align: left;
 }
 
@@ -375,10 +376,12 @@ p.pRule {
   display: none;
 }
 
-#ruleBtnX {
-  border: 0;
+button.ruleBtnX {
   position: absolute;
   top: 10px;
   right: 10px;
+  border: 0;
+  color: rgba(254, 254, 254, 0.75);
+  background: none;
 }
 /*# sourceMappingURL=game.css.map */
