@@ -46,12 +46,17 @@
     </header>
     <main>
     <div class="parent_title">
-        <h3>選擇角色</h3>
-        <p>每個角色的基礎能力不同，選擇你喜歡的吧！</p>
-        <h3>選擇裝備</h3>
-        <p>您僅有50元，每種裝備最多購買一款，組合出你想要的能力吧!</p>
+        <div class="choseRole">
+            <h3>選擇角色</h3>
+            <p class="chose">每個角色的基礎能力不同，選擇您喜歡的吧！</p>
+        </div>
+        <div class="choseEquipment">
+            <h3>選擇裝備</h3>
+            <p class="chose">您僅有50元，每種裝備最多購買一款，組合出您想要的能力吧!</p>
+        </div>
     </div>
     <div class="parent_container">
+        <button></button>
         <div class="playRole">
             <img src="./img/game/greenrole.png">
             <div class="eye">
@@ -78,7 +83,7 @@
             <li class="equip"><img src="./img/game/shoe40Btn.png"></li>
         </ul>
 
-        <div class="rule" id="ruleD">
+        <div class="rule" id="ruleD" style="display: none;">
             <button id="rulebtnX" class="ruleBtnX">X</button>
             <h3 class="h3Rule">遊戲規則</h3>
             <p class="pRule">  選擇你喜歡的角色，並在有限金額內搭配最適合的裝備。閃避各種障礙物，盡可能生存下去，並獲得紅利點數吧！<br>
@@ -155,11 +160,6 @@
             Copyright © 2020 Divein | 海中日子 All Rights Reserved.
         </div>
     </footer>
-    
-    <script>
-
-        
-    </script>
 
 <script src="./js/game.js"></script>
 <script src="./js/bubbleBtn.js"></script>

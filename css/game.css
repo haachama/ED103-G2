@@ -15,6 +15,27 @@ p {
   text-align: left;
 }
 
+div.parent_title {
+  width: 1200px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+div.choseRole {
+  width: 49%;
+  display: inline-block;
+  text-align: center;
+}
+
+p.chose {
+  text-align: center;
+}
+
+div.choseEquipment {
+  width: 49%;
+  display: inline-block;
+}
+
 .parent_container {
   display: flex;
   justify-content: center;
@@ -93,5 +114,11 @@ button.ruleBtnX {
 
 .start .bubbleBtn {
   text-align: center;
+  margin: 20px;
+}
+
+.Retart .bubbleBtn {
+  text-align: center;
+  margin: 20px;
 }
 /*# sourceMappingURL=game.css.map */
