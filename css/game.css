@@ -4,7 +4,15 @@ body {
   box-sizing: border-box;
 }
 
+h2 {
+  color: rgba(254, 254, 254, 0.75);
+}
+
 h3 {
+  color: rgba(254, 254, 254, 0.75);
+}
+
+h4 {
   color: rgba(254, 254, 254, 0.75);
 }
 
@@ -15,29 +23,35 @@ p {
   text-align: left;
 }
 
-div.parent_title {
+.parent_title {
   width: 1200px;
   margin: 20px auto;
   text-align: center;
 }
 
-div.choseRole {
+.choseRole {
   width: 49%;
   display: inline-block;
   text-align: center;
 }
 
-p.chose {
+.choseEquipment {
+  width: 49%;
+  display: inline-block;
+}
+
+.chose {
+  display: inline-block;
   text-align: center;
 }
 
-div.choseEquipment {
-  width: 49%;
+.totalPrice {
   display: inline-block;
 }
 
 .parent_container {
   display: flex;
+  width: 1200px;
   justify-content: center;
   margin: 30px auto;
   box-sizing: border-box;
@@ -49,16 +63,29 @@ div.choseEquipment {
   position: relative;
 }
 
-.playRole::before {
-  align-self: center;
-  position: relative;
-}
-
 .equipList {
-  display: flex;
+  position: relative;
   justify-content: space-evenly;
   flex-wrap: wrap;
   width: 500px;
+}
+
+.maskList {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.airList {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.shoeList {
+  position: relative;
+  width: 100%;
+  display: flex;
 }
 
 .equip {
@@ -71,7 +98,7 @@ div.choseEquipment {
 }
 
 .equip img {
-  width: 100%;
+  width: auto;
 }
 
 .eye img {
@@ -117,12 +144,12 @@ button.ruleBtnX {
   background: none;
 }
 
-.start .bubbleBtn {
+.startBtn .bubbleBtn {
   text-align: center;
   margin: 20px;
 }
 
-.reStart .bubbleBtn {
+.reStartBtn .bubbleBtn {
   text-align: center;
   margin: 20px;
 }

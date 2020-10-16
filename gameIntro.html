@@ -47,12 +47,15 @@
     <main>
     <div class="parent_title">
         <div class="choseRole">
-            <h3>選擇角色</h3>
+            <h2>選擇角色</h2>
             <p class="chose">每個角色的基礎能力不同，選擇您喜歡的吧！</p>
         </div>
         <div class="choseEquipment">
-            <h3>選擇裝備</h3>
+            <h2>選擇裝備</h2>
+            <div class="choseEquipmentDescribe">
             <p class="chose">您僅有50元，每種裝備最多購買一款，組合出您想要的能力吧!</p>
+            <h3 class="totalPrice">$50</h3>
+            </div>
         </div>
     </div>
     <div class="parent_container">
@@ -71,24 +74,34 @@
             </div>
         </div>
         
+        <div class="euipList">
+            <ul class="maskList">
+                <li class="equip"><img src="./img/game/mask10Btn.png"></li>
+                <h4 class="price">10</h4>
+                <li class="equip"><img src="./img/game/mask20Btn.png"></li>
+                <h4 class="price">20</h4>
+                <li class="equip"><img src="./img/game/mask40Btn.png"></li>
+                <h4 class="price">40</h4>
+            </ul>
 
-        <ul class="maskList">
-            <li class="equip"><img src="./img/game/mask10Btn.png"></li>
-            <li class="equip"><img src="./img/game/mask20Btn.png"></li>
-            <li class="equip"><img src="./img/game/mask40Btn.png"></li>
-        </ul>
+            <ul class="airList">
+                <li class="equip"><img src="./img/game/air10Btn.png"></li>
+                <h4 class="price">10</h4>
+                <li class="equip"><img src="./img/game/air20Btn.png"></li>
+                <h4 class="price">20</h4>
+                <li class="equip"><img src="./img/game/air40Btn.png"></li>
+                <h4 class="price">40</h4>
+            </ul>
 
-        <ul class="airList">
-            <li class="equip"><img src="./img/game/air10Btn.png"></li>
-            <li class="equip"><img src="./img/game/air20Btn.png"></li>
-            <li class="equip"><img src="./img/game/air40Btn.png"></li>
-        </ul>
-
-        <ul class="shoeList">
-            <li class="equip"><img src="./img/game/shoe10Btn.png"></li>
-            <li class="equip"><img src="./img/game/shoe20Btn.png"></li>
-            <li class="equip"><img src="./img/game/shoe40Btn.png"></li>
-        </ul>
+            <ul class="shoeList">
+                <li class="equip"><img src="./img/game/shoe10Btn.png"></li>
+                <h4 class="price">10</h4>
+                <li class="equip"><img src="./img/game/shoe20Btn.png"></li>
+                <h4 class="price">20</h4>
+                <li class="equip"><img src="./img/game/shoe40Btn.png"></li>
+                <h4 class="price">40</h4>
+            </ul>
+        </div>
 
         <div class="rule" id="ruleD" style="display: none;">
             <button id="rulebtnX" class="ruleBtnX">X</button>
@@ -129,7 +142,7 @@
         </div>
     </div>
 
-    <div class="start">
+    <div class="startBtn">
         <div class="bubbleBtn">
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
                 <defs>
