@@ -1,0 +1,205 @@
+@import "./style";
+
+body{
+    box-sizing: border-box;
+    // font-size: 0;
+}
+
+.memberContainer{
+    width: 100%;
+    // height: 500px;
+    margin: 0 auto;
+    border: 1PX solid green;
+    display: inline-block;
+}
+.memberAside{
+    width: 30%;
+    margin: 0;
+    // border: 1PX solid red;
+    display: inline-block;
+    vertical-align: top;
+}
+.memberMain{
+    width: 70%;
+    // height: 500px;
+    margin: 0;
+    // border: 1PX solid yellow;
+    // background-color: yellow;
+    display: inline-block;
+    vertical-align: top;
+}
+
+//會員中心
+.memberAsideTitle{
+    width: 60%;
+    height: 50px;
+    margin: 40px auto 20px;
+    // border: 1px solid purple;
+    background-color: #16181D;
+}
+.memberAsideTitle h4{
+    text-align: center;
+    line-height: 2.2;
+}
+.memberData{
+    width: 60%;
+    margin: 0 auto;
+    background: rgba($color: #FEFEFE, $alpha: 0.75);
+}
+.memberData h4{
+    padding-top: 20px;
+    margin: 15px auto;
+    color: #16181D;
+    text-align: center;
+}
+.memberPic{
+    border-radius: 50%;
+    margin: 10px auto 20px;
+    width: 150px;
+    height: 150px;
+    // border: 1PX solid green;
+    overflow: hidden;
+    cursor: pointer;
+}
+.memberDataTable{
+    width: 150;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.memberDataTable tr td{
+    width: 150;
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    cursor: pointer;
+}
+.memberPion{
+    margin: 0 auto;
+    text-align: center;
+}
+.memberPion p{
+    font-size: 16px;
+    color: #16181D;
+    display: inline-block;
+    margin: 10px 0;
+}
+.memberPion span{
+    font-size: 16px;
+    color: #930000;
+}
+
+//右側頁簽
+.memberMainTebArea{
+    width: 70%;
+    // border: 1PX solid #FEFEFE;
+    margin: 50px auto;
+    text-align: center;
+}
+.memberMainTeb{
+    font-size: 24px;
+    color: #FEFEFE;
+    border: 1px solid #FEFEFE;
+    display: inline-block;
+    margin: 0;
+    padding: 8px 52px;
+    cursor: pointer;
+}
+.memberDiary{
+    background-color: #FEFEFE;
+    color: #073977;
+}
+.memberMainTeb:hover{
+    background-color: #FEFEFE;
+    color: #073977;
+}
+
+//內文
+.memberLogArea{
+    width: 65%;
+    // border: 1PX solid #FEFEFE;
+    margin: 0px auto 50px;
+}
+.memberLogContent{
+    cursor: pointer;
+}
+.memberLogContent:hover{
+    background-color: rgba($color: #FEFEFE, $alpha: 0.3);
+}
+.memberLogImg{
+    width: 30%;
+    display: inline-block;
+    // border: 1PX solid red;
+    vertical-align: middle;
+}
+.memberLogText{
+    width: 45%;
+    display: inline-block;
+    // border: 1PX solid red; 
+    margin: 0;
+    vertical-align: middle;
+}
+.memberLogTitle{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #FEFEFE;
+}
+.memberLogData{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.memberLogData p{
+    display: inline-block;
+}
+.memberLogData span{
+    display: inline-block;
+    font-size: 16px;
+    color: #FEFEFE;
+}
+.memberLogAss{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.memberLogAss p{
+    font-size: 16px;
+}
+
+.memberLogButton{
+    width: 25%;
+    display: inline-block;
+    // border: 1PX solid red;
+    text-align: center;
+    vertical-align: middle;
+    // padding: 20px 0;
+}
+.memberLogDE{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+hr{
+    margin: 15px 0;
+}
+
+.memberPage{
+    font-size: 24px;
+    // border: 1PX solid red;
+    text-align: center;
+    margin: 60px auto 40px;
+}
+.memberPage li{
+    display: inline-block;
+    border: 1PX solid #FEFEFE;
+    color: #FEFEFE;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.memberPage li:first-child{
+    color: #073977;
+    background-color: #FEFEFE;
+}
+.memberPage li:hover{
+    color: #073977;
+    background-color: #FEFEFE;
+}
+
