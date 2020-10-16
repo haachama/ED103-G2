@@ -294,7 +294,12 @@ header {
 }
 
 body {
-  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+
+p.rule {
+  font-size: 16px;
+  color: rgba(254, 254, 254, 0.75);
 }
 
 .parent_container {
@@ -354,7 +359,7 @@ body {
   width: 375px;
   position: absolute;
   top: 80px;
-  background-color: #fff;
+  background-color: #16181D;
   padding: 20px;
   text-align: center;
 }

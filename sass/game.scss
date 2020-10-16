@@ -7,7 +7,12 @@
 
 
 body{
-    background-color: rgba(0, 0, 0, .7);
+    overflow: hidden;
+}
+
+p.rule{
+    font-size: $baseFz;
+    color: $transparentWhite;
 }
 .parent_container {
     display: flex;
@@ -68,7 +73,7 @@ body{
     width: 375px;
     position: absolute;
     top: 80px;
-    background-color: #fff;
+    background-color: $keyBlack;
     padding: 20px;
     text-align: center;
 }

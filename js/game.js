@@ -1,12 +1,7 @@
-var rule = document.getElementsByClassName("rule")[0];
-        var ruleBtnX = document.getElementById("ruleBtnX");
-        var ruleBtn = document.getElementById("ruleBtn");
-        ruleBtnX.onclick = function(){
-            rule.classList.add("none");
-        };
-        ruleBtn.onclick = function(){
-            rule.classList.add("none");
-        };
+var rule = document.getElementsById("rule");
+var ruleBtnX = document.getElementById("ruleBtnX");
+var ruleBtn = document.getElementById("ruleBtn");
+
 
 // canvas {
 //     border:1px solid #d3d3d3;
@@ -147,9 +142,9 @@ var rule = document.getElementsByClassName("rule")[0];
 //     myGamePiece.speedY = 0; 
 // }
 
-{/* <div style="text-align:center;width:480px;">
-  <button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br>
-  <button onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button>
-  <button onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br>
-  <button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>
-</div> */}
+// { <div style="text-align:center;width:480px;">
+//   <button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br>
+//   <button onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button>
+//   <button onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br>
+//   <button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>
+// </div> }
