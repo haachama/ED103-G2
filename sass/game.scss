@@ -29,7 +29,7 @@ p{
 
 .parent_title{
     width: 1200px;
-    margin: 20px auto;
+    margin: 25px auto;
     text-align: center;
 }
 
@@ -159,7 +159,29 @@ button.ruleBtnX{
 
 //gameResort.html
 
-.reStartBtn .bubbleBtn{
+.parent_score{
+    position: relative;
+    width: 576px;
+    border-bottom: 3px solid $transparentWhite;
+    margin: 25px auto;
+    text-align: center;
+}
+.parent_score img{
+    width: 100px;
+}
+.score{
+    font-size: 60px;
+    color: White;
+    margin: 10px;
+}
+.goShopBtn .bubbleBtn{
+    // position: absolute;
+    // right: 10px;
+    // bottom: 10px;
+    text-align: right;
+    margin: 10px;
+}
+.restartBtn .bubbleBtn{
     text-align: center;
     margin: 20px;
 }
