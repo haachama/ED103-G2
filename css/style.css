@@ -221,6 +221,7 @@ header {
 .logo img {
   height: 80px;
   padding: 5px 0;
+  width: auto;
 }
 
 .nav ul {

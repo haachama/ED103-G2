@@ -1,14 +1,11 @@
-@import "./common/mixin";
-@import "./common/reset";
+
 @import "./common/variables";
-@import "./common/base";
-@import "./common/bubbleBtn";
-@import "./common/header";    //包含footer
 
 
 body{
     overflow: hidden;
     font-family:$en,$zh;
+    box-sizing: border-box;
 }
 
 .parent_container {
@@ -70,7 +67,7 @@ body{
     width: 375px;
     position: absolute;
     top: 80px;
-    background-color: $keyBlack;
+    background-color: $keyBlack;//$transparentWhite;
     padding: 20px;
     border-radius: 15px;
     text-align: center;
