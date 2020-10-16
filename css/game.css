@@ -297,11 +297,6 @@ body {
   overflow: hidden;
 }
 
-p.rule {
-  font-size: 16px;
-  color: rgba(254, 254, 254, 0.75);
-}
-
 .parent_container {
   display: flex;
   justify-content: center;
@@ -364,12 +359,17 @@ p.rule {
   text-align: center;
 }
 
-.none {
-  display: none;
+h3.h3Rule {
+  color: rgba(254, 254, 254, 0.75);
 }
 
-.rule p:nth-child(3) {
-  text-align: left;
+p.pRule {
+  font-size: 16px;
+  color: rgba(254, 254, 254, 0.75);
+}
+
+.none {
+  display: none;
 }
 
 #ruleBtnX {

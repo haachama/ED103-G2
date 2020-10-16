@@ -10,10 +10,6 @@ body{
     overflow: hidden;
 }
 
-p.rule{
-    font-size: $baseFz;
-    color: $transparentWhite;
-}
 .parent_container {
     display: flex;
     justify-content: center;
@@ -78,13 +74,18 @@ p.rule{
     text-align: center;
 }
 
+h3.h3Rule{
+    color: $transparentWhite;
+}
+p.pRule{
+    font-size: $baseFz;
+    color: $transparentWhite;
+}
+
 .none {
     display: none;
 }
 
-.rule p:nth-child(3){
-    text-align: left;
-}
 
 #ruleBtnX{
     border: 0;
