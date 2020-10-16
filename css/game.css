@@ -356,6 +356,7 @@ body {
   top: 80px;
   background-color: #16181D;
   padding: 20px;
+  border-radius: 15px;
   text-align: center;
 }
 
@@ -366,6 +367,8 @@ h3.h3Rule {
 p.pRule {
   font-size: 16px;
   color: rgba(254, 254, 254, 0.75);
+  margin: 10px;
+  text-align: left;
 }
 
 .none {

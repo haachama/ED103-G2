@@ -71,6 +71,7 @@ body{
     top: 80px;
     background-color: $keyBlack;
     padding: 20px;
+    border-radius: 15px;
     text-align: center;
 }
 
@@ -80,6 +81,8 @@ h3.h3Rule{
 p.pRule{
     font-size: $baseFz;
     color: $transparentWhite;
+    margin: 10px;
+    text-align: left;
 }
 
 .none {
