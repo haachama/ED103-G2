@@ -1,0 +1,89 @@
+@import "./common/mixin";
+@import "./common/reset";
+@import "./common/variables";
+@import "./common/base";
+@import "./common/bubbleBtn";
+@import "./common/header";    //包含footer
+
+
+body{
+    background-color: rgba(0, 0, 0, .7);
+}
+.parent_container {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.playRole{
+    align-self: center;
+    position: relative;
+}
+
+
+.equipList{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.equip{
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 20px;
+    list-style: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.equip img{
+    width: 100%;
+}
+
+
+.eye img{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    transform: scale(1.15) rotate(170deg);
+}
+
+.back img{
+    position: absolute;
+    top: 28%;
+    transform: translateX(-70%);
+    z-index: -1;
+}
+
+.foot img{
+    position: absolute;
+    bottom: -30px;
+    transform: scale(1.7) rotate(12deg) translate(10px, 5px);
+}
+
+.rule{
+    width: 375px;
+    position: absolute;
+    top: 80px;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.none {
+    display: none;
+}
+
+.rule p:nth-child(3){
+    text-align: left;
+}
+
+#ruleBtnX{
+    border: 0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
