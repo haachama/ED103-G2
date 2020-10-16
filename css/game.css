@@ -2,6 +2,12 @@
 body {
   font-family: "Tahoma", sans-serif, "微軟正黑體", sans-serif;
   box-sizing: border-box;
+  overflow: hidden;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
 }
 
 h2 {
@@ -176,6 +182,37 @@ button.ruleBtnX {
 .goShopBtn .bubbleBtn {
   text-align: right;
   margin: 10px;
+}
+
+.rankList {
+  width: 576px;
+  height: 460px;
+  border-bottom: 3px solid rgba(254, 254, 254, 0.75);
+  margin: 25px auto;
+  overflow: scroll;
+}
+
+.record {
+  display: flex;
+}
+
+.record img {
+  width: 80px;
+  height: 80px;
+  margin: 10px 20px;
+  border: 1px solid #16181D;
+  border-radius: 50%;
+}
+
+.record h3 {
+  flex-grow: 1;
+  width: 100px;
+  margin: auto 0;
+}
+
+.record h4 {
+  flex-grow: 1;
+  margin: auto 0;
 }
 
 .restartBtn .bubbleBtn {
