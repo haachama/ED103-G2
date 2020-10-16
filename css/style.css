@@ -1,0 +1,295 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Tahoma", sans-serif, "微軟正黑體", sans-serif;
+}
+
+body .container {
+  width: 100%;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+img {
+  width: 100%;
+  font-size: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+}
+
+.button {
+  -webkit-font-smoothing: antialiased;
+  background-color: seashell;
+  color: #fff;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  letter-spacing: 1px;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  transition: all 0.1s ease-out;
+}
+
+.button:hover {
+  background-color: #073977;
+  color: #fff;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.button--bubble {
+  position: relative;
+  z-index: 2;
+  color: #073977;
+  background: none;
+}
+
+.button--bubble:hover {
+  background: none;
+}
+
+.button--bubble:hover + .button--bubble__effect-container .circle {
+  background: #03162f;
+}
+
+.button--bubble:hover + .button--bubble__effect-container .button {
+  background: #03162f;
+}
+
+.button--bubble:active + .button--bubble__effect-container {
+  transform: scale(0.95);
+}
+
+.button--bubble__container {
+  position: relative;
+  display: inline-block;
+}
+
+.button--bubble__container .effect-button {
+  position: absolute;
+  width: 50%;
+  height: 25%;
+  top: 50%;
+  left: 25%;
+  z-index: 1;
+  transform: translateY(-50%);
+  background: seashell;
+  transition: background 0.1s ease-out;
+}
+
+.button--bubble__effect-container {
+  position: absolute;
+  display: block;
+  width: 200%;
+  height: 400%;
+  top: -150%;
+  left: -50%;
+  filter: url("#goo");
+  transition: all 0.1s ease-out;
+  pointer-events: none;
+}
+
+.button--bubble__effect-container .circle {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  background: seashell;
+  transition: background 0.1s ease-out;
+}
+
+.button--bubble__effect-container .circle.top-left {
+  top: 40%;
+  left: 27%;
+}
+
+.button--bubble__effect-container .circle.bottom-right {
+  bottom: 40%;
+  right: 27%;
+}
+
+.goo {
+  position: absolute;
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+}
+
+.button--bubble__container {
+  top: 50%;
+  margin-top: -25px;
+}
+
+@keyframes hue-rotate {
+  from {
+    -moz-filter: hue-rotate(0);
+    -ms-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+  }
+  to {
+    -moz-filter: hue-rotate(360deg);
+    -ms-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+
+body {
+  background-image: url("../img/insidepage.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+header {
+  background-color: rgba(254, 254, 254, 0.15);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo img {
+  height: 80px;
+  padding: 5px 0;
+}
+
+.nav ul {
+  font-size: 0;
+}
+
+.nav li {
+  font-size: 16px;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fefefe;
+  line-height: 25px;
+}
+
+.nav a:hover {
+  color: #073977;
+}
+
+.memCart li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.memCart img {
+  width: 30px;
+}
+
+.recommend_nav::before, .course_nav::before, .shop_nav::before, .blog_nav::before, .game_nav::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-right: 7px;
+}
+
+.recommend_nav::before {
+  background-image: url("../img/header/recmed.png");
+}
+
+.course_nav::before {
+  background-image: url("../img/header/lesson.png");
+}
+
+.shop_nav::before {
+  background-image: url("../img/header/shop.png");
+}
+
+.blog_nav::before {
+  background-image: url("../img/header/blog.png");
+}
+
+.game_nav::before {
+  background-image: url("../img/header/game.png");
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+  background-color: #16181D;
+  color: #fefefe;
+  font-size: 16px;
+}
+/*# sourceMappingURL=style.css.map */
