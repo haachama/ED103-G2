@@ -49,6 +49,11 @@ div.choseEquipment {
   position: relative;
 }
 
+.playRole::before {
+  align-self: center;
+  position: relative;
+}
+
 .equipList {
   display: flex;
   justify-content: space-evenly;
@@ -117,7 +122,7 @@ button.ruleBtnX {
   margin: 20px;
 }
 
-.Retart .bubbleBtn {
+.reStart .bubbleBtn {
   text-align: center;
   margin: 20px;
 }
