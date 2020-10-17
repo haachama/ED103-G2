@@ -194,8 +194,28 @@ button.ruleBtnX{
     height: 460px;
     border-bottom: 3px solid $transparentWhite;
     margin: 25px auto;
-    overflow: scroll;
+    overflow-y: scroll;     
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
     
+}
+  
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: $transparentWhite; 
+}
+   
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #888; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
 
 .record {
@@ -205,23 +225,21 @@ button.ruleBtnX{
 .record img{
     width: 80px;
     height: 80px;
-    margin: 10px 20px;
-    border: 1px solid $keyBlack;
+    margin: 20px;
+    // border: 1px solid $keyBlack;
+    background-color: $transparentWhite;
     border-radius: 50%;
-    // display: inline-block;
 }
 
 .record h3{
     flex-grow: 1;
     width: 100px;
     margin: auto 0;
-    // display: inline-block;
 }
 
 .record h4{
     flex-grow: 1;
     margin: auto 0;
-    // display: inline-block;
 }
 
 .restartBtn .bubbleBtn{
