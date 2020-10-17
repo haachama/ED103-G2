@@ -1,5 +1,6 @@
 body {
   background-image: url("../../img/index/azurlane.png");
+  background-repeat: no-repeat;
 }
 
 h3 {
@@ -10,6 +11,10 @@ h3 {
 .waves {
   z-index: -1;
   position: relative;
+}
+
+.waves img {
+  width: 100%;
 }
 
 .waves .biglogo {

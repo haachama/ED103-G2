@@ -2,6 +2,7 @@
 
 body{
     background-image: url("../../img/index/azurlane.png");
+    background-repeat: no-repeat;
 }
 
 h3{
@@ -12,6 +13,9 @@ h3{
     z-index: -1;
     // border: 1px solid #fff;
     position: relative;
+    img{
+        width: 100%;
+    }
     .biglogo{
         position: absolute;
         top: 40%;
@@ -20,7 +24,7 @@ h3{
     .biglogo img{
         height: 250px;
         padding: 5px;
-        width: auto;        
+        width: auto; 
     }
 }
 
