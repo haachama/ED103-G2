@@ -24,6 +24,11 @@ h3 {
   width: auto;
 }
 
+h2 {
+  margin-top: 200px;
+  margin-left: 150px;
+}
+
 .container {
   display: block;
   width: 600px;
@@ -34,7 +39,7 @@ h3 {
 
 .container .spotTitle {
   position: absolute;
-  top: 0px;
+  top: 18px;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -78,7 +83,7 @@ h3 {
   height: 100%;
   bottom: 0;
   left: -49%;
-  z-index: -1;
+  z-index: 2;
 }
 
 .spotBtn {
@@ -92,5 +97,226 @@ h3 {
 
 .spotBtn .bubbleBtn {
   margin: 30px;
+}
+
+.containerCourse {
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.containerCourse .aside,
+.containerCourse .main {
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.containerCourse .aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid red;
+  margin-top: 50px;
+  margin-left: 150px;
+}
+
+.containerCourse .aside .courseBox {
+  border: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 30px;
+}
+
+.containerCourse .aside .courseBox .animal {
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+}
+
+.containerCourse .aside .courseBox .animal img {
+  width: 300px;
+}
+
+.containerCourse .aside .courseBox .animal .turtle {
+  position: absolute;
+  left: 12%;
+  top: 20%;
+  z-index: -1;
+}
+
+.containerCourse .aside .courseBox .courseTxt {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.containerCourse .aside .courseBox .courseTxt span {
+  background-color: #fefefe;
+  padding: 10px 15px;
+}
+
+.shop {
+  width: 1000px;
+  margin: auto;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shop .demoman {
+  -webkit-box-flex: 10;
+      -ms-flex: 10;
+          flex: 10;
+}
+
+.shop .demoman img {
+  width: 200px;
+  margin-left: 150px;
+}
+
+.shop .itemList {
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.shop .itemList div {
+  margin-bottom: 30px;
+}
+
+.shop .itemList span {
+  color: #fefefe;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.shop .itemList .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shop .itemList .item a {
+  margin-right: 30px;
+}
+
+.shop .itemList .mask {
+  margin-left: 140px;
+}
+
+.shop .itemList .watch {
+  margin-left: 80px;
+}
+
+.shop .itemList .gloves {
+  margin-left: 200px;
+}
+
+.shopBtn {
+  text-align: center;
+}
+
+.diary {
+  width: 1200px;
+  margin: 50px auto;
+}
+
+.bigDiary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.diaryTxt {
+  width: 560px;
+  height: 420px;
+  border: 1px solid #545544;
+}
+
+.smallDiary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.diaryList {
+  font-size: 0;
+  position: relative;
+}
+
+.diaryList img:first-child {
+  opacity: .6;
+}
+
+.diaryList .adama {
+  border-radius: 50%;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  border: 2px solid #fefefe;
+}
+
+.txt {
+  background-color: rgba(254, 254, 254, 0.75);
+  padding-bottom: 20px;
+}
+
+.diaryList .txt .txtUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.diaryList .txtUp .two {
+  text-align: center;
+}
+
+.two p:first-child {
+  font-size: 12px;
+}
+
+.two p:last-child {
+  font-size: 14px;
+}
+
+.txtDown {
+  font-size: 16px;
+}
+
+.txtDown span {
+  padding: 5px 15px;
+  margin-left: 6px;
 }
 /*# sourceMappingURL=index.css.map */
