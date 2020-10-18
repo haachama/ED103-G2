@@ -195,56 +195,100 @@ h2{
     justify-content: space-between;
     margin-bottom: 40px;
 }
-
 .diaryTxt{
     width: 560px;
     height: 420px;
     border: 1px solid #545544;
 }
 
+
 .smallDiary{
     display: flex;
     justify-content: space-between;
+
+    .diaryList{
+        font-size: 0;
+        position: relative;
+        margin-bottom: 50px;
+        .user{
+            display: flex;
+            position: absolute;
+            top: 2%;
+            left: 2%;
+            align-items: center;
+    
+            > span{
+                font-size: 14px;
+                color: $keyWhite;
+                margin-left: 4px;
+            }
+            .adama{
+                border-radius: 50%;
+                border: 2px solid $keyWhite;
+            }
+            .diaryTitle{
+                font-size: 20px;
+                color: $keyWhite;
+                margin-left: 90px;
+            }
+        }
+        .local{
+            position: absolute;
+            bottom: 35%;
+            left: 2%;
+            color: #fefefe;
+            font-size: 14px;
+        }
+        .txt{
+            background-color: $transparentWhite;
+            padding-bottom: 20px;
+            color: $keyBlack;
+
+            .txtUp{
+                display: flex;
+                padding: 10px 0;
+                margin-bottom: 10px;
+                justify-content: space-evenly;
+                border-bottom: 1px solid gray;
+
+                .two{
+                    text-align: center;
+                    p:first-child{
+                        font-size: 12px;
+                        margin-bottom: 4px;
+                    }
+                    p:last-child{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .txtDown{
+                font-size: $baseFz;
+                span{
+                    padding: 5px 15px;
+                    margin-left: 6px;
+                }
+            }
+        }
+
+    }
 }
-.diaryList{
-    font-size: 0;
-    position: relative;
-}
-.diaryList img:first-child{
-    opacity: .6;
-}
-.diaryList .adama{
-    border-radius: 50%;
+.diaryList::after{
+    content: '';
+    display: inline-block;
+    width: 130px;
+    height: 105px;
+    background-image: url(../../img/index/shaII.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 120px auto;
     position: absolute;
-    top: 2%;
-    left: 2%;
-    border: 2px solid $keyWhite;
+    left: 50%;
+    bottom: -32%;
+    transform: translateX(-50%);
 }
-.txt{
-    background-color: $transparentWhite;
-    padding-bottom: 20px;
-}
-.diaryList .txt .txtUp{
-    display: flex;
-    padding-top: 10px;
-    margin-bottom: 10px;
-    justify-content: space-evenly;
-
-}
-.diaryList .txtUp .two{
-    text-align: center;
-}
-.two p:first-child{
-    font-size: 12px;
-}
-.two p:last-child{
-    font-size: 14px;
+.diaryList:hover::after{
+    background-position: center bottom;
 }
 
-.txtDown{
-    font-size: $baseFz;
-}
-.txtDown span{
-    padding: 5px 15px;
-    margin-left: 6px;
-}
+

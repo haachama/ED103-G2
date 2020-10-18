@@ -271,57 +271,106 @@ h2 {
           justify-content: space-between;
 }
 
-.diaryList {
+.smallDiary .diaryList {
   font-size: 0;
   position: relative;
+  margin-bottom: 50px;
 }
 
-.diaryList img:first-child {
-  opacity: .6;
-}
-
-.diaryList .adama {
-  border-radius: 50%;
-  position: absolute;
-  top: 2%;
-  left: 2%;
-  border: 2px solid #fefefe;
-}
-
-.txt {
-  background-color: rgba(254, 254, 254, 0.75);
-  padding-bottom: 20px;
-}
-
-.diaryList .txt .txtUp {
+.smallDiary .diaryList .user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 10px;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.smallDiary .diaryList .user > span {
+  font-size: 14px;
+  color: #fefefe;
+  margin-left: 4px;
+}
+
+.smallDiary .diaryList .user .adama {
+  border-radius: 50%;
+  border: 2px solid #fefefe;
+}
+
+.smallDiary .diaryList .user .diaryTitle {
+  font-size: 20px;
+  color: #fefefe;
+  margin-left: 90px;
+}
+
+.smallDiary .diaryList .local {
+  position: absolute;
+  bottom: 35%;
+  left: 2%;
+  color: #fefefe;
+  font-size: 14px;
+}
+
+.smallDiary .diaryList .txt {
+  background-color: rgba(254, 254, 254, 0.75);
+  padding-bottom: 20px;
+  color: #16181D;
+}
+
+.smallDiary .diaryList .txt .txtUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
   margin-bottom: 10px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  border-bottom: 1px solid gray;
 }
 
-.diaryList .txtUp .two {
+.smallDiary .diaryList .txt .txtUp .two {
   text-align: center;
 }
 
-.two p:first-child {
+.smallDiary .diaryList .txt .txtUp .two p:first-child {
   font-size: 12px;
+  margin-bottom: 4px;
 }
 
-.two p:last-child {
+.smallDiary .diaryList .txt .txtUp .two p:last-child {
   font-size: 14px;
 }
 
-.txtDown {
+.smallDiary .diaryList .txt .txtDown {
   font-size: 16px;
 }
 
-.txtDown span {
+.smallDiary .diaryList .txt .txtDown span {
   padding: 5px 15px;
   margin-left: 6px;
+}
+
+.diaryList::after {
+  content: '';
+  display: inline-block;
+  width: 130px;
+  height: 105px;
+  background-image: url(../../img/index/shaII.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 120px auto;
+  position: absolute;
+  left: 50%;
+  bottom: -32%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.diaryList:hover::after {
+  background-position: center bottom;
 }
 /*# sourceMappingURL=index.css.map */

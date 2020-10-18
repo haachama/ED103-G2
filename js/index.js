@@ -18,3 +18,12 @@ fish04.style.top = "190px"
 var fishNemo = document.getElementsByClassName("fishNemo")[0];
 fishNemo.style.left = "450px"
 fishNemo.style.top = "200px"
+
+//蝦蝦
+var diaryLists = document.getElementsByClassName("diaryList")
+for (let i = 0; i < diaryLists.length; i++){
+    diaryLists[i].addEventListener("mouseenter",function(){
+        diaryLists[i].classList.add("animate__animated","animate__shakeX","animate__slow");
+    })
+}
+

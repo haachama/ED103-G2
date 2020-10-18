@@ -245,6 +245,7 @@ div {
 body {
   background-image: url("../img/insidepage.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
 }
 
