@@ -1,59 +1,59 @@
-
 @import "./common/variables";
 
 
-body{
-    font-family:$en,$zh;
+body {
+    font-family: $en, $zh;
     box-sizing: border-box;
     // overflow: hidden;
 }
 
-.copyright{
+.copyright {
     position: absolute;
-    bottom:0;
+    bottom: 0;
 }
-h2{
+
+h2 {
     color: $transparentWhite;
 }
 
-h3{
+h3 {
     color: $transparentWhite;
 }
 
-h4{
+h4 {
     color: $transparentWhite;
 }
 
-p{
+p {
     font-size: $baseFz;
     color: $transparentWhite;
     margin: 20px;
     text-align: left;
 }
 
-.parent_title{
+.parent_title {
     width: 1200px;
     margin: 25px auto;
     text-align: center;
 }
 
-.choseRole{
+.choseRole {
     width: 49%;
     display: inline-block;
     text-align: center;
 }
 
-.choseEquipment{
+.choseEquipment {
     width: 49%;
     display: inline-block;
 }
 
-.chose{
+.chose {
     display: inline-block;
     text-align: center;
 }
 
-.totalPrice{
+.totalPrice {
     display: inline-block;
 }
 
@@ -66,13 +66,13 @@ p{
     position: relative;
 }
 
-.playRole{
+.playRole {
     align-self: center;
     position: relative;
 }
 
 
-.equipList{
+.equipList {
     // display: flex;
     position: relative;
     justify-content: space-evenly;
@@ -80,25 +80,25 @@ p{
     width: 500px;
 }
 
-.maskList{
+.maskList {
     position: relative;
     width: 100%;
     display: flex;
 }
 
-.airList{
+.airList {
     position: relative;
     width: 100%;
     display: flex;
 }
 
-.shoeList{
+.shoeList {
     position: relative;
     width: 100%;
     display: flex;
 }
 
-.equip{
+.equip {
     box-sizing: border-box;
     margin: 20px;
     padding: 20px;
@@ -107,36 +107,36 @@ p{
     cursor: pointer;
 }
 
-.equip img{
+.equip img {
     width: auto;
 }
 
 
-.eye img{
+.eye img {
     position: absolute;
     top: 20px;
     left: 15px;
     transform: scale(1.15) rotate(170deg);
 }
 
-.back img{
+.back img {
     position: absolute;
     top: 28%;
     transform: translateX(-70%);
     z-index: -1;
 }
 
-.foot img{
+.foot img {
     position: absolute;
     bottom: -30px;
     transform: scale(1.7) rotate(12deg) translate(10px, 5px);
 }
 
-.rule{
+.rule {
     width: 375px;
     position: fixed;
     top: 100px;
-    background-color: $keyBlack;//$transparentWhite;
+    background-color: $keyBlack; //$transparentWhite;
     padding: 20px;
     border-radius: 15px;
     text-align: center;
@@ -147,7 +147,7 @@ p{
 }
 
 
-button.ruleBtnX{
+button.ruleBtnX {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -156,93 +156,352 @@ button.ruleBtnX{
     background: none;
 }
 
-.startBtn .bubbleBtn{
+.startBtn .bubbleBtn {
     text-align: center;
     margin: 20px;
 }
 
 //gameResort.html
 
-.parent_score{
+.parent_score {
     position: relative;
     width: 576px;
     border-bottom: 3px solid $transparentWhite;
     margin: 25px auto;
     text-align: center;
 }
-.parent_score img{
+
+.parent_score img {
     width: 100px;
 }
-.scoreDescribe{
+
+.scoreDescribe {
     font-size: 60px;
     color: White;
     margin: 10px;
 }
 
-.resortRole{
+.resortRole {
     position: absolute;
     left: 0;
     bottom: 0;
 }
-.goShopBtn .bubbleBtn{
+
+.goShopBtn .bubbleBtn {
     text-align: right;
     margin: 10px;
 }
 
-.rankList{
+.rankList {
     width: 576px;
     height: 460px;
     border-bottom: 3px solid $transparentWhite;
     margin: 25px auto;
-    overflow-y: scroll;     
+    overflow-y: scroll;
     overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
     width: 10px;
-    
-}
-  
-::-webkit-scrollbar-track {
-    border-radius: 5px;
-    background: $transparentWhite; 
-}
-   
 
-::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    background: #888; 
-}
-  
-::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    @media (min-width: 1200px) {
+        body {
+            font-family: $en, $zh;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .copyright {
+            position: absolute;
+            bottom: 0;
+        }
+
+        h2 {
+            color: $transparentWhite;
+        }
+
+        h3 {
+            color: $transparentWhite;
+        }
+
+        h4 {
+            color: $transparentWhite;
+        }
+
+        p {
+            font-size: $baseFz;
+            color: $transparentWhite;
+            margin: 20px;
+            text-align: left;
+        }
+
+        .parent_title {
+            width: 1200px;
+            margin: 25px auto;
+            text-align: center;
+        }
+
+        .choseRole {
+            width: 49%;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .choseEquipment {
+            width: 49%;
+            display: inline-block;
+        }
+
+        .chose {
+            display: inline-block;
+            text-align: center;
+        }
+
+        .totalPrice {
+            display: inline-block;
+        }
+
+        .parent_container {
+            display: flex;
+            width: 1200px;
+            justify-content: center;
+            margin: 30px auto;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .playRole {
+            align-self: center;
+            position: relative;
+        }
+
+
+        .equipList {
+            // display: flex;
+            position: relative;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            width: 500px;
+        }
+
+        .maskList {
+            position: relative;
+            width: 100%;
+            display: flex;
+        }
+
+        .airList {
+            position: relative;
+            width: 100%;
+            display: flex;
+        }
+
+        .shoeList {
+            position: relative;
+            width: 100%;
+            display: flex;
+        }
+
+        .equip {
+            box-sizing: border-box;
+            margin: 20px;
+            padding: 20px;
+            list-style: none;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .equip img {
+            width: auto;
+        }
+
+
+        .eye img {
+            position: absolute;
+            top: 20px;
+            left: 15px;
+            transform: scale(1.15) rotate(170deg);
+        }
+
+        .back img {
+            position: absolute;
+            top: 28%;
+            transform: translateX(-70%);
+            z-index: -1;
+        }
+
+        .foot img {
+            position: absolute;
+            bottom: -30px;
+            transform: scale(1.7) rotate(12deg) translate(10px, 5px);
+        }
+
+        .rule {
+            width: 375px;
+            position: fixed;
+            top: 100px;
+            background-color: $keyBlack; //$transparentWhite;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .none {
+            display: none;
+        }
+
+
+        button.ruleBtnX {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border: 0;
+            color: $transparentWhite;
+            background: none;
+        }
+
+        .startBtn .bubbleBtn {
+            text-align: center;
+            margin: 20px;
+        }
+
+        //gameResort.html
+
+        .parent_score {
+            position: relative;
+            width: 576px;
+            border-bottom: 3px solid $transparentWhite;
+            margin: 25px auto;
+            text-align: center;
+        }
+
+        .parent_score img {
+            width: 100px;
+        }
+
+        .scoreDescribe {
+            font-size: 60px;
+            color: White;
+            margin: 10px;
+        }
+
+        .resortRole {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        .goShopBtn .bubbleBtn {
+            text-align: right;
+            margin: 10px;
+        }
+
+        .rankList {
+            width: 576px;
+            height: 460px;
+            border-bottom: 3px solid $transparentWhite;
+            margin: 25px auto;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+
+        }
+
+        ::-webkit-scrollbar-track {
+            border-radius: 5px;
+            background: $transparentWhite;
+        }
+
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background: #888;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .record {
+            display: flex;
+        }
+
+        .record img {
+            width: 80px;
+            height: 80px;
+            margin: 20px;
+            // border: 1px solid $keyBlack;
+            background-color: $transparentWhite;
+            border-radius: 50%;
+        }
+
+        .record h3 {
+            flex-grow: 1;
+            width: 100px;
+            margin: auto 0;
+        }
+
+        .record h4 {
+            flex-grow: 1;
+            margin: auto 0;
+        }
+
+        .restartBtn .bubbleBtn {
+            text-align: center;
+            margin: 20px;
+        }
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 5px;
+        background: $transparentWhite;
+    }
+
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background: #888;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    .record {
+        display: flex;
+    }
+
+    .record img {
+        width: 80px;
+        height: 80px;
+        margin: 20px;
+        // border: 1px solid $keyBlack;
+        background-color: $transparentWhite;
+        border-radius: 50%;
+    }
+
+    .record h3 {
+        flex-grow: 1;
+        width: 100px;
+        margin: auto 0;
+    }
+
+    .record h4 {
+        flex-grow: 1;
+        margin: auto 0;
+    }
+
+    .restartBtn .bubbleBtn {
+        text-align: center;
+        margin: 20px;
+    }
 }
 
-.record {
-    display: flex;
-}
+@media screen and (min-width: 992px) and (max-width: 1199px) {}
 
-.record img{
-    width: 80px;
-    height: 80px;
-    margin: 20px;
-    // border: 1px solid $keyBlack;
-    background-color: $transparentWhite;
-    border-radius: 50%;
-}
+@media screen and (min-width: 576px) and (max-width: 991px) {}
 
-.record h3{
-    flex-grow: 1;
-    width: 100px;
-    margin: auto 0;
-}
-
-.record h4{
-    flex-grow: 1;
-    margin: auto 0;
-}
-
-.restartBtn .bubbleBtn{
-    text-align: center;
-    margin: 20px;
-}
+@media screen and (max-width: 575px) {}
