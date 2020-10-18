@@ -1,0 +1,142 @@
+.addTitle {
+  margin: 5% 15%;
+}
+
+.content {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #16181D;
+  color: #fefefe;
+  padding: 5%;
+  border-radius: 15px;
+}
+
+.content section {
+  margin: 50px auto;
+  width: 90%;
+}
+
+.content .second, .content .third, .content .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content .second div, .content .third div, .content .date div {
+  line-height: 1.8;
+  width: 173px;
+}
+
+.content .second input.num, .content .third input.num, .content .date input.num {
+  margin: 0 3px;
+  width: 70%;
+}
+
+.content .second input[type=file], .content .third input[type=file], .content .date input[type=file] {
+  width: 40%;
+}
+
+.content .date span {
+  line-height: 57px;
+}
+
+.content select {
+  padding: 3px 15px;
+}
+
+.lessonType {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 130px;
+  text-align: center;
+}
+
+.lessonType p {
+  width: 130px;
+  height: 130px;
+  border: 1px solid #fefefe;
+  border-radius: 15px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 20px;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+.lessonType p:hover {
+  background-color: #fefefe;
+  color: #16181D;
+  cursor: pointer;
+}
+
+main {
+  margin-bottom: 100px;
+}
+
+.saveBtn {
+  margin: 0 auto;
+  width: 130px;
+}
+
+.button--bubble {
+  background: #fefefe;
+}
+
+.button--bubble:hover {
+  background: #fefefe;
+  color: #073977;
+}
+
+.button--bubble:hover + .button--bubble__effect-container .circle {
+  background: #fefefe;
+}
+
+.button--bubble:hover + .button--bubble__effect-container .button {
+  background: #fefefe;
+}
+
+.button--bubble__effect-container .circle {
+  background: #fefefe;
+}
+
+@media all and (max-width: 1200px) {
+  .content {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .lessonType {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .content .second, .content .third, .content .date {
+    display: block;
+  }
+  .content .second div, .content .third div, .content .date div {
+    margin: 15px 0;
+  }
+  .date span {
+    display: none;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .lessonType {
+    line-height: 100px;
+  }
+  .lessonType p {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+}
+/*# sourceMappingURL=addCourse.css.map */
