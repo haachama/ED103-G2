@@ -1,0 +1,30 @@
+h2 {
+  margin-top: 100px;
+  margin-left: 15%;
+}
+
+.itemType ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.itemType ul li {
+  width: 150px;
+  text-align: center;
+  border: 2px solid #fefefe;
+  font-size: 28.8px;
+  margin: 50px 80px;
+  padding: 8px 15px;
+  color: #fefefe;
+  cursor: pointer;
+}
+
+.itemType ul li:hover {
+  background-color: #fefefe;
+  color: #073977;
+}
+/*# sourceMappingURL=shopmall.css.map */

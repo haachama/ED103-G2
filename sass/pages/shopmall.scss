@@ -1,0 +1,31 @@
+@import "../common/variables";
+
+h2{
+    margin-top: 100px;
+    margin-left: 15%;
+}
+
+.itemType{
+
+    ul{     
+        display: flex;
+        justify-content: center;
+        
+        li{
+            width: 150px;
+            text-align: center;
+            border: 2px solid $keyWhite;
+            font-size: 1.8*$baseFz;
+            margin: 50px 80px;
+            padding: 8px 15px;
+            color: $keyWhite;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $keyWhite;
+                color: $keyBlue;
+            }
+        }
+
+    }
+}
