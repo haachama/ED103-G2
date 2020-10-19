@@ -10,6 +10,7 @@
   }
   h2 {
     color: rgba(254, 254, 254, 0.75);
+    margin: 0 0 20px 0;
   }
   h3 {
     color: rgba(254, 254, 254, 0.75);
@@ -21,8 +22,7 @@
   p {
     font-size: 16px;
     color: rgba(254, 254, 254, 0.75);
-    margin: 20px;
-    text-align: left;
+    margin: 5px;
   }
   .parent_title {
     width: 1200px;
@@ -79,15 +79,21 @@
   .abilityBlock {
     position: relative;
     width: 200px;
-    margin: 0 20px;
+    margin: 0 50px 0 0;
   }
   .ability {
     position: absolute;
     bottom: 0;
     width: 200px;
-    height: 200px;
     margin: 20px 0;
-    border: 1px solid red;
+    text-align: center;
+  }
+  .abilityDescribe {
+    width: 100%;
+    display: inline-flex;
+  }
+  .flexGrow {
+    flex-grow: 1;
   }
   .equipList {
     position: relative;
@@ -172,16 +178,38 @@
     border-radius: 15px;
     text-align: center;
   }
+  .pRule {
+    text-indent: 2em;
+    line-height: 32px;
+    margin: 20px;
+    text-align: left;
+  }
   .none {
     display: none;
   }
-  button.ruleBtnX {
+  .ruleBtnX {
     position: absolute;
     top: 10px;
     right: 10px;
     border: 0;
     color: rgba(254, 254, 254, 0.75);
     background: none;
+  }
+  .button--bubble {
+    background: #fefefe;
+  }
+  .button--bubble:hover {
+    background: #fefefe;
+    color: #073977;
+  }
+  .button--bubble:hover + .button--bubble__effect-container .circle {
+    background: #fefefe;
+  }
+  .button--bubble:hover + .button--bubble__effect-container .button {
+    background: #fefefe;
+  }
+  .button--bubble__effect-container .circle {
+    background: #fefefe;
   }
   .startBtn .bubbleBtn {
     text-align: center;

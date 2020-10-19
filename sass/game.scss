@@ -15,6 +15,7 @@
 
     h2 {
         color: $transparentWhite;
+        margin: 0 0 20px 0;
     }
     
     h3 {
@@ -29,8 +30,7 @@
     p {
         font-size: $baseFz;
         color: $transparentWhite;
-        margin: 20px;
-        text-align: left;
+        margin: 5px;
     }
     
     .parent_title {
@@ -98,17 +98,23 @@
     .abilityBlock{
         position: relative;
         width: 200px;
-        margin: 0 20px; 
+        margin: 0 50px 0 0 ; 
     }
     .ability{
         position: absolute;
         bottom: 0;
         width: 200px;
-        height: 200px;
         margin: 20px 0;
-        border: 1px solid red;
+        text-align: center;
+        
     }
-
+    .abilityDescribe{
+        width: 100%;
+        display: inline-flex;
+    }
+    .flexGrow{
+        flex-grow: 1;
+    }
     .equipList {
         // display: flex;
         position: relative;
@@ -205,12 +211,18 @@
         text-align: center;
     }
     
+    .pRule{
+        text-indent: 2em;
+        line-height: 32px;
+        margin: 20px;
+        text-align: left;
+    }
     .none {
         display: none;
     }
     
     
-    button.ruleBtnX {
+    .ruleBtnX {
         position: absolute;
         top: 10px;
         right: 10px;
@@ -219,6 +231,30 @@
         background: none;
     }
     
+    .button--bubble{
+        background: $keyWhite;
+    }
+    
+    .button--bubble:hover {
+        background: $keyWhite;
+        color: $keyBlue;
+    }
+    
+    //觸摸時泡泡顏色
+    .button--bubble:hover+.button--bubble__effect-container .circle {
+        background: $keyWhite;
+    }
+    
+    //觸摸時背景顏色
+    .button--bubble:hover+.button--bubble__effect-container .button {
+        background:$keyWhite;
+    }
+    
+    //泡泡變形中顏色
+    .button--bubble__effect-container .circle{
+        background: $keyWhite;
+    }
+
     .startBtn .bubbleBtn {
         text-align: center;
         margin: 20px;
