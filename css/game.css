@@ -85,6 +85,7 @@
     text-align: center;
   }
   .bubbleBackground {
+    position: relative;
     width: 130px;
     height: 130px;
     display: block;
@@ -97,11 +98,12 @@
     display: block;
   }
   .equip {
-    box-sizing: border-box;
-    margin: 20px;
-    padding: 20px;
-    list-style: none;
-    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
     cursor: pointer;
   }
   .equip img {
