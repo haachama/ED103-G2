@@ -7,10 +7,10 @@
         // overflow: hidden;
     }
     
-    // .copyright {
-    //     position: absolute;
-    //     bottom: 0;
-    // }
+    .copyright {
+        position: absolute;
+        bottom: 0;
+    }
     
     h2 {
         color: $transparentWhite;
@@ -162,6 +162,17 @@
         margin: 20px;
     }
     
+    //game.html
+    .parent_gameGif{
+        width: 100%;
+        text-align: center;
+    }
+    .gameGif{
+        display: block;
+    }
+    .gameGifRWD{
+        display: none;
+    }
     //gameResort.html
     
     .parent_score {
@@ -413,6 +424,17 @@
         margin: 20px;
     }
     
+    //game.html
+    .parent_gameGif{
+        width: 100%;
+        text-align: center;
+    }
+    .gameGif{
+        display: block;
+    }
+    .gameGifRWD{
+        display: none;
+    }
     //gameResort.html
     
     .parent_score {
@@ -527,6 +549,14 @@
         margin: 25px auto;
         overflow-y: scroll;
         overflow-x: hidden;
+    }
+
+
+    .gameGif{
+        display: none;
+    }
+    .gameGifRWD{
+        display: block;
     }
 }
 

@@ -4,6 +4,10 @@
     font-family: "Tahoma", sans-serif, "微軟正黑體", sans-serif;
     box-sizing: border-box;
   }
+  .copyright {
+    position: absolute;
+    bottom: 0;
+  }
   h2 {
     color: rgba(254, 254, 254, 0.75);
   }
@@ -125,6 +129,16 @@
   .startBtn .bubbleBtn {
     text-align: center;
     margin: 20px;
+  }
+  .parent_gameGif {
+    width: 100%;
+    text-align: center;
+  }
+  .gameGif {
+    display: block;
+  }
+  .gameGifRWD {
+    display: none;
   }
   .parent_score {
     position: relative;
@@ -324,6 +338,16 @@
     text-align: center;
     margin: 20px;
   }
+  .parent_gameGif {
+    width: 100%;
+    text-align: center;
+  }
+  .gameGif {
+    display: block;
+  }
+  .gameGifRWD {
+    display: none;
+  }
   .parent_score {
     position: relative;
     width: 576px;
@@ -410,6 +434,12 @@
     margin: 25px auto;
     overflow-y: scroll;
     overflow-x: hidden;
+  }
+  .gameGif {
+    display: none;
+  }
+  .gameGifRWD {
+    display: block;
   }
 }
 /*# sourceMappingURL=game.css.map */
