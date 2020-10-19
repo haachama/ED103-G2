@@ -1,6 +1,7 @@
 body{
     background-image: url("../img/insidepage.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
 }
 
@@ -9,6 +10,10 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+h1{
+    font-size: 0;
 }
 
 .logo{
@@ -50,7 +55,6 @@ header{
         display: inline-block;
         margin: 0 10px;
     }
-
     img{
         width: 30px;
     }
