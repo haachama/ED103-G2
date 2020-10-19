@@ -274,107 +274,151 @@ h2 {
           justify-content: space-between;
 }
 
-.smallDiary .diaryList {
-  font-size: 0;
-  position: relative;
-  margin-bottom: 50px;
+.smallDiary .diarySolid {
+  width: 350px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-.smallDiary .diaryList .user {
+.smallDiary .diarySolid a .imgContent {
+  width: 100%;
+  position: relative;
+}
+
+.smallDiary .diarySolid a .imgContent .imgSolid {
+  width: 100%;
+}
+
+.smallDiary .diarySolid a .imgContent .imgSolid img {
+  vertical-align: top;
+}
+
+.smallDiary .diarySolid a .imgContent .diaryTitleA {
+  position: absolute;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  top: 2%;
-  left: 2%;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 15px;
+}
+
+.smallDiary .diarySolid a .imgContent .diaryTitleA .diaryTitleFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.smallDiary .diaryList .user > span {
-  font-size: 14px;
-  color: #fefefe;
-  margin-left: 4px;
-}
-
-.smallDiary .diaryList .user .adama {
+.smallDiary .diarySolid a .imgContent .diaryTitleA .diaryTitleFlex .userLogo {
+  width: 42px;
   border-radius: 50%;
-  border: 2px solid #fefefe;
+  border: 1px solid #fefefe;
+  overflow: hidden;
 }
 
-.smallDiary .diaryList .user .diaryTitle {
-  font-size: 20px;
+.smallDiary .diarySolid a .imgContent .diaryTitleA .diaryTitleFlex .userLogo img {
+  vertical-align: top;
+}
+
+.smallDiary .diarySolid a .imgContent .diaryTitleA .diaryTitleFlex .userName {
+  padding-left: 10px;
   color: #fefefe;
-  margin-left: 90px;
 }
 
-.smallDiary .diaryList .local {
+.smallDiary .diarySolid a .imgContent .diaryTitleA .userText {
+  color: #fefefe;
+}
+
+.smallDiary .diarySolid a .imgContent .diaryTitleB {
   position: absolute;
-  bottom: 35%;
-  left: 2%;
+  bottom: 0;
+}
+
+.smallDiary .diarySolid a .imgContent .diaryTitleB .diaryTitleText {
+  padding: 0px 15px 15px 15px;
   color: #fefefe;
-  font-size: 14px;
 }
 
-.smallDiary .diaryList .txt {
-  background-color: rgba(254, 254, 254, 0.75);
-  padding-bottom: 20px;
-  color: #16181D;
+.smallDiary .diarySolid a .imgContent .diaryTitleB .diaryTitleDate {
+  padding: 0px 15px 15px 15px;
+  color: #fefefe;
 }
 
-.smallDiary .diaryList .txt .txtUp {
+.smallDiary .diarySolid .diaryText {
+  width: 100%;
+  padding: 10px;
+  background-color: #fefefe;
+}
+
+.smallDiary .diarySolid .diaryText .diaryTextData {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 0;
-  margin-bottom: 10px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  border-bottom: 1px solid gray;
 }
 
-.smallDiary .diaryList .txt .txtUp .two {
+.smallDiary .diarySolid .diaryText .diaryTextData div:first-child p:nth-child(2) span:nth-child(1) {
+  color: #467500;
+  font-size: 32px;
+}
+
+.smallDiary .diarySolid .diaryText .diaryTextData div p:nth-child(1) {
+  color: #073977;
+  font-size: 10px;
   text-align: center;
+  padding: 15px 0px 5px 0px;
 }
 
-.smallDiary .diaryList .txt .txtUp .two p:first-child {
-  font-size: 12px;
-  margin-bottom: 4px;
+.smallDiary .diarySolid .diaryText .diaryTextData div p:nth-child(2) {
+  color: #073977;
+  text-align: center;
+  padding: 10px 0px;
 }
 
-.smallDiary .diaryList .txt .txtUp .two p:last-child {
-  font-size: 14px;
+.smallDiary .diarySolid .diaryText .diaryTextData div p:nth-child(2) span:nth-child(1) {
+  font-size: 32px;
+  color: #073977;
 }
 
-.smallDiary .diaryList .txt .txtDown {
+.smallDiary .diarySolid .diaryText .diaryTextData div p:nth-child(2) span:nth-child(2) {
   font-size: 16px;
+  color: #073977;
 }
 
-.smallDiary .diaryList .txt .txtDown span {
-  padding: 5px 15px;
-  margin-left: 6px;
+.smallDiary .diarySolid .diaryTextP {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.diaryList::after {
-  content: '';
-  display: inline-block;
-  width: 130px;
-  height: 105px;
-  background-image: url(../../img/index/shaII.png);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 120px auto;
-  position: absolute;
-  left: 50%;
-  bottom: -32%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+.smallDiary .diarySolid .diaryTextP .diaryTextPP {
+  padding: 10px 0px 10px 10px;
+  width: 100%;
+  overflow: hidden;
+  color: #073977;
 }
 
-.diaryList:hover::after {
-  background-position: center bottom;
+.smallDiary .diarySolid .diaryTextP i {
+  color: #073977;
 }
 
 .gameCenter {

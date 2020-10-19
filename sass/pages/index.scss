@@ -1,46 +1,51 @@
 @import "../common/variables";
 
-body{
+body {
     background-image: url("../../img/index/azurlane.png");
     background-repeat: no-repeat;
 }
 
-h3{
+h3 {
     margin-top: 170px;
     text-align: center;
 }
-.waves{
+
+.waves {
     z-index: -1;
     // border: 1px solid #fff;
     position: relative;
-    img{
+
+    img {
         width: 100%;
     }
-    .biglogo{
+
+    .biglogo {
         position: absolute;
         top: 40%;
         left: 8%;
     }
-    .biglogo img{
+
+    .biglogo img {
         height: 250px;
         padding: 5px;
-        width: auto; 
+        width: auto;
     }
 }
 
-h2{
+h2 {
     margin-top: 200px;
     margin-left: 150px;
 }
+
 //潛點推薦
-.container{
+.container {
     display: block;
     width: 600px;
     margin: 100px auto 0;
     height: 400px;
     position: relative;
 
-    .spotTitle{
+    .spotTitle {
         position: absolute;
         top: 18px;
         left: 50%;
@@ -48,19 +53,22 @@ h2{
         color: #fefefe;
         font-size: 24px;
     }
-    .scene{
+
+    .scene {
         height: 400px;
         background-image: url("../img/index/diveSpotNew.jpg");
         background-size: 85%;
         background-position: center center;
         background-repeat: no-repeat;
         z-index: -1;
-        img{
+
+        img {
             width: 90px;
         }
     }
 }
-%parallax{
+
+%parallax {
     content: '';
     display: inline-block;
     background-size: contain;
@@ -69,13 +77,15 @@ h2{
     position: absolute;
     transform: scale(1.2);
 }
-.container::before{
+
+.container::before {
     @extend %parallax;
     background-image: url("../img/index/maskDark.png");
     width: 600px;
     height: 400px;
 }
-.container::after{
+
+.container::after {
     @extend %parallax;
     background-image: url("../img/index/tube.png");
     width: 100%;
@@ -84,53 +94,63 @@ h2{
     left: -49%;
     z-index: 2;
 }
-.spotBtn{
+
+.spotBtn {
     display: flex;
     justify-content: center;
-    .bubbleBtn{
+
+    .bubbleBtn {
         margin: 30px;
     }
 }
 
 //潛水課程
-.containerCourse{
+.containerCourse {
     margin: 0 auto;
     box-sizing: border-box;
     width: 100%;
     display: flex;
+
     .aside,
-    .main{
+    .main {
         vertical-align: top;
         box-sizing: border-box;
     }
-    .aside{
+
+    .aside {
         display: flex;
         border: 1px solid red;
         margin-top: 50px;
         margin-left: 150px;
-        .courseBox{
+
+        .courseBox {
             border: 1px solid #000;
             display: flex;
             flex-direction: column;
             margin: 30px;
-            .animal{
+
+            .animal {
                 overflow: hidden;
                 border-radius: 50%;
                 position: relative;
-                img{
+
+                img {
                     width: 300px;
                 }
-                .turtle{
+
+                .turtle {
                     position: absolute;
                     left: 12%;
                     top: 20%;
                     z-index: -1;
                 }
             }
-            .courseTxt{
+
+            .courseTxt {
                 text-align: center;
                 margin-top: 20px;
-                span{
+
+                span {
                     display: inline-block;
                     width: 120px;
                     background-color: $keyWhite;
@@ -142,180 +162,350 @@ h2{
     }
 }
 
-.shop{
+.shop {
     width: 1000px;
     margin: auto;
     margin-top: 20px;
     display: flex;
-    .demoman{
+
+    .demoman {
         flex: 10;
-        img{
+
+        img {
             width: 200px;
             margin-left: 150px;
         }
     }
-    .itemList{
+
+    .itemList {
         flex: 9;
         display: flex;
         flex-direction: column;
-        div{
+
+        div {
             margin-bottom: 30px;
         }
-        span{
+
+        span {
             color: $keyWhite;
             font-weight: bold;
             font-size: 1.5*$baseFz;
         }
-        .item{
+
+        .item {
             display: flex;
             align-items: center;
-    
-            a{
+
+            a {
                 margin-right: 30px;
             }
         }
-        .mask{
+
+        .mask {
             margin-left: 140px;
         }
-        .watch{
+
+        .watch {
             margin-left: 80px;
         }
-        .gloves{
+
+        .gloves {
             margin-left: 200px;
         }
     }
 }
-.shopBtn{
+
+.shopBtn {
     text-align: center;
 }
 
-.diary{
+.diary {
     width: 1200px;
     margin: 50px auto;
 }
-.bigDiary{
+
+.bigDiary {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
 }
-.diaryTxt{
+
+.diaryTxt {
     width: 560px;
     height: 420px;
     border: 1px solid #545544;
 }
 
 
-.smallDiary{
+.smallDiary {
     display: flex;
     justify-content: space-between;
 
-    .diaryList{
-        font-size: 0;
-        position: relative;
-        margin-bottom: 50px;
-        .user{
-            display: flex;
-            position: absolute;
-            top: 2%;
-            left: 2%;
-            align-items: center;
-    
-            > span{
-                font-size: 14px;
-                color: $keyWhite;
-                margin-left: 4px;
-            }
-            .adama{
-                border-radius: 50%;
-                border: 2px solid $keyWhite;
-            }
-            .diaryTitle{
-                font-size: 20px;
-                color: $keyWhite;
-                margin-left: 90px;
-            }
-        }
-        .local{
-            position: absolute;
-            bottom: 35%;
-            left: 2%;
-            color: #fefefe;
-            font-size: 14px;
-        }
-        .txt{
-            background-color: $transparentWhite;
-            padding-bottom: 20px;
-            color: $keyBlack;
+    .diarySolid {
+        width: 350px;
+        border-radius: 5px;
+        overflow: hidden;
 
-            .txtUp{
+        a {
+            .imgContent {
+                // border: 1px solid red;
+                width: 100%;
+                position: relative;
+
+                .imgSolid {
+                    // border: 1px solid green;
+                    width: 100%;
+
+                    img {
+                        vertical-align: top;
+                    }
+                }
+
+                .diaryTitleA {
+                    // border: 1px solid purple;
+                    position: absolute;
+                    top: 0;
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 15px 15px;
+
+                    .diaryTitleFlex {
+                        // border: 1px solid gold;
+                        display: flex;
+                        align-items: center;
+
+                        .userLogo {
+                            // border: 1px solid olivedrab;
+                            width: 42px;
+                            border-radius: 50%;
+                            border: 1px solid $keyWhite;
+                            overflow: hidden;
+
+                            img {
+                                vertical-align: top;
+                            }
+                        }
+
+                        .userName {
+                            // border: 1px solid yellow;
+                            padding-left: 10px;
+                            color: $keyWhite;
+                        }
+                    }
+
+                    .userText {
+                        // border: 1px solid pink;
+                        color: $keyWhite;
+                    }
+                }
+
+                .diaryTitleB {
+                    // border: 1px solid purple;
+                    position: absolute;
+                    bottom: 0;
+
+                    .diaryTitleText {
+                        // border: 1px solid grey;
+                        padding: 0px 15px 15px 15px;
+                        color: $keyWhite;
+                    }
+
+                    .diaryTitleDate {
+                        // border: 1px solid greenyellow;
+                        padding: 0px 15px 15px 15px;
+                        color: $keyWhite;
+                    }
+                }
+            }
+        }
+
+        // 卡片文字內容
+        .diaryText {
+            // border: 1px solid black;
+            width: 100%;
+            padding: 10px;
+            background-color: $keyWhite;
+
+            .diaryTextData {
+                // border: 1px solid yellowgreen;
+                width: 100%;
                 display: flex;
-                padding: 10px 0;
-                margin-bottom: 10px;
                 justify-content: space-evenly;
-                border-bottom: 1px solid gray;
 
-                .two{
-                    text-align: center;
-                    p:first-child{
-                        font-size: 12px;
-                        margin-bottom: 4px;
-                    }
-                    p:last-child{
-                        font-size: 14px;
-                    }
+                div:first-child p:nth-child(2) span:nth-child(1) {
+                    color: #467500;
+                    font-size: 32px; //h4 *1.5
                 }
-            }
-            .txtDown{
-                font-size: $baseFz;
-                span{
-                    padding: 5px 15px;
-                    margin-left: 6px;
+
+                div {
+
+                    // border: 1px solid purple;
+                    p:nth-child(1) {
+                        // border: 1px solid blue;
+                        color: $keyBlue;
+                        font-size: 10px;
+                        text-align: center;
+                        padding: 15px 0px 5px 0px;
+                    }
+
+                    p:nth-child(2) {
+                        // border: 1px solid blue;
+                        color: $keyBlue;
+                        text-align: center;
+                        padding: 10px 0px;
+
+                        span:nth-child(1) {
+                            // border: 1px solid blue;
+                            font-size: 32px;
+                            color: $keyBlue;
+                        }
+
+                        span:nth-child(2) {
+                            // border: 1px solid orange;
+                            font-size: $baseFz; //16px
+                            color: $keyBlue;
+                        }
+                    }
                 }
             }
         }
 
+        .diaryTextP {
+            // border: 1px solid orange;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .diaryTextPP {
+                // border: 1px solid green;
+                padding: 10px 0px 10px 10px;
+                width: 100%;
+                overflow: hidden;
+                color: $keyBlue;
+            }
+
+            i {
+                // border: 1px solid blue;
+                color: $keyBlue;
+            }
+        }
     }
-}
-.diaryList::after{
-    content: '';
-    display: inline-block;
-    width: 130px;
-    height: 105px;
-    background-image: url(../../img/index/shaII.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 120px auto;
-    position: absolute;
-    left: 50%;
-    bottom: -32%;
-    transform: translateX(-50%);
-}
-.diaryList:hover::after{
-    background-position: center bottom;
+
+    // .diaryList{
+    //     font-size: 0;
+    //     position: relative;
+    //     margin-bottom: 50px;
+    //     .user{
+    //         display: flex;
+    //         position: absolute;
+    //         top: 2%;
+    //         left: 2%;
+    //         align-items: center;
+
+    //         > span{
+    //             font-size: 14px;
+    //             color: $keyWhite;
+    //             margin-left: 4px;
+    //         }
+    //         .adama{
+    //             border-radius: 50%;
+    //             border: 2px solid $keyWhite;
+    //         }
+    //         .diaryTitle{
+    //             font-size: 20px;
+    //             color: $keyWhite;
+    //             margin-left: 90px;
+    //         }
+    //     }
+    //     .local{
+    //         position: absolute;
+    //         bottom: 35%;
+    //         left: 2%;
+    //         color: #fefefe;
+    //         font-size: 14px;
+    //     }
+    //     .txt{
+    //         background-color: $transparentWhite;
+    //         padding-bottom: 20px;
+    //         color: $keyBlack;
+
+    //         .txtUp{
+    //             display: flex;
+    //             padding: 10px 0;
+    //             margin-bottom: 10px;
+    //             justify-content: space-evenly;
+    //             border-bottom: 1px solid gray;
+
+    //             .two{
+    //                 text-align: center;
+    //                 p:first-child{
+    //                     font-size: 12px;
+    //                     margin-bottom: 4px;
+    //                 }
+    //                 p:last-child{
+    //                     font-size: 14px;
+    //                 }
+    //             }
+    //         }
+    //         .txtDown{
+    //             font-size: $baseFz;
+    //             span{
+    //                 padding: 5px 15px;
+    //                 margin-left: 6px;
+    //             }
+    //         }
+    //     }
+
+    // }
 }
 
-.gameCenter{
+//蝦蝦
+// .diaryList::after{
+//     content: '';
+//     display: inline-block;
+//     width: 130px;
+//     height: 105px;
+//     background-image: url(../../img/index/shaII.png);
+//     background-repeat: no-repeat;
+//     background-position: center top;
+//     background-size: 120px auto;
+//     position: absolute;
+//     left: 50%;
+//     bottom: -32%;
+//     transform: translateX(-50%);
+// }
+// .diaryList:hover::after{
+//     background-position: center bottom;
+// }
+
+.gameCenter {
     width: 800px;
     margin-top: 30px;
     margin: auto;
     padding: 5px;
-    .gameH3{
+
+    .gameH3 {
         margin-top: 50px;
     }
-    .diveGif{
-        img{
+
+    .diveGif {
+        img {
             width: 100%;
             margin: 50px auto;
         }
     }
-    .bubbleBtn{
+
+    .bubbleBtn {
         text-align: center;
         margin-bottom: 30px;
     }
 }
 
 
-.bottomSunhoo{
+.bottomSunhoo {
     width: 100%;
     background-image: url(../../img/index/homeBg.png);
     background-position: center;
