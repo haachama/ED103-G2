@@ -1,249 +1,47 @@
 @charset "UTF-8";
-body {
-  font-family: "Tahoma", sans-serif, "微軟正黑體", sans-serif;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.copyright {
-  position: absolute;
-  bottom: 0;
-}
-
-h2 {
-  color: rgba(254, 254, 254, 0.75);
-}
-
-h3 {
-  color: rgba(254, 254, 254, 0.75);
-}
-
-h4 {
-  color: rgba(254, 254, 254, 0.75);
-}
-
-p {
-  font-size: 16px;
-  color: rgba(254, 254, 254, 0.75);
-  margin: 20px;
-  text-align: left;
-}
-
-.parent_title {
-  width: 1200px;
-  margin: 25px auto;
-  text-align: center;
-}
-
-.choseRole {
-  width: 49%;
-  display: inline-block;
-  text-align: center;
-}
-
-.choseEquipment {
-  width: 49%;
-  display: inline-block;
-}
-
-.chose {
-  display: inline-block;
-  text-align: center;
-}
-
-.totalPrice {
-  display: inline-block;
-}
-
-.parent_container {
-  display: flex;
-  width: 1200px;
-  justify-content: center;
-  margin: 30px auto;
-  box-sizing: border-box;
-  position: relative;
-}
-
-.playRole {
-  align-self: center;
-  position: relative;
-}
-
-.equipList {
-  position: relative;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  width: 500px;
-}
-
-.maskList {
-  position: relative;
-  width: 100%;
-  display: flex;
-}
-
-.airList {
-  position: relative;
-  width: 100%;
-  display: flex;
-}
-
-.shoeList {
-  position: relative;
-  width: 100%;
-  display: flex;
-}
-
-.equip {
-  box-sizing: border-box;
-  margin: 20px;
-  padding: 20px;
-  list-style: none;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.equip img {
-  width: auto;
-}
-
-.eye img {
-  position: absolute;
-  top: 20px;
-  left: 15px;
-  transform: scale(1.15) rotate(170deg);
-}
-
-.back img {
-  position: absolute;
-  top: 28%;
-  transform: translateX(-70%);
-  z-index: -1;
-}
-
-.foot img {
-  position: absolute;
-  bottom: -30px;
-  transform: scale(1.7) rotate(12deg) translate(10px, 5px);
-}
-
-.rule {
-  width: 375px;
-  position: fixed;
-  top: 100px;
-  background-color: #16181D;
-  padding: 20px;
-  border-radius: 15px;
-  text-align: center;
-}
-
-.none {
-  display: none;
-}
-
-button.ruleBtnX {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  border: 0;
-  color: rgba(254, 254, 254, 0.75);
-  background: none;
-}
-
-.startBtn .bubbleBtn {
-  text-align: center;
-  margin: 20px;
-}
-
-.parent_score {
-  position: relative;
-  width: 576px;
-  border-bottom: 3px solid rgba(254, 254, 254, 0.75);
-  margin: 25px auto;
-  text-align: center;
-}
-
-.parent_score img {
-  width: 100px;
-}
-
-.scoreDescribe {
-  font-size: 60px;
-  color: White;
-  margin: 10px;
-}
-
-.resortRole {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
-.goShopBtn .bubbleBtn {
-  text-align: right;
-  margin: 10px;
-}
-
-.rankList {
-  width: 576px;
-  height: 460px;
-  border-bottom: 3px solid rgba(254, 254, 254, 0.75);
-  margin: 25px auto;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-@media (min-width: 1200px) {
-  ::-webkit-scrollbar body {
+@media all and (min-width: 1200px) {
+  body {
     font-family: "Tahoma", sans-serif, "微軟正黑體", sans-serif;
     box-sizing: border-box;
-    overflow: hidden;
   }
-  ::-webkit-scrollbar .copyright {
-    position: absolute;
-    bottom: 0;
-  }
-  ::-webkit-scrollbar h2 {
+  h2 {
     color: rgba(254, 254, 254, 0.75);
   }
-  ::-webkit-scrollbar h3 {
+  h3 {
     color: rgba(254, 254, 254, 0.75);
   }
-  ::-webkit-scrollbar h4 {
+  h4 {
+    font-size: 24px;
     color: rgba(254, 254, 254, 0.75);
   }
-  ::-webkit-scrollbar p {
+  p {
     font-size: 16px;
     color: rgba(254, 254, 254, 0.75);
     margin: 20px;
     text-align: left;
   }
-  ::-webkit-scrollbar .parent_title {
+  .parent_title {
     width: 1200px;
     margin: 25px auto;
     text-align: center;
   }
-  ::-webkit-scrollbar .choseRole {
+  .choseRole {
     width: 49%;
     display: inline-block;
     text-align: center;
   }
-  ::-webkit-scrollbar .choseEquipment {
+  .choseEquipment {
     width: 49%;
     display: inline-block;
   }
-  ::-webkit-scrollbar .chose {
+  .chose {
     display: inline-block;
     text-align: center;
   }
-  ::-webkit-scrollbar .totalPrice {
+  .totalPrice {
     display: inline-block;
   }
-  ::-webkit-scrollbar .parent_container {
+  .parent_container {
     display: flex;
     width: 1200px;
     justify-content: center;
@@ -251,32 +49,32 @@ button.ruleBtnX {
     box-sizing: border-box;
     position: relative;
   }
-  ::-webkit-scrollbar .playRole {
+  .playRole {
     align-self: center;
     position: relative;
   }
-  ::-webkit-scrollbar .equipList {
+  .equipList {
     position: relative;
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 500px;
   }
-  ::-webkit-scrollbar .maskList {
+  .maskList {
     position: relative;
     width: 100%;
     display: flex;
   }
-  ::-webkit-scrollbar .airList {
+  .airList {
     position: relative;
     width: 100%;
     display: flex;
   }
-  ::-webkit-scrollbar .shoeList {
+  .shoeList {
     position: relative;
     width: 100%;
     display: flex;
   }
-  ::-webkit-scrollbar .equip {
+  .equip {
     box-sizing: border-box;
     margin: 20px;
     padding: 20px;
@@ -284,27 +82,27 @@ button.ruleBtnX {
     border-radius: 50%;
     cursor: pointer;
   }
-  ::-webkit-scrollbar .equip img {
+  .equip img {
     width: auto;
   }
-  ::-webkit-scrollbar .eye img {
+  .eye img {
     position: absolute;
     top: 20px;
     left: 15px;
     transform: scale(1.15) rotate(170deg);
   }
-  ::-webkit-scrollbar .back img {
+  .back img {
     position: absolute;
     top: 28%;
     transform: translateX(-70%);
     z-index: -1;
   }
-  ::-webkit-scrollbar .foot img {
+  .foot img {
     position: absolute;
     bottom: -30px;
     transform: scale(1.7) rotate(12deg) translate(10px, 5px);
   }
-  ::-webkit-scrollbar .rule {
+  .rule {
     width: 375px;
     position: fixed;
     top: 100px;
@@ -313,10 +111,10 @@ button.ruleBtnX {
     border-radius: 15px;
     text-align: center;
   }
-  ::-webkit-scrollbar .none {
+  .none {
     display: none;
   }
-  ::-webkit-scrollbar button.ruleBtnX {
+  button.ruleBtnX {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -324,35 +122,35 @@ button.ruleBtnX {
     color: rgba(254, 254, 254, 0.75);
     background: none;
   }
-  ::-webkit-scrollbar .startBtn .bubbleBtn {
+  .startBtn .bubbleBtn {
     text-align: center;
     margin: 20px;
   }
-  ::-webkit-scrollbar .parent_score {
+  .parent_score {
     position: relative;
     width: 576px;
     border-bottom: 3px solid rgba(254, 254, 254, 0.75);
     margin: 25px auto;
     text-align: center;
   }
-  ::-webkit-scrollbar .parent_score img {
+  .parent_score img {
     width: 100px;
   }
-  ::-webkit-scrollbar .scoreDescribe {
+  .scoreDescribe {
     font-size: 60px;
     color: White;
     margin: 10px;
   }
-  ::-webkit-scrollbar .resortRole {
+  .resortRole {
     position: absolute;
     left: 0;
     bottom: 0;
   }
-  ::-webkit-scrollbar .goShopBtn .bubbleBtn {
+  .goShopBtn .bubbleBtn {
     text-align: right;
     margin: 10px;
   }
-  ::-webkit-scrollbar .rankList {
+  .rankList {
     width: 576px;
     height: 460px;
     border-bottom: 3px solid rgba(254, 254, 254, 0.75);
@@ -360,84 +158,258 @@ button.ruleBtnX {
     overflow-y: scroll;
     overflow-x: hidden;
   }
-  ::-webkit-scrollbar ::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     width: 10px;
   }
-  ::-webkit-scrollbar ::-webkit-scrollbar-track {
+  ::-webkit-scrollbar-track {
     border-radius: 5px;
     background: rgba(254, 254, 254, 0.75);
   }
-  ::-webkit-scrollbar ::-webkit-scrollbar-thumb {
+  ::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background: #888;
   }
-  ::-webkit-scrollbar ::-webkit-scrollbar-thumb:hover {
+  ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
-  ::-webkit-scrollbar .record {
+  .record {
     display: flex;
   }
-  ::-webkit-scrollbar .record img {
+  .record img {
     width: 80px;
     height: 80px;
     margin: 20px;
     background-color: rgba(254, 254, 254, 0.75);
     border-radius: 50%;
   }
-  ::-webkit-scrollbar .record h3 {
+  .record h3 {
     flex-grow: 1;
     width: 100px;
     margin: auto 0;
   }
-  ::-webkit-scrollbar .record h4 {
+  .record h4 {
     flex-grow: 1;
     margin: auto 0;
   }
-  ::-webkit-scrollbar .restartBtn .bubbleBtn {
+  .restartBtn .bubbleBtn {
     text-align: center;
     margin: 20px;
   }
 }
 
-::-webkit-scrollbar ::-webkit-scrollbar-track {
-  border-radius: 5px;
-  background: rgba(254, 254, 254, 0.75);
+@media all and (max-width: 1200px) {
+  body {
+    font-family: "Tahoma", sans-serif, "微軟正黑體", sans-serif;
+    box-sizing: border-box;
+  }
+  h2 {
+    color: rgba(254, 254, 254, 0.75);
+  }
+  h3 {
+    color: rgba(254, 254, 254, 0.75);
+  }
+  h4 {
+    font-size: 24px;
+    color: rgba(254, 254, 254, 0.75);
+  }
+  p {
+    font-size: 16px;
+    color: rgba(254, 254, 254, 0.75);
+    margin: 20px;
+    text-align: left;
+  }
+  .parent_title {
+    width: 1200px;
+    margin: 25px auto;
+    text-align: center;
+  }
+  .choseRole {
+    width: 49%;
+    display: inline-block;
+    text-align: center;
+  }
+  .choseEquipment {
+    width: 49%;
+    display: inline-block;
+  }
+  .chose {
+    display: inline-block;
+    text-align: center;
+  }
+  .totalPrice {
+    display: inline-block;
+  }
+  .parent_container {
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+    margin: 30px auto;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .playRole {
+    align-self: center;
+    position: relative;
+  }
+  .equipList {
+    position: relative;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 500px;
+  }
+  .maskList {
+    position: relative;
+    width: 100%;
+    display: flex;
+  }
+  .airList {
+    position: relative;
+    width: 100%;
+    display: flex;
+  }
+  .shoeList {
+    position: relative;
+    width: 100%;
+    display: flex;
+  }
+  .equip {
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 20px;
+    list-style: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .equip img {
+    width: auto;
+  }
+  .eye img {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    transform: scale(1.15) rotate(170deg);
+  }
+  .back img {
+    position: absolute;
+    top: 28%;
+    transform: translateX(-70%);
+    z-index: -1;
+  }
+  .foot img {
+    position: absolute;
+    bottom: -30px;
+    transform: scale(1.7) rotate(12deg) translate(10px, 5px);
+  }
+  .rule {
+    width: 375px;
+    position: fixed;
+    top: 100px;
+    background-color: #16181D;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+  }
+  .none {
+    display: none;
+  }
+  button.ruleBtnX {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 0;
+    color: rgba(254, 254, 254, 0.75);
+    background: none;
+  }
+  .startBtn .bubbleBtn {
+    text-align: center;
+    margin: 20px;
+  }
+  .parent_score {
+    position: relative;
+    width: 576px;
+    border-bottom: 3px solid rgba(254, 254, 254, 0.75);
+    margin: 25px auto;
+    text-align: center;
+  }
+  .parent_score img {
+    width: 100px;
+  }
+  .scoreDescribe {
+    font-size: 60px;
+    color: White;
+    margin: 10px;
+  }
+  .resortRole {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .goShopBtn .bubbleBtn {
+    text-align: right;
+    margin: 10px;
+  }
+  .rankList {
+    width: 576px;
+    height: 460px;
+    border-bottom: 3px solid rgba(254, 254, 254, 0.75);
+    margin: 25px auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: rgba(254, 254, 254, 0.75);
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #888;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .record {
+    display: flex;
+  }
+  .record img {
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    background-color: rgba(254, 254, 254, 0.75);
+    border-radius: 50%;
+  }
+  .record h3 {
+    flex-grow: 1;
+    width: 100px;
+    margin: auto 0;
+  }
+  .record h4 {
+    flex-grow: 1;
+    margin: auto 0;
+  }
+  .restartBtn .bubbleBtn {
+    text-align: center;
+    margin: 20px;
+  }
 }
 
-::-webkit-scrollbar ::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background: #888;
-}
-
-::-webkit-scrollbar ::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-::-webkit-scrollbar .record {
-  display: flex;
-}
-
-::-webkit-scrollbar .record img {
-  width: 80px;
-  height: 80px;
-  margin: 20px;
-  background-color: rgba(254, 254, 254, 0.75);
-  border-radius: 50%;
-}
-
-::-webkit-scrollbar .record h3 {
-  flex-grow: 1;
-  width: 100px;
-  margin: auto 0;
-}
-
-::-webkit-scrollbar .record h4 {
-  flex-grow: 1;
-  margin: auto 0;
-}
-
-::-webkit-scrollbar .restartBtn .bubbleBtn {
-  text-align: center;
-  margin: 20px;
+@media all and (max-width: 576px) {
+  .parent_score {
+    position: relative;
+    width: 100%;
+    border-bottom: 3px solid rgba(254, 254, 254, 0.75);
+    margin: 25px auto;
+    text-align: center;
+  }
+  .rankList {
+    width: 100%;
+    height: 460px;
+    border-bottom: 3px solid rgba(254, 254, 254, 0.75);
+    margin: 25px auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 }
 /*# sourceMappingURL=game.css.map */
