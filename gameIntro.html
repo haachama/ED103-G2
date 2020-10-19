@@ -5,6 +5,7 @@
     <title>下潛遊戲</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/game.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
@@ -63,20 +64,37 @@
         </div>
     </div>
     <div class="parent_container">
-        <div class="playRole">
-            <!-- <button><</button>
-            <button>></button> -->
-            <img src="./img/game/greenRole.png">
-            <div class="eye">
-                <!-- <img src="./img/mask10.png"> -->
+        <div class="changeRole">
+            <div class="changeRoleBtnBlock">
+                <button class="changeRoleBtn">
+                    <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-caret-left" fill="#fefefe" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 12.796L4.519 8 10 3.204v9.592zm-.659.753l-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                      </svg>
+                </button>
             </div>
-            <div class="back">
-                <!-- <img src="./img/air10.png"> -->
+            <div class="playRole">
+                <img src="./img/game/greenRole.png">
+                <div class="eye">
+                    <!-- <img src="./img/mask10.png"> -->
+                </div>
+                <div class="back">
+                    <!-- <img src="./img/air10.png"> -->
+                </div>
+                <div class="foot">
+                    <!-- <img src="./img/shoe20.png"> -->
+                </div>
             </div>
-            <div class="foot">
-                <!-- <img src="./img/shoe20.png"> -->
-            </div>
+            <div class="changeRoleBtnBlock">
+                <button class="changeRoleBtn">
+                    <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-caret-right" fill="#fefefe" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M6 12.796L11.481 8 6 3.204v9.592zm.659.753l5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                      </svg>
+                </button>
+            </div> 
         </div>
+
+        <div class="ability"></div>
+
         <div class="equipList">
             <div class="maskList">
                 <div class="equipDescribeBlock">
@@ -168,44 +186,46 @@
         </div>
     </div>
 
-        <div class="rule" id="ruleD" style="display: none;">
-            <button id="rulebtnX" class="ruleBtnX">X</button>
-            <h3 class="h3Rule">遊戲規則</h3>
-            <p class="pRule">  選擇你喜歡的角色，並在有限金額內搭配最適合的裝備。閃避各種障礙物，盡可能生存下去，並獲得紅利點數吧！<br>
-                <br>
-                ※訪客無法累積紅利點數，若要累積請登入會員。
-            </p>
-            <div id="rulebtn" class="bubbleBtn">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
-                    <defs>
-                        <filter id="goo">
-                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-                                result="goo" />
-                            <feComposite in="SourceGraphic" in2="goo" />
-                        </filter>
-                    </defs>
-                </svg>
-        
-                <span class="button--bubble__container">
-                    <a href="#campaign" class="button button--bubble">
-                        我知道了
-                    </a>
-                    <span class="button--bubble__effect-container">
-                        <span class="circle top-left"></span>
-                        <span class="circle top-left"></span>
-                        <span class="circle top-left"></span>
-        
-                        <span class="button effect-button"></span>
-        
-                        <span class="circle bottom-right"></span>
-                        <span class="circle bottom-right"></span>
-                        <span class="circle bottom-right"></span>
-                    </span>
+    
+
+    <div class="rule" id="ruleD" style="display: none;">
+        <button id="rulebtnX" class="ruleBtnX">X</button>
+        <h3 class="h3Rule">遊戲規則</h3>
+        <p class="pRule">  選擇你喜歡的角色，並在有限金額內搭配最適合的裝備。閃避各種障礙物，盡可能生存下去，並獲得紅利點數吧！<br>
+            <br>
+            ※訪客無法累積紅利點數，若要累積請登入會員。
+        </p>
+        <div id="rulebtn" class="bubbleBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo" />
+                        <feComposite in="SourceGraphic" in2="goo" />
+                    </filter>
+                </defs>
+            </svg>
+    
+            <span class="button--bubble__container">
+                <a href="#campaign" class="button button--bubble">
+                    我知道了
+                </a>
+                <span class="button--bubble__effect-container">
+                    <span class="circle top-left"></span>
+                    <span class="circle top-left"></span>
+                    <span class="circle top-left"></span>
+    
+                    <span class="button effect-button"></span>
+    
+                    <span class="circle bottom-right"></span>
+                    <span class="circle bottom-right"></span>
+                    <span class="circle bottom-right"></span>
                 </span>
-            </div>
+            </span>
         </div>
-    </div>
+    </div>        
+
 
     <div class="startBtn">
         <div class="bubbleBtn">

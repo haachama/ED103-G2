@@ -7,11 +7,12 @@
         // overflow: hidden;
     }
     
+    //footer置底
     .copyright {
         position: absolute;
         bottom: 0;
     }
-    
+
     h2 {
         color: $transparentWhite;
     }
@@ -34,7 +35,7 @@
     
     .parent_title {
         width: 1200px;
-        margin: 25px auto;
+        margin: 25px auto 0 auto;
         text-align: center;
     }
     
@@ -58,17 +59,47 @@
     }
     
     .parent_container {
+        position: relative;
         display: flex;
         width: 1200px;
         justify-content: center;
-        margin: 30px auto;
+        margin: 20px auto;
         box-sizing: border-box;
-        position: relative;
+        
+        
     }
     
-    .playRole {
-        align-self: center;
+    .changeRole{
         position: relative;
+        display: inline-flex;
+        flex-grow: 1;
+
+    }
+    .changeRoleBtnBlock{
+        width: 50px;
+        height: 100%;
+        display: inline-block;
+        position: relative;
+        
+    }
+    .changeRoleBtn{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        border: 0;
+        outline: none;
+        background-color: transparent;
+    }
+
+    svg{
+        outline: none;
+    }
+
+    .playRole {
+        margin: auto 50px;
+        width: 142px;
+        display: block;
     }
     
     
