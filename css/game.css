@@ -30,16 +30,14 @@
     text-align: center;
   }
   .choseRole {
-    width: 49%;
     display: inline-block;
     text-align: center;
   }
   .choseEquipment {
-    width: 49%;
     display: inline-block;
+    text-align: center;
   }
   .chose {
-    display: inline-block;
     text-align: center;
   }
   .totalPrice {
@@ -61,22 +59,42 @@
     position: relative;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 500px;
+    width: 600px;
   }
   .maskList {
-    position: relative;
-    width: 100%;
-    display: flex;
+    display: inline-flex;
+    width: 600px;
   }
   .airList {
-    position: relative;
-    width: 100%;
-    display: flex;
+    display: inline-flex;
+    width: 600px;
   }
   .shoeList {
-    position: relative;
-    width: 100%;
-    display: flex;
+    display: inline-flex;
+    width: 600px;
+  }
+  .equipDescribeBlock {
+    height: 150px;
+    line-height: 150px;
+  }
+  .equipBlock {
+    display: block;
+    width: 130px;
+    margin: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+  .bubbleBackground {
+    width: 130px;
+    height: 130px;
+    display: block;
+    text-align: center;
+    background-image: url("../img/game/bubbleBackground.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .price {
+    display: block;
   }
   .equip {
     box-sizing: border-box;
