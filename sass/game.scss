@@ -49,11 +49,6 @@
         text-align: center;
     }
     
-    .chose {
-        // display: inline-block;
-        text-align: center;
-    }
-    
     .totalPrice {
         display: inline-block;
     }
@@ -65,8 +60,6 @@
         justify-content: center;
         margin: 20px auto;
         box-sizing: border-box;
-        
-        
     }
     
     .changeRole{
@@ -102,8 +95,19 @@
         display: block;
     }
     
-    
-   
+    .abilityBlock{
+        position: relative;
+        width: 200px;
+        margin: 0 20px; 
+    }
+    .ability{
+        position: absolute;
+        bottom: 0;
+        width: 200px;
+        height: 200px;
+        margin: 20px 0;
+        border: 1px solid red;
+    }
 
     .equipList {
         // display: flex;
@@ -188,9 +192,13 @@
     }
     
     .rule {
-        width: 375px;
-        position: fixed;
+        
+        position: absolute;
         top: 100px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 375px;
         background-color: $keyBlack; //$transparentWhite;
         padding: 20px;
         border-radius: 15px;
