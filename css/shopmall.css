@@ -1,6 +1,29 @@
-h2 {
-  margin-top: 100px;
-  margin-left: 15%;
+body {
+  height: auto;
+  background-image: url(../../img/index/shopbg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgBlack {
+  width: 80%;
+  margin: auto;
+  background-color: rgba(22, 24, 29, 0.9);
+}
+
+.bgBlack .shopH2 {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.oneee {
+  margin-top: 60px;
+}
+
+.itemType {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .itemType ul {
@@ -10,15 +33,17 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .itemType ul li {
-  width: 150px;
+  width: 10%;
   text-align: center;
   border: 2px solid #fefefe;
-  font-size: 28.8px;
-  margin: 50px 80px;
-  padding: 8px 15px;
+  font-size: 16px;
+  margin: 20px;
+  padding: 8px 10px;
   color: #fefefe;
   cursor: pointer;
 }
@@ -26,5 +51,124 @@ h2 {
 .itemType ul li:hover {
   background-color: #fefefe;
   color: #073977;
+}
+
+.itemList {
+  margin: auto;
+  position: relative;
+}
+
+.itemList .demomanIn {
+  width: 150px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.product {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.productUp,
+.productDown {
+  color: #fefefe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.productDown {
+  padding-bottom: 100px;
+}
+
+.art {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  border: 2px solid seashell;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+  margin: 15px;
+}
+
+.art .itemName,
+.art .NT {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px;
+}
+
+.art .NT {
+  font-weight: 400;
+}
+
+.art .addNumber {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.art .addNumber input {
+  width: 75px;
+  text-align: center;
+}
+
+.art .addNumber .fas {
+  cursor: pointer;
+}
+
+.art .fa-heart {
+  position: absolute;
+  top: 7%;
+  right: 7%;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.item img {
+  width: 150px;
+  padding: 30px;
+}
+
+.shopBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 5px auto;
+  text-align: center;
+}
+
+.bubbleBtn {
+  width: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 10px;
+}
+
+.button {
+  padding: 12px 10px;
+  font-size: 12px;
+}
+
+.button--bubble__container {
+  width: 100%;
 }
 /*# sourceMappingURL=shopmall.css.map */

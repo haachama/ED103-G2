@@ -131,8 +131,11 @@ h2{
                 text-align: center;
                 margin-top: 20px;
                 span{
+                    display: inline-block;
+                    width: 120px;
                     background-color: $keyWhite;
                     padding: 10px 15px;
+                    border: 8px solid $keyBlue;
                 }
             }
         }
@@ -291,4 +294,31 @@ h2{
     background-position: center bottom;
 }
 
+.gameCenter{
+    width: 800px;
+    margin-top: 30px;
+    margin: auto;
+    padding: 5px;
+    .gameH3{
+        margin-top: 50px;
+    }
+    .diveGif{
+        img{
+            width: 100%;
+            margin: 50px auto;
+        }
+    }
+    .bubbleBtn{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
 
+
+.bottomSunhoo{
+    width: 100%;
+    background-image: url(../../img/index/homeBg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
