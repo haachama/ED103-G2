@@ -46,30 +46,18 @@
         </div>
     </header>
     <main>
-    <div class="parent_title">
-        <div class="choseRole">
-            <h2>選擇角色</h2>
-            <div>
-            <p class="chose">每個角色的基礎能力不同，選擇您喜歡的吧！</p>
-            </div>
-        </div>
-        <div class="choseEquipment">
-            <h2>選擇裝備</h2>
-            <div class="choseEquipmentDescribe">
-            <p class="chose">您僅有50元，每種裝備最多購買一款，組合出你想要的能力吧！</p>
-            </div>
-        </div>
-        <div class="totalPrice">
-            <h3 >$50</h3>
-        </div>
-    </div>
+
     <div class="parent_container">
         <div class="changeRole">
+            <div class="choseRole">
+                <h2>選擇角色/組合裝備</h2>
+                <p class="chose">您僅有50元，每種裝備最多購買一款，組合出你想要的能力吧！</p>
+            </div>
             <div class="changeRoleBtnBlock">
                 <button class="changeRoleBtn">
                     <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-caret-left" fill="#fefefe" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M10 12.796L4.519 8 10 3.204v9.592zm-.659.753l-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
-                      </svg>
+                    </svg>
                 </button>
             </div>
             <div class="playRole">
@@ -88,10 +76,11 @@
                 <button class="changeRoleBtn">
                     <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-caret-right" fill="#fefefe" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M6 12.796L11.481 8 6 3.204v9.592zm.659.753l5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
-                      </svg>
+                    </svg>
                 </button>
             </div> 
-        </div>
+        </div>            
+
 
         <div class="abilityBlock">
             <div class="ability">
@@ -107,6 +96,10 @@
         </div>
 
         <div class="equipList">
+            <div class="abilityDescribe">
+                <div class="flexGrow"></div>
+                <h3 class="totalPrice">$50</h3>
+            </div>
             <div class="maskList">
                 <div class="equipDescribeBlock">
                     <h4>面鏡:</h4>
@@ -199,7 +192,7 @@
 
     
 
-    <div class="rule" id="ruleD" >
+    <div class="rule" id="ruleD" style="display: none;">
         <button id="rulebtnX" class="ruleBtnX">X</button>
         <h3>遊戲規則</h3>
         <p class="pRule">選擇你喜歡的角色，在有限金額內搭配最適合的裝備。閃避各種障礙物，盡可能生存下去，並獲得紅利點數吧！<br>
