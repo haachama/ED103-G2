@@ -39,10 +39,6 @@
   width: 40%;
 }
 
-.content .date span {
-  line-height: 57px;
-}
-
 .content select {
   padding: 3px 15px;
 }
@@ -123,9 +119,6 @@ main {
   }
   .content .second div, .content .third div, .content .date div {
     margin: 15px 0;
-  }
-  .date span {
-    display: none;
   }
 }
 

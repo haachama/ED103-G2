@@ -1,0 +1,1629 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.courseHeader {
+  z-index: 3;
+  position: fixed;
+  width: 100vw;
+}
+
+/*------------------------------------------------course潛水課程--------------*/
+.coursePage01 {
+  position: relative;
+}
+
+.video-box {
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.3%;
+  overflow: hidden;
+  font-size: 0;
+}
+
+#the-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.courseTitle {
+  width: 100%;
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+}
+
+.courseTitle_2 {
+  width: 100%;
+  position: absolute;
+  bottom: 42%;
+  text-align: center;
+}
+
+.courseFont {
+  font-size: 40px;
+  color: #fefefe;
+}
+
+.courseNum {
+  font-size: 60px;
+  color: #fefefe;
+}
+
+/*---------------------------------------教練slider-------*/
+.courseProfession {
+  text-align: center;
+}
+
+.courseProfession .courseProfession01 {
+  position: relative;
+  top: -40px;
+}
+
+.ms--images {
+  position: relative;
+  overflow: hidden;
+}
+
+.ms--images.ms-container--horizontal {
+  width: 100%;
+  height: 400px;
+  max-width: 100%;
+}
+
+.ms--images.ms-container--horizontal .ms-track {
+  left: calc(50% - 350px);
+}
+
+.ms--images.ms-container--horizontal .ms-slide {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.ms--images .ms-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.ms--images .ms-slide {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 700px;
+  height: 400px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.ms--images {
+  left: calc(50% - 280px);
+}
+
+.ms--images.ms-container--horizontal .ms-track {
+  left: -70px;
+}
+
+.ms--images .ms-slide:nth-child(1) .ms-slide__image {
+  background-image: url(../img/course/courseImage660x410.jpg);
+}
+
+.ms--images .ms-slide:nth-child(2) .ms-slide__image {
+  background-image: url(../img/course/courseImage02_660x410.jpg);
+}
+
+.ms--images .ms-slide:nth-child(3) .ms-slide__image {
+  background-image: url(../img/course/courseImage03_660x410.jpg);
+}
+
+.ms--images .ms-slide:nth-child(4) .ms-slide__image {
+  background-image: url(../img/course/courseImage04_660x410.jpg);
+}
+
+.ms--images .ms-slide__image-container {
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+}
+
+.ms--images .ms-slide__image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.ms--numbers {
+  position: relative;
+  overflow: hidden;
+}
+
+.ms--numbers.ms-container--horizontal {
+  width: 240px;
+  height: 240px;
+  max-width: 100%;
+}
+
+.ms--numbers.ms-container--horizontal .ms-track {
+  left: calc(50% - 120px);
+}
+
+.ms--numbers.ms-container--horizontal .ms-slide {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.ms--numbers .ms-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.ms--numbers .ms-slide {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 240px;
+  height: 240px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.ms--numbers {
+  position: absolute;
+  left: calc(50% - 380px);
+  top: calc(50% - 300px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.ms--numbers .ms-slide {
+  font-size: 9em;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.ms--titles {
+  position: relative;
+  overflow: hidden;
+}
+
+.ms--titles.ms-container--vertical {
+  width: 400px;
+  height: 170px;
+  max-height: 100%;
+}
+
+.ms--titles.ms-container--vertical .ms-track {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: calc(50% - 85px);
+}
+
+.ms--titles.ms-container--vertical.ms-container--reverse .ms-track {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  top: auto;
+  bottom: calc(50% - 85px);
+}
+
+.ms--titles.ms-container--vertical .ms-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ms--titles .ms-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.ms--titles .ms-slide {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 400px;
+  height: 170px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.ms--titles {
+  position: absolute;
+  left: calc(50% - 420px);
+  top: calc(50% - 85px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.ms--titles h3 {
+  font-size: 80px;
+  position: relative;
+  right: 100px;
+}
+
+.ms--titles .ms-track {
+  white-space: normal;
+}
+
+.ms--titles .ms-slide {
+  font-size: 3.3em;
+  font-weight: 600;
+}
+
+.ms--titles .ms-slide h3 {
+  margin: 0;
+  text-shadow: 1px 1px 2px black;
+}
+
+.ms--links {
+  position: relative;
+  overflow: hidden;
+}
+
+.ms--links.ms-container--vertical {
+  width: 120px;
+  height: 60px;
+  max-height: 100%;
+}
+
+.ms--links.ms-container--vertical .ms-track {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: calc(50% - 30px);
+}
+
+.ms--links.ms-container--vertical .ms-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ms--links .ms-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.ms--links .ms-slide {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 120px;
+  height: 60px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.ms--links {
+  position: absolute;
+  left: calc(50% - 420px);
+  top: calc(50% + 105px);
+  z-index: 1;
+}
+
+.ms--links .ms-track {
+  white-space: normal;
+}
+
+.ms--links .ms-slide__link {
+  font-weight: 600;
+  padding: 5px 0 8px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: calc(50% - 420px);
+  top: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.pagination__button {
+  display: inline-block;
+  position: relative;
+  width: 36px;
+  height: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination__button:before, .pagination__button:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: calc(50% - 1px);
+  width: 100%;
+  -webkit-box-shadow: 0 1px 0 #0B0D14;
+          box-shadow: 0 1px 0 #0B0D14;
+}
+
+.pagination__button:before {
+  height: 2px;
+  background-color: #87CEFA;
+}
+
+.pagination__button:after {
+  height: 3px;
+  background-color: #6495ED;
+  opacity: 0;
+  -webkit-transition: 0.5s opacity;
+  transition: 0.5s opacity;
+}
+
+.pagination__item--active .pagination__button:after {
+  opacity: 1;
+}
+
+@media screen and (max-width: 991px) {
+  .ms--numbers {
+    left: calc(50% - 120px);
+  }
+  .ms--titles {
+    left: calc(50% - 200px);
+    top: calc(50% - 135px);
+    text-align: center;
+  }
+  .ms--links {
+    left: calc(50% - 60px);
+    top: calc(50% + 80px);
+  }
+  .pagination {
+    left: 50%;
+    top: calc(100% - 10px);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .ms--images {
+    overflow: visible;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ms--titles .ms-slide {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background-color: #1B1C21;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.courseContainer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding-top: 17%;
+  padding-bottom: 12%;
+}
+
+.courseContainer:before {
+  content: '';
+  position: absolute;
+  left: -150%;
+  top: 0;
+  width: 300%;
+  height: 100%;
+  background-color: #101113;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: -1;
+}
+
+.sliders-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media screen and (max-width: 860px) {
+  .header__menu,
+  .footer {
+    display: none;
+  }
+}
+
+/*----------star rating-------------------*/
+.fas {
+  color: #FFED65;
+}
+
+.choice {
+  color: #FFED65;
+}
+
+.not-choice {
+  color: #FDFFF7;
+}
+
+.yellow {
+  color: #FFED65;
+}
+
+.grey {
+  color: #FDFFF7;
+}
+
+/*---------------button-------*/
+.courseButton {
+  position: absolute;
+  right: 21%;
+  top: 85%;
+}
+
+.button--bubble {
+  color: seashell;
+}
+
+.button--bubble:hover {
+  background: none;
+  color: #03162F;
+}
+
+.button--bubble:hover + .button--bubble__effect-container .circle {
+  background: seashell;
+}
+
+.button--bubble:hover + .button--bubble__effect-container .button {
+  background: seashell;
+}
+
+.button--bubble__container .effect-button {
+  background: #03162f;
+}
+
+.button--bubble__effect-container .circle {
+  background: #03162f;
+}
+
+/*-------------------------------------------course潛水課程 第三屏------------*/
+.courseClass {
+  margin: 0 auto;
+  width: 950px;
+  height: 32%;
+}
+
+.courseSign {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.courseItem {
+  margin-top: 8%;
+}
+
+.courseTime {
+  width: 150px;
+  font-size: 16px;
+  border-radius: 8px;
+  letter-spacing: 3px;
+  font-family: "微軟正黑體", sans-serif;
+  margin-right: 30px;
+  padding: 5px 10px;
+}
+
+.courseTime:nth-child(4) {
+  width: 150px;
+}
+
+.courseTime.courseAw {
+  font-size: 16px;
+  border-radius: 8px;
+  letter-spacing: 5px;
+  font-family: "微軟正黑體", sans-serif;
+  background-color: #03162F;
+  color: white;
+}
+
+.courseH4 {
+  display: inline-block;
+  width: 200px;
+}
+
+.courseCa {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.courseItem_02 {
+  margin-top: 3%;
+}
+
+.courseCa_02 {
+  display: inline-block;
+}
+
+#ddmmyyyy {
+  width: 150px;
+  border-radius: 5px;
+  color: #073977;
+}
+
+.courseItem_03 {
+  margin-top: 3%;
+}
+
+.courseSelect {
+  width: 150px;
+  border-radius: 5px;
+}
+
+.courseItem_04 {
+  margin-top: 3%;
+}
+
+/*--------------------------------------course潛水課程第三屏 課程*3---------*/
+.swal2-title {
+  font-size: 24px;
+}
+
+.courseLesson {
+  margin: 0 auto;
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 65%;
+}
+
+.courseouter {
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: rgba(254, 254, 254, 0.75);
+  color: #221814;
+  width: 28%;
+}
+
+.courseouter img {
+  width: 100%;
+}
+
+.courseDetail {
+  padding: 10px 20px;
+}
+
+.courseButton_01 {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.coursePp {
+  display: inline-block;
+  width: 80px;
+  margin-top: 20px;
+}
+
+.courseP {
+  display: inline-block;
+  width: 200px;
+  margin-top: 5px;
+}
+
+.courseOwaow {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/*--------------------------------------pagination--------------*/
+.coursePaginationBlock {
+  margin-top: 20px;
+  text-align: center;
+}
+
+ul.coursePagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fefefe;
+  font-size: 18px;
+}
+
+ul.coursePagination li {
+  border: 1px solid #fefefe;
+  margin: 20px 10px;
+  padding: 10px 15px;
+}
+
+ul.coursePagination li:hover {
+  color: #073977;
+  background-color: #fefefe;
+  border: 1px solid #073977;
+  cursor: pointer;
+}
+
+ul.coursePagination li:hover a {
+  color: #073977;
+}
+
+ul.coursePagination li:first-child {
+  color: #073977;
+  background-color: #fefefe;
+  border: 1px solid #073977;
+}
+
+ul.coursePagination .-on {
+  color: #073977;
+}
+
+/*---------------------------------------------------coursePage02潛水課程內頁------------*/
+.courseContent {
+  position: relative;
+  top: 200px;
+  margin: 0 auto;
+  width: 70%;
+  background-color: #16181D;
+  vertical-align: top;
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.courseContentLeft {
+  width: 70%;
+}
+
+.courseContentRight {
+  width: 50%;
+  margin: 0;
+}
+
+.courseImgLeft {
+  margin: 0 auto;
+  width: 70%;
+}
+
+/*---------------------------內頁button------------------*/
+.courseButton {
+  position: absolute;
+  right: 21%;
+  top: 85%;
+}
+
+.courseOwaow01 {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.coursePp01 {
+  display: inline-block;
+  width: 150px;
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+
+.courseP01 {
+  display: inline-block;
+  width: 60%;
+}
+
+.coursePright {
+  margin-bottom: 20px;
+}
+
+.courseBttn {
+  color: #073977;
+}
+
+.courseBttn:hover {
+  background: none;
+  color: #073977;
+}
+
+.courseBttn:hover + .courseBttnn .courseD {
+  background: #fefefe;
+}
+
+.courseBttn:hover + .courseAttn .button {
+  background: #fefefe;
+}
+
+.courseBttnn .courseE {
+  background: #fefefe;
+}
+
+.courseAttn .courseD {
+  background: #fefefe;
+}
+
+/*-------------------------------------課程內容-----------------*/
+.courseDay {
+  background-color: rgba(254, 254, 254, 0.75);
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  height: 800px;
+}
+
+.courseSign_02 {
+  color: #221814;
+  margin-top: 70px;
+}
+
+.coursePage01_01 {
+  padding-bottom: 200px;
+}
+
+/*----------------------------------------課程內容頁籤-------------*/
+.courseTab_container {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.courseTab_container .courseTab_list_block {
+  padding-left: 5px;
+}
+
+.courseTab_container .courseTab_list_block ul.courseTab_list {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 3px;
+}
+
+.courseTab_container .courseTab_list_block ul.courseTab_list > li {
+  display: inline-block;
+}
+
+.courseTab_container .courseTab_list_block ul.courseTab_list > li > a {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #073977;
+  /* border-bottom: 1px solid black; */
+  padding: 5px 20px;
+  cursor: pointer;
+  color: #073977;
+  position: relative;
+  top: -5px;
+  font-size: 18px;
+}
+
+.courseTab_container .courseTab_list_block ul.courseTab_list > li > a::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 2px);
+  height: 1px;
+  bottom: -1px;
+  left: -1px;
+  z-index: 1;
+}
+
+.courseTab_container .courseTab_list_block ul.courseTab_list > li > a.-on {
+  border: 1px solid black;
+  color: black;
+  background-color: rgba(254, 254, 254, 0.75);
+}
+
+.courseTab_container .courseTab_list_block ul.courseTab_list > li > a.-on::after {
+  width: 100%;
+  left: 0;
+}
+
+.courseTab_container .courseTab_contents {
+  border: 1px solid black;
+  background-color: rgba(254, 254, 254, 0.75);
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.courseTab_container .courseTab_contents .courseTab {
+  padding: 0px;
+  display: none;
+}
+
+.courseTab_container .courseTab_contents .courseTab.-on {
+  display: block;
+}
+
+.courseSchedule01 {
+  display: inline-block;
+  width: 28%;
+  margin-top: 80px;
+  color: #221814;
+}
+
+.courseSchedule02 {
+  margin-left: 20px;
+  display: inline-block;
+  width: 60%;
+  color: #221814;
+  text-align: left;
+}
+
+/*--------------------------------------課程須知----------------------------*/
+.courseNotice {
+  width: 70%;
+  background-color: #16181D;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.courseSign_03 {
+  text-align: center;
+  margin: 100px 0 80px 0;
+}
+
+.courseSign_04 {
+  color: #fefefe;
+}
+
+.courseNoticeCon {
+  width: 60%;
+  margin: 0 auto;
+  letter-spacing: 3px;
+  line-height: 25px;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+}
+
+/*--------------------------日誌---------------------*/
+.courseXl {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.courseDiaryCenter {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto 50px auto;
+}
+
+.courseDiarySolid {
+  width: 350px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.courseDiarySolid a .courseImgContent {
+  width: 100%;
+  position: relative;
+}
+
+.courseDiarySolid a .courseImgContent .courseImgSolid {
+  width: 100%;
+  font-size: 0;
+}
+
+.courseDiarySolid a .courseImgContent .courseDiaryTitleA {
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 15px;
+}
+
+.courseDiarySolid a .courseImgContent .courseDiaryTitleA .courseDiaryTitleFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.courseDiarySolid a .courseImgContent .courseDiaryTitleA .courseDiaryTitleFlex .courseUserLogo {
+  width: 42px;
+  border-radius: 50%;
+  border: 1px solid #fefefe;
+  overflow: hidden;
+}
+
+.courseDiarySolid a .courseImgContent .courseDiaryTitleA .courseDiaryTitleFlex .courseUserLogo img {
+  vertical-align: top;
+}
+
+.courseDiarySolid a .courseImgContent .courseDiaryTitleA .courseDiaryTitleFlex .courseUserName {
+  padding-left: 10px;
+  color: #fefefe;
+}
+
+.courseDiarySolid a .courseImgContent .courseDiaryTitleA .courseUserText {
+  color: #fefefe;
+}
+
+.courseDiarySolid a .courseImgContent .courseDiaryTitleB {
+  position: absolute;
+  bottom: 0;
+}
+
+.courseDiarySolid a .courseImgContent .courseDiaryTitleB .courseDiaryTitleText {
+  padding: 0px 15px 15px 15px;
+  color: #fefefe;
+}
+
+.courseDiarySolid a .courseImgContent .courseDiaryTitleB .courseDiaryTitleDate {
+  padding: 0px 15px 15px 15px;
+  color: #fefefe;
+}
+
+.courseDiarySolid .courseDiaryText {
+  width: 100%;
+  padding: 10px;
+  background-color: #fefefe;
+}
+
+.courseDiarySolid .courseDiaryText .courseDiaryTextData {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.courseDiarySolid .courseDiaryText .courseDiaryTextData div:first-child p:nth-child(2) span:nth-child(1) {
+  color: #467500;
+  font-size: 32px;
+}
+
+.courseDiarySolid .courseDiaryText .courseDiaryTextData div p:nth-child(1) {
+  color: #073977;
+  font-size: 10px;
+  text-align: center;
+  padding: 15px 0px 5px 0px;
+}
+
+.courseDiarySolid .courseDiaryText .courseDiaryTextData div p:nth-child(2) {
+  color: #073977;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.courseDiarySolid .courseDiaryText .courseDiaryTextData div p:nth-child(2) span:nth-child(1) {
+  font-size: 32px;
+  color: #073977;
+}
+
+.courseDiarySolid .courseDiaryText .courseDiaryTextData div p:nth-child(2) span:nth-child(2) {
+  font-size: 16px;
+  color: #073977;
+}
+
+.courseDiarySolid .courseDiaryTextP {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.courseDiarySolid .courseDiaryTextP .courseDiaryTextPP {
+  padding: 10px 0px 10px 10px;
+  width: 100%;
+  overflow: hidden;
+  color: #073977;
+}
+
+.courseDiarySolid .courseDiaryTextP i {
+  color: #073977;
+}
+
+/*-----------------------------------------------------coursePage03潛水課程-------*/
+.courseSign_05 {
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+
+.courseOrder {
+  margin: 250px auto 50px auto;
+  width: 70%;
+  vertical-align: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.courseOrderLeft {
+  background-color: #16181D;
+  width: 50%;
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+.courseInfo {
+  color: #fefefe;
+  padding: 40px 40px;
+}
+
+.courseInfo_01 {
+  font-size: 21px;
+  padding: 20px 40px;
+}
+
+.coursePz {
+  display: inline-block;
+  width: 28%;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.coursePx {
+  display: inline-block;
+  width: 55%;
+  margin-top: 10px;
+}
+
+.courseOrderRight {
+  width: 50%;
+  background-color: rgba(254, 254, 254, 0.75);
+}
+
+.courseButton01 {
+  margin: 40px 0 30px 270px;
+}
+
+.courseInfo02 {
+  padding: 40px 40px;
+  color: #221814;
+}
+
+.courseItem_A {
+  margin-top: 70px;
+}
+
+.courseItem_B {
+  margin-top: 20px;
+}
+
+#courseOw02 {
+  font-size: 12px;
+  border-radius: 8px;
+  letter-spacing: 3px;
+  font-family: "微軟正黑體", sans-serif;
+  padding: 3px 25px;
+  margin-left: 10px;
+}
+
+.courseInfo02_00.courseAw01 {
+  font-size: 16px;
+  border-radius: 8px;
+  letter-spacing: 5px;
+  font-family: "微軟正黑體", sans-serif;
+  padding: 5px 49px;
+  background-color: #03162F;
+  color: white;
+}
+
+.courseInfo02_1 {
+  margin-left: 40px;
+  color: #221814;
+}
+
+.courseInfo02_4 {
+  vertical-align: top;
+  margin-left: 40px;
+  color: #221814;
+}
+
+.courseInfo02_T {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 80px;
+}
+
+.courseInput {
+  margin-left: 52px;
+}
+
+.courseInput02 {
+  margin-left: 20px;
+}
+
+.courseInput03 {
+  margin-left: 18px;
+}
+
+/*-------------------------------------lightBox--------*/
+.pu_black {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  opacity: .5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  display: none;
+}
+
+.cart_jump {
+  width: 250px;
+  height: 30%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #eee;
+  display: none;
+  z-index: 1500;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  overflow: hidden;
+  opacity: .95;
+}
+
+.jump_close {
+  right: 5px;
+  top: 2px;
+  width: 35px;
+  height: 35px;
+  color: #000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: 210px;
+}
+
+.jump_title {
+  font-size: 32px;
+  color: #221814;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.courseOkicon {
+  text-align: center;
+}
+
+.courseOkicon img {
+  width: 30%;
+  height: 30%;
+  padding-top: 50px;
+}
+
+@media all and (max-width: 1200px) {
+  /*-----------------------------------01----------------*/
+  .rating {
+    right: 76%;
+  }
+  .courseouter {
+    width: 60%;
+    margin-bottom: 50px;
+  }
+  .courseP {
+    width: 250px;
+  }
+  /*------------------------------------02--------------*/
+  .courseSmallDiary {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /*------------------------------------03--------------*/
+  .courseOrder {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 991px) {
+  /*-----------------------------------01----------------*/
+  .ms--titles h3 {
+    position: relative;
+    right: 5px;
+    top: -35%;
+  }
+  .ms--titles .ms-track {
+    white-space: normal;
+  }
+  .ms--titles .ms-slide {
+    font-size: 3.3em;
+    font-weight: 600;
+  }
+  .ms--titles .ms-slide h3 {
+    margin: 0;
+    text-shadow: 1px 1px 2px black;
+  }
+  .rating {
+    right: 41%;
+  }
+  .courseButton {
+    position: static;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .button--bubble {
+    color: #073977;
+  }
+  .button--bubble:hover {
+    background: none;
+    color: #073977;
+  }
+  .button--bubble:hover + .button--bubble__effect-container .circle {
+    background: #fefefe;
+  }
+  .button--bubble:hover + .button--bubble__effect-container .button {
+    background: #fefefe;
+  }
+  .button--bubble__container .effect-button {
+    background: #fefefe;
+  }
+  .button--bubble__effect-container .circle {
+    background: #fefefe;
+  }
+  .ms--numbers .ms-slide {
+    font-size: 80px;
+  }
+  .courseClass {
+    margin: 0 auto;
+    width: 70%;
+    height: 32%;
+  }
+  .courseTime {
+    width: 110px;
+    margin-top: 20px;
+  }
+  .courseTime:nth-child(4) {
+    width: 140px;
+  }
+  .courseCa {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  /*---------------------------------------02------------------*/
+  .coursePp01 {
+    width: 28%;
+    margin-top: 10px;
+  }
+  .courseP01 {
+    width: 60%;
+  }
+  .courseContentLeft {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .courseContentRight {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .courseImgLeft {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .courseContent {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .coursePright {
+    margin-left: 50px;
+  }
+  .courseDiaryCenter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /*-----------------------------------03-------------*/
+  .courseButton01 {
+    margin-left: 150px;
+  }
+  .courseInput {
+    margin-top: 10px;
+  }
+  .courseItem_A {
+    margin-top: 15px;
+  }
+  .courseInput {
+    margin-left: 45px;
+  }
+  .courseInput02 {
+    margin-left: 45px;
+    margin-top: 5px;
+  }
+  .courseInput03 {
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  /*-----------------------------------01----------------*/
+  .courseFont {
+    font-size: 24px;
+  }
+  .courseNum {
+    font-size: 32px;
+  }
+  .courseClass {
+    width: 70%;
+    text-align: center;
+  }
+  .courseCa_02 {
+    display: block;
+  }
+  .courseItem_02 {
+    text-align: center;
+  }
+  .courseH4 {
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+  .courseTime {
+    width: 180px;
+    margin-top: 5px;
+  }
+  .courseTime:nth-child(4) {
+    width: 180px;
+  }
+  .courseSelect {
+    display: block;
+    margin: 0 auto;
+  }
+  .courseCa {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .courseouter {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+  /*------------------------------------------02---------------*/
+  .coursePp01 {
+    display: block;
+    width: 150px;
+    margin-top: 25px;
+  }
+  .courseP01 {
+    display: block;
+    width: 80%;
+  }
+  .courseNoticeCon > p.courseOPEN {
+    cursor: pointer;
+  }
+  .courseNoticeCon > p.courseOPEN.close {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+  }
+  /*--------------------------------03-----------------------*/
+  .courseOrder {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .courseOrderLeft {
+    width: 80%;
+  }
+  .courseOrderRight {
+    width: 80%;
+  }
+  .courseInfo02_1 {
+    display: inline-block;
+    width: 100px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  /*-----------------------------------01----------------*/
+  .courseFont {
+    font-size: 16px;
+  }
+  .courseNum {
+    font-size: 21px;
+  }
+  .ms--images .ms-slide__image {
+    width: 70%;
+    height: 70%;
+    margin-left: 100px;
+    margin-top: 70px;
+  }
+  .ms--titles {
+    position: absolute;
+    top: calc(50% - 85px);
+  }
+  .ms--titles h3 {
+    font-size: 32px;
+    position: relative;
+    right: 5px;
+    top: -35%;
+  }
+  .ms--titles .ms-track {
+    white-space: normal;
+  }
+  .ms--titles .ms-slide {
+    font-size: 3.3em;
+    font-weight: 600;
+  }
+  .ms--titles h3 {
+    margin: 0;
+    text-shadow: 1px 1px 2px black;
+  }
+  .courseClass {
+    width: 350px;
+    text-align: center;
+  }
+  .courseTime {
+    width: 180px;
+    margin-top: 5px;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+  .courseTime:nth-child(4) {
+    width: 180px;
+  }
+  .courseouter {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  /*-------------------------------------------03-----------------*/
+  .courseOrderLeft {
+    width: 90%;
+  }
+  .courseOrderRight {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 375px) {
+  /*-----------------------------------01----------------*/
+  .courseProfession {
+    text-align: center;
+  }
+  .courseProfession .courseProfession01 {
+    position: relative;
+    top: -40px;
+    font-size: 24px;
+  }
+  /*----------------------------------------------02--------------*/
+  .coursePright {
+    margin-left: 5px;
+  }
+  .courseImgLeft {
+    width: 100%;
+  }
+  .courseContent {
+    padding-top: 20px;
+  }
+}
+/*# sourceMappingURL=course.css.map */
