@@ -4,7 +4,6 @@
     body {
         font-family: $en, $zh;
         box-sizing: border-box;
-        // overflow: hidden;
     }
     
     :root{
@@ -154,7 +153,8 @@
         margin: 5px;
         text-align: center;
         border-radius: 10px;
-        background-color: $keyBlack;
+        color: $keyBlack;
+        background-color: #FFE153;
     }
 
     .maskList {
@@ -397,7 +397,7 @@
     body {
         font-family: $en, $zh;
         box-sizing: border-box;
-        // overflow: hidden;
+        height: auto;
     }
 
     h2 {
@@ -420,6 +420,21 @@
         margin: 5px;
     }
     
+    .totalPriceBlock {
+        width: 100%;
+        text-align: right;
+    }
+
+    .totalPrice {
+        width: 100px;
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+        border-radius: 10px;
+        color: $keyBlack;
+        background-color: #FFE153;
+    }
+
     //選擇裝備
     .choseEquipment {
         display: inline-block;
@@ -462,7 +477,6 @@
     .changeRole{
         position: relative;
         width: 40%;
-        border: 1px solid red;
     }
 
     .changeRoleBtnBlock{
@@ -502,7 +516,6 @@
         position: relative;
         display: block;
         width: 15%;
-        border: 1px solid red;
     }
     .ability{
         position: absolute;
@@ -540,15 +553,6 @@
         text-align: right;
     }
 
-    .totalPrice {
-        width: 100px;
-        padding: 5px;
-        margin: 5px;
-        text-align: center;
-        border-radius: 10px;
-        background-color: $keyBlack;
-    }
-
     .maskList {
         display: inline-flex;
         width: 600px;
@@ -570,6 +574,7 @@
         position: relative;
         display: block;
         width: 20%;
+        height: 70%;
         margin: 5%;
         margin: 10px;
         text-align: center;
@@ -588,13 +593,13 @@
   
     .equip {
         position: absolute;
-        top: 0;
+        top: -10px;
         bottom: 0;
         left: 0;
         right: 0;
         margin: auto auto;
-        width: 40%;
-        height: 40%;
+        width: 60%;
+        height: 60%;
         cursor: pointer;
     }
     
@@ -881,21 +886,7 @@
         flex-wrap: wrap;
         width: 510px;
         margin: 50px 0;
-    }
-        
-    .totalPriceBlock {
-        width: 100%;
-        text-align: right;
-    }
-
-    .totalPrice {
-        width: 100px;
-        padding: 5px;
-        margin: 5px;
-        text-align: center;
-        border-radius: 10px;
-        background-color: $keyBlack;
-    }
+    }    
 
     .maskList {
         display: inline-flex;
@@ -1063,20 +1054,6 @@
         flex-wrap: wrap;
         width: 100%;
         margin: 50px auto;
-    }
-
-    .totalPriceBlock {
-        width: 100%;
-        text-align: right;
-    }
-
-    .totalPrice {
-        width: 100px;
-        padding: 5px;
-        margin: 5px;
-        text-align: center;
-        border-radius: 10px;
-        background-color: $keyBlack;
     }
 
     .maskList {
