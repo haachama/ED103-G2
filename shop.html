@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="Shortcut Icon" href="./img/favicon.ico" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="./css/hamburgers.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <title>海中日子 | 潛水商城</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">海中日子 Divein
+            <a href="javascript:;"><img src="./img/header/logo.png" alt="logo"></a>
+        </h1>
+        <div class="nav">
+            <ul>
+                <li class="recommend_nav">
+                    <a href="javascript:;">潛點推薦</a>
+                </li>
+                <li class="course_nav">
+                    <a href="javascript:;">潛水課程</a>
+                </li>
+                <li class="shop_nav">
+                    <a href="javascript:;">潛水商城</a>
+                </li>
+                <li class="blog_nav">
+                    <a href="javascript:;">潛水日誌</a>
+                </li>
+                <li class="game_nav">
+                    <a href="javascript:;">下潛遊戲</a>
+                </li>
+            </ul>
+        </div>
+        <div class="memCart">
+            <ul>
+                <li><a href="javascript:;"><img src="./img/header/member.png" ></a></li>
+                <li><a href="javascript:;"><img src="./img/header/cart.png"></a></li>
+            </ul>
+        </div>
+        <button class="hamburger hamburger--3dxy" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+        </button>  
+    </header>
+    <div class="option">
+        <div class="shopH2">
+            <h2>潛水商城</h2>
+        </div>
+        
+        <ul class="itemType">
+            <li id="goggles">面鏡</li>
+            <li id="watch">潛水錶</li>
+            <li id="glove">手套</li>
+            <li id="fins">蛙鞋</li>
+        </ul>
+    </div>
+    <div class="wrapper" id="js-wrapper">
+        
+        <div class="sections" id="js-slideContainer">
+            <section class="section">
+                <div class="section__title" id="title1">
+                    <div class="product">
+                        <div class="art">
+                            <span class="itemName">水中看得清</span>
+                            <div class="item">
+                                <img src="./img/index/mask4@2x.png" alt="">
+                            </div>
+                            <span class="NT">NT$8700</span>
+                            <div class="addNumber">
+                                <i class="fas fa-minus"></i>
+                                <input type="text" value="1" name="number">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="shopBtn">
+                                <div class="bubbleBtn detail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+    
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            查看詳情
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+    
+                                            <span class="button effect-button"></span>
+    
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="bubbleBtn addCart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+    
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            加入購物車
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+    
+                                            <span class="button effect-button"></span>
+    
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="art">
+                            <span class="itemName">水中看得見</span>
+                            <div class="item">
+                                <img src="./img/index/mask1@2x.png" alt="">
+                            </div>
+                            <span class="NT">NT$6600</span>
+                            <div class="addNumber">
+                                <i class="fas fa-minus"></i>
+                                <input type="text" value="1" name>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="shopBtn">
+                                <div class="bubbleBtn detail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+    
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            查看詳情
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+    
+                                            <span class="button effect-button"></span>
+    
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="bubbleBtn addCart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+    
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            加入購物車
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+    
+                                            <span class="button effect-button"></span>
+    
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="art">
+                            <span class="itemName">水中看得到</span>
+                            <div class="item">
+                                <img src="./img/index/mask2@2x.png" alt="">
+                            </div>
+                            <span class="NT">NT$2150</span>
+                            <div class="addNumber">
+                                <i class="fas fa-minus"></i>
+                                <input type="text" value="1" name>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="shopBtn">
+                                <div class="bubbleBtn detail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+    
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            查看詳情
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+    
+                                            <span class="button effect-button"></span>
+    
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="bubbleBtn addCart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+    
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            加入購物車
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+    
+                                            <span class="button effect-button"></span>
+    
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="art">
+                            <span class="itemName">眼睛進水啦</span>
+                            <div class="item">
+                                <img src="./img/index/mask3@2x.png" alt="">
+                            </div>
+                            <span class="NT">NT$1290</span>
+                            <div class="addNumber">
+                                <i class="fas fa-minus"></i>
+                                <input type="text" value="1" name>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="shopBtn">
+                                <div class="bubbleBtn detail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+    
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            查看詳情
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+    
+                                            <span class="button effect-button"></span>
+    
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="bubbleBtn addCart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+    
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            加入購物車
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+    
+                                            <span class="button effect-button"></span>
+    
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <span id="trigger--title1"></span>
+            </section>
+            <section class="section">
+                <div class="section__title watch" id="title2">
+                    <div class="product">
+                        <div class="art">
+                            <span class="itemName">永久指針</span>
+                            <div class="item">
+                                <img src="./img/index/watch1@2x.png" alt="">
+                            </div>
+                            <span class="NT">NT$8700</span>
+                            <div class="addNumber">
+                                <i class="fas fa-minus"></i>
+                                <input type="text" value="1" name>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="shopBtn">
+                                <div class="bubbleBtn detail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+    
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            查看詳情
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+    
+                                            <span class="button effect-button"></span>
+    
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="bubbleBtn addCart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+    
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            加入購物車
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+    
+                                            <span class="button effect-button"></span>
+    
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="art">
+                            <span class="itemName">紀錄指針</span>
+                            <div class="item">
+                                <img src="./img/index/watch2@2x.png" alt="">
+                            </div>
+                            <span class="NT">NT$6600</span>
+                            <div class="addNumber">
+                                <i class="fas fa-minus"></i>
+                                <input type="text" value="1" name>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="shopBtn">
+                                <div class="bubbleBtn detail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+    
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            查看詳情
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+    
+                                            <span class="button effect-button"></span>
+    
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="bubbleBtn addCart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+    
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            加入購物車
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+    
+                                            <span class="button effect-button"></span>
+    
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="art">
+                            <span class="itemName">磁石指針</span>
+                            <div class="item">
+                                <img src="./img/index/watch3@2x.png" alt="">
+                            </div>
+                            <span class="NT">NT$2150</span>
+                            <div class="addNumber">
+                                <i class="fas fa-minus"></i>
+                                <input type="text" value="1" name>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="shopBtn">
+                                <div class="bubbleBtn detail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+    
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            查看詳情
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+    
+                                            <span class="button effect-button"></span>
+    
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="bubbleBtn addCart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+    
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            加入購物車
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+    
+                                            <span class="button effect-button"></span>
+    
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="art">
+                            <span class="itemName">迷路指針</span>
+                            <div class="item">
+                                <img src="./img/index/watch4@2x.png" alt="">
+                            </div>
+                            <span class="NT">NT$1290</span>
+                            <div class="addNumber">
+                                <i class="fas fa-minus"></i>
+                                <input type="text" value="1" name>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="shopBtn">
+                                <div class="bubbleBtn detail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+    
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            查看詳情
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+    
+                                            <span class="button effect-button"></span>
+    
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="bubbleBtn addCart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+    
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            加入購物車
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+    
+                                            <span class="button effect-button"></span>
+    
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <span id="trigger--title2"></span>
+            </section>
+            <section class="section">
+                <div class="section__title" id="title3">
+                    <div class="product">
+                        <div class="art">
+                            <span class="itemName">紅色工作手套</span>
+                            <div class="item">
+                                <img src="./img/index/gloves1@2x.png" alt="">
+                            </div>
+                            <span class="NT">NT$8700</span>
+                            <div class="addNumber">
+                                <i class="fas fa-minus"></i>
+                                <input type="text" value="1" name>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="shopBtn">
+                                <div class="bubbleBtn detail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                    result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            查看詳情
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+
+                                            <span class="button effect-button"></span>
+
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="bubbleBtn addCart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                    result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            加入購物車
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+
+                                            <span class="button effect-button"></span>
+
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="art">
+                            <span class="itemName">藍色工作手套</span>
+                            <div class="item">
+                                <img src="./img/index/gloves2@2x.png" alt="">
+                            </div>
+                            <span class="NT">NT$6600</span>
+                            <div class="addNumber">
+                                <i class="fas fa-minus"></i>
+                                <input type="text" value="1" name>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="shopBtn">
+                                <div class="bubbleBtn detail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                    result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            查看詳情
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+
+                                            <span class="button effect-button"></span>
+
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="bubbleBtn addCart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                    result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            加入購物車
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+
+                                            <span class="button effect-button"></span>
+
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="art">
+                            <span class="itemName">綠色工作手套</span>
+                            <div class="item">
+                                <img src="./img/index/gloves3@2x.png" alt="">
+                            </div>
+                            <span class="NT">NT$2150</span>
+                            <div class="addNumber">
+                                <i class="fas fa-minus"></i>
+                                <input type="text" value="1" name>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="shopBtn">
+                                <div class="bubbleBtn detail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                    result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            查看詳情
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+
+                                            <span class="button effect-button"></span>
+
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="bubbleBtn addCart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                    result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            加入購物車
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+
+                                            <span class="button effect-button"></span>
+
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="art">
+                            <span class="itemName">楓葉手套</span>
+                            <div class="item">
+                                <img src="./img/index/gloves4@2x.png" alt="">
+                            </div>
+                            <span class="NT">NT$1290</span>
+                            <div class="addNumber">
+                                <i class="fas fa-minus"></i>
+                                <input type="text" value="1" name>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="shopBtn">
+                                <div class="bubbleBtn detail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                    result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            查看詳情
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+
+                                            <span class="button effect-button"></span>
+
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="bubbleBtn addCart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                    result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            加入購物車
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+
+                                            <span class="button effect-button"></span>
+
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <span id="trigger--title3"></span>
+            </section>
+            <section class="section">
+                <div class="section__title shoe" id="title4">
+                    <div class="product">
+                        <div class="art">
+                            <span class="itemName">神速蛙鞋</span>
+                            <div class="item">
+                                <img src="./img/index/frogshoes1@2x.png" alt="">
+                            </div>
+                            <span class="NT">NT$8700</span>
+                            <div class="addNumber">
+                                <i class="fas fa-minus"></i>
+                                <input type="text" value="1" name>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="shopBtn">
+                                <div class="bubbleBtn detail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                    result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            查看詳情
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+
+                                            <span class="button effect-button"></span>
+
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="bubbleBtn addCart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                    result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            加入購物車
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+
+                                            <span class="button effect-button"></span>
+
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="art">
+                            <span class="itemName">噴射蛙鞋</span>
+                            <div class="item">
+                                <img src="./img/index/frogshoes2@2x.png" alt="">
+                            </div>
+                            <span class="NT">NT$6600</span>
+                            <div class="addNumber">
+                                <i class="fas fa-minus"></i>
+                                <input type="text" value="1" name>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="shopBtn">
+                                <div class="bubbleBtn detail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                    result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            查看詳情
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+
+                                            <span class="button effect-button"></span>
+
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="bubbleBtn addCart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                    result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            加入購物車
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+
+                                            <span class="button effect-button"></span>
+
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="art">
+                            <span class="itemName">推進蛙鞋</span>
+                            <div class="item">
+                                <img src="./img/index/frogshoes3@2x.png" alt="">
+                            </div>
+                            <span class="NT">NT$2150</span>
+                            <div class="addNumber">
+                                <i class="fas fa-minus"></i>
+                                <input type="text" value="1" name>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="shopBtn">
+                                <div class="bubbleBtn detail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                    result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            查看詳情
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+
+                                            <span class="button effect-button"></span>
+
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="bubbleBtn addCart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                    result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            加入購物車
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+
+                                            <span class="button effect-button"></span>
+
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="art">
+                            <span class="itemName">游的真慢</span>
+                            <div class="item">
+                                <img src="./img/index/frogshoes4@2x.png" alt="">
+                            </div>
+                            <span class="NT">NT$1290</span>
+                            <div class="addNumber">
+                                <i class="fas fa-minus"></i>
+                                <input type="text" value="1" name>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="shopBtn">
+                                <div class="bubbleBtn detail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                    result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            查看詳情
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+
+                                            <span class="button effect-button"></span>
+
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="bubbleBtn addCart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                    result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+
+                                    <span class="button--bubble__container">
+                                        <a href="#campaign" class="button button--bubble">
+                                            加入購物車
+                                        </a>
+                                        <span class="button--bubble__effect-container">
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+                                            <span class="circle top-left"></span>
+
+                                            <span class="button effect-button"></span>
+
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                            <span class="circle bottom-right"></span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <span id="trigger--title4"></span>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            Copyright © 2020 Divein | 海中日子 All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="./js/horizon.js"></script>
+    <script src="./js/bubbleBtn.js"></script>
+</body>
+</html>

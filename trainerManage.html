@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="Shortcut Icon" href="./img/favicon.ico" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="./css/hamburgers.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/trainerManage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>
+    <title>海中日子 | 管理課表</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">海中日子 Divein
+            <a href="javascript:;"><img src="./img/header/logo.png" alt="logo"></a>
+        </h1>
+        <div class="nav">
+            <ul>
+                <li class="recommend_nav">
+                    <a href="javascript:;">潛點推薦</a>
+                </li>
+                <li class="course_nav">
+                    <a href="javascript:;">潛水課程</a>
+                </li>
+                <li class="shop_nav">
+                    <a href="javascript:;">潛水商城</a>
+                </li>
+                <li class="blog_nav">
+                    <a href="javascript:;">潛水日誌</a>
+                </li>
+                <li class="game_nav">
+                    <a href="javascript:;">下潛遊戲</a>
+                </li>
+            </ul>
+        </div>
+        <div class="memCart">
+            <ul>
+                <li><a href="javascript:;"><img src="./img/header/member.png" ></a></li>
+                <li><a href="javascript:;"><img src="./img/header/cart.png"></a></li>
+            </ul>
+        </div>
+        <button class="hamburger hamburger--3dxy" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+        </button>  
+    </header>
+    <main>
+        <div class="asideMenu">
+            <div class="title"><a href="./trainerCenter.html">教練中心</a></div>
+            <div class="option">
+                <p>Hello, 出木杉英才</p>
+                <div class="profile"><img src="./img/trainer/character_10.png"></div>
+                <ul>
+                    <li><a href="javascript:;">個人資料</a></li>
+                    <li><a href="./addCourse.html">新增課程</a></li>
+                    <li><a href="javascript:;">管理課表</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="info">
+            <div class="month">
+                <i class="fas fa-angle-left"></i>
+                <span>September, 2020</span>
+                <i class="fas fa-angle-right"></i>
+            </div>
+
+            <div class="tab_container">
+
+                <div class="tab_list_block">
+                    <ul class="tab_list">
+                        <li><a href="#" data-target="tab1" class="tab -on">報名中</a></li>
+                        <li><a href="#" data-target="tab2" class="tab">審核中</a></li>
+                        <li><a href="#" data-target="tab3" class="tab">已結訓</a></li>
+                    </ul>
+                </div>
+    
+                <div class="tab_contents" >
+    
+                    <div class="tab tab1 -on">
+                        <div class="course full">
+                            <div class="imgContainer">
+                                <img src="./img/trainer/coast.jpg">
+                            </div>
+                            <div class="courseInfo">
+                                <p>潛水體驗班</p>
+                                <p>上課日期：09/20 - 09/24</p>
+                                <p>上課地點：大白沙</p>
+                                <p>學員人數：5 / 5 人</p>
+                            </div>
+                            <div class="bubbleBtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                    <defs>
+                                        <filter id="goo">
+                                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                            <feColorMatrix in="blur" mode="matrix"
+                                                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                            <feComposite in="SourceGraphic" in2="goo" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+
+                                <span class="button--bubble__container">
+                                    <a href="#campaign" class="button button--bubble">
+                                        查看名單
+                                    </a>
+                                    <span class="button--bubble__effect-container">
+                                        <span class="circle top-left"></span>
+                                        <span class="circle top-left"></span>
+                                        <span class="circle top-left"></span>
+
+                                        <span class="button effect-button"></span>
+
+                                        <span class="circle bottom-right"></span>
+                                        <span class="circle bottom-right"></span>
+                                        <span class="circle bottom-right"></span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="course">
+                            <div class="imgContainer">
+                                <img src="./img/trainer/coast.jpg">
+                            </div>
+                            <div class="courseInfo">
+                                <p>潛水體驗班</p>
+                                <p>上課日期：09/20 - 09/24</p>
+                                <p>上課地點：大白沙</p>
+                                <p>學員人數：0 / 5 人</p>
+                            </div>
+                            <div class="bubbleBtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                    <defs>
+                                        <filter id="goo">
+                                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                            <feColorMatrix in="blur" mode="matrix"
+                                                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                            <feComposite in="SourceGraphic" in2="goo" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+
+                                <span class="button--bubble__container">
+                                    <a href="#campaign" class="button button--bubble">
+                                        查看名單
+                                    </a>
+                                    <span class="button--bubble__effect-container">
+                                        <span class="circle top-left"></span>
+                                        <span class="circle top-left"></span>
+                                        <span class="circle top-left"></span>
+
+                                        <span class="button effect-button"></span>
+
+                                        <span class="circle bottom-right"></span>
+                                        <span class="circle bottom-right"></span>
+                                        <span class="circle bottom-right"></span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="course">
+                            <div class="imgContainer">
+                                <img src="./img/trainer/coast.jpg">
+                            </div>
+                            <div class="courseInfo">
+                                <p>潛水體驗班</p>
+                                <p>上課日期：09/20 - 09/24</p>
+                                <p>上課地點：大白沙</p>
+                                <p>學員人數：0 / 5 人</p>
+                            </div>
+                            <div class="bubbleBtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                    <defs>
+                                        <filter id="goo">
+                                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                            <feColorMatrix in="blur" mode="matrix"
+                                                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                            <feComposite in="SourceGraphic" in2="goo" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+
+                                <span class="button--bubble__container">
+                                    <a href="#campaign" class="button button--bubble">
+                                        查看名單
+                                    </a>
+                                    <span class="button--bubble__effect-container">
+                                        <span class="circle top-left"></span>
+                                        <span class="circle top-left"></span>
+                                        <span class="circle top-left"></span>
+
+                                        <span class="button effect-button"></span>
+
+                                        <span class="circle bottom-right"></span>
+                                        <span class="circle bottom-right"></span>
+                                        <span class="circle bottom-right"></span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="course">
+                            <div class="imgContainer">
+                                <img src="./img/trainer/coast.jpg">
+                            </div>
+                            <div class="courseInfo">
+                                <p>潛水體驗班</p>
+                                <p>上課日期：09/20 - 09/24</p>
+                                <p>上課地點：大白沙</p>
+                                <p>學員人數：0 / 5 人</p>
+                            </div>
+                            <div class="bubbleBtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                    <defs>
+                                        <filter id="goo">
+                                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                            <feColorMatrix in="blur" mode="matrix"
+                                                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                            <feComposite in="SourceGraphic" in2="goo" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+
+                                <span class="button--bubble__container">
+                                    <a href="#campaign" class="button button--bubble">
+                                        查看名單
+                                    </a>
+                                    <span class="button--bubble__effect-container">
+                                        <span class="circle top-left"></span>
+                                        <span class="circle top-left"></span>
+                                        <span class="circle top-left"></span>
+
+                                        <span class="button effect-button"></span>
+
+                                        <span class="circle bottom-right"></span>
+                                        <span class="circle bottom-right"></span>
+                                        <span class="circle bottom-right"></span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="tab tab2">
+                        <div class="course">
+                            <div class="imgContainer">
+                                <img src="./img/trainer/coast.jpg">
+                            </div>
+                            <div class="courseInfo">
+                                <p>潛水體驗班</p>
+                                <p>上課日期：09/20 - 09/24</p>
+                                <p>上課地點：大白沙</p>
+                                <p>學員人數：0 / 5 人</p>
+                            </div>
+                            <div class="bubbleBtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                    <defs>
+                                        <filter id="goo">
+                                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                            <feColorMatrix in="blur" mode="matrix"
+                                                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                            <feComposite in="SourceGraphic" in2="goo" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+
+                                <span class="button--bubble__container">
+                                    <a href="#campaign" class="button button--bubble">
+                                        課程異動
+                                    </a>
+                                    <span class="button--bubble__effect-container">
+                                        <span class="circle top-left"></span>
+                                        <span class="circle top-left"></span>
+                                        <span class="circle top-left"></span>
+
+                                        <span class="button effect-button"></span>
+
+                                        <span class="circle bottom-right"></span>
+                                        <span class="circle bottom-right"></span>
+                                        <span class="circle bottom-right"></span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="course">
+                            <div class="imgContainer">
+                                <img src="./img/trainer/coast.jpg">
+                            </div>
+                            <div class="courseInfo">
+                                <p>潛水體驗班</p>
+                                <p>上課日期：09/20 - 09/24</p>
+                                <p>上課地點：大白沙</p>
+                                <p>學員人數：0 / 5 人</p>
+                            </div>
+                            <div class="bubbleBtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                    <defs>
+                                        <filter id="goo">
+                                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                            <feColorMatrix in="blur" mode="matrix"
+                                                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                            <feComposite in="SourceGraphic" in2="goo" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+
+                                <span class="button--bubble__container">
+                                    <a href="#campaign" class="button button--bubble">
+                                        課程異動
+                                    </a>
+                                    <span class="button--bubble__effect-container">
+                                        <span class="circle top-left"></span>
+                                        <span class="circle top-left"></span>
+                                        <span class="circle top-left"></span>
+
+                                        <span class="button effect-button"></span>
+
+                                        <span class="circle bottom-right"></span>
+                                        <span class="circle bottom-right"></span>
+                                        <span class="circle bottom-right"></span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="tab tab3">
+                        <div class="course">
+                            <div class="imgContainer">
+                                <img src="./img/trainer/coast.jpg">
+                            </div>
+                            <div class="courseInfo">
+                                <p>潛水體驗班</p>
+                                <p>上課日期：09/20 - 09/24</p>
+                                <p>上課地點：大白沙</p>
+                                <p>學員人數：0 / 5 人</p>
+                            </div>
+                            <div class="bubbleBtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                    <defs>
+                                        <filter id="goo">
+                                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                            <feColorMatrix in="blur" mode="matrix"
+                                                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                            <feComposite in="SourceGraphic" in2="goo" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+
+                                <span class="button--bubble__container">
+                                    <a href="#campaign" class="button button--bubble">
+                                        查看名單
+                                    </a>
+                                    <span class="button--bubble__effect-container">
+                                        <span class="circle top-left"></span>
+                                        <span class="circle top-left"></span>
+                                        <span class="circle top-left"></span>
+
+                                        <span class="button effect-button"></span>
+
+                                        <span class="circle bottom-right"></span>
+                                        <span class="circle bottom-right"></span>
+                                        <span class="circle bottom-right"></span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nameList">
+                    <div class="courseInfo">
+                        <p>潛水體驗班</p>
+                        <p>上課日期：09/20 - 09/24</p>
+                        <p>上課地點：大白沙</p>
+                        <p>學員人數：5 / 5 人</p>
+                    </div>
+                    <div class="avatar">
+                        <table>
+                            <tr>
+                                <th>學員名單</th>
+                                <th>報名日期</th>
+                            </tr>
+                            <tr>
+                                <td><img src="./img/trainer/character_2.png"></td>
+                                <td>2020/09/01</td>
+                            </tr>
+                            <tr>
+                                <td><img src="./img/trainer/character_3.png"></td>
+                                <td>2020/09/05</td>
+                            </tr>
+                            <tr>
+                                <td><img src="./img/trainer/character_4.png"></td>
+                                <td>2020/09/19</td>
+                            </tr>
+                            <tr>
+                                <td><img src="./img/trainer/character_5.png"></td>
+                                <td>2020/09/16</td>
+                            </tr>
+                            <tr>
+                                <td><img src="./img/trainer/character_6.png"></td>
+                                <td>2020/09/08</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="bubbleBtn closeBtn" id="closeBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                            <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                        result="goo" />
+                                    <feComposite in="SourceGraphic" in2="goo" />
+                                </filter>
+                            </defs>
+                        </svg>
+                
+                        <span class="button--bubble__container">
+                            <a href="#campaign" class="button button--bubble">
+                                關閉
+                            </a>
+                            <span class="button--bubble__effect-container">
+                                <span class="circle top-left"></span>
+                                <span class="circle top-left"></span>
+                                <span class="circle top-left"></span>
+                
+                                <span class="button effect-button"></span>
+                
+                                <span class="circle bottom-right"></span>
+                                <span class="circle bottom-right"></span>
+                                <span class="circle bottom-right"></span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+    
+            </div>
+
+            <ul class="pagination">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+
+       
+
+    </main>
+
+    <footer>
+        <div class="copyright">
+            Copyright © 2020 Divein | 海中日子 All Rights Reserved.
+        </div>
+    </footer>
+    <script src="./js/bubbleBtn.js"></script>
+    <script>
+        $(function(){
+            $("a.tab").on("click", function(e){
+                e.preventDefault();
+                
+                $(this).closest("ul").find("a.tab").removeClass("-on");
+                $(this).addClass("-on");
+                
+                $("div.tab").removeClass("-on");
+                $("div.tab." + $(this).attr("data-target")).addClass("-on");
+            });
+        });
+    </script>
+    <script>
+        // namelist
+        var closeBtn = document.getElementById("closeBtn");
+        var bubbleBtn = document.getElementsByClassName("bubbleBtn");
+        var nameList = document.getElementsByClassName("nameList")[0];
+        for(var i=0; i<bubbleBtn.length; i++){
+            bubbleBtn[i].addEventListener("click",function(){
+                nameList.classList.toggle('on')
+            },false)
+        }
+    </script>
+</body>
+
+</html>
