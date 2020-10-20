@@ -808,7 +808,6 @@
 }
 
 @media all and (max-width: 768px){
-
     .copyright {
         position: relative;
     }
@@ -820,77 +819,53 @@
 
     .parent_container {
         position: relative;
-        display: block;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
         width: 100%;
+        justify-content: center;
         box-sizing: border-box;
     }
     
+    .choseRole{
+        display: none;
+    }
+    .choseRoleRwd{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 20px 0 0 0;
+    }
+
     .changeRole{
         display: flex;
         position: relative;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        width: 100%;
+        width: 20%;
         flex-grow: 1;
-    }
-
-    .choseRole{
-        width: 100%;
-        text-align: center;
-        display: block;
-    }
-
-    .choseRoleRwd{
-        display: none;
-    }
-
-    .choseRoleBlock{
-        position: relative;
-        display: flex;
-        flex-grow: 1;
-    }
-    .margin{
-        margin: 0 20px 0 0;
-    }
-
-    .changeRoleBtnBlock{
-        width: 50px;
-        height: 100%;
-        display: inline-block;
-        position: relative;
-        
-    }
-    .changeRoleBtn{
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: auto 0;
-        border: 0;
-        outline: none;
-        background-color: transparent;
-    }
-
-    svg{
-        outline: none;
     }
 
     .playRole {
-        margin: auto 10px;
-        width: 40%;
+        width: 30%;
         display: inline-flex;
     }
     .playRole img{
         max-width: 100%;
     }
     
+    //角色能力圖
     .abilityBlock{
         position: relative;
-        display: flex;
-        width: 100%;
+        display: inline-flex;
+        width: 30%;
+        padding: 5px;
     }
 
     .ability{
-        width: 100px;
+        position: relative;
+        right: 0;
+        width: 100%;
         margin: 20px 0;
         text-align: center;  
     }
@@ -902,18 +877,17 @@
         display: flex;
     }
 
-    .flexGrow{
-        display: flex;
-        flex-grow: 1;
-    }
-
     .equipList {
         display: flex;
         position: relative;
         justify-content: space-evenly;
         flex-wrap: wrap;
         width: 100%;
-        margin: 50px auto;
+        margin: 0 auto;
+    }
+
+    .totalPrice {
+        border-radius: 10px 0 0 10px;
     }
 
     .maskList {
