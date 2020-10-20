@@ -49,12 +49,16 @@
     <main>
 
     <div class="parent_container">
+
+        <!-- 更換角色 -->
         <div class="changeRole">
             <div class="choseRole">
                 <h2>選擇角色/組合裝備</h2>
                 <p class="chose">用50元搭配出最棒的能力吧！(每種裝備限購一款)</p>
             </div>
-            <div class="margin">
+            <!-- <div class="margin">
+
+            <div> -->
             <div class="changeRoleBtnBlock">
                 <button class="changeRoleBtn">
                     <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-caret-left" fill="#fefefe" xmlns="http://www.w3.org/2000/svg">
@@ -62,6 +66,8 @@
                     </svg>
                 </button>
             </div>
+
+            <div class="flexGrow"></div>
 
             <div class="playRole">
                 <img class="role" src="./img/game/greenRole.png">
@@ -76,6 +82,8 @@
                 </div>
             </div>
 
+            <div class="flexGrow"></div>
+
             <div class="changeRoleBtnBlock">
                 <button class="changeRoleBtn">
                     <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-caret-right" fill="#fefefe" xmlns="http://www.w3.org/2000/svg">
@@ -83,15 +91,14 @@
                     </svg>
                 </button>
             </div>
-            </div> 
+ 
         </div>            
 
-        <div class="oneHundred"></div>
         <div class="abilityBlock">
             <div class="ability">
                 <p>速度</p>
+                <!-- 之後要換成canvas↓ -->
                 <img class="abilityImg" src="./img/game/ability.png" alt="">
-                <!-- 之後換成canvas -->
                 <div class="abilityDescribe">
                     <p>體力</p>
                     <div class="flexGrow"></div>
@@ -108,7 +115,7 @@
             <div class="maskList">
                 <div class="flexGrow"></div>
                 <div class="equipDescribeBlock">
-                    <h4>面鏡:</h4>
+                    <h4>面鏡</h4>
                 </div>
                 <div class="equipBlock">
                     <div class="bubbleBackground">
@@ -139,7 +146,7 @@
             <div class="airList">
                 <div class="flexGrow"></div>
                 <div class="equipDescribeBlock">
-                    <h4>氣瓶:</h4>
+                    <h4>氣瓶</h4>
                 </div>
                 <div class="equipBlock">
                     <div class="bubbleBackground">
@@ -170,7 +177,7 @@
             <div class="maskList">
                 <div class="flexGrow"></div>
                 <div class="equipDescribeBlock">
-                    <h4>蛙鞋:</h4>
+                    <h4>蛙鞋</h4>
                 </div>
                 <div class="equipBlock">
                     <div class="bubbleBackground">
@@ -201,9 +208,7 @@
         </div>
     </div>
 
-    
-
-    <div class="rule" id="ruleD" >
+    <div class="rule" id="ruleD" style="display: none;">
         <button id="rulebtnX" class="ruleBtnX">X</button>
         <h3>遊戲規則</h3>
         <p class="pRule">選擇你喜歡的角色，在有限金額內搭配最適合的裝備。閃避各種障礙物，盡可能生存下去，並獲得紅利點數吧！<br>

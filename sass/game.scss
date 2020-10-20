@@ -11,15 +11,11 @@
         --header-height: 117px;
     }
 
+    // footer置底
     main{
         min-height: calc(100vh - var(--header-height));
         overflow: hidden;
     }
-    // footer置底
-    // .copyright {
-    //     position: absolute;
-    //     bottom: 0;
-    // }
 
     h2 {
         color: $transparentWhite;
@@ -83,19 +79,24 @@
         height: 100%;
         display: inline-flex;
         position: relative;
+        cursor: pointer;
     }
     .changeRoleBtn{
         position: absolute;
         top: 0;
         bottom: 0;
         margin: auto 0;
+        width: 100%;
+        height: 50px;
         border: 0;
         outline: none;
+        cursor: pointer;
         background-color: transparent;
     }
 
     svg{
         outline: none;
+        cursor: pointer;
     }
 
     .playRole {
@@ -400,12 +401,6 @@
         box-sizing: border-box;
         // overflow: hidden;
     }
-    
-    // footer置底
-    // .copyright {
-    //     position: absolute;
-    //     bottom: 0;
-    // }
 
     h2 {
         color: $transparentWhite;
@@ -438,22 +433,24 @@
         display: flex;
         -webkit-flex-flow: row wrap;
         flex-flow: row wrap;
-        width: 992px;
+        width: 100%;
         justify-content: center;
         margin: 40px auto;
         box-sizing: border-box;
     }
     
+    //選擇角色
     .changeRole{
         display: flex;
         position: relative;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        width: 50%;
-        flex-grow: 1;
+        width: 40%;
+        flex-grow: 0;
     }
 
     .choseRole{
+        position: relative;
         width: 100%;
         text-align: center;
     }
@@ -464,13 +461,20 @@
         flex-grow: 1;
     }
 
+    .changeRole{
+        position: relative;
+        width: 40%;
+        border: 1px solid red;
+    }
+
     .changeRoleBtnBlock{
+        position: relative;
         width: 50px;
         height: 100%;
+        margin: 0;
         display: inline-block;
-        position: relative;
-        
     }
+
     .changeRoleBtn{
         position: absolute;
         top: 0;
@@ -486,24 +490,30 @@
     }
 
     .playRole {
-        margin: auto 50px;
-        width: 142px;
+        margin: auto 0;
+        width: 40%;
         display: inline-flex;
     }
+    .playRole img{
+        max-width: 100%;
+    }
     
+    //角色能力圖
     .abilityBlock{
         position: relative;
         display: block;
-        width: 200px;
-        margin: 0 50px 0 0 ; 
+        width: 15%;
+        border: 1px solid red;
     }
     .ability{
         position: absolute;
         bottom: 0;
-        width: 200px;
+        width: 100%;
         margin: 20px 0;
         text-align: center;
-        
+    }
+    .abilityImg{
+        max-width: 100%;
     }
     .abilityDescribe{
         width: 100%;
@@ -514,13 +524,15 @@
         flex-grow: 1;
     }
 
+    //選擇裝備
     .equipList {
         display: flex;
         position: relative;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        width: 510px;
+        width: 45%;
         margin: 50px 0;
+        overflow: hidden;
     }
 
         
@@ -565,8 +577,8 @@
 
     .bubbleBackground{
         position: relative;
-        width: 130px;
-        height: 130px;
+        width: 30%;
+        height: 100%;
         display: block;
         text-align: center;
         background-image: url("../img/game/bubbleBackground.png");
@@ -589,7 +601,7 @@
     }
     
     .equip img {
-        width: auto;
+        max-width: 100%;
     }
     
     
@@ -701,11 +713,14 @@
     }
     
     .scoreDescribe {
-        font-size: 60px;
-        color: White;
+        font-size: 30px;
+        color: $keyWhite;
         margin: 10px;
+        font-weight: 500;
     }
-    
+    .yellow{
+        color: #FFE153;
+    }
     .resortRole {
         position: absolute;
         left: 0;
