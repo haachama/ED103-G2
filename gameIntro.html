@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>下潛遊戲</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/game.css">
@@ -51,8 +52,9 @@
         <div class="changeRole">
             <div class="choseRole">
                 <h2>選擇角色/組合裝備</h2>
-                <p class="chose">您僅有50元，每種裝備最多購買一款，組合出你想要的能力吧！</p>
+                <p class="chose">用50元搭配出最棒的能力吧！(每種裝備限購一款)</p>
             </div>
+            <div class="margin">
             <div class="changeRoleBtnBlock">
                 <button class="changeRoleBtn">
                     <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-caret-left" fill="#fefefe" xmlns="http://www.w3.org/2000/svg">
@@ -60,8 +62,9 @@
                     </svg>
                 </button>
             </div>
+
             <div class="playRole">
-                <img src="./img/game/greenRole.png">
+                <img class="role" src="./img/game/greenRole.png">
                 <div class="eye">
                     <!-- <img src="./img/mask10.png"> -->
                 </div>
@@ -72,20 +75,22 @@
                     <!-- <img src="./img/shoe20.png"> -->
                 </div>
             </div>
+
             <div class="changeRoleBtnBlock">
                 <button class="changeRoleBtn">
                     <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-caret-right" fill="#fefefe" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M6 12.796L11.481 8 6 3.204v9.592zm.659.753l5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
                     </svg>
                 </button>
+            </div>
             </div> 
         </div>            
 
-
+        <div class="oneHundred"></div>
         <div class="abilityBlock">
             <div class="ability">
                 <p>速度</p>
-                <img src="./img/game/ability.png" alt="">
+                <img class="abilityImg" src="./img/game/ability.png" alt="">
                 <!-- 之後換成canvas -->
                 <div class="abilityDescribe">
                     <p>體力</p>
@@ -94,13 +99,14 @@
                 </div>
             </div>
         </div>
-
+                
         <div class="equipList">
             <div class="abilityDescribe">
                 <div class="flexGrow"></div>
                 <h3 class="totalPrice">$50</h3>
             </div>
             <div class="maskList">
+                <div class="flexGrow"></div>
                 <div class="equipDescribeBlock">
                     <h4>面鏡:</h4>
                 </div>
@@ -128,8 +134,10 @@
                         <h4 >$40</h4>
                     </div>
                 </div>
+                <div class="flexGrow"></div>
             </div>
             <div class="airList">
+                <div class="flexGrow"></div>
                 <div class="equipDescribeBlock">
                     <h4>氣瓶:</h4>
                 </div>
@@ -157,8 +165,10 @@
                         <h4 >$40</h4>
                     </div>
                 </div>
+                <div class="flexGrow"></div>
             </div>
             <div class="maskList">
+                <div class="flexGrow"></div>
                 <div class="equipDescribeBlock">
                     <h4>蛙鞋:</h4>
                 </div>
@@ -186,13 +196,14 @@
                         <h4 >$40</h4>
                     </div>
                 </div>
+                <div class="flexGrow"></div>
             </div>
         </div>
     </div>
 
     
 
-    <div class="rule" id="ruleD" style="display: none;">
+    <div class="rule" id="ruleD" >
         <button id="rulebtnX" class="ruleBtnX">X</button>
         <h3>遊戲規則</h3>
         <p class="pRule">選擇你喜歡的角色，在有限金額內搭配最適合的裝備。閃避各種障礙物，盡可能生存下去，並獲得紅利點數吧！<br>
