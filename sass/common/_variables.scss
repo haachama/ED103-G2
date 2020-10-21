@@ -9,6 +9,26 @@ $en: "Tahoma", sans-serif;
 $zh: "微軟正黑體", sans-serif;
 $baseFz: 16px;
 
+//===========coco的變數 10.17
+$spotFontColor: #a5a5a5;
+$spotBnPaddingRL: 30px;
+$spotBnPaddingTB: 50px;
+$spotPadding: 10px;
+$spotMargin: 20px;
+$spotImgMargin: 5px;
+
+$spotareaW: 90vw;
+$spotRightW:  $spotareaW * 0.35; 
+$spotLeftW:  $spotareaW * 0.63; 
+$spotAnimalW: $spotareaW*0.9;
+
+$lineH: 30px;
+$memimgW: 40px;
+
+$rwdSpotMargin: $spotMargin *0.5;
+$rwdSpotPadding: $spotMargin *0.5;
+$rwdLineH: $lineH - 10px;
+
 
 
 

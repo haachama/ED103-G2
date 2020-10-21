@@ -1,0 +1,1561 @@
+@import "../common/variables";
+@import "../common/mixin";
+/*========潛點頁面樣式開始 coco 10.17=======*/
+
+//第一頁－所有的共同屬性
+.spotheader{
+    position: fixed;
+    width: 100vw;
+    margin: 0 auto;
+    z-index: 99999;
+}
+
+.spotMain{
+    // border: 1px solid red;
+    color: $keyWhite;
+    width: 100vw;
+
+    section{
+        // border: 1px solid red;
+        width: 100vw;
+        @include margin-auto(0);
+        margin-bottom: $spotMargin; 
+    }
+
+    .spotBannerTab{
+        // border: 1px solid rgb(54, 182, 15);
+        background-image: url("../img/spot/spotBanner_1-1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+}
+
+
+//第一部分
+.spotContents{
+    // border: 1px solid lawngreen;
+    width: $spotareaW;
+    @include margin-auto(0);
+    .spotarea{
+        // border: 1px solid purple;
+        width: 100%;
+        padding-top: $spotBnPaddingTB + 40;
+        @include margin-auto(0);
+        margin-top: 80px;
+        font-size: 0;
+        //頁籤功能
+        display: none;
+    }
+
+    .spotBlock{
+        // background-color: rgb(120, 104, 190);
+        display: inline-block;
+        vertical-align: top;
+        // padding-top: $spotBnPaddingTB;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .spotRight{
+        // border: 1px solid yellow;
+        width: $spotRightW;
+        padding-top: $spotPadding+10;
+        >h5{
+            font-size: $baseFz;
+            line-height: $lineH+10;
+            margin-bottom: $spotMargin;
+            color: $transparentWhite;
+        }
+        .spotRightblock{
+            // border: 1px solid yellow;
+            padding: $spotPadding 0;
+            font-size: $baseFz;
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-items: baseline;
+                li{
+                    display: inline-block;
+                }
+            }
+        
+        }
+        .spotWeather{
+            border-radius: 50px;
+            background-color: rgba(254, 254, 254, 0.377);
+            padding: $spotPadding ;
+            margin-bottom: $spotPadding;
+            // display: flex;
+            display: inline-block;
+            ul{
+                font-size: $baseFz - 10;
+                li{
+                    padding: 0 2px;
+                    .fas{
+                        font-size: $baseFz+2 ;
+                        margin: 0 2px;
+                    }
+                }
+            }
+        }
+        .spotData{
+            ul{
+                li{
+                    // border: 1px solid rgb(252, 145, 6);
+                    font-size: $baseFz - 10;
+                    display: inline-block;
+                    padding: 0 $spotPadding 0 2px ;
+                    color: $transparentWhite;
+                }
+                .spotDataNum{
+                    font-size: $baseFz + 10 ;
+                    padding-right: 0;
+                    color: $keyWhite;
+                }
+            }
+        }
+        .spotHere{
+            color: $transparentWhite;
+            ul{
+                // border: 1px solid rgb(252, 145, 6);
+                height: $memimgW;
+                display: inline-block;
+                vertical-align: top;
+                li{
+                    width: $memimgW;
+                    display: inline-block;                        
+                    align-items: center;
+
+                    img{
+                        display: inline-block;
+                        width: 100%;
+                        border-radius: 50%;
+                    }
+                }
+            }        
+            p{
+                // border: 1px solid rgb(252, 145, 6);
+                display: inline-flex; 
+                align-items: center;
+                line-height: $memimgW;
+            } 
+        }
+        .spotMain{
+            border: 0;
+            display: block;
+            width: 100%;
+            p{
+                display: inline-block;
+                color: $keyWhite;                
+                width: 100%;
+                line-height: $lineH;
+                margin: 0;
+                font-size: $baseFz;
+            }
+        }
+        .spotBtn.bubbleBtn{
+            padding: $spotPadding + 30 0;
+        }
+    }
+
+    .spotLeft{
+        // border: 1px solid rgb(252, 145, 6);
+        width: $spotLeftW;
+        padding: $spotPadding,$spotBnPaddingRL;
+        .spotLeftTop{
+            a{
+                // border: 1px solid rgb(252, 145, 6);
+                width: 50%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .spotLeftBottom{
+            a{
+                // border: 1px solid rgb(252, 145, 6);
+                flex: 3;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .spotLeftImage{
+            // border: 1px solid rgb(17, 216, 67);
+            display: flex;
+            width: $spotLeftW;
+            a{
+                // border: 1px solid rgb(216, 17, 183);
+                display: block;
+                width: 50%;
+                margin: $spotImgMargin $spotImgMargin 0 0;
+                overflow: hidden;
+                font-size: 0;
+                
+                //嘗試動畫效果
+                .spotLeftImageAd {
+                    font-size: 0;
+                    // border: 1px solid rgb(216, 17, 183);
+                    width: 100%;
+                    position: relative;
+                    
+                    span{
+                        // background-color:  rgba(254, 254, 254, 0.377);
+                        background-color: $keyBlue;
+                        border-radius: 0 0 10px 0;
+                        font-size: $baseFz - 5;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        padding: $spotPadding;
+                        color: $transparentWhite;
+                        
+                    }
+                }
+                .slider_container {
+                    width: 100%;
+                    font-size: 0;
+                    margin: auto;
+                    position: relative;
+                    .sw{
+                        img{
+                            max-width: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+                
+                &:hover .slider_container .sw {
+                    position: absolute;
+                    width: 100%;
+                    opacity: 0;
+                    animation-name: gradient;
+                    animation-duration: 4s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+        
+                }
+                &:hover span{
+                    color: $keyWhite;
+                }
+
+                @keyframes gradient {
+                    0% {
+                        opacity: 1;
+                        filter: blur(0px);
+                        transform: scale(1);
+                    }
+                
+                    20% {
+                        opacity: 1;
+                        filter: blur(0px);
+                        transform: scale(1);
+                    }
+                
+                    25% {
+                        opacity: 0;
+                        filter: blur(10px);
+                        transform: scale(1.1);
+                    }
+                
+                    95% {
+                        opacity: 0;
+                        filter: blur(10px);
+                        transform: scale(0.9);
+                    }
+                
+                    100% {
+                        opacity: 1;
+                        filter: blur(0px);
+                        transform: scale(1);
+                    }
+                }
+                .slider_container .sw:first-child {
+                    animation-delay: -0.75s;
+                }
+                
+                .slider_container .sw:nth-child(2) {
+                    animation-delay: -3.75s;
+                }
+                
+                .slider_container .sw:nth-child(3) {
+                    animation-delay: -2.75s;
+                }
+                
+                .slider_container .sw:last-child {
+                    animation-delay: -1.75s;
+                }
+                
+                .slider_container .sw:nth-child(2),
+                .slider_container .sw:nth-child(3),
+                .slider_container .sw:last-child {
+                    opacity: 1;
+                    height: 0;
+                }
+                img{
+                    width: 100%;
+                }
+                
+            }
+
+        }
+    }
+    
+}
+.spotListBlock{
+    // border: 1px solid $transparentWhite;
+    .spotList{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        // border-top: 1px solid $transparentWhite;
+        li{
+            flex: 5;
+            // border: 1px solid rgba(255, 255, 255, 0.253);
+            border-top: 0;
+            text-align: center;
+            a{
+                display: block;
+                margin: 0 auto;
+                font-size: $baseFz;
+                color: $spotFontColor;
+                padding: $spotPadding+40 $spotPadding $spotPadding+30 $spotPadding;
+                &:hover{
+                    color: $keyWhite;
+
+                }
+            }
+        }
+        & li:first-child {
+            border-left: 0;
+        }        
+    }
+}
+//=====頁籤功能
+//頁籤及頁面內容
+.spotarea.-iAmHere{
+    display: block;
+    margin: 0 auto;
+}
+.spotList{
+    li{    
+        border-top: 0;
+        a.-iAmHere{
+            color: $keyWhite;
+            border-bottom: 2px solid $transparentWhite;
+        }
+    }
+}
+
+//－－－－－第二部分&第三共用地方
+.pushBlock{
+    padding: $spotBnPaddingTB $spotBnPaddingRL;
+
+    // 標題
+    .spotPushBlock{
+        // border: 1px solid green;
+        width: $spotareaW;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: $spotPadding;
+        text-align: center;
+        &:first-child{
+            // border-bottom: 1px solid $transparentWhite;
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            margin: 0 auto;
+        }
+        
+        .spotPush{
+            // border: 1px solid black;
+            width: 350px;
+            max-width: 350px;
+            border-radius: 5px;
+            // overflow: hidden;
+            margin: $spotMargin auto;
+        }
+        //按鈕
+        .spotNewbtn{
+            // border: 1px solid black;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}
+//－－－－－第二 第三部分共用結束
+
+//嘉惠的日誌卡片
+
+.spotPush {
+    a {
+        .imgContent {
+            // border: 1px solid red;
+            width: 100%;
+            position: relative;
+
+            .imgSolid {
+                // border: 1px solid green;
+                width: 100%;
+                img{
+                    vertical-align: top;
+                }
+            }
+
+            .diaryTitleA {
+                // border: 1px solid purple;
+                position: absolute;
+                top: 0;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 15px;
+
+                .diaryTitleFlex {
+                    // border: 1px solid gold;
+                    display: flex;
+                    align-items: center;
+
+                    .userLogo {
+                        // border: 1px solid olivedrab;
+                        width: 40px;
+                        border-radius: 90px;
+                        overflow: hidden;
+
+                        img {
+                            vertical-align: top;
+                        }
+                    }
+
+                    .userName {
+                        // border: 1px solid yellow;
+                        padding-left: 10px;
+                        color: $keyWhite;
+                    }
+                }
+
+                .userText {
+                    // border: 1px solid pink;
+                    color: $keyWhite;
+                }
+            }
+
+            .diaryTitleB {
+                // border: 1px solid purple;
+                position: absolute;
+                bottom: 0;
+
+                .diaryTitleText {
+                    // border: 1px solid grey;
+                    padding: 0px 15px 15px 15px;
+                    color: $keyWhite;
+                }
+
+                .diaryTitleDate {
+                    // border: 1px solid greenyellow;
+                    padding: 0px 15px 15px 15px;
+                    color: $keyWhite;
+                }
+            }
+        }
+    }
+
+    //svg 或 chart.js
+    .lineSolid {
+        // border: 1px solid gray;
+        background-color: $keyBlack;
+        width: 100%;
+        height: 70px;
+        color: $keyWhite;
+    }
+
+    // 卡片文字內容
+    .diaryText {
+        // border: 1px solid black;
+        width: 100%;
+        padding: 10px;
+        background-color: $keyWhite;
+
+        .diaryTextData {
+            // border: 1px solid yellowgreen;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+
+            div:first-child p:nth-child(2) span:nth-child(1) {
+                color: #467500;
+                font-size: 32px; //h4 *1.5
+            }
+
+            div {
+
+                // border: 1px solid purple;
+                p:nth-child(1) {
+                    // border: 1px solid blue;
+                    color: $keyBlue;
+                    font-size: 10px;
+                    text-align: center;
+                    padding: 15px 0px 5px 0px;
+                }
+
+                p:nth-child(2) {
+                    // border: 1px solid blue;
+                    color: $keyBlue;
+                    text-align: center;
+                    padding: 10px 0px;
+
+                    span:nth-child(1) {
+                        // border: 1px solid blue;
+                        font-size: 32px;
+                        color: $keyBlue;
+                    }
+
+                    span:nth-child(2) {
+                        // border: 1px solid orange;
+                        font-size: $baseFz; //16px
+                        color: $keyBlue;
+                    }
+                }
+            }
+        }
+    }
+
+    .diaryTextP {
+        // border: 1px solid orange;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .diaryTextPP {
+            // border: 1px solid green;
+            padding: 10px 0px 10px 10px;
+            width: 100%;
+            overflow: hidden;
+            color: $keyBlue;
+        }
+
+        i {
+            // border: 1px solid blue;
+            color: $keyBlue;
+        }
+    }
+}
+//第三部分 瀏覽課程
+//課程卡片
+.spotPush{
+    a{
+        color: $keyBlue;
+        text-align: left;
+        .spotPushTital{
+            // border: 1px solid yellow;
+            background-image: url("../img/spot/spotGiLittle-02.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 200px;
+            >h4{
+                padding: $spotPadding;
+                color: $keyWhite;
+
+            }
+        }
+    
+        .spotPushMain{
+            // border: 1px solid orange;
+            background-color: $keyWhite;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        
+            .spotPushListText{
+                width: 100%;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                
+                h4{
+                    // padding: $spotPadding 0;
+                    line-height: $lineH;
+        
+                }
+                h5{
+                    font-size: $baseFz - 10;
+                    // padding: 0 0 $spotPadding 0;
+
+                }
+            }
+            &:last-child{
+                // border: 1px solid green;
+                text-align: center;
+                padding: $spotPadding;
+                img{
+                    width: $memimgW*2;
+                    border-radius: 50%;
+                    padding: $spotPadding;
+                }
+    
+            }
+        }
+
+    }
+        
+    
+}
+/*========潛點頁面樣式結束 cooc 10.17=======*/
+
+
+
+/*========潛點內頁樣式開始 cooc 10.18=======*/
+
+.spotRefre_Main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+//網頁版左側
+.spotRefre_left{
+    // border: 1px solid rgb(33, 12, 153);
+    width: 60%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-right: 0;
+}
+//網頁版左側－踩點的人
+.spotRefre_here{
+    // border: 1px solid orange;
+    //潛點照片&潛點標題
+    .spotRefre_Contain{
+        display: block;
+        width: 100%;
+        h2{
+            color: $keyWhite;
+            padding: $spotBnPaddingRL;
+        }
+        h3{
+            display: none;
+        }
+        .spotRefreImg{
+            width: 90%;
+            margin: 0 auto;
+            // border: 1px solid orange;
+            img{
+                width: 100%;
+            }
+        }
+        h4{
+            color: $keyWhite;
+            padding: $spotBnPaddingRL;
+        }
+    }
+    h3{
+        color: $keyWhite;
+        padding: $spotBnPaddingRL;
+    }
+    .spotRefre_left_Block{
+        width: 90%;
+        margin: 0 auto;
+        .spotHereList{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .hereList{
+                flex: 1;
+                // position: relative;
+                // border: 1px solid white;
+                ul{
+                    // border: 1px solid greenyellow;
+                    display: inline-block;
+                    li{
+                        width: $memimgW*1.8;
+                        display: inline-block;
+                        img{
+                            width: 100%;
+                            border-radius: 50%;
+                        }
+                        &:last-child{
+                            position: relative;
+                            &::after{
+                                content: "+6";
+                                display: block;
+                                position: absolute;
+                                clear: both;
+                                right: -20px;
+                                bottom: 0;
+                                width: $memimgW*0.5;
+                                height: $memimgW*0.5;
+                                border-radius: 50%;
+                                padding: $spotPadding;
+                                color: $keyGray;
+                                background-color: rgb(93, 92, 90);
+                                &:hover{
+                                    background-color: $keyGray;
+                                    cursor: pointer;
+                                }
+                                  
+                            }
+                        }
+                    }
+                }  
+            }
+        }
+    }
+    .hereAddBtn{
+        width: $memimgW*2;
+        height: $memimgW*2;
+        border: 1px solid $keyWhite;
+        border-radius: 60%;
+        background-color: transparent;
+        padding: 20px;
+        text-align: center;
+        color: $keyWhite;
+        &:hover{
+            background-color: $keyGray;
+            border: 1px solid $keyGray;
+            cursor: pointer;
+    
+        }
+    
+    }
+}
+    
+//網頁版右邊
+.spotRefre_right{
+    padding: 100px 30px;
+    // border: 1px solid rgb(33, 12, 153);
+    width: 40%;
+    // max-width: 400px;
+    margin: 0 auto;
+    margin-left: 0;
+
+}
+//網頁版右邊－潛點介紹
+.spotRefreIntor{
+    width: 100%;
+    color: $keyWhite;
+    padding: $spotPadding;
+    // background-color: blue;
+    h3{
+        padding-bottom: $spotPadding;
+    }
+    p{
+        // border: 1px solid orange;
+        line-height: $lineH;
+        padding: $spotPadding 0 ;
+        margin-bottom: $spotMargin*3;
+        font-weight: lighter;
+    }
+}
+
+
+//內頁頁籤-rwd
+.spotRefreTab_rwd{
+    display: block;
+    width: 100%;
+    ul{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        align-items: center;
+        li{
+            display: flex;
+            flex: 5;
+            justify-content: center;
+            text-align: center;
+            border: 0.5px solid $transparentWhite;
+            // align-items: center;
+            // padding: $rwdSpotPadding 0;
+            a{
+                padding: $rwdSpotPadding*3 0;
+                width: 100%;
+                color: $keyWhite;
+                // display: block;
+                font-size: $baseFz;
+                &.spotShow{
+                    background-color: $transparentWhite;
+                    color: $keyBlue;
+                }
+            }
+        }
+    }
+}
+//潛點內容－rwd
+.spotRefre_Contain_Tital_rwd{
+    display: block;
+    width: 100%;
+    text-align: center;
+    // border: 1px solid red;
+    h2{
+        color: $keyWhite;
+        line-height: $lineH*2;
+    }
+    h3{
+        color: $keyWhite;
+        line-height: $lineH*2;
+    }
+    .spotRefreImg{
+        width: 100%;
+        display: block;
+    }
+}
+//spotRefre_Contain_Tital_rwd
+.spotRefre_Contain_Tital_rwd{
+    display: none;
+}
+//rwd才出現
+.spotRefre_weather{
+    display: none;
+}
+.spotRefreTab_rwd{
+    display: none;
+}
+
+
+//氣象 頁籤
+.spotWeatherTab{
+    color: $keyWhite;
+    .weather_list{
+        font-size: 0;
+        text-align: left;
+        .Weather{
+            // border: 1px solid purple;
+            display: inline-block;
+            border: 1px solid $transparentWhite;
+            overflow: hidden;
+            margin: 0 3px 5px 0;
+            a{
+                display: block;
+                padding: $spotPadding $spotPadding*2;
+                font-size: $baseFz;
+                color: $keyWhite;
+                //頁籤
+                &.-clickNow{
+                    background-color: $transparentWhite;
+                    color: $keyBlue;
+                    border: $transparentWhite;
+                }
+                &:hover{
+                    background-color: $transparentWhite;
+                    color: $keyBlue;
+
+                }
+            }  
+        }
+    }
+    //氣象頁籤
+    .-clickNow{
+        display: inline-block;
+    }
+
+}
+//即時＆未來共用屬性
+.weather_block{
+    border: 1px solid $keyWhite;
+    display: none;
+    width: 100%;
+    max-width: 450px;
+    .weather_block_inside{
+        // border: 1px solid orange;
+        font-size: $baseFz;
+        padding: $spotPadding $spotPadding*2;
+        text-align: left;
+    }
+}
+
+//即時－內容呈現
+.spotWeather{
+    // border: 1px solid orange;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: $spotPadding;
+}
+.spotWeatherText{
+    // border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    &:first-child{
+        flex: 1;
+        padding: $spotPadding 0;
+        text-align: center;
+        h5{
+            margin-top: $spotMargin;
+        }
+    }
+    &:last-child{
+        // flex: 3;
+        width: 75%;
+        flex-wrap: wrap;
+        padding-top: $spotPadding*1.5;
+        >div{
+            width: 100%;
+            // border: 1px solid blue;
+            flex-direction: row;
+            display: flex;
+        }
+    }
+}
+.weather_main{
+    flex: 1;                    
+    flex-direction: row;
+    padding: 0 0 $spotPadding 0;
+    >h6{
+        color: $keyWhite;
+        font-weight: lighter;
+        font-size: $baseFz - 2;
+        margin-bottom: $spotMargin - 10;
+    }
+}
+//未來一週－內容呈現
+.spotWeatherfuture{
+    display: block;
+    width: 100%;
+    text-align: left;
+    ul{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        border-bottom: 0.5px solid $keyGray;
+        &:last-child{
+            border-bottom: 0;
+        }
+    }
+    li{
+        flex: 8;
+        justify-self: center;
+        padding: $spotPadding 0;
+
+        .fas{
+            // width: 55px;
+            padding: 0 10px;
+        }
+    }
+}
+//氣象資料出處
+.weatherDataFrom{
+    text-align: left;
+    color: $transparentWhite;
+    font-size: $baseFz - 5;
+    a{
+        text-decoration: underline;
+        color: $transparentWhite;
+    }
+    p{
+        padding-left: 20px;
+    }
+}
+
+//你將會看到
+.spotRefre_Animal{
+    padding-bottom: $spotBnPaddingTB;
+    // border: 1px solid greenyellow;
+    width: 100%;
+    background: linear-gradient(to bottom, transparent 52%, $keyBlack 30px);
+    // padding-bottom: $spotPadding*5;
+    h3{
+        text-align: center;
+        padding: $spotBnPaddingTB 0;
+        color: $keyWhite;
+    }
+    //生物照片
+    .spotAnimal{
+        @include margin-auto(0);
+        // border: 1px solid greenyellow;
+        font-size: 0;
+        >img{
+            width: 25%;
+            
+        }
+        &:last-child{
+            width: $spotAnimalW;
+            
+        }
+    }
+}
+    
+
+//留言
+.spotRefre_Msg{
+    // border: 1px solid greenyellow;
+    width: 100%;
+    color: $keyWhite;
+    padding: $spotBnPaddingTB $spotBnPaddingRL*2;
+    h3{
+        text-align: center;
+        padding: $spotPadding 0;
+
+    }
+    //所有留言
+    .spotMsgBlock{
+        // border: 1px solid red;
+        width: 80%;
+        margin: 0 auto;
+        .spotMsg{
+            // border: 1px solid red;
+            display: flex;
+            flex-direction: row;
+            font-size: $baseFz;
+            padding: $spotPadding;
+            border-bottom: 1px solid $keyGray;
+            
+            img{
+                width: $memimgW*2;
+                height: $memimgW*2;
+                border-radius: 50%;
+                padding: $spotPadding;
+            }
+            >div{
+                // border: 1px solid greenyellow;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .spotMsgText{
+                    // border: 1px solid orange;
+                    padding: $spotPadding;
+                    display: flex;
+                    flex-direction: row;
+                    align-content: center;
+                    h5{
+                        font-size: $baseFz;
+                        color: $transparentWhite;
+                        // border: 1px solid greenyellow;
+                        padding: $spotPadding;
+                    // line-height: $lineH;
+                    }
+                    span{
+                        font-size: $baseFz*0.5;
+                        color: $transparentWhite;
+                    }
+                    
+                }
+                &:nth-child(2){
+                    width: 80%;
+                    display: flex;
+                    padding: $spotPadding;
+                    // border: 1px solid greenyellow;
+                    p{
+                        display: inline-block;
+                        text-align: right;
+                        color: $transparentWhite;
+                        font-size: $baseFz;
+                        padding-left: $spotPadding; 
+                        margin: 0 auto;  
+                        // border: 1px solid greenyellow;
+
+                    }
+                }
+                &:nth-child(3){
+                    // background-color: rebeccapurple;
+                    flex: 2;
+                    text-align: right;
+                    font-size: $baseFz;
+                }
+                i{
+                    color: $transparentWhite;
+                    &:hover{
+                        color: $keyWhite;
+                        cursor: pointer;
+                    }
+                }
+                &:last-child{
+                    font-size: 0;
+                    i{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        .spotMsgMoreBtn{
+            // color: $keyWhite;
+            margin: $rwdSpotMargin*2;
+            text-align: center;
+            
+        }
+    }  
+
+    //檢舉留言
+    .reportMsg{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: $transparentWhite;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 1s;
+        &.-sentRepor{
+            opacity: 1;
+            z-index: 1;
+        }
+        &.-opacity-zero{
+            opacity: 0;
+        }
+        > article{
+            background-color: white;
+            width: 80%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ddd;
+            padding: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: $baseFz;
+            h3{
+                font-size: $baseFz;
+                color: $keyBlue;
+
+            }
+            form{
+                font-size: $baseFz;
+                // border: 1px solid black;
+                text-align: center;
+                color: $keyBlue;
+                width: 100%;
+                display: flex;
+                input{
+                    border: 1px solid black;
+                    text-align: left;
+                    display: inline-block;
+                }
+                
+            }
+            .reportMsgBtn{
+                margin: 0 auto;
+                text-align: center;
+                margin: 20px auto;
+
+            }
+            .reportMsg_close{
+                display: block;
+                margin-right: 0;
+                margin-left: auto;
+                text-align: right;
+                border: none;
+
+            }
+        }
+    }
+
+    
+
+
+    //送出留言
+    .spotMsgSend{
+        // border: 1px solid blue;
+        margin: 0 auto;
+        width: 80%;
+        padding: $spotPadding;
+        display: flex;
+
+        >img{
+            height: $memimgW*2;
+            width: $memimgW*2; 
+            border-radius: 50%; 
+        }
+    
+        .spotMsgSendText{
+            // border: 1px solid greenyellow;
+            position: relative;
+            // background-color: rebeccapurple;
+            display: inline-block;
+            vertical-align: top;
+            width: 90%;
+            margin: 0 auto;
+            margin-left: $spotMargin;
+            padding: $rwdSpotPadding 0;
+
+            textarea{
+                border: 1px solid $keyWhite;
+                border-radius: 5px;
+                // width: 700px;
+                width: 100%;
+                resize: none;
+                height: 50px;
+                font-size: $baseFz*0.8;
+            }
+            .fa-location-arrow{
+                color: $spotFontColor;
+                position: absolute;
+                bottom: 30%;
+                right: 10px;
+                font-size: $baseFz;
+                &:hover{
+                    color: $keyBlue;
+                }
+        
+            }
+        }
+    }
+}
+//---------------------
+
+
+@media all and (max-width: 1200px){
+    .spotListBlock ul.spotList{
+        li{
+            a{
+                // border: 1px solid yellow;
+                padding-top: $spotPadding;
+            }
+        }
+    }
+    //潛點內頁
+    //no
+}
+@media all and (max-width: 991px){
+
+    .spotContents{
+        .spotRight{
+            // border: 1px solid blueviolet;
+            padding: 0;
+            margin: 0;
+            padding: $rwdSpotPadding;
+            width: 35%;
+            >h5{
+                margin: 0;
+            }
+            .spotWeather{
+                .spotRightBlockList{
+                    li{
+                        i{
+                            font-size: $baseFz - 10;
+                        }
+                        &:first-child{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .spotData{
+                padding-left: $rwdSpotPadding;
+            }
+            .spotHere {
+                padding: 0;
+                p{
+                    line-height: $rwdLineH;
+                }
+            }
+            .spotBtn.bubbleBtn {
+                padding: $spotPadding 0;
+            }
+        }
+    }
+
+
+    //==============內頁===============
+    //右邊的文字修改
+    .spotRefre_right{
+        padding-left: 0;
+        padding-right: 5px;
+        .spotRefreIntor{
+            p{
+                margin-bottom: 0;
+            }
+        }
+    }
+    //天氣------------------------------
+    .spotWeatherTab{
+        .weather_block{
+            width: 100%;
+            .weather_block_inside{
+                // border: 1px solid orange;
+                font-size: $baseFz;
+                padding: $spotPadding $spotPadding*2;
+                text-align: left;
+                overflow: scroll;
+            }    
+        }
+    }
+    //即時氣象
+    .spotWeather{
+        // border: 1px solid orange;
+        width: 100%;
+        overflow: scroll;
+        .spotWeatherText{
+            // overflow: scroll;
+
+            &:first-child{
+                // border: 1px solid black;
+                flex: 1;
+                padding: $spotPadding 0;
+                text-align: center;
+                h5{
+                    margin-top: $spotMargin;
+                }
+            }
+            &:last-child{
+                width: 100%;
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding-top: $spotPadding*1.5;
+                >div{
+                    // border: 1px solid black;
+                    width: 100%;
+                    flex-direction: row;
+                    display: flex;
+                }
+            }
+            .weather_main{
+                padding-left: 5px;
+                display: block;
+                width: 80px;
+            }
+        }
+    }
+    //未來一週－內容呈現
+    .spotWeatherfuture{
+        > ul{
+            display: flex;
+            flex-direction: row;
+            white-space: nowrap;
+            > li{
+                display: flex;
+                width: 80px;
+                padding: 10px 30px;
+                .fas{
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 768px){
+    .spotContents{
+        text-align: center;
+        .spotRight{
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        h2{
+            text-align: center;
+        }
+        h5{
+            text-align: center;
+        }
+        p{
+            justify-content: center;
+            display: block;
+        }
+        .spotRightblock{
+            padding: $spotPadding 0;
+            text-align: center;
+            margin: $spotMargin auto;
+            // border: 1px solid yellow;
+            flex: none;
+
+            ul.spotRightBlockList{
+                text-align: center;
+                display: block;
+                margin: auto;
+            }
+        }
+        .spotData{
+
+        }
+        .spotWeather{
+            width: 60%;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .spotLeft{
+            // border: 1px solid yellow;
+            margin: 5% auto;
+            width: 100%;
+            .spotLeftImage{
+                width: 100%;
+                a .spotLeftImageAd{  
+                    span{
+                        font-size: $baseFz*0.5;
+                        padding: $rwdSpotPadding*0.5;
+                    }
+                }
+            }
+        }
+    }
+
+
+//==============內頁===============
+    //大尺寸 右邊
+    .spotRefre_right{
+        padding-bottom: 0;
+        // border: 1px solid rgb(33, 12, 153);
+        width: 40%;
+        margin: 0;
+    }
+    //潛點介紹
+    .spotRefreIntor{
+        width: 100%;
+        color: $keyWhite;
+        padding: 0;
+        margin-bottom: $spotMargin;
+        h3{
+            padding-bottom: $spotPadding;
+        }
+        p{
+            // border: 1px solid orange;
+            line-height: $lineH*0.8;
+            font-weight: lighter;
+        }
+    }
+    //留言------------------------------
+    .spotRefre_Msg{
+        padding: $spotBnPaddingTB $spotBnPaddingRL;
+        // border: 1px solid greenyellow;
+        .spotMsgBlock{
+            width: 100%;
+            margin: 0 auto;
+            .spotMsg{
+                .spotMsgText{
+                    >div{
+                        h5{
+                            padding: $spotPadding;
+                        }
+                        > span{
+                            font-size: $baseFz*0.2;
+                            color: $transparentWhite;
+                        }
+                    }
+                    &:last-child{
+                        font-size: 0;
+                    }
+                }
+            }
+        }  
+        
+    }
+}
+@media all and (max-width: 576px){
+   
+//==============內頁===============
+    //內頁頁籤
+    .spotRefreTab_rwd{
+        display: block;
+    }
+    //rwd出現
+    .spotRefre_weather{
+        display: block;
+    }
+    .spotRefre_Contain_Tital_rwd{
+        display: block;
+    }
+
+    .spotRefre_Main .spotRefre_here,
+    .spotRefre_Main .spotRefre_intor,
+    .spotRefre_Main .spotRefre_right,
+    .spotRefre_Main .spotRefre_Animal,
+    .spotRefre_Main .spotRefre_Msg{
+        display: none;
+    }
+
+    .spotRefre_Main .spotShow{
+        display:block;
+    }
+    .spotRefre_Main{
+        .spotRefre_here{
+            // border: 1px solid red;
+            width: 100%;
+            padding: $spotPadding;
+            h3{
+                text-align: center;
+            }
+            .spotRefre_Contain_Tital{
+                display: none;
+            }
+        }
+        .spotRefre_intor{
+            width: 100%;
+            padding: $spotPadding;
+            >div{
+                width:90%;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                h3{
+                    display: none;
+                }
+            }
+            .spotWeatherTab{
+                display: none;
+            }
+            
+        }
+        
+        .spotRefre_weather{
+            width: 100%;
+            // border: 1px solid red;
+            padding: $spotPadding;
+            text-align: center;
+            .spotWeatherTab{
+                width: 90%;
+                margin: 0 auto;
+            }
+            .weatherDataFrom{
+                text-align: center;
+            }
+
+        }
+        .spotRefre_Animal{
+            width: 100%;
+            .spotAnimal{
+                width: 80%;
+                margin: 0 auto;
+                img{
+                    width: 50%;
+                }
+            }
+        }
+        .spotRefre_Msg{
+            width: 100%;
+            padding: $spotPadding $spotPadding;
+            .spotMsgBlock{
+                // border: 1px solid red;
+                width: 100%; 
+            }
+        }
+    }
+
+
+}
+@media all and (max-width: 375px){
+
+    //==============內頁===============
+    //你將會看到------------------------------
+    .spotRefre_Main{
+        .spotRefre_here{
+            width: 100%;
+        }
+        .spotRefre_Animal{
+            // border: 1px solid red;
+            width: 100%;
+            background: linear-gradient(to bottom, transparent 70%, $keyBlack 70%);
+            // padding-bottom: $spotPadding*5;
+            h3{
+                text-align: center;
+                padding: $spotBnPaddingTB 0;
+                color: $keyWhite;
+                font-size: $baseFz*1.5;
+            }
+        }
+    }
+}
+
+
+
+
+
+
