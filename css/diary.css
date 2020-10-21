@@ -1,0 +1,1835 @@
+img {
+  width: 100%;
+}
+
+.diary_diaryTitleH3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0px 10px 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 80px auto 80px auto;
+  max-width: 1600px;
+  position: relative;
+}
+
+.diary_diaryTitleH3 h3 {
+  color: #fefefe;
+}
+
+.diary_diaryTitleH3 .button--bubble {
+  left: -50%;
+}
+
+.diary_diaryTitleH3 .button--bubble__effect-container {
+  left: -100%;
+}
+
+.diary_formSelect {
+  margin: 80px auto 150px;
+  max-width: 1600px;
+  padding: 30px 0px 30px 80px;
+  background-color: #16181D;
+  border-radius: 5px;
+}
+
+.diary_formSelect .diarySelect {
+  padding: 15px 0px;
+  color: #fefefe;
+}
+
+.diary_formSelect .diarySelect #diarySelect {
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.diary_formSelect .diveAreaSelect {
+  padding: 15px 0px;
+  color: #fefefe;
+}
+
+.diary_formSelect .diveAreaSelect #diveArea {
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.diaryCenter {
+  max-width: 1600px;
+  margin: 0px auto 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.diaryCenter .diarySolid {
+  width: 350px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0px 20px 20px 20px;
+}
+
+.diaryCenter .diarySolid a .imgContent {
+  width: 100%;
+  position: relative;
+}
+
+.diaryCenter .diarySolid a .imgContent .imgSolid {
+  width: 100%;
+}
+
+.diaryCenter .diarySolid a .imgContent .imgSolid img {
+  vertical-align: top;
+}
+
+.diaryCenter .diarySolid a .imgContent .diaryTitleA {
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 15px;
+}
+
+.diaryCenter .diarySolid a .imgContent .diaryTitleA .diaryTitleFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.diaryCenter .diarySolid a .imgContent .diaryTitleA .diaryTitleFlex .userLogo {
+  width: 50px;
+  border-radius: 90px;
+  overflow: hidden;
+}
+
+.diaryCenter .diarySolid a .imgContent .diaryTitleA .diaryTitleFlex .userLogo img {
+  vertical-align: top;
+}
+
+.diaryCenter .diarySolid a .imgContent .diaryTitleA .diaryTitleFlex .userName {
+  padding-left: 10px;
+  color: #fefefe;
+}
+
+.diaryCenter .diarySolid a .imgContent .diaryTitleA .userText {
+  color: #fefefe;
+}
+
+.diaryCenter .diarySolid a .imgContent .diaryTitleB {
+  position: absolute;
+  bottom: 0;
+}
+
+.diaryCenter .diarySolid a .imgContent .diaryTitleB .diaryTitleText {
+  padding: 0px 15px 15px 15px;
+  color: #fefefe;
+}
+
+.diaryCenter .diarySolid a .imgContent .diaryTitleB .diaryTitleDate {
+  padding: 0px 15px 15px 15px;
+  color: #fefefe;
+}
+
+.diaryCenter .diarySolid .lineSolid {
+  background-color: #16181D;
+  width: 100%;
+  height: 70px;
+  color: #fefefe;
+}
+
+.diaryCenter .diarySolid .diaryText {
+  width: 100%;
+  padding: 10px;
+  background-color: #fefefe;
+}
+
+.diaryCenter .diarySolid .diaryText .diaryTextData {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.diaryCenter .diarySolid .diaryText .diaryTextData div:first-child p:nth-child(2) span:nth-child(1) {
+  color: #467500;
+  font-size: 32px;
+}
+
+.diaryCenter .diarySolid .diaryText .diaryTextData div p:nth-child(1) {
+  color: #073977;
+  font-size: 10px;
+  text-align: center;
+  padding: 15px 0px 5px 0px;
+}
+
+.diaryCenter .diarySolid .diaryText .diaryTextData div p:nth-child(2) {
+  color: #073977;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.diaryCenter .diarySolid .diaryText .diaryTextData div p:nth-child(2) span:nth-child(1) {
+  font-size: 32px;
+  color: #073977;
+}
+
+.diaryCenter .diarySolid .diaryText .diaryTextData div p:nth-child(2) span:nth-child(2) {
+  font-size: 16px;
+  color: #073977;
+}
+
+.diaryCenter .diarySolid .diaryTextP {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.diaryCenter .diarySolid .diaryTextP .diaryTextPP {
+  padding: 10px 0px 10px 10px;
+  width: 100%;
+  overflow: hidden;
+  color: #073977;
+}
+
+.diaryCenter .diarySolid .diaryTextP i {
+  color: #073977;
+}
+
+@media all and (max-width: 1600px) {
+  .diary_diaryTitleH3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 0px 10px 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 80px auto 80px auto;
+    max-width: 1600px;
+    position: relative;
+  }
+  .diary_diaryTitleH3 h3 {
+    color: #fefefe;
+  }
+  .diary_diaryTitleH3 .button--bubble {
+    left: -50%;
+  }
+  .diary_diaryTitleH3 .button--bubble__effect-container {
+    left: -100%;
+  }
+  .diary_formSelect {
+    border: 1px solid blue;
+    margin: 80px auto 150px;
+    width: 90%;
+    padding: 30px 0px 30px 80px;
+    background-color: #16181D;
+    border-radius: 5px;
+  }
+  .diary_formSelect .diarySelect {
+    padding: 15px 0px;
+    color: #fefefe;
+  }
+  .diary_formSelect .diarySelect #diarySelect {
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+    outline: none;
+  }
+  .diary_formSelect .diveAreaSelect {
+    padding: 15px 0px;
+    color: #fefefe;
+  }
+  .diary_formSelect .diveAreaSelect #diveArea {
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+    outline: none;
+  }
+  .diaryCenter {
+    width: 90%;
+    margin: 0px auto 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .diaryCenter .diarySolid {
+    width: 350px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0px 20px 20px 20px;
+  }
+  .diaryCenter .diarySolid a .imgContent {
+    width: 100%;
+    position: relative;
+  }
+  .diaryCenter .diarySolid a .imgContent .imgSolid {
+    width: 100%;
+  }
+  .diaryCenter .diarySolid a .imgContent .imgSolid img {
+    vertical-align: top;
+  }
+  .diaryCenter .diarySolid a .imgContent .diaryTitleA {
+    position: absolute;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px 15px;
+  }
+  .diaryCenter .diarySolid a .imgContent .diaryTitleA .diaryTitleFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .diaryCenter .diarySolid a .imgContent .diaryTitleA .diaryTitleFlex .userLogo {
+    width: 50px;
+    border-radius: 90px;
+    overflow: hidden;
+  }
+  .diaryCenter .diarySolid a .imgContent .diaryTitleA .diaryTitleFlex .userLogo img {
+    vertical-align: top;
+  }
+  .diaryCenter .diarySolid a .imgContent .diaryTitleA .diaryTitleFlex .userName {
+    padding-left: 10px;
+    color: #fefefe;
+  }
+  .diaryCenter .diarySolid a .imgContent .diaryTitleA .userText {
+    color: #fefefe;
+  }
+  .diaryCenter .diarySolid a .imgContent .diaryTitleB {
+    position: absolute;
+    bottom: 0;
+  }
+  .diaryCenter .diarySolid a .imgContent .diaryTitleB .diaryTitleText {
+    padding: 0px 15px 15px 15px;
+    color: #fefefe;
+  }
+  .diaryCenter .diarySolid a .imgContent .diaryTitleB .diaryTitleDate {
+    padding: 0px 15px 15px 15px;
+    color: #fefefe;
+  }
+  .diaryCenter .diarySolid .lineSolid {
+    background-color: #16181D;
+    width: 100%;
+    height: 70px;
+    color: #fefefe;
+  }
+  .diaryCenter .diarySolid .diaryText {
+    width: 100%;
+    padding: 10px;
+    background-color: #fefefe;
+  }
+  .diaryCenter .diarySolid .diaryText .diaryTextData {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .diaryCenter .diarySolid .diaryText .diaryTextData div:first-child p:nth-child(2) span:nth-child(1) {
+    color: #467500;
+    font-size: 32px;
+  }
+  .diaryCenter .diarySolid .diaryText .diaryTextData div p:nth-child(1) {
+    color: #073977;
+    font-size: 10px;
+    text-align: center;
+    padding: 15px 0px 5px 0px;
+  }
+  .diaryCenter .diarySolid .diaryText .diaryTextData div p:nth-child(2) {
+    color: #073977;
+    text-align: center;
+    padding: 10px 0px;
+  }
+  .diaryCenter .diarySolid .diaryText .diaryTextData div p:nth-child(2) span:nth-child(1) {
+    font-size: 32px;
+    color: #073977;
+  }
+  .diaryCenter .diarySolid .diaryText .diaryTextData div p:nth-child(2) span:nth-child(2) {
+    font-size: 16px;
+    color: #073977;
+  }
+  .diaryCenter .diarySolid .diaryTextP {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .diaryCenter .diarySolid .diaryTextP .diaryTextPP {
+    padding: 10px 0px 10px 10px;
+    width: 100%;
+    overflow: hidden;
+    color: #073977;
+  }
+  .diaryCenter .diarySolid .diaryTextP i {
+    color: #073977;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .diary_diaryTitleH3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 0px 10px 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 80px auto 80px auto;
+    max-width: 1600px;
+    position: relative;
+  }
+  .diary_diaryTitleH3 h3 {
+    color: #fefefe;
+  }
+  .diary_diaryTitleH3 .button--bubble {
+    left: -50%;
+  }
+  .diary_diaryTitleH3 .button--bubble__effect-container {
+    left: -100%;
+  }
+  .diary_formSelect {
+    border: 1px solid blue;
+    margin: 80px auto 150px;
+    width: 90%;
+    padding: 30px 0px 30px 80px;
+    background-color: #16181D;
+    border-radius: 5px;
+  }
+  .diary_formSelect .diarySelect {
+    padding: 15px 0px;
+    color: #fefefe;
+  }
+  .diary_formSelect .diarySelect #diarySelect {
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+    outline: none;
+  }
+  .diary_formSelect .diveAreaSelect {
+    padding: 15px 0px;
+    color: #fefefe;
+  }
+  .diary_formSelect .diveAreaSelect #diveArea {
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+    outline: none;
+  }
+  .diaryCenter {
+    width: 90%;
+    margin: 0px auto 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .diaryCenter .diarySolid {
+    width: 350px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0px 20px 20px 20px;
+  }
+  .diaryCenter .diarySolid a .imgContent {
+    width: 100%;
+    position: relative;
+  }
+  .diaryCenter .diarySolid a .imgContent .imgSolid {
+    width: 100%;
+  }
+  .diaryCenter .diarySolid a .imgContent .imgSolid img {
+    vertical-align: top;
+  }
+  .diaryCenter .diarySolid a .imgContent .diaryTitleA {
+    position: absolute;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px 15px;
+  }
+  .diaryCenter .diarySolid a .imgContent .diaryTitleA .diaryTitleFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .diaryCenter .diarySolid a .imgContent .diaryTitleA .diaryTitleFlex .userLogo {
+    width: 50px;
+    border-radius: 90px;
+    overflow: hidden;
+  }
+  .diaryCenter .diarySolid a .imgContent .diaryTitleA .diaryTitleFlex .userLogo img {
+    vertical-align: top;
+  }
+  .diaryCenter .diarySolid a .imgContent .diaryTitleA .diaryTitleFlex .userName {
+    padding-left: 10px;
+    color: #fefefe;
+  }
+  .diaryCenter .diarySolid a .imgContent .diaryTitleA .userText {
+    color: #fefefe;
+  }
+  .diaryCenter .diarySolid a .imgContent .diaryTitleB {
+    position: absolute;
+    bottom: 0;
+  }
+  .diaryCenter .diarySolid a .imgContent .diaryTitleB .diaryTitleText {
+    padding: 0px 15px 15px 15px;
+    color: #fefefe;
+  }
+  .diaryCenter .diarySolid a .imgContent .diaryTitleB .diaryTitleDate {
+    padding: 0px 15px 15px 15px;
+    color: #fefefe;
+  }
+  .diaryCenter .diarySolid .lineSolid {
+    background-color: #16181D;
+    width: 100%;
+    height: 70px;
+    color: #fefefe;
+  }
+  .diaryCenter .diarySolid .diaryText {
+    width: 100%;
+    padding: 10px;
+    background-color: #fefefe;
+  }
+  .diaryCenter .diarySolid .diaryText .diaryTextData {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .diaryCenter .diarySolid .diaryText .diaryTextData div:first-child p:nth-child(2) span:nth-child(1) {
+    color: #467500;
+    font-size: 32px;
+  }
+  .diaryCenter .diarySolid .diaryText .diaryTextData div p:nth-child(1) {
+    color: #073977;
+    font-size: 10px;
+    text-align: center;
+    padding: 15px 0px 5px 0px;
+  }
+  .diaryCenter .diarySolid .diaryText .diaryTextData div p:nth-child(2) {
+    color: #073977;
+    text-align: center;
+    padding: 10px 0px;
+  }
+  .diaryCenter .diarySolid .diaryText .diaryTextData div p:nth-child(2) span:nth-child(1) {
+    font-size: 32px;
+    color: #073977;
+  }
+  .diaryCenter .diarySolid .diaryText .diaryTextData div p:nth-child(2) span:nth-child(2) {
+    font-size: 16px;
+    color: #073977;
+  }
+  .diaryCenter .diarySolid .diaryTextP {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .diaryCenter .diarySolid .diaryTextP .diaryTextPP {
+    padding: 10px 0px 10px 10px;
+    width: 100%;
+    overflow: hidden;
+    color: #073977;
+  }
+  .diaryCenter .diarySolid .diaryTextP i {
+    color: #073977;
+  }
+}
+
+.diaryInsidePage {
+  margin: 0 auto;
+  max-width: 1600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 80px auto;
+}
+
+.diaryInsidePage .pageLeft {
+  padding: 10px;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
+.diaryInsidePage .pageLeft .pageLeftImg img {
+  vertical-align: top;
+}
+
+.diaryInsidePage .pageLeft .pageLeftLine {
+  border: 1px solid black;
+  height: 150px;
+}
+
+.diaryInsidePage .pageRight {
+  padding: 10px;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
+.diaryInsidePage .pageRight hr {
+  border: 0;
+  background-color: rgba(254, 254, 254, 0.75);
+  height: 1px;
+}
+
+.diaryInsidePage .pageRight .share {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-right: 5px;
+  padding-bottom: 10px;
+}
+
+.diaryInsidePage .pageRight .share p:nth-child(1) a:nth-child(1) {
+  color: #fefefe;
+  font-size: 14px;
+}
+
+.diaryInsidePage .pageRight .share p:nth-child(1) a:nth-child(1):hover {
+  color: #073977;
+  font-size: 14px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.diaryInsidePage .pageRight .share p {
+  padding: 5px;
+}
+
+.diaryInsidePage .pageRight .share p a {
+  color: #fefefe;
+  font-size: 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.diaryInsidePage .pageRight .share p a:hover {
+  color: #073977;
+  font-size: 20px;
+}
+
+.diaryInsidePage .pageRight .rightTitle {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.diaryInsidePage .pageRight .rightTitle .rightNameImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.diaryInsidePage .pageRight .rightTitle .rightNameImg .rightImg {
+  width: 80px;
+}
+
+.diaryInsidePage .pageRight .rightTitle .rightNameImg .rightName {
+  padding-left: 10px;
+}
+
+.diaryInsidePage .pageRight .rightTitle .rightNameImg .rightName p:nth-child(1) {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.diaryInsidePage .pageRight .rightTitle .rightNameImg .rightName p {
+  color: #fefefe;
+}
+
+.diaryInsidePage .pageRight .rightTitle .rightNameText p:nth-child(1) {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.diaryInsidePage .pageRight .rightTitle .rightNameText p {
+  color: #fefefe;
+  text-align: right;
+}
+
+.diaryInsidePage .pageRight .rightInformation {
+  width: 100%;
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.diaryInsidePage .pageRight .rightInformation div p:nth-child(2) {
+  font-size: 24px;
+  padding: 10px 0px;
+}
+
+.diaryInsidePage .pageRight .rightInformation div p {
+  text-align: center;
+  color: #fefefe;
+}
+
+.diaryInsidePage .pageRight .rightData {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0px;
+}
+
+.diaryInsidePage .pageRight .rightData .rightDataA {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.diaryInsidePage .pageRight .rightData .rightDataA div p:nth-child(2) {
+  font-size: 28px;
+  padding: 10px 0px;
+}
+
+.diaryInsidePage .pageRight .rightData .rightDataA div p {
+  color: #fefefe;
+  text-align: center;
+}
+
+.diaryInsidePage .pageRight .rightData .rightDataA div span:nth-child(2) {
+  font-size: 16px;
+}
+
+.diaryInsidePage .pageRight .rightData .rightDataB {
+  border-left: 1px solid #fefefe;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.diaryInsidePage .pageRight .rightData .rightDataB div p:nth-child(2) {
+  font-size: 28px;
+  padding: 10px 0px;
+}
+
+.diaryInsidePage .pageRight .rightData .rightDataB div p {
+  color: #fefefe;
+  text-align: center;
+}
+
+.diaryInsidePage .pageRight .rightData .rightDataB div p span:nth-child(2) {
+  font-size: 16px;
+}
+
+.diaryInsidePage .pageRight .rightData .rightDataB div p i {
+  font-size: 20px;
+}
+
+.diaryInsidePage .pageRight .rightData .rightDataB div span:nth-child(2) {
+  font-size: 16px;
+}
+
+.diaryInsidePage .pageRight .biological {
+  color: #fefefe;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+.diaryInsidePage .pageRight .rightPicture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.diaryInsidePage .pageRight .rightPicture div {
+  width: 120px;
+}
+
+.diaryInsidePage .pageRight .rightContent {
+  width: 100%;
+  padding: 10px;
+}
+
+.diaryInsidePage .pageRight .rightContent p {
+  color: #fefefe;
+}
+
+.diaryInside_controlBtn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px auto 80px auto;
+}
+
+.diaryInside_controlBtn div:nth-child(1) {
+  margin-right: 100px;
+}
+
+.spotPushBlock {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px auto 120px;
+  padding: 10px;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.spotPush {
+  width: 350px;
+  border-radius: 10px;
+  margin: 0px 0px 20px;
+  overflow: hidden;
+}
+
+.spotPush > a {
+  color: #073977;
+  text-align: left;
+}
+
+.spotPush > a .spotPushTital {
+  background-image: url("./../img/diary/spotBanner_5.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 200px;
+}
+
+.spotPush > a .spotPushTital > h4 {
+  padding: 10px;
+  color: #fefefe;
+}
+
+.spotPush > a .spotPushMain {
+  background-color: #fefefe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.spotPush > a .spotPushMain .spotPushListText {
+  width: 100%;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.spotPush > a .spotPushMain .spotPushListText h4 {
+  line-height: 30px;
+}
+
+.spotPush > a .spotPushMain .spotPushListText h5 {
+  font-size: 6px;
+}
+
+.spotPush > a .spotPushMain:last-child {
+  text-align: center;
+  padding: 10px;
+}
+
+.spotPush > a .spotPushMain:last-child img {
+  width: 80px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+@media all and (max-width: 1600px) {
+  .diaryInsidePage {
+    margin: 0 auto;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 80px auto;
+  }
+  .diaryInsidePage .pageLeft {
+    padding: 10px;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
+  .diaryInsidePage .pageLeft .pageLeftImg img {
+    vertical-align: top;
+  }
+  .diaryInsidePage .pageLeft .pageLeftLine {
+    border: 1px solid black;
+    height: 150px;
+  }
+  .diaryInsidePage .pageRight {
+    padding: 10px;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
+  .diaryInsidePage .pageRight hr {
+    border: 0;
+    background-color: rgba(254, 254, 254, 0.75);
+    height: 1px;
+  }
+  .diaryInsidePage .pageRight .share {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-right: 5px;
+    padding-bottom: 10px;
+  }
+  .diaryInsidePage .pageRight .share p:nth-child(1) a:nth-child(1) {
+    color: #fefefe;
+    font-size: 14px;
+  }
+  .diaryInsidePage .pageRight .share p:nth-child(1) a:nth-child(1):hover {
+    color: #073977;
+    font-size: 14px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .diaryInsidePage .pageRight .share p {
+    padding: 5px;
+  }
+  .diaryInsidePage .pageRight .share p a {
+    color: #fefefe;
+    font-size: 20px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .diaryInsidePage .pageRight .share p a:hover {
+    color: #073977;
+    font-size: 20px;
+  }
+  .diaryInsidePage .pageRight .rightTitle {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .diaryInsidePage .pageRight .rightTitle .rightNameImg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .diaryInsidePage .pageRight .rightTitle .rightNameImg .rightImg {
+    width: 80px;
+  }
+  .diaryInsidePage .pageRight .rightTitle .rightNameImg .rightName {
+    padding-left: 10px;
+  }
+  .diaryInsidePage .pageRight .rightTitle .rightNameImg .rightName p:nth-child(1) {
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+  .diaryInsidePage .pageRight .rightTitle .rightNameImg .rightName p {
+    color: #fefefe;
+  }
+  .diaryInsidePage .pageRight .rightTitle .rightNameText p:nth-child(1) {
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+  .diaryInsidePage .pageRight .rightTitle .rightNameText p {
+    color: #fefefe;
+    text-align: right;
+  }
+  .diaryInsidePage .pageRight .rightInformation {
+    width: 100%;
+    padding: 10px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .diaryInsidePage .pageRight .rightInformation div p:nth-child(2) {
+    font-size: 24px;
+    padding: 10px 0px;
+  }
+  .diaryInsidePage .pageRight .rightInformation div p {
+    text-align: center;
+    color: #fefefe;
+  }
+  .diaryInsidePage .pageRight .rightData {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 0px;
+  }
+  .diaryInsidePage .pageRight .rightData .rightDataA {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .diaryInsidePage .pageRight .rightData .rightDataA div p:nth-child(2) {
+    font-size: 28px;
+    padding: 10px 0px;
+  }
+  .diaryInsidePage .pageRight .rightData .rightDataA div p {
+    color: #fefefe;
+    text-align: center;
+  }
+  .diaryInsidePage .pageRight .rightData .rightDataA div span:nth-child(2) {
+    font-size: 16px;
+  }
+  .diaryInsidePage .pageRight .rightData .rightDataB {
+    border-left: 1px solid #fefefe;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .diaryInsidePage .pageRight .rightData .rightDataB div p:nth-child(2) {
+    font-size: 28px;
+    padding: 10px 0px;
+  }
+  .diaryInsidePage .pageRight .rightData .rightDataB div p {
+    color: #fefefe;
+    text-align: center;
+  }
+  .diaryInsidePage .pageRight .rightData .rightDataB div p span:nth-child(2) {
+    font-size: 16px;
+  }
+  .diaryInsidePage .pageRight .rightData .rightDataB div p i {
+    font-size: 20px;
+  }
+  .diaryInsidePage .pageRight .rightData .rightDataB div span:nth-child(2) {
+    font-size: 16px;
+  }
+  .diaryInsidePage .pageRight .biological {
+    color: #fefefe;
+    width: 100%;
+    padding: 10px 0px;
+  }
+  .diaryInsidePage .pageRight .rightPicture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .diaryInsidePage .pageRight .rightPicture div {
+    width: 120px;
+  }
+  .diaryInsidePage .pageRight .rightContent {
+    width: 100%;
+    padding: 10px;
+  }
+  .diaryInsidePage .pageRight .rightContent p {
+    color: #fefefe;
+  }
+  .diaryInside_controlBtn {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0px auto 80px auto;
+  }
+  .diaryInside_controlBtn div:nth-child(1) {
+    margin-right: 100px;
+  }
+  .spotPushBlock {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 20px auto 120px;
+    padding: 10px;
+    text-align: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .spotPush {
+    width: 350px;
+    border-radius: 10px;
+    margin: 0px 0px 20px;
+    overflow: hidden;
+  }
+  .spotPush > a {
+    color: #073977;
+    text-align: left;
+  }
+  .spotPush > a .spotPushTital {
+    background-image: url("../../img/diary/spotLyLittle-01.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 200px;
+  }
+  .spotPush > a .spotPushTital > h4 {
+    padding: 10px;
+    color: #fefefe;
+  }
+  .spotPush > a .spotPushMain {
+    background-color: #fefefe;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .spotPush > a .spotPushMain .spotPushListText {
+    width: 100%;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .spotPush > a .spotPushMain .spotPushListText h4 {
+    line-height: 30px;
+  }
+  .spotPush > a .spotPushMain .spotPushListText h5 {
+    font-size: 6px;
+  }
+  .spotPush > a .spotPushMain:last-child {
+    text-align: center;
+    padding: 10px;
+  }
+  .spotPush > a .spotPushMain:last-child img {
+    width: 80px;
+    border-radius: 50%;
+    padding: 10px;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .diaryInsidePage {
+    margin: 0 auto;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 80px auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .diaryInsidePage .pageRight {
+    padding: 10px;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
+  .diaryInsidePage .pageRight .rightData {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px 0px;
+  }
+  .diaryInsidePage .pageRight .rightData .rightDataA {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  .diaryInsidePage .pageRight .rightData .rightDataB {
+    border-left: none;
+    border-top: 1px solid #fefefe;
+    width: 100%;
+    padding-top: 15px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .diaryInsidePage {
+    margin: 0 auto;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 80px auto;
+  }
+  .diaryInsidePage .pageLeft {
+    padding: 10px;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
+  .diaryInsidePage .pageRight {
+    padding: 10px;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
+  .diaryInsidePage .pageRight .rightTitle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .diaryInsidePage .pageRight .rightTitle .rightNameImg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .diaryInsidePage .pageRight .rightTitle .rightNameText {
+    padding: 25px 0px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .diaryInsidePage .pageRight .rightTitle .rightNameText p:nth-child(1) {
+    font-size: 40px;
+    padding-bottom: 0px;
+  }
+  .diaryInsidePage .pageRight .rightTitle .rightNameText p {
+    color: #fefefe;
+    text-align: right;
+  }
+  .diaryInsidePage .pageRight .rightData {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px 0px;
+  }
+  .diaryInsidePage .pageRight .rightData .rightDataA {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  .diaryInsidePage .pageRight .rightData .rightDataB {
+    border-left: none;
+    border-top: 1px solid #fefefe;
+    width: 100%;
+    padding-top: 15px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .diaryInsidePage {
+    margin: 0 auto;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 80px auto;
+  }
+  .diaryInsidePage .pageLeft {
+    padding: 10px;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
+  .diaryInsidePage .pageRight {
+    padding: 10px;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
+  .diaryInsidePage .pageRight .rightTitle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .diaryInsidePage .pageRight .rightTitle .rightNameImg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .diaryInsidePage .pageRight .rightTitle .rightNameText {
+    padding: 25px 0px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .diaryInsidePage .pageRight .rightTitle .rightNameText p:nth-child(1) {
+    font-size: 40px;
+    padding-bottom: 0px;
+  }
+  .diaryInsidePage .pageRight .rightTitle .rightNameText p {
+    color: #fefefe;
+    text-align: right;
+  }
+  .diaryInsidePage .pageRight .rightData {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px 0px;
+  }
+  .diaryInsidePage .pageRight .rightData .rightDataA {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  .diaryInsidePage .pageRight .rightData .rightDataB {
+    border-left: none;
+    border-top: 1px solid #fefefe;
+    width: 100%;
+    padding-top: 15px;
+  }
+}
+
+.diaryAddTitleH3 {
+  margin: 80px auto 0px;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.diaryAddTitleH3 h3 {
+  color: #fefefe;
+}
+
+.diaryAddTitleH3 h3 i {
+  color: #fefefe;
+  padding-left: 20px;
+}
+
+.diaryAddTitleH3 .diaryAdd_controlBtn {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.diaryAdd_formAddAll {
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+.diaryAdd_formAddAll .formf {
+  width: 100%;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddA {
+  width: 100%;
+  background-color: #16181D;
+  border-radius: 10px;
+  margin: 30px auto 0px;
+  padding: 30px;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddA .diaryAddName {
+  color: #fefefe;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddA .diaryAddName p {
+  display: inline-block;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddA .diaryAddName input {
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddA .diaryAddType {
+  color: #fefefe;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddA .diaryAddType p {
+  display: inline-block;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddA .diaryAddType select {
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddA .diaryAddArea {
+  color: #fefefe;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddA .diaryAddArea p {
+  display: inline-block;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddA .diaryAddArea select {
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddA .diaryAddPlace {
+  color: #fefefe;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddA .diaryAddPlace p {
+  display: inline-block;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddA .diaryAddPlace .northeastCorner {
+  display: inline-block;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddA .diaryAddPlace .kenTing {
+  display: inline-block;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddA .diaryAddPlace .xiaoLiuQiu {
+  display: inline-block;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddA .diaryAddPlace .greenIsland {
+  display: inline-block;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddA .diaryAddPlace .lanYu {
+  display: inline-block;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddA .diaryAddTime {
+  color: #fefefe;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddA .diaryAddTime p {
+  display: inline-block;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddA .diaryAddTime input {
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddA .diaryDate {
+  color: #fefefe;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddA .diaryDate p {
+  display: inline-block;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddA .diaryDate input {
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.diaryAdd_formAddAll .formf .climate {
+  width: 100%;
+  background-color: #16181D;
+  border-radius: 10px;
+  margin: 30px auto 30px;
+  padding: 30px;
+}
+
+.diaryAdd_formAddAll .formf .climate .climateP {
+  width: 100%;
+  color: #fefefe;
+  padding: 10px;
+}
+
+.diaryAdd_formAddAll .formf .climate .climateflex {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.diaryAdd_formAddAll .formf .climate .climateflex .climateA div p {
+  color: #fefefe;
+  display: inline-block;
+  padding: 20px 0px;
+}
+
+.diaryAdd_formAddAll .formf .climate .climateflex .climateA div p i {
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+.diaryAdd_formAddAll .formf .climate .climateflex .climateA div select {
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.diaryAdd_formAddAll .formf .climate .climateflex .climateA div input {
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.diaryAdd_formAddAll .formf .climate .climateflex .climateB div {
+  color: #fefefe;
+}
+
+.diaryAdd_formAddAll .formf .climate .climateflex .climateB div p {
+  color: #fefefe;
+  display: inline-block;
+  padding: 20px 0px;
+}
+
+.diaryAdd_formAddAll .formf .climate .climateflex .climateB div p i {
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+.diaryAdd_formAddAll .formf .climate .climateflex .climateB div input {
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.diaryAdd_formAddAll .formf .biological {
+  width: 100%;
+  background-color: #16181D;
+  border-radius: 10px;
+  margin: 30px auto 0px;
+  padding: 30px;
+}
+
+.diaryAdd_formAddAll .formf .biological .biologicalP {
+  width: 100%;
+  color: #fefefe;
+  padding: 10px;
+}
+
+.diaryAdd_formAddAll .formf .biological .filp {
+  color: #fefefe;
+}
+
+.diaryAdd_formAddAll .formf .biological .filp i {
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+.diaryAdd_formAddAll .formf .biological .panel {
+  border: 1px solid green;
+  height: 120px;
+  display: none;
+}
+
+.diaryAdd_formAddAll .formf .process {
+  width: 100%;
+  background-color: #16181D;
+  border-radius: 10px;
+  margin: 30px auto 0px;
+  padding: 30px;
+}
+
+.diaryAdd_formAddAll .formf .process .processP {
+  width: 100%;
+  color: #fefefe;
+  padding: 10px;
+}
+
+.diaryAdd_formAddAll .formf .process div {
+  color: #fefefe;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddImg {
+  width: 100%;
+  background-color: #16181D;
+  border-radius: 10px;
+  margin: 30px auto 0px;
+  padding: 30px;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddImg .diaryAddImgP {
+  width: 100%;
+  color: #fefefe;
+  padding: 10px;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddImg div {
+  width: 100%;
+  padding: 10px;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddImg div p {
+  color: #fefefe;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddImg div p i {
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddContent {
+  width: 100%;
+  background-color: #16181D;
+  border-radius: 10px;
+  margin: 30px auto 0px;
+  padding: 30px;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddContent .diaryAddContentP {
+  width: 100%;
+  color: #fefefe;
+  padding: 10px;
+}
+
+.diaryAdd_formAddAll .formf .diaryAddContent .diaryAddText textarea {
+  width: 100%;
+}
+
+.diaryAdd_formAddAll .formf .submitData {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.diaryAdd_formAddAll .formf .submitData .allData {
+  border: 1px solid #fefefe;
+  border-radius: 15px;
+  padding: 8px 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fefefe;
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.diaryAdd_formAddAll .formf .submitData .allData:hover {
+  border: 1px solid #073977;
+  border-radius: 15px;
+  padding: 8px 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #073977;
+  background-color: rgba(254, 254, 254, 0.75);
+  outline: none;
+}
+/*# sourceMappingURL=diary.css.map */

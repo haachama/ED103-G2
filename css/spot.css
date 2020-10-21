@@ -170,11 +170,44 @@
   padding: 10px, 30px;
 }
 
+.spotContents .spotLeft .spotLeftTopA a:first-child {
+  width: 65%;
+}
+
+.spotContents .spotLeft .spotLeftTopA a:first-child img {
+  width: 100%;
+}
+
+.spotContents .spotLeft .spotLeftTopA a:last-child {
+  width: 35%;
+}
+
+.spotContents .spotLeft .spotLeftTopA a:last-child img {
+  width: 100%;
+}
+
 .spotContents .spotLeft .spotLeftTop a {
   width: 50%;
 }
 
 .spotContents .spotLeft .spotLeftTop a img {
+  width: 100%;
+}
+
+.spotContents .spotLeft .spotLeftBottomA a:first-child {
+  width: 35%;
+  height: auto;
+}
+
+.spotContents .spotLeft .spotLeftBottomA a:first-child img {
+  width: 100%;
+}
+
+.spotContents .spotLeft .spotLeftBottomA a:last-child {
+  width: 65%;
+}
+
+.spotContents .spotLeft .spotLeftBottomA a:last-child img {
   width: 100%;
 }
 
@@ -493,9 +526,10 @@
 }
 
 .spotPush a .imgContent .diaryTitleA .diaryTitleFlex .userLogo {
-  width: 40px;
-  border-radius: 90px;
+  width: 42px;
+  border-radius: 50%;
   overflow: hidden;
+  border: 1px solid #fefefe;
 }
 
 .spotPush a .imgContent .diaryTitleA .diaryTitleFlex .userLogo img {
@@ -1340,7 +1374,6 @@
 
 @media all and (max-width: 991px) {
   .spotContents .spotRight {
-    padding: 0;
     margin: 0;
     padding: 10px;
     width: 35%;
@@ -1380,23 +1413,23 @@
     font-size: 16px;
     padding: 10px 20px;
     text-align: left;
-    overflow: scroll;
+    overflow: auto;
   }
-  .spotWeather {
+  .spotReferWeather {
     width: 100%;
-    overflow: scroll;
+    overflow: auto;
   }
-  .spotWeather .spotWeatherText:first-child {
+  .spotReferWeather .spotWeatherText:first-child {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     padding: 10px 0;
     text-align: center;
   }
-  .spotWeather .spotWeatherText:first-child h5 {
+  .spotReferWeather .spotWeatherText:first-child h5 {
     margin-top: 20px;
   }
-  .spotWeather .spotWeatherText:last-child {
+  .spotReferWeather .spotWeatherText:last-child {
     width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1406,7 +1439,7 @@
         flex-wrap: wrap;
     padding-top: 15px;
   }
-  .spotWeather .spotWeatherText:last-child > div {
+  .spotReferWeather .spotWeatherText:last-child > div {
     width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1416,7 +1449,7 @@
     display: -ms-flexbox;
     display: flex;
   }
-  .spotWeather .spotWeatherText .weather_main {
+  .spotReferWeather .spotWeatherText .weather_main {
     padding-left: 5px;
     display: block;
     width: 80px;

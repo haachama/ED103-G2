@@ -163,6 +163,26 @@
         // border: 1px solid rgb(252, 145, 6);
         width: $spotLeftW;
         padding: $spotPadding,$spotBnPaddingRL;
+        //四張spotLeftTopA
+        .spotLeftTopA{
+            a{
+                // border: 1px solid rgb(252, 145, 6);
+                
+                &:first-child{
+                    width: 65%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                &:last-child{
+                    width: 35%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        //五張spotLeftTop
         .spotLeftTop{
             a{
                 // border: 1px solid rgb(252, 145, 6);
@@ -172,6 +192,26 @@
                 }
             }
         }
+        //四張 
+        .spotLeftBottomA{
+            a{
+                // border: 1px solid rgb(252, 145, 6);
+                &:first-child{
+                    width: 35%;
+                    height: auto;
+                    img{
+                        width: 100%;
+                    }
+                }
+                &:last-child{
+                    width: 65%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        //五張
         .spotLeftBottom{
             a{
                 // border: 1px solid rgb(252, 145, 6);
@@ -426,9 +466,10 @@
 
                     .userLogo {
                         // border: 1px solid olivedrab;
-                        width: 40px;
-                        border-radius: 90px;
+                        width: 42px;
+                        border-radius: 50%;
                         overflow: hidden;
+                        border: 1px solid $keyWhite;
 
                         img {
                             vertical-align: top;
@@ -1220,7 +1261,6 @@
     .spotContents{
         .spotRight{
             // border: 1px solid blueviolet;
-            padding: 0;
             margin: 0;
             padding: $rwdSpotPadding;
             width: 35%;
@@ -1275,15 +1315,15 @@
                 font-size: $baseFz;
                 padding: $spotPadding $spotPadding*2;
                 text-align: left;
-                overflow: scroll;
+                overflow: auto;
             }    
         }
     }
     //即時氣象
-    .spotWeather{
+    .spotReferWeather{
         // border: 1px solid orange;
         width: 100%;
-        overflow: scroll;
+        overflow: auto;
         .spotWeatherText{
             // overflow: scroll;
 
@@ -1364,6 +1404,9 @@
                 display: block;
                 margin: auto;
             }
+        }
+        .spotData{
+
         }
         .spotWeather{
             width: 60%;
@@ -1550,6 +1593,8 @@
         }
     }
 }
+
+
 
 
 

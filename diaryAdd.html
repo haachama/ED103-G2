@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="Shortcut Icon" href="./img/favicon.ico" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="./css/hamburgers.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/diary.css">
+    <link href="./vendors/fontawesome/css/all.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 下拉 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>
+    <title>海中日子</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">海中日子 Divein
+            <a href="./index.html"><img src="./img/header/logo.png" alt="logo"></a>
+        </h1>
+        <div class="nav">
+            <ul>
+                <li class="recommend_nav">
+                    <a href="./spot.html">潛點推薦</a>
+                </li>
+                <li class="course_nav">
+                    <a href="./course.html">潛水課程</a>
+                </li>
+                <li class="shop_nav">
+                    <a href="./shop.html">潛水商城</a>
+                </li>
+                <li class="blog_nav">
+                    <a href="./shop.html">潛水日誌</a>
+                </li>
+                <li class="game_nav">
+                    <a href="./game.html">下潛遊戲</a>
+                </li>
+            </ul>
+        </div>
+        <div class="memCart">
+            <ul>
+                <li><a href="javascript:;"><img src="./img/header/member.png" ></a></li>
+                <li><a href="javascript:;"><img src="./img/header/cart.png"></a></li>
+            </ul>
+        </div>
+        <button class="hamburger hamburger--3dxy" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+        </button>  
+    </header>
+
+
+    <!-- 新增日誌 Title -->
+    <div class="diaryAddTitleH3">
+        <!-- 規範h3 -->
+        <h3>新增日誌<i class="fas fa-pencil-alt"></i></h3>
+        <!-- 規範btn -->
+        <div class="diaryAdd_controlBtn">
+            <div class="bubbleBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                result="goo" />
+                            <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                    </defs>
+                </svg>
+                <span class="button--bubble__container">
+                    <a href="./diary.html" class="button button--bubble">
+                        回到我的日誌
+                    </a>
+                    <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="button effect-button"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 篩選 -->
+    <div class="diaryAdd_formAddAll">
+        <form action="" class="formf">
+            <div class="diaryAddA"> <!-- 區塊A -->
+                <!-- 日誌名稱 -->
+                <div class="diaryAddName">
+                    <p>日誌名稱<span> *</span></p>
+                    <input type="text" placeholder="請輸入日誌名稱" onfocus="this.placeholder=''" onblur="this.placeholder='請輸入日誌名稱'">
+                </div>
+                <!-- 日誌類型 -->
+                <div class="diaryAddType">
+                    <p>日誌類型<span> *</span></p>
+                    <select name="" id="">
+                        <option value="no">選擇類型</option>
+                        <option value="0">旅潛</option>
+                        <option value="1">課程</option>
+                    </select>
+                </div>
+                <!-- 潛水區域 -->
+                <div class="diaryAddArea">
+                    <p>潛水區域<span> *</span></p>
+                    <select name="" id="">
+                        <option value="no">選擇區域</option>
+                        <option value="a">東北角</option>
+                        <option value="b">墾丁</option>
+                        <option value="c">小琉球</option>
+                        <option value="d">綠島</option>
+                        <option value="e">蘭嶼</option>
+                    </select>
+                    <!-- <label><input type="radio" name="diveArea" value="a">東北角</label>
+                    <label><input type="radio" name="diveArea" value="b">墾丁</label>
+                    <label><input type="radio" name="diveArea" value="c">小琉球</label>
+                    <label><input type="radio" name="diveArea" value="d">綠島</label>
+                    <label><input type="radio" name="diveArea" value="e">蘭嶼</label> -->
+                </div>
+                <!-- 潛水地點 -->
+                <div class="diaryAddPlace">
+                    <p>潛水地點<span> *</span></p>
+                    <div id="northeastCorner" class="northeastCorner"> <!-- 東北角 -->
+                        <label><input type="radio" name="a" value="a1">和美</label>
+                        <label><input type="radio" name="a" value="a2">龍洞</label>
+                        <label><input type="radio" name="a" value="a3">潮境公園</label>
+                        <label><input type="radio" name="a" value="a4">鼻頭角</label>
+                    </div>
+
+                    <!-- <div id="kenTing" class="kenTing"> 墾丁 
+                        <label><input type="radio" name="b" value="b1">後壁湖</label>
+                        <label><input type="radio" name="b" value="b2">出水口</label>
+                        <label><input type="radio" name="b" value="b3">雙峰藍洞</label>
+                        <label><input type="radio" name="b" value="b4">北岸花園</label>
+                    </div>
+
+                    <div id="xiaoLiuQiu" class="xiaoLiuQiu"> 小琉球 
+                        <label><input type="radio" name="c" value="c1">花瓶岩</label>
+                        <label><input type="radio" name="c" value="c2">美人洞</label>
+                        <label><input type="radio" name="c" value="c3">衫福沈船</label>
+                        <label><input type="radio" name="c" value="c4">鎮海艦</label>
+                        <label><input type="radio" name="c" value="c5">厚石礁群</label>
+                    </div>
+
+                    <div id="greenIsland" class="greenIsland"> 綠島 
+                        <label><input type="radio" name="d" value="d1">海底教堂</label>
+                        <label><input type="radio" name="d" value="d2">鋼鐵礁</label>
+                        <label><input type="radio" name="d" value="d3">石朗大香菇</label>
+                        <label><input type="radio" name="d" value="d4">海底大峽谷</label>
+                        <label><input type="radio" name="d" value="d5">雞仔礁</label>
+                    </div>
+
+                    <div id="lanYu" class="lanYu"> 蘭嶼 
+                        <label><input type="radio" name="e" value="e1">母雞岩</label>
+                        <label><input type="radio" name="e" value="e2">八代灣沉船</label>
+                        <label><input type="radio" name="e" value="e3">椰油斷層</label>
+                        <label><input type="radio" name="e" value="e4">野銀小峽谷</label>
+                        <label><input type="radio" name="e" value="e5">四條溝</label>
+                    </div> -->
+                </div>
+                <!-- 潛水時間 -->
+                <div class="diaryAddTime">
+                    <p>潛水時間<span> *</span></p>
+                    <input type="number" placeholder="1.0" step="0.5" min="0">分鐘<!-- 允許小數1位 -->
+                </div>
+                <!-- 入水日期 -->
+                <div class="diaryDate">
+                    <p>入水日期<span> *</span></p>
+                    <input type="date">
+                </div>
+            </div>
+            
+            <div class="climate"> <!-- 區塊B -->
+                <p class="climateP">氣候條件</p>
+                <div class="climateflex">
+                    <div class="climateA">
+                        <div>
+                            <p><i class="fas fa-sun"></i>當日天氣</p>
+                            <select name="" id="">
+                                <option value="no">選擇天氣</option>
+                                <option value="sunny">晴</option>
+                                <option value="cloudy">陰</option>
+                                <option value="rainy">雨</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p><i class="fas fa-eye"></i>能&nbsp;見&nbsp;度&nbsp;</p>
+                            <input type="number" placeholder="1.0" step="0.5" min="0"><!-- 允許小數1位 -->
+                        </div>
+                    </div>
+                    <div class="climateB">
+                        <div>
+                            <p><i class="fas fa-temperature-high"></i>當日氣溫</p>
+                            <input type="number" placeholder="1.0" step="0.5" >度<!-- 允許小數1位 -->
+                        </div>
+                        <div>
+                            <p><i class="fas fa-temperature-low"></i>最低水溫</p>
+                            <input type="number" placeholder="1.0" step="0.5" >度<!-- 允許小數1位 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="biological"> <!-- 區塊C -->
+                <p class="biologicalP">遇見生物</p>
+                <p class="filp"><i class="fas fa-book"></i><span>選擇圖鑑</span></p>
+                <div class="panel"></div>
+            </div>
+
+            <div class="process"> <!-- 區塊D -->
+                <p class="processP">潛水過程</p>
+                <div>
+                    idea誰想的，快來切
+                </div>
+            </div>
+
+            <div class="diaryAddImg"> <!-- 區塊E -->
+                <p class="diaryAddImgP">潛水照片</p>
+                <div>
+                    <p><i class="fas fa-camera-retro"></i><button>選擇照片</button></p>
+                </div>
+            </div>
+
+            <div class="diaryAddContent"> <!-- 區塊F -->
+                <p class="diaryAddContentP">內容撰寫</p>
+                <div class="diaryAddText">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+
+            <p class="submitData"><input class="allData" type="submit" value="新增日誌"></p>
+
+        </form>
+    </div>
+
+    
+
+
+    <footer>
+        <div class="copyright">
+            Copyright © 2020 Divein | 海中日子 All Rights Reserved.
+        </div>
+    </footer>
+    <!-- js要修改 -->
+    <script src="./js/bubbleBtn.js"></script>
+    <script src="./js/jquery.ripples.js"></script>
+    <script src="./js/common.js"></script>
+    <script>
+        function doFirst() {
+            //先跟HTML畫面產生關聯，再建事件聆聽功能
+            document.getElementById('diveArea').onchange = chkbox;
+            chkbox();
+        }
+        function chkbox() {
+            let diveAreas = ['northeastCorner', 'kenting', 'xiaoliuqiu', 'greenIsland', 'lanyu'];
+            let mapping = ['東北角','墾丁','小琉球','綠島','蘭嶼'];
+            let selected = document.getElementById("diveArea").options[document.getElementById("diveArea").selectedIndex].text;
+    
+            for (let i = 0; i < diveAreas.length; i++) {
+                let yourSelect = document.getElementById(diveAreas[i]);
+                if (selected == mapping[i]) {
+                    yourSelect.style.display = 'inline-block';
+                } else {
+                    yourSelect.style.display = 'none';
+                }
+            }
+        }
+        window.addEventListener('load', doFirst);
+
+
+        $('body').ripples({
+            resolution: 1280,
+            dropRadius: 20,
+            perturbance: 0.01,
+        });
+        $('canvas').css({
+            position:"fixed",
+        });
+
+
+        // $(".flip").click(function(){
+        //     $(".panel").slideToggle("slow");
+        // });
+
+    </script>
+</body>
+</html>
