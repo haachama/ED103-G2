@@ -1,7 +1,7 @@
 @import "../common/variables";
 
 body {
-    background-image: url("../../img/index/azurlane.png");
+    background-image: url("../img/index/azurlane.png");
     background-repeat: no-repeat;
     height: auto;
 }
@@ -110,7 +110,7 @@ h2 {
 
     .scene {
         height: 400px;
-        background-image: url("../../img/index/diveSpotNew.png");
+        background-image: url("../img/index/diveSpotNew.png");
         background-size: 81%;
         background-position: 50% center;
         background-repeat: no-repeat;
@@ -171,7 +171,7 @@ h2 {
         // border: 1px solid red;
         margin: 50px auto;
 
-        // background-image: url(../../img/index/submarineCut.png);
+        // background-image: url(../img/index/submarineCut.png);
         // background-repeat: no-repeat;
         // background-position: center -100%;
         // background-size: contain;
@@ -873,7 +873,7 @@ h2 {
     display: inline-block;
     width: 130px;
     height: 105px;
-    background-image: url(../../img/index/shaII.png);
+    background-image: url(../img/index/shaII.png);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 120px auto;
@@ -960,7 +960,7 @@ h2 {
 //     display: inline-block;
 //     width: 130px;
 //     height: 105px;
-//     background-image: url(../../img/index/shaII.png);
+//     background-image: url(../img/index/shaII.png);
 //     background-repeat: no-repeat;
 //     background-position: center top;
 //     background-size: 120px auto;
@@ -1001,7 +1001,7 @@ h2 {
 
 .bottomSunhoo {
     width: 100%;
-    background-image: url(../../img/index/homeBg.png);
+    background-image: url(../img/index/homeBg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

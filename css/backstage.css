@@ -1,0 +1,396 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  height: 100vh;
+  color: #fefefe;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ==================== header 區域 ==================== */
+.header {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header img[alt=logo] {
+  height: 80px;
+  padding: 5px 0;
+  width: auto;
+  margin-left: 50px;
+}
+
+.header .profile p {
+  display: inline-block;
+  line-height: 80px;
+  color: #fefefe;
+}
+
+.header .profile .btn {
+  background: none;
+  border: 1px solid #fefefe;
+  border-radius: 5px;
+  color: #fefefe;
+  margin: 0 20px;
+  padding: 5px;
+}
+
+.header .profile .btn:hover {
+  border: 1px solid #073977;
+  background: #073977;
+  cursor: pointer;
+}
+
+.btn_hamburger {
+  display: none;
+}
+
+/* ==================== aside 區域 ==================== */
+.aside {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  height: calc(100% - 80px);
+  width: 200px;
+  overflow-y: auto;
+  padding: 20px 0;
+}
+
+.aside .btn_hamburger {
+  display: none;
+}
+
+.aside a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fefefe;
+}
+
+/* 基本按鈕樣式 */
+.btn_hamburger {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  border: none;
+}
+
+/* 每一條橫線的樣式 */
+.btn_hamburger span.-hr {
+  height: 2px;
+  width: 80%;
+  border-radius: 5px;
+  background-color: #fefefe;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* 最上面那條線的樣式 */
+.btn_hamburger span.-hr.-top {
+  top: 25%;
+}
+
+/* 最下面那條線的樣式 */
+.btn_hamburger span.-hr.-bottom {
+  top: 75%;
+}
+
+/* -on 的狀態 */
+/* 上方的線 */
+.btn_hamburger.inner {
+  margin-left: 10px;
+}
+
+.btn_hamburger.inner span.-hr.-top {
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  top: 4px;
+  left: 7px;
+  width: 102%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+/* 中間的線 */
+.btn_hamburger.inner span.-hr.-middle {
+  opacity: 0;
+}
+
+/* 下方的線 */
+.btn_hamburger.inner span.-hr.-bottom {
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  bottom: 5px;
+  left: 6px;
+  width: 102%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: auto;
+}
+
+.nav_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.nav_list a {
+  display: inline-block;
+  width: 80%;
+  padding: 20px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  position: relative;
+}
+
+.nav_list a::before {
+  content: "";
+  background: url("../img/bubbleBefore2.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: inline-block;
+  left: 20px;
+  width: 30px;
+  height: 20px;
+}
+
+.nav_list a:hover::before {
+  background-position: 0 -24px;
+}
+
+.nav_list li:first-child a::before {
+  background-position: 0 -24px;
+}
+
+/* ==================== main 區域 ==================== */
+.main {
+  margin-left: 200px;
+  width: calc(100% - 200px);
+  padding: 20px;
+  min-height: calc(100vh - 80px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.addAdminBtn {
+  display: block;
+  background: #fefefe;
+  border: 1px solid #fefefe;
+  border-radius: 5px;
+  color: #073977;
+  margin: 0 20px;
+  padding: 13px;
+}
+
+.addAdminBtn:hover {
+  cursor: pointer;
+  background: #073977;
+  border: 1px solid #073977;
+  color: #fefefe;
+}
+
+table {
+  margin: 20px;
+}
+
+th,
+td {
+  border-top: 1px solid #fefefe;
+  padding: 15px;
+  vertical-align: middle;
+}
+
+table tr:last-child td {
+  border-bottom: 1px solid #fefefe;
+}
+
+input[type=password] {
+  width: 150px;
+}
+
+.status {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  border: 1px solid #fefefe;
+  padding: 1px;
+  border-radius: 15px;
+  background-color: darkgray;
+}
+
+.status::before {
+  content: '';
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 1;
+  left: 1;
+  bottom: 1;
+  background-color: #fefefe;
+  border-radius: 50%;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2ecc71;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2ecc71;
+          box-shadow: 0 0 1px #2ecc71;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .aside {
+    top: 0;
+    height: 100%;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  .aside.-on {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .header .btn_hamburger,
+  .aside .btn_hamburger {
+    display: inline-block;
+  }
+  .header .profile p {
+    display: none;
+  }
+  .nav {
+    height: 100%;
+    background: #16181D;
+  }
+  .main {
+    margin-left: 2px;
+  }
+  table, .addAdminBtn {
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=backstage.css.map */

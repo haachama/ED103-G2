@@ -1,0 +1,353 @@
+@import "../common/reset";
+@import "../common/variables";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    height: 100vh;
+    color: $keyWhite;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ==================== header 區域 ==================== */
+.header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    img[alt=logo] {
+        height: 80px;
+        padding: 5px 0;
+        width: auto;
+        margin-left: 50px;
+    }
+
+
+    .profile {
+        p {
+            display: inline-block;
+            line-height: 80px;
+            color: $keyWhite;
+        }
+
+        .btn {
+            background: none;
+            border: 1px solid $keyWhite;
+            border-radius: 5px;
+            color: $keyWhite;
+            margin: 0 20px;
+            padding: 5px;
+        }
+
+        .btn:hover {
+            border: 1px solid $keyBlue;
+            background: $keyBlue;
+            cursor: pointer;
+        }
+    }
+}
+
+.btn_hamburger {
+    display: none;
+}
+
+/* ==================== aside 區域 ==================== */
+.aside {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    height: calc(100% - 80px);
+    width: 200px;
+    overflow-y: auto;
+    padding: 20px 0;
+
+    .btn_hamburger {
+        display: none;
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: $keyWhite;
+    }
+}
+
+/* 基本按鈕樣式 */
+.btn_hamburger {
+    width: 40px;
+    height: 40px;
+
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    background: none;
+    border: none;
+}
+
+/* 每一條橫線的樣式 */
+.btn_hamburger span.-hr {
+    height: 2px;
+    width: 80%;
+    border-radius: 5px;
+    background-color: $keyWhite;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 最上面那條線的樣式 */
+.btn_hamburger span.-hr.-top {
+    top: 25%;
+}
+
+/* 最下面那條線的樣式 */
+.btn_hamburger span.-hr.-bottom {
+    top: 75%;
+}
+
+/* -on 的狀態 */
+/* 上方的線 */
+.btn_hamburger.inner {
+    margin-left: 10px;
+}
+
+.btn_hamburger.inner span.-hr.-top {
+    transform-origin: top left;
+    top: 4px;
+    left: 7px;
+    width: 102%;
+    transform: rotate(45deg);
+}
+
+/* 中間的線 */
+.btn_hamburger.inner span.-hr.-middle {
+    opacity: 0;
+}
+
+/* 下方的線 */
+.btn_hamburger.inner span.-hr.-bottom {
+    transform-origin: top left;
+    bottom: 5px;
+    left: 6px;
+    width: 102%;
+    transform: rotate(-45deg);
+
+    top: auto;
+}
+
+
+.nav_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.nav_list a {
+    display: inline-block;
+    width: 80%;
+    padding: 20px;
+    transition: all .3s;
+    position: relative;
+}
+
+.nav_list a::before {
+    content: "";
+    background: url('../img/bubbleBefore2.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    display: inline-block;
+    left: 20px;
+    width: 30px;
+    height: 20px;
+}
+
+.nav_list a:hover::before {
+    background-position: 0 -24px;
+}
+
+.nav_list li:first-child a::before {
+    background-position: 0 -24px;
+}
+
+/* ==================== main 區域 ==================== */
+.main {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+    padding: 20px;
+    min-height: calc(100vh - 80px);
+    transition: all 1s;
+}
+
+.addAdminBtn {
+    display: block;
+    background: $keyWhite;
+    border: 1px solid $keyWhite;
+    border-radius: 5px;
+    color: $keyBlue;
+    margin: 0 20px;
+    padding: 13px;
+}
+
+.addAdminBtn:hover {
+    cursor: pointer;
+    background: $keyBlue;
+    border: 1px solid $keyBlue;
+    color: $keyWhite;
+}
+
+
+// manage admin
+table {
+    margin: 20px;
+}
+
+th,
+td {
+    border-top: 1px solid $keyWhite;
+    padding: 15px;
+    vertical-align: middle;
+}
+
+table tr:last-child td {
+    border-bottom: 1px solid $keyWhite;
+}
+
+input[type=password] {
+    width: 150px;
+}
+
+.status {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    border: 1px solid $keyWhite;
+    padding: 1px;
+    border-radius: 15px;
+    background-color: darkgray;
+}
+
+.status::before {
+    content: '';
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 1;
+    left: 1;
+    bottom: 1;
+    background-color: $keyWhite;
+    border-radius: 50%;
+}
+
+// btn
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color:#2ecc71;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px#2ecc71;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .aside {
+        top: 0;
+        height: 100%;
+        transform: translateX(-100%);
+    }
+
+    .aside.-on {
+        transform: translateX(0%);
+    }
+
+    .header .btn_hamburger,
+    .aside .btn_hamburger {
+        display: inline-block;
+    }
+
+    .header .profile p {
+        display: none;
+    }
+
+    .nav {
+        height: 100%;
+        background: $keyBlack;
+    }
+
+    .main{
+        margin-left: 2px;
+    }
+
+    table,.addAdminBtn{
+        margin-left: 0;
+    }
+}
