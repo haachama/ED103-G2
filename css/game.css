@@ -27,9 +27,29 @@
     color: rgba(254, 254, 254, 0.75);
     margin: 5px;
   }
-  .choseEquipment {
-    display: inline-block;
+  .flexGrow {
+    display: flex;
+    flex-grow: 1;
+  }
+  .button--bubble {
+    background: #fefefe;
+  }
+  .button--bubble:hover {
+    background: #fefefe;
+    color: #073977;
+  }
+  .button--bubble:hover + .button--bubble__effect-container .circle {
+    background: #fefefe;
+  }
+  .button--bubble:hover + .button--bubble__effect-container .button {
+    background: #fefefe;
+  }
+  .button--bubble__effect-container .circle {
+    background: #fefefe;
+  }
+  .startBtn .bubbleBtn {
     text-align: center;
+    margin: 20px;
   }
   .parent_container {
     position: relative;
@@ -48,11 +68,6 @@
   }
   .choseRoleRwd {
     display: none;
-  }
-  .choseRoleBlock {
-    position: relative;
-    display: flex;
-    flex-grow: 1;
   }
   .changeRole {
     position: relative;
@@ -97,9 +112,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .oneHundred {
-    width: 200px;
-  }
   .abilityBlock {
     position: relative;
     width: 200px;
@@ -116,10 +128,6 @@
     width: 100%;
     display: inline-flex;
   }
-  .flexGrow {
-    display: flex;
-    flex-grow: 1;
-  }
   .equipList {
     display: flex;
     position: relative;
@@ -129,7 +137,7 @@
   }
   .totalPriceBlock {
     width: 100%;
-    text-align: right;
+    display: inline-flex;
   }
   .totalPrice {
     width: 100px;
@@ -172,9 +180,6 @@
     background-image: url("../img/game/bubbleBackground.png");
     background-size: 100%;
     background-repeat: no-repeat;
-  }
-  .price {
-    display: block;
   }
   .equip {
     position: absolute;
@@ -234,26 +239,6 @@
     color: rgba(254, 254, 254, 0.75);
     background: none;
   }
-  .button--bubble {
-    background: #fefefe;
-  }
-  .button--bubble:hover {
-    background: #fefefe;
-    color: #073977;
-  }
-  .button--bubble:hover + .button--bubble__effect-container .circle {
-    background: #fefefe;
-  }
-  .button--bubble:hover + .button--bubble__effect-container .button {
-    background: #fefefe;
-  }
-  .button--bubble__effect-container .circle {
-    background: #fefefe;
-  }
-  .startBtn .bubbleBtn {
-    text-align: center;
-    margin: 20px;
-  }
   .gameGif {
     margin: 0 auto;
     display: block;
@@ -266,337 +251,8 @@
     position: relative;
     width: 576px;
     border-bottom: 3px solid rgba(254, 254, 254, 0.75);
-    margin: 25px auto;
+    margin: 65px auto 25px auto;
     text-align: center;
-  }
-  .parent_score img {
-    width: 100px;
-  }
-  .scoreDescribe {
-    font-size: 60px;
-    color: White;
-    margin: 10px;
-  }
-  .resortRole {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
-  .goShopBtn .bubbleBtn {
-    text-align: right;
-    margin: 10px;
-  }
-  .rankList {
-    width: 576px;
-    height: 460px;
-    border-bottom: 3px solid rgba(254, 254, 254, 0.75);
-    margin: 25px auto;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  ::-webkit-scrollbar-track {
-    border-radius: 5px;
-    background: rgba(254, 254, 254, 0.75);
-  }
-  ::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    background: #888;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
-  .record {
-    display: flex;
-  }
-  .record img {
-    width: 80px;
-    height: 80px;
-    margin: 20px;
-    background-color: rgba(254, 254, 254, 0.75);
-    border-radius: 50%;
-  }
-  .record h3 {
-    flex-grow: 1;
-    width: 100px;
-    margin: auto 0;
-  }
-  .record h4 {
-    flex-grow: 1;
-    margin: auto 0;
-  }
-  .restartBtn .bubbleBtn {
-    text-align: center;
-    margin: 20px;
-  }
-}
-
-@media all and (max-width: 1200px) {
-  body {
-    font-family: "Tahoma", sans-serif, "微軟正黑體", sans-serif;
-    box-sizing: border-box;
-    height: auto;
-  }
-  h2 {
-    color: rgba(254, 254, 254, 0.75);
-    margin: 0 0 20px 0;
-  }
-  h3 {
-    color: rgba(254, 254, 254, 0.75);
-  }
-  h4 {
-    font-size: 24px;
-    color: rgba(254, 254, 254, 0.75);
-  }
-  p {
-    font-size: 16px;
-    color: rgba(254, 254, 254, 0.75);
-    margin: 5px;
-  }
-  .totalPriceBlock {
-    width: 100%;
-    text-align: right;
-  }
-  .totalPrice {
-    width: 100px;
-    padding: 5px;
-    margin: 5px;
-    text-align: center;
-    border-radius: 10px;
-    color: #16181D;
-    background-color: #FFE153;
-  }
-  .flexGrow {
-    display: flex;
-    flex-grow: 1;
-  }
-  .choseEquipment {
-    display: inline-block;
-    text-align: center;
-  }
-  .parent_container {
-    position: relative;
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    justify-content: center;
-    margin: 40px auto;
-    box-sizing: border-box;
-  }
-  .changeRole {
-    display: flex;
-    position: relative;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 40%;
-    flex-grow: 0;
-  }
-  .choseRole {
-    position: relative;
-    width: 100%;
-    text-align: center;
-  }
-  .choseRoleRwd {
-    display: none;
-  }
-  .changeRole {
-    position: relative;
-    width: 40%;
-  }
-  .changeRole .changeRoleBtnBlock {
-    position: relative;
-    width: 50px;
-    height: 100%;
-    margin: 0;
-    display: inline-block;
-  }
-  .changeRole .changeRoleBtnBlock .changeRoleBtn {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
-    border: 0;
-    outline: none;
-    background-color: transparent;
-  }
-  .changeRole .changeRoleBtnBlock .changeRoleBtn svg {
-    outline: none;
-    cursor: pointer;
-  }
-  .playRole {
-    margin: auto 0;
-    width: 40%;
-    display: inline-flex;
-  }
-  .playRole img {
-    max-width: 100%;
-  }
-  .abilityBlock {
-    position: relative;
-    display: block;
-    width: 15%;
-  }
-  .abilityBlock .ability {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    margin: 20px 0;
-    text-align: center;
-  }
-  .abilityBlock .ability .abilityImg {
-    max-width: 100%;
-  }
-  .abilityBlock .abilityDescribe {
-    width: 100%;
-    display: inline-flex;
-  }
-  .equipList {
-    display: flex;
-    position: relative;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 45%;
-    margin: 50px 0;
-    overflow: hidden;
-  }
-  .totalPriceBlock {
-    width: 100%;
-    text-align: right;
-  }
-  .maskList {
-    display: inline-flex;
-    width: 600px;
-  }
-  .airList {
-    display: inline-flex;
-    width: 600px;
-  }
-  .shoeList {
-    display: inline-flex;
-    width: 600px;
-  }
-  .equipDescribeBlock {
-    height: 150px;
-    line-height: 150px;
-  }
-  .equipBlock {
-    position: relative;
-    display: block;
-    width: 20%;
-    height: 70%;
-    margin: 5%;
-    margin: 10px;
-    text-align: center;
-  }
-  .bubbleBackground {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: block;
-    text-align: center;
-    background-image: url("../img/game/bubbleBackground.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-  .equip {
-    position: absolute;
-    top: -10px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto auto;
-    width: 60%;
-    height: 60%;
-    cursor: pointer;
-  }
-  .price {
-    display: block;
-  }
-  .eye img {
-    position: absolute;
-    top: 20px;
-    left: 15px;
-    transform: scale(1.15) rotate(170deg);
-  }
-  .back img {
-    position: absolute;
-    top: 28%;
-    transform: translateX(-70%);
-    z-index: -1;
-  }
-  .foot img {
-    position: absolute;
-    bottom: -30px;
-    transform: scale(1.7) rotate(12deg) translate(10px, 5px);
-  }
-  .rule {
-    position: absolute;
-    top: 100px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 375px;
-    background-color: #16181D;
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-  }
-  .pRule {
-    text-indent: 2em;
-    line-height: 32px;
-    margin: 20px;
-    text-align: left;
-  }
-  .none {
-    display: none;
-  }
-  .ruleBtnX {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    border: 0;
-    color: rgba(254, 254, 254, 0.75);
-    background: none;
-  }
-  .button--bubble {
-    background: #fefefe;
-  }
-  .button--bubble:hover {
-    background: #fefefe;
-    color: #073977;
-  }
-  .button--bubble:hover + .button--bubble__effect-container .circle {
-    background: #fefefe;
-  }
-  .button--bubble:hover + .button--bubble__effect-container .button {
-    background: #fefefe;
-  }
-  .button--bubble__effect-container .circle {
-    background: #fefefe;
-  }
-  .startBtn .bubbleBtn {
-    text-align: center;
-    margin: 20px;
-  }
-  .gameGif {
-    margin: 0 auto;
-    display: block;
-  }
-  .gameGifRWD {
-    margin: 0 auto;
-    display: none;
-  }
-  .parent_score {
-    position: relative;
-    width: 576px;
-    border-bottom: 3px solid rgba(254, 254, 254, 0.75);
-    margin: 25px auto;
-    text-align: center;
-  }
-  .parent_score img {
-    width: 100px;
   }
   .scoreDescribe {
     font-size: 30px;
@@ -663,6 +319,326 @@
   }
 }
 
+@media all and (max-width: 1200px) {
+  :root {
+    --header-height: 117px;
+  }
+  main {
+    min-height: calc(100vh - var(--header-height));
+    overflow: hidden;
+  }
+  body {
+    font-family: "Tahoma", sans-serif, "微軟正黑體", sans-serif;
+    box-sizing: border-box;
+    height: auto;
+  }
+  h2 {
+    color: rgba(254, 254, 254, 0.75);
+    margin: 0 0 20px 0;
+  }
+  h3 {
+    color: rgba(254, 254, 254, 0.75);
+  }
+  h4 {
+    font-size: 24px;
+    color: rgba(254, 254, 254, 0.75);
+  }
+  p {
+    font-size: 16px;
+    color: rgba(254, 254, 254, 0.75);
+    margin: 5px;
+  }
+  .flexGrow {
+    display: flex;
+    flex-grow: 1;
+  }
+  .button--bubble {
+    background: #fefefe;
+  }
+  .button--bubble:hover {
+    background: #fefefe;
+    color: #073977;
+  }
+  .button--bubble:hover + .button--bubble__effect-container .circle {
+    background: #fefefe;
+  }
+  .button--bubble:hover + .button--bubble__effect-container .button {
+    background: #fefefe;
+  }
+  .button--bubble__effect-container .circle {
+    background: #fefefe;
+  }
+  .parent_container {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+    margin: 40px auto;
+    box-sizing: border-box;
+  }
+  .choseRole {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  .choseRoleRwd {
+    display: none;
+  }
+  .changeRole {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 40%;
+    flex-grow: 0;
+  }
+  .changeRole .changeRoleBtnBlock {
+    position: relative;
+    width: 50px;
+    height: 100%;
+    margin: 0;
+    display: inline-block;
+  }
+  .changeRole .changeRoleBtnBlock .changeRoleBtn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+  }
+  .changeRole .changeRoleBtnBlock .changeRoleBtn svg {
+    outline: none;
+    cursor: pointer;
+  }
+  .changeRole .playRole {
+    margin: auto 0;
+    width: 40%;
+    display: inline-flex;
+  }
+  .changeRole .playRole .playRole img {
+    max-width: 100%;
+  }
+  .abilityBlock {
+    position: relative;
+    display: block;
+    width: 15%;
+  }
+  .abilityBlock .ability {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .abilityBlock .ability .abilityImg {
+    max-width: 100%;
+  }
+  .abilityBlock .abilityDescribe {
+    width: 100%;
+    display: inline-flex;
+  }
+  .totalPriceBlock {
+    width: 100%;
+    text-align: right;
+    display: inline-flex;
+  }
+  .totalPriceBlock .totalPrice {
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+    color: #16181D;
+    background-color: #FFE153;
+  }
+  .equipList {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 45%;
+    margin: 50px 0;
+  }
+  .equipList .maskList {
+    display: inline-flex;
+    width: 600px;
+  }
+  .equipList .airList {
+    display: inline-flex;
+    width: 600px;
+  }
+  .equipList .shoeList {
+    display: inline-flex;
+    width: 600px;
+  }
+  .equipBlock {
+    position: relative;
+    display: block;
+    width: 20%;
+    height: 70%;
+    margin: 5%;
+    margin: 10px;
+    text-align: center;
+  }
+  .bubbleBackground {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    background-image: url("../img/game/bubbleBackground.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .bubbleBackground .equip {
+    position: absolute;
+    top: -10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+    width: 60%;
+    height: 60%;
+    cursor: pointer;
+  }
+  .equipDescribeBlock {
+    height: 150px;
+    line-height: 150px;
+  }
+  .price {
+    display: block;
+  }
+  .eye img {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    transform: scale(1.15) rotate(170deg);
+  }
+  .back img {
+    position: absolute;
+    top: 28%;
+    transform: translateX(-70%);
+    z-index: -1;
+  }
+  .foot img {
+    position: absolute;
+    bottom: -30px;
+    transform: scale(1.7) rotate(12deg) translate(10px, 5px);
+  }
+  .rule {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 375px;
+    background-color: #16181D;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+  }
+  .rule .pRule {
+    text-indent: 2em;
+    line-height: 32px;
+    margin: 20px;
+    text-align: left;
+  }
+  .rule .ruleBtnX {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 0;
+    color: rgba(254, 254, 254, 0.75);
+    background: none;
+  }
+  .startBtn .bubbleBtn {
+    text-align: center;
+    margin: 20px;
+  }
+  .gameGif {
+    margin: 0 auto;
+    display: block;
+  }
+  .gameGifRWD {
+    margin: 0 auto;
+    display: none;
+  }
+  .parent_score {
+    position: relative;
+    width: 576px;
+    border-bottom: 3px solid rgba(254, 254, 254, 0.75);
+    margin: 65px auto 25px auto;
+    text-align: center;
+  }
+  .parent_score .scoreDescribe {
+    font-size: 30px;
+    color: #fefefe;
+    margin: 10px;
+    font-weight: 500;
+  }
+  .parent_score .yellow {
+    color: #FFE153;
+  }
+  .parent_score .resortRole {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .parent_score .goShopBtn .bubbleBtn {
+    text-align: right;
+    margin: 10px;
+  }
+  .rankList {
+    width: 576px;
+    height: 460px;
+    border-bottom: 3px solid rgba(254, 254, 254, 0.75);
+    margin: 25px auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: rgba(254, 254, 254, 0.75);
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #888;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .record {
+    display: flex;
+  }
+  .record img {
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    background-color: rgba(254, 254, 254, 0.75);
+    border-radius: 50%;
+  }
+  .record h3 {
+    flex-grow: 1;
+    width: 100px;
+    margin: auto 0;
+  }
+  .record h4 {
+    flex-grow: 1;
+    margin: auto 0;
+  }
+  .restartBtn .bubbleBtn {
+    text-align: center;
+    margin: 20px;
+  }
+}
+
 @media all and (max-width: 991px) {
   .choseRole {
     display: none;
@@ -672,6 +648,13 @@
     width: 100%;
     text-align: center;
     margin: 10px 0 -100px 0;
+  }
+  .gameGif {
+    display: none;
+  }
+  .gameGifRWD {
+    display: block;
+    max-width: 100%;
   }
 }
 
@@ -730,23 +713,11 @@
 }
 
 @media all and (max-width: 576px) {
-  body {
-    height: auto;
-  }
   .parent_score {
-    position: relative;
     width: 100%;
-    border-bottom: 3px solid rgba(254, 254, 254, 0.75);
-    margin: 25px auto;
-    text-align: center;
   }
   .rankList {
     width: 100%;
-    height: 460px;
-    border-bottom: 3px solid rgba(254, 254, 254, 0.75);
-    margin: 25px auto;
-    overflow-y: scroll;
-    overflow-x: hidden;
   }
 }
 /*# sourceMappingURL=game.css.map */
