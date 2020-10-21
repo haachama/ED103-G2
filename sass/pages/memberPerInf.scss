@@ -1,0 +1,53 @@
+.memberPerInfArea{
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px 40px;
+    background-color: rgba($color: #FEFEFE, $alpha: 0.75);
+    border-radius: 15px;
+}
+.memberPerInfAreaText{
+    width: 70%;
+    margin: auto;
+}
+.memberPerInfAreaText div{
+    text-align: left;
+    font-size: 16px;
+}
+.memberPerInfAreaText .memberLRButtonArea{
+    text-align: center;
+}
+.memberPIButtonArea{
+    display: inline-block;
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: 1px solid #FEFEFE;
+    background-color: #FEFEFE;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.memberPIButtonArea a{
+    color: #073977;
+    font-size: 12px;
+}
+.memberPIButtonArea:hover{
+    background-color: #073977;
+}
+.memberPIButtonArea:hover a{
+    color: #FEFEFE;
+}
+
+@media all and (max-width: 768px){
+    // .memberPerInfAreaText .memberPI .memberLRAP{
+    //     text-align: left;
+    // }
+    .memberPerInfAreaText .memberPI .memberLRAP p{
+        display: inline-block;
+        margin: 0;
+    }
+}
+@media all and (max-width: 576px){
+    .memberPIButtonArea{
+        margin: 15px 0;
+        margin-left: 90px;
+    }
+}

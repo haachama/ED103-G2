@@ -1,0 +1,214 @@
+@charset "UTF-8";
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+span {
+  font-size: 16px;
+}
+
+h4 {
+  color: #16181D;
+}
+
+p {
+  color: #16181D;
+}
+
+/* 內文區域 */
+.memberLoginMineArea {
+  margin: auto;
+  padding-top: 40px;
+  min-height: 100%;
+}
+
+.memberLoginMine {
+  width: 70%;
+  max-width: 900px;
+  height: 360px;
+  margin: 0 auto;
+  background-color: rgba(254, 254, 254, 0.75);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.memberLoginPic {
+  width: 50%;
+  margin: 0 auto;
+  display: inline-block;
+  border-radius: 15px 0 0 15px;
+  vertical-align: top;
+}
+
+.memberLR {
+  width: 50%;
+  margin: 0 auto;
+  display: inline-block;
+  border-radius: 0 15px 15px 0;
+  vertical-align: top;
+}
+
+/* 共用 */
+.memberInput {
+  width: 200px;
+  height: 25px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  vertical-align: middle;
+}
+
+.memberLRTitle {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.memberLRTitle h4 {
+  color: #16181D;
+}
+
+.memberLRFA {
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  overflow: auto;
+}
+
+.memberLRAP {
+  margin: 0 auto 10px;
+  text-align: center;
+}
+
+.memberLRAP p {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.memberLRButtonArea {
+  margin: 40px auto 5px;
+  text-align: center;
+}
+
+.memberLRButton {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.memberLRF {
+  margin-bottom: 20px;
+}
+
+.memberLRF p {
+  margin: 0 auto 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.memberLRF > p > a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #073977;
+}
+
+登入slider
+.memberLoginBanner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.memberLoginImgList {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.memberLoginImgList li {
+  position: absolute;
+}
+
+/* 登入頁面 */
+.memberLA {
+  margin: 0 auto;
+}
+
+.trainerLoginArea {
+  margin: 0 auto;
+  display: none;
+}
+
+/* 註冊頁面 */
+.memberRegArea {
+  margin: 0 auto;
+  display: none;
+}
+
+/* 密碼查詢頁面 */
+.memberPsnArea {
+  margin: 0 auto;
+  display: none;
+}
+
+/* 密碼查詢完成頁面 */
+.memberPsnFinArea {
+  margin: 0 auto;
+  display: none;
+}
+
+.memberPsnFinArea p {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.memberPsnFinArea p:last-child {
+  color: #073977;
+  cursor: pointer;
+}
+
+@media all and (max-width: 991px) {
+  .memberLoginImgList li {
+    overflow: hidden;
+  }
+  .memberLoginImgList li img {
+    width: 130%;
+  }
+  .memberInput {
+    width: 150px;
+    height: 25px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .memberLoginImgList li img {
+    width: 140%;
+  }
+  .memberLRF {
+    margin-bottom: 0;
+  }
+  .memberLRButtonArea .memberLRButton:last-child {
+    margin-top: 25px;
+  }
+  .memberLRF {
+    margin-bottom: 10px;
+  }
+  .memberLRAP p {
+    display: block;
+    text-align: left;
+    margin-left: 20%;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .memberLoginPic {
+    display: none;
+  }
+  .memberLR {
+    width: 100%;
+    border-radius: 0 15px 15px 0;
+  }
+}
+/*# sourceMappingURL=memberLogin.css.map */
