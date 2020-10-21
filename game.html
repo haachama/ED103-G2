@@ -6,7 +6,16 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/game.css">
 <style>
+:root{
+        --header-height: 81.82px;
+    }
+
 canvas {
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     border:1px solid #d3d3d3;
     background-color: #f1f1f1;
 }
@@ -47,6 +56,7 @@ canvas {
     </header>
 
     <main>
+        <canvas id="canvas"></canvas>
         <div style="text-align:center;width:480px;">
             <button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br>
             <button onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button>
@@ -66,20 +76,21 @@ canvas {
         var myGamePiece;
         var myObstacles = [];
         var myScore;
+        var myBackground;
 
         function startGame() {
             myGamePiece = new component(30, 30, "red", 10, 120);
             myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+            myBackground = new component(992, window.innerHeight -= 117, "./img/game/gameBackground.jpg", 0, 0, "image");
             myGameArea.start();
         }
 
         var myGameArea = {
-            canvas : document.createElement("canvas"),
+            canvas : document.getElementById('canvas'),
+            
             start : function() {
-                this.canvas.x =1000;
-                this.canvas.y = 120;
-                this.canvas.width = 480;
-                this.canvas.height = 270;
+                this.canvas.width = 992;
+                this.canvas.height =  window.innerHeight -= 117;
                 this.context = this.canvas.getContext("2d");
                 document.body.insertBefore(this.canvas, document.body.childNodes[0]);
                 this.frameNo = 0;
@@ -93,20 +104,13 @@ canvas {
                 clearInterval(this.interval);
             }
         }
-
-        function mainLoop(time) {
-
-        // Check if the canvas size matches the window size
-            if (canvas.width !== innerWidth || canvas.height !== innerHeight) {
-                canvas.width = innerWidth;    // resize canvas
-                canvas.height = innerHeight;  // also clears the canvas
-            } else {
-            ctx.clearRect(0, 0, canvas.width, canvas.height); // clear if not resized
-            }
-        }
-        // Animation code as normal.
+       
         function component(width, height, color, x, y, type) {
             this.type = type;
+            if (type == "image") {
+                this.image = new Image();
+                this.image.src = color;
+            }
             this.width = width;
             this.height = height;
             this.speedX = 0;
@@ -115,7 +119,13 @@ canvas {
             this.y = y;    
             this.update = function() {
                 ctx = myGameArea.context;
-                if (this.type == "text") {
+                if (type == "image") {
+                    ctx.drawImage(this.image,
+                    this.x,
+                    this.y,
+                    this.width, this.height);
+                } else if 
+                    (this.type == "text") {
                     ctx.font = this.width + " " + this.height;
                     ctx.fillStyle = color;
                     ctx.fillText(this.text, this.x, this.y);
@@ -154,6 +164,9 @@ canvas {
                 } 
             }
             myGameArea.clear();
+            myBackground.speedY = -1;
+            myBackground.newPos();
+            myBackground.update();
             myGameArea.frameNo += 1;
             if (myGameArea.frameNo == 1 || everyinterval(150)) {
                 x = myGameArea.canvas.width;
