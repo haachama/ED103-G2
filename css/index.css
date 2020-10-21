@@ -6,13 +6,15 @@ body {
 }
 
 h3 {
-  margin-top: 170px;
+  margin-top: 100px;
   text-align: center;
+  font-size: 18px;
 }
 
 .waves {
   z-index: -1;
   position: relative;
+  top: 0px;
 }
 
 .waves img {
@@ -41,8 +43,8 @@ h2 {
 }
 
 .weather .bubbleCircle {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   background-image: url("../img/index/bigbubble@2x.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -62,7 +64,7 @@ h2 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 250px;
+  height: 200px;
   color: #fefefe;
 }
 
@@ -78,13 +80,13 @@ h2 {
 }
 
 .weather .secondBubble {
-  width: 130px;
-  height: 130px;
+  width: 120px;
+  height: 120px;
   background-image: url("../img/index/bigbubble@2x.png");
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  left: 53%;
+  left: 50%;
 }
 
 .container {
@@ -196,7 +198,7 @@ h2 {
 }
 
 .containerCourse .courseUp .courseBox .animal img {
-  width: 200px;
+  width: 150px;
 }
 
 .containerCourse .courseUp .courseBox .animal .windows {
@@ -460,7 +462,7 @@ h2 {
 }
 
 .shop {
-  width: 1000px;
+  max-width: 1000px;
   margin: auto;
   margin-top: 20px;
   display: -webkit-box;
@@ -532,7 +534,7 @@ h2 {
 }
 
 .diary {
-  width: 1200px;
+  max-width: 1200px;
   margin: 50px auto;
 }
 
@@ -540,55 +542,42 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.bigDiary .diaryInsidePage {
-  margin: 0 auto;
-  width: 1200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 0 20px 0;
 }
 
-.bigDiary .diaryInsidePage .pageLeft {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
+.bigDiary .pageLeft {
+  width: 50%;
 }
 
-.bigDiary .diaryInsidePage .pageLeft .pageLeftImg {
+.bigDiary .pageLeft .pageLeftImg {
   font-size: 0;
 }
 
-.bigDiary .diaryInsidePage .pageLeft .pageLeftImg img {
+.bigDiary .pageLeft .pageLeftImg img {
   border-radius: 5px 0 0 5px;
 }
 
-.bigDiary .diaryInsidePage .pageLeft .pageLeftLine {
+.bigDiary .pageLeft .pageLeftLine {
   border: 1px solid black;
   height: 150px;
 }
 
-.bigDiary .diaryInsidePage .pageRight {
+.bigDiary .pageRight {
   padding: 10px;
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
   border-radius: 0 5px 5px 0;
   background-color: #16181D;
 }
 
-.bigDiary .diaryInsidePage .pageRight hr {
+.bigDiary .pageRight hr {
   border: 0;
   background-color: rgba(254, 254, 254, 0.75);
   height: 1px;
 }
 
-.bigDiary .diaryInsidePage .pageRight .share {
+.bigDiary .pageRight .share {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -603,21 +592,21 @@ h2 {
   padding-bottom: 10px;
 }
 
-.bigDiary .diaryInsidePage .pageRight .share p:nth-child(1) a:nth-child(1) {
+.bigDiary .pageRight .share p:nth-child(1) a:nth-child(1) {
   color: #fefefe;
   font-size: 14px;
 }
 
-.bigDiary .diaryInsidePage .pageRight .share p {
+.bigDiary .pageRight .share p {
   padding: 5px;
 }
 
-.bigDiary .diaryInsidePage .pageRight .share p a {
+.bigDiary .pageRight .share p a {
   color: #fefefe;
   font-size: 20px;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightTitle {
+.bigDiary .pageRight .rightTitle {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -630,7 +619,7 @@ h2 {
           align-items: flex-start;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightTitle .rightNameImg {
+.bigDiary .pageRight .rightTitle .rightNameImg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -639,36 +628,36 @@ h2 {
           align-items: center;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightTitle .rightNameImg .rightImg img {
+.bigDiary .pageRight .rightTitle .rightNameImg .rightImg img {
   border-radius: 50%;
   width: 52px;
   border: 1px solid #fefefe;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightTitle .rightNameImg .rightName {
+.bigDiary .pageRight .rightTitle .rightNameImg .rightName {
   padding-left: 10px;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightTitle .rightNameImg .rightName p:nth-child(1) {
+.bigDiary .pageRight .rightTitle .rightNameImg .rightName p:nth-child(1) {
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 18px;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightTitle .rightNameImg .rightName p {
+.bigDiary .pageRight .rightTitle .rightNameImg .rightName p {
   color: #fefefe;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightTitle .rightNameText p:nth-child(1) {
-  font-size: 24px;
+.bigDiary .pageRight .rightTitle .rightNameText p:nth-child(1) {
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightTitle .rightNameText p {
+.bigDiary .pageRight .rightTitle .rightNameText p {
   color: #fefefe;
   text-align: right;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightInformation {
+.bigDiary .pageRight .rightInformation {
   width: 100%;
   margin: 20px 0;
   display: -webkit-box;
@@ -678,17 +667,17 @@ h2 {
       justify-content: space-around;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightInformation div p:nth-child(2) {
+.bigDiary .pageRight .rightInformation div p:nth-child(2) {
   font-size: 24px;
   padding: 10px 0px;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightInformation div p {
+.bigDiary .pageRight .rightInformation div p {
   text-align: center;
   color: #fefefe;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightData {
+.bigDiary .pageRight .rightData {
   position: relative;
   width: 100%;
   display: -webkit-box;
@@ -703,7 +692,7 @@ h2 {
   padding: 10px 0px;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightData .rightDataA {
+.bigDiary .pageRight .rightData .rightDataA {
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
           flex: 50%;
@@ -716,22 +705,22 @@ h2 {
           justify-content: space-between;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightData .rightDataA div p:nth-child(2) {
+.bigDiary .pageRight .rightData .rightDataA div p:nth-child(2) {
   font-size: 19.2px;
   padding: 5px 0px;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightData .rightDataA div p {
+.bigDiary .pageRight .rightData .rightDataA div p {
   color: #fefefe;
   text-align: center;
   font-size: 14px;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightData .rightDataA div span:nth-child(2) {
+.bigDiary .pageRight .rightData .rightDataA div span:nth-child(2) {
   font-size: 16px;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightData .rightDataB {
+.bigDiary .pageRight .rightData .rightDataB {
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
           flex: 50%;
@@ -743,50 +732,50 @@ h2 {
       justify-content: space-around;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightData .rightDataB div p:nth-child(2) {
+.bigDiary .pageRight .rightData .rightDataB div p:nth-child(2) {
   font-size: 19.2px;
   padding: 5px 0px;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightData .rightDataB div p {
+.bigDiary .pageRight .rightData .rightDataB div p {
   color: #fefefe;
   text-align: center;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightData .rightDataB div p span:nth-child(2) {
+.bigDiary .pageRight .rightData .rightDataB div p span:nth-child(2) {
   font-size: 16px;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightData .rightDataB div p i {
+.bigDiary .pageRight .rightData .rightDataB div p i {
   font-size: 20px;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightData .rightDataB div span:nth-child(2) {
+.bigDiary .pageRight .rightData .rightDataB div span:nth-child(2) {
   font-size: 16px;
 }
 
-.bigDiary .diaryInsidePage .pageRight .biological {
+.bigDiary .pageRight .biological {
   color: #fefefe;
   width: 100%;
   padding: 10px 0px;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightPicture {
+.bigDiary .pageRight .rightPicture {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightPicture div {
+.bigDiary .pageRight .rightPicture div {
   margin: 0 30px;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightContent {
+.bigDiary .pageRight .rightContent {
   width: 100%;
   padding: 10px;
 }
 
-.bigDiary .diaryInsidePage .pageRight .rightContent p {
+.bigDiary .pageRight .rightContent p {
   color: #fefefe;
 }
 
@@ -794,13 +783,13 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .smallDiary .diarySolid {
-  width: 350px;
+  width: 300px;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -948,6 +937,7 @@ h2 {
 
 .diaryCenter {
   position: relative;
+  margin: 0 10px;
 }
 
 .diaryCenter::after {
@@ -971,7 +961,7 @@ h2 {
 }
 
 .gameCenter {
-  width: 800px;
+  max-width: 800px;
   margin-top: 30px;
   margin: auto;
   padding: 5px;
@@ -981,8 +971,12 @@ h2 {
   margin-top: 50px;
 }
 
+.gameCenter .diveGif {
+  text-align: center;
+}
+
 .gameCenter .diveGif img {
-  width: 100%;
+  width: 80%;
   margin: 50px auto;
 }
 
@@ -1129,4 +1123,143 @@ svg #fish6 {
     }
 } */
 /*END Fish Animation*/
+@media screen and (min-width: 1500px) {
+  .waves {
+    top: 80px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .waves .biglogo img {
+    height: 150px;
+  }
+  .weather .firstBubble,
+  .weather .secondBubble {
+    display: none;
+  }
+  .weather .bubbleCircle {
+    width: auto;
+    height: 100px;
+    background-image: none;
+    position: static;
+  }
+  .weather .bubbleCircle .txt {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 100px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container {
+    width: 400px;
+    margin-top: 0;
+  }
+  .container::before {
+    width: 400px;
+  }
+  .container::after {
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: -30%;
+  }
+  .container .scene img {
+    width: 60px;
+  }
+  .containerCourse .courseUp {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .containerCourse .courseDown {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .containerCourse .courseDown .mainLeft .bubbleBtn {
+    margin: 50px;
+  }
+  .shop .demoman {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .shop .demoman img {
+    width: 150px;
+  }
+  .shop .itemList {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  .bigDiary {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .bigDiary .pageRight .rightData {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .bigDiary .pageRight .rightData .rightDataB {
+    margin: 20px 5px;
+  }
+  .bigDiary .pageLeft .pageLeftImg img {
+    max-width: 100%;
+    border-radius: 0;
+  }
+  .smallDiary .diarySolid {
+    width: 250px;
+  }
+  .smallDiary .diarySolid .diaryText .diaryTextData div:first-child p:nth-child(2) span:nth-child(1),
+  .smallDiary .diarySolid .diaryText .diaryTextData div p:nth-child(2) span:nth-child(1) {
+    font-size: 18px;
+  }
+  .diaryCenter:nth-child(3) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .shop {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .shop .demoman {
+    display: none;
+  }
+  .shop .itemList {
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+  }
+  .shop .itemList .mask,
+  .shop .itemList .watch,
+  .shop .itemList .gloves {
+    margin-left: 0;
+  }
+  .shop .itemList .item img {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .containerCourse .courseDown .mainLeft .courseH4 {
+    margin: 0px;
+  }
+  .containerCourse .courseDown .mainLeft .courseItem {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 /*# sourceMappingURL=index.css.map */

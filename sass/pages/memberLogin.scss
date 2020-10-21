@@ -16,19 +16,19 @@ p{
 .memberLoginMineArea{
     margin: auto;
     padding-top: 40px;
-    min-height: 100%;
+    // min-height: 100%;
 }
 .memberLoginMine{
 width: 70%;
 max-width: 900px;
 height: 360px;
-margin: 0 auto;
+margin: 100px auto;
 background-color: rgba($color: #FEFEFE, $alpha: 0.75);
 border-radius: 15px;
 overflow: hidden;
 }
 .memberLoginPic{
-width: 50%;
+width: 48%;
 margin: 0 auto;
 // border: 1px solid blue;
 display: inline-block;

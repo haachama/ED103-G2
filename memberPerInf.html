@@ -3,48 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Member PerInf</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="Shortcut Icon" href="./img/favicon.ico" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="./css/hamburgers.css">
     <link rel="stylesheet" href="./css/member.css">
     <link rel="stylesheet" href="./css/memberLogin.css">
     <link rel="stylesheet" href="./css/memberPerInf.css">
     <link rel="stylesheet" href="./css/memberPerInfChange.css">
     <link rel="stylesheet" href="./css/style.css">
+    <title>Member | Personal Information</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="javascript:;"><img src="./img/header/logo.png" alt="logo"></a>
-        </div>
-        <div class="nav">
-            <ul>
-                <li class="recommend_nav">
-                    <a href="javascript:;">潛 點<br>&nbsp;&nbsp;推 薦</a>
-                </li>
-                <li class="course_nav">
-                    <a href="javascript:;">潛 水<br>&nbsp;&nbsp;課 程</a>
-                </li>
-                <li class="shop_nav">
-                    <a href="javascript:;">潛 水<br>&nbsp;&nbsp;商 城</a>
-                </li>
-                <li class="blog_nav">
-                    <a href="javascript:;">潛 水<br>&nbsp;&nbsp;日 誌</a>
-                </li>
-                <li class="game_nav">
-                    <a href="javascript:;">下 潛<br>&nbsp;&nbsp;遊 戲</a>
-                </li>
-            </ul>
-        </div>
-        <div class="memCart">
-            <ul>
-                <li><a href="javascript:;"><img src="./img/header/member.png" ></a></li>
-                <li><a href="javascript:;"><img src="./img/header/cart.png"></a></li>
-            </ul>
-        </div>
-    </header>
+  <header class="courseHeader">
+    <h1 class="logo">海中日子 Divein
+        <a href="./index.html"><img src="./img/header/logo.png" alt="logo"></a>
+    </h1>
+    <div class="nav">
+        <ul>
+            <li class="recommend_nav">
+                <a href="./spot.html">潛點推薦</a>
+            </li>
+            <li class="course_nav">
+                <a href="./course.html">潛水課程</a>
+            </li>
+            <li class="shop_nav">
+                <a href="./shop.html">潛水商城</a>
+            </li>
+            <li class="blog_nav">
+                <a href="./shop.html">潛水日誌</a>
+            </li>
+            <li class="game_nav">
+                <a href="./game.html">下潛遊戲</a>
+            </li>
+        </ul>
+    </div>
+    <div class="memCart">
+        <ul>
+            <li><a href="./memberLogin.html"><img src="./img/header/member.png"></a></li>
+            <li><a href="javascript:;"><img src="./img/header/cart.png"></a></li>
+        </ul>
+    </div>
+    <button class="hamburger hamburger--3dxy" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+    </button>  
+</header>
     <div class="memberContainer">
         <div class="memberAside">
             <div class="memberAsideTitle">
+              <a href="./member.html">
                 <p>會員中心</p>
+              </a>
             </div>
             <div class="memberAsideTable">
                 <div class="memberData">
@@ -64,9 +75,9 @@
                     </div>
                     <table class="memberDataTable">
                         <tr>
-                            <td>個人資料</td>
-                            <td>更換密碼</td>
-                            <td>密碼修改</td>
+                          <td><a href="./memberPerInf.html">個人資料</a></td>
+                          <td>更換頭像</td>
+                          <td><a href="./memberPasChange.html">密碼修改</a></td>
                         </tr>
                     </table>
                     <div class="memberComputer">
@@ -97,7 +108,7 @@
                       <p>會員密碼：</p>
                       <p>*********</p>
                       <div class="memberPIButtonArea">
-                        <a href="">密碼修改</a>
+                        <a href="./memberPasChange.html">密碼修改</a>
                       </div>
                     </div>
                     <div class="memberLRAP">
@@ -115,7 +126,7 @@
                   <div class="memberLRAP">
                     <p>AOW證照：</p>
                     <p class="memberLRAPAOW">審查未通過</p>
-                    <div class="memberPIButtonArea"><a href="">證照填寫</a></div>
+                    <div class="memberPIButtonArea"><a href="./memberlicense.html">證照填寫</a></div>
                   </div>
                 <div class="memberLRAP">
                     <p>會員信箱：</p>
@@ -134,7 +145,7 @@
                         </defs>
                       </svg>
                       <span class="button--bubble__container">
-                        <a href="#campaign" class="button button--bubble">
+                        <a href="./memberPerInfChange.html" class="button button--bubble">
                           修改資料
                         </a>
                         <span class="button--bubble__effect-container">
@@ -154,11 +165,13 @@
               </div>
         </div>
     </div>
+  </div>
+</div>
     <footer>
-        <div class="copyright">
-            Copyright © 2020 Divein | 海中日子 All Rights Reserved.
-        </div>
-    </footer>
+      <div class="copyright">
+          Copyright © 2020 Divein | 海中日子 All Rights Reserved.
+      </div>
+  </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
@@ -167,5 +180,6 @@
     <script src="./js/bubbleBtn.js"></script>
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/common.js"></script>
 </body>
 </html>

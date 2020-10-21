@@ -7,14 +7,16 @@ body {
 }
 
 h3 {
-    margin-top: 170px;
+    margin-top: 100px;
     text-align: center;
+    font-size: 18px;
 }
 
 .waves {
     z-index: -1;
     // border: 1px solid #fff;
     position: relative;
+    top: 0px;
 
     img {
         width: 100%;
@@ -45,8 +47,8 @@ h2 {
     position: relative;
 
     .bubbleCircle {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
         background-image: url("../img/index/bigbubble@2x.png");
         background-repeat: no-repeat;
         background-size: contain;
@@ -60,7 +62,7 @@ h2 {
             flex-direction: column;
             justify-content: space-evenly;
 
-            height: 250px;
+            height: 200px;
             color: $keyWhite;
         }
     }
@@ -78,14 +80,14 @@ h2 {
     }
 
     .secondBubble {
-        width: 130px;
-        height: 130px;
+        width: 120px;
+        height: 120px;
         background-image: url("../img/index/bigbubble@2x.png");
         background-repeat: no-repeat;
         background-size: contain;
 
         position: absolute;
-        left: 53%;
+        left: 50%;
     }
 }
 
@@ -186,7 +188,7 @@ h2 {
                 position: relative;
 
                 img {
-                    width: 200px;
+                    width: 150px;
                 }
 
                 .windows {
@@ -400,7 +402,7 @@ h2 {
 
 
 .shop {
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
     margin-top: 20px;
     display: flex;
@@ -457,268 +459,258 @@ h2 {
 }
 
 .diary {
-    width: 1200px;
+    max-width: 1200px;
     margin: 50px auto;
 }
 
 .bigDiary {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    // max-width: 850px;
+    margin: 0 0 20px 0;
 
-    .diaryInsidePage {
-        // border: 1px solid black;
-        margin: 0 auto;
-        width: 1200px;
-        display: flex;
-        margin: 0 0 20px 0;
+    .pageLeft {
+        width: 50%;
 
-        .pageLeft {
-            flex: 50%;
+        .pageLeftImg {
+            font-size: 0;
 
-            .pageLeftImg {
-                font-size: 0;
-
-                img {
-                    border-radius: 5px 0 0 5px;
-                }
-            }
-
-            .pageLeftLine {
-                border: 1px solid black;
-                height: 150px; //先設假的
+            img {
+                border-radius: 5px 0 0 5px;
             }
         }
 
-        .pageRight {
-            // border: 1px solid purple;
-            padding: 10px;
-            flex: 50%;
-            border-radius: 0 5px 5px 0;
-            background-color: $keyBlack;
+        .pageLeftLine {
+            border: 1px solid black;
+            height: 150px; //先設假的
+        }
+    }
 
-            hr {
-                border: 0;
-                background-color: $transparentWhite;
-                height: 1px;
+    .pageRight {
+        // border: 1px solid purple;
+        padding: 10px;
+        // flex: 50%;
+        border-radius: 0 5px 5px 0;
+        background-color: $keyBlack;
+
+        hr {
+            border: 0;
+            background-color: $transparentWhite;
+            height: 1px;
+        }
+
+        // 分享
+        .share {
+            // border: 1px solid orange;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding-right: 5px;
+            padding-bottom: 10px;
+
+            p:nth-child(1) a:nth-child(1) {
+                //檢舉
+                // border: 1px solid red;
+                color: $keyWhite;
+                font-size: 14px;
             }
 
-            // 分享
-            .share {
-                // border: 1px solid orange;
-                width: 100%;
-                display: flex;
-                justify-content: flex-end;
-                align-items: flex-end;
-                padding-right: 5px;
-                padding-bottom: 10px;
+            p {
+                // border: 1px solid blue;
+                padding: 5px;
 
-                p:nth-child(1) a:nth-child(1) {
-                    //檢舉
-                    // border: 1px solid red;
+                a {
+                    // border: 1px solid green;
                     color: $keyWhite;
-                    font-size: 14px;
-                }
-
-                p {
-                    // border: 1px solid blue;
-                    padding: 5px;
-
-                    a {
-                        // border: 1px solid green;
-                        color: $keyWhite;
-                        font-size: 20px;
-                    }
+                    font-size: 20px;
                 }
             }
+        }
 
-            // user
-            .rightTitle {
-                width: 100%;
+        // user
+        .rightTitle {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .rightNameImg {
                 display: flex;
-                justify-content: space-between;
-                align-items: flex-start;
+                align-items: center;
 
-                .rightNameImg {
-                    display: flex;
-                    align-items: center;
-
-                    .rightImg img {
-                        border-radius: 50%;
-                        width: 52px;
-                        border: 1px solid $keyWhite;
-                    }
-
-                    .rightName {
-                        padding-left: 10px;
-
-                        p:nth-child(1) {
-                            margin-bottom: 10px;
-                            font-size: 1.5*$baseFz;
-                        }
-
-                        p {
-                            color: $keyWhite;
-                        }
-                    }
+                .rightImg img {
+                    border-radius: 50%;
+                    width: 52px;
+                    border: 1px solid $keyWhite;
                 }
 
-                .rightNameText {
+                .rightName {
+                    padding-left: 10px;
+
                     p:nth-child(1) {
-                        font-size: 1.5*$baseFz;
                         margin-bottom: 10px;
+                        font-size: 1.125*$baseFz;
                     }
 
                     p {
                         color: $keyWhite;
-                        text-align: right;
                     }
                 }
             }
 
-            // 潛點資訊
-            .rightInformation {
-                // border: 1px solid blue;
-                width: 100%;
-                margin: 20px 0;
+            .rightNameText {
+                p:nth-child(1) {
+                    font-size: 1.125*$baseFz;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    color: $keyWhite;
+                    text-align: right;
+                }
+            }
+        }
+
+        // 潛點資訊
+        .rightInformation {
+            // border: 1px solid blue;
+            width: 100%;
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-around;
+
+            div {
+
+                // border: 1px solid orange;
+                p:nth-child(2) {
+                    font-size: 24px;
+                    padding: 10px 0px;
+                }
+
+                p {
+                    // border: 1px solid orange;
+                    text-align: center;
+                    color: $keyWhite;
+                }
+            }
+        }
+
+        // 資料
+        .rightData {
+            // border: 1px solid black;
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0px;
+
+            .rightDataA {
+                // border: 1px solid $keyWhite;
+                flex: 50%;
                 display: flex;
+                margin: 0 5px;
+                justify-content: space-between;
+
+                div {
+
+                    // border: 1px solid gray;
+                    p:nth-child(2) {
+                        font-size: 1.2*$baseFz;
+                        padding: 5px 0px;
+                    }
+
+                    p {
+                        // border: 1px solid rgb(51, 141, 153);
+                        color: $keyWhite;
+                        text-align: center;
+                        font-size: 14px;
+                    }
+
+                    span:nth-child(2) {
+                        font-size: 16px;
+                    }
+                }
+
+            }
+
+            .rightDataB {
+                flex: 50%;
+                display: flex;
+                margin: 0 5px;
                 justify-content: space-around;
 
                 div {
 
-                    // border: 1px solid orange;
+                    // border: 1px solid gray;
                     p:nth-child(2) {
-                        font-size: 24px;
-                        padding: 10px 0px;
+                        font-size: 1.2*$baseFz;
+                        padding: 5px 0px;
                     }
 
                     p {
-                        // border: 1px solid orange;
-                        text-align: center;
+                        // border: 1px solid rgb(51, 141, 153);
                         color: $keyWhite;
-                    }
-                }
-            }
-
-            // 資料
-            .rightData {
-                // border: 1px solid black;
-                position: relative;
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 10px 0px;
-
-                .rightDataA {
-                    // border: 1px solid $keyWhite;
-                    flex: 50%;
-                    display: flex;
-                    margin: 0 5px;
-                    justify-content: space-between;
-
-                    div {
-
-                        // border: 1px solid gray;
-                        p:nth-child(2) {
-                            font-size: 1.2*$baseFz;
-                            padding: 5px 0px;
-                        }
-
-                        p {
-                            // border: 1px solid rgb(51, 141, 153);
-                            color: $keyWhite;
-                            text-align: center;
-                            font-size: 14px;
-                        }
+                        text-align: center;
 
                         span:nth-child(2) {
                             font-size: 16px;
                         }
-                    }
 
-                }
-
-                .rightDataB {
-                    flex: 50%;
-                    display: flex;
-                    margin: 0 5px;
-                    justify-content: space-around;
-
-                    div {
-
-                        // border: 1px solid gray;
-                        p:nth-child(2) {
-                            font-size: 1.2*$baseFz;
-                            padding: 5px 0px;
-                        }
-
-                        p {
-                            // border: 1px solid rgb(51, 141, 153);
-                            color: $keyWhite;
-                            text-align: center;
-
-                            span:nth-child(2) {
-                                font-size: 16px;
-                            }
-
-                            i {
-                                font-size: 20px;
-                                // border: 1px solid gray;
-                            }
-                        }
-
-                        span:nth-child(2) {
-                            font-size: 16px;
+                        i {
+                            font-size: 20px;
+                            // border: 1px solid gray;
                         }
                     }
-                }
-            }
 
-            // 圖鑑
-            .biological {
-                // border: 1px solid blue;
-                color: $keyWhite;
-                width: 100%;
-                padding: 10px 0px;
-            }
-
-            .rightPicture {
-                // border: 1px solid blue;
-                display: flex;
-
-                div {
-                    margin: 0 30px;
-                }
-            }
-
-            // 日誌
-            .rightContent {
-                // border: 1px solid black;
-                width: 100%;
-                padding: 10px;
-
-                p {
-                    // border: 1px solid rgb(226, 119, 119);
-                    color: $keyWhite;
+                    span:nth-child(2) {
+                        font-size: 16px;
+                    }
                 }
             }
         }
+
+        // 圖鑑
+        .biological {
+            // border: 1px solid blue;
+            color: $keyWhite;
+            width: 100%;
+            padding: 10px 0px;
+        }
+
+        .rightPicture {
+            // border: 1px solid blue;
+            display: flex;
+
+            div {
+                margin: 0 30px;
+            }
+        }
+
+        // 日誌
+        .rightContent {
+            // border: 1px solid black;
+            width: 100%;
+            padding: 10px;
+
+            p {
+                // border: 1px solid rgb(226, 119, 119);
+                color: $keyWhite;
+            }
+        }
     }
+
 }
 
-// .diaryTxt {
-//     width: 560px;
-//     height: 420px;
-//     border: 1px solid #545544;
-// }
 
 
 .smallDiary {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     .diarySolid {
-        width: 350px;
+        width: 300px;
         border-radius: 5px;
         overflow: hidden;
 
@@ -873,6 +865,7 @@ h2 {
 
 .diaryCenter {
     position: relative;
+    margin: 0 10px;
 }
 
 .diaryCenter::after {
@@ -981,7 +974,7 @@ h2 {
 // }
 
 .gameCenter {
-    width: 800px;
+    max-width: 800px;
     margin-top: 30px;
     margin: auto;
     padding: 5px;
@@ -991,8 +984,10 @@ h2 {
     }
 
     .diveGif {
+        text-align: center;
+
         img {
-            width: 100%;
+            width: 80%;
             margin: 50px auto;
         }
     }
@@ -1144,3 +1139,172 @@ svg #fish6 {
 } */
 
 /*END Fish Animation*/
+@media screen and (min-width:1500px){
+    .waves{
+        top: 80px;
+    }
+}
+@media screen and (min-width:1200px){
+    .waves{
+        // top: 100px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .waves {
+        .biglogo img {
+            height: 150px;
+        }
+    }
+
+    .weather {
+
+        .firstBubble,
+        .secondBubble {
+            display: none;
+        }
+
+        .bubbleCircle {
+            width: auto;
+            height: 100px;
+            background-image: none;
+            position: static;
+
+            .txt {
+                flex-direction: row;
+                justify-content: space-evenly;
+                height: 100px;
+                align-items: center;
+
+            }
+        }
+
+    }
+
+    .container {
+        width: 400px;
+        margin-top: 0;
+    }
+
+    .container::before {
+        width: 400px;
+    }
+
+    .container::after {
+        width: 60%;
+        height: 60%;
+        top: 20%;
+        left: -30%;
+    }
+
+    .container .scene img {
+        width: 60px;
+    }
+
+    .containerCourse .courseUp {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .containerCourse .courseDown {
+        flex-wrap: wrap;
+    }
+
+    .containerCourse .courseDown .mainLeft .bubbleBtn {
+        margin: 50px;
+    }
+
+    .shop .demoman {
+        flex: 1;
+    }
+
+    .shop .demoman img {
+        width: 150px;
+    }
+
+    .shop .itemList {
+        flex: 2;
+    }
+
+    .bigDiary {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .pageRight {
+            .rightData {
+                flex-wrap: wrap;
+
+                .rightDataB {
+                    margin: 20px 5px;
+                }
+
+            }
+        }
+
+        .pageLeft .pageLeftImg img {
+            max-width: 100%;
+            border-radius: 0;
+        }
+
+    }
+
+    .smallDiary .diarySolid {
+        width: 250px;
+    }
+
+    .smallDiary .diarySolid .diaryText .diaryTextData div:first-child p:nth-child(2) span:nth-child(1),
+    .smallDiary .diarySolid .diaryText .diaryTextData div p:nth-child(2) span:nth-child(1) {
+        font-size: 18px;
+    }
+
+    .diaryCenter:nth-child(3){
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    .shop {
+        justify-content: center;
+    }
+
+    .shop .demoman {
+        display: none;
+    }
+
+    .shop .itemList {
+        flex: 0;
+
+        .mask,
+        .watch,
+        .gloves {
+            margin-left: 0;
+        }
+
+        .item img {
+            width: 100px;
+
+        }
+    }
+
+
+}
+
+@media screen and (max-width:576px) {
+
+    .containerCourse .courseDown .mainLeft .courseH4 {
+        margin: 0px;
+    }
+
+    .containerCourse .courseDown .mainLeft .courseItem {
+        flex-wrap: wrap;
+
+    }
+
+
+
+
+
+
+}

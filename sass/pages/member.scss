@@ -4,6 +4,15 @@ body{
 img{
     width: 100%;
 }
+a{
+    color: #16181D;
+    text-decoration: none;
+  }
+  footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
 .memberContainer{
     min-height: 100%;
     display: flex;

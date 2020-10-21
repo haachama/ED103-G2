@@ -1,6 +1,6 @@
 .memberPerInfArea {
   width: 80%;
-  margin: 40px auto;
+  margin: 100px auto;
   padding: 20px 40px;
   background-color: rgba(254, 254, 254, 0.75);
   border-radius: 15px;
@@ -41,6 +41,10 @@
 
 .memberPIButtonArea:hover a {
   color: #FEFEFE;
+}
+
+.memberLRAPAOW {
+  color: #E81438;
 }
 
 @media all and (max-width: 768px) {
