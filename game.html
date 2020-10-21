@@ -57,12 +57,6 @@ canvas {
 
     <main>
         <canvas id="canvas"></canvas>
-        <div style="text-align:center;width:480px;">
-            <button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br>
-            <button onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button>
-            <button onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br>
-            <button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>
-        </div>
     </main>
 
     <footer>
@@ -81,7 +75,7 @@ canvas {
         function startGame() {
             myGamePiece = new component(30, 30, "red", 10, 120);
             myScore = new component("30px", "Consolas", "black", 280, 40, "text");
-            myBackground = new component(992, window.innerHeight -= 117, "./img/game/gameBackground.jpg", 0, 0, "image");
+            myBackground = new component(1920, 3000, "./img/game/gameBackground.jpg", 0, 0, "background");
             myGameArea.start();
         }
 
@@ -89,25 +83,32 @@ canvas {
             canvas : document.getElementById('canvas'),
             
             start : function() {
-                this.canvas.width = 992;
-                this.canvas.height =  window.innerHeight -= 117;
+                this.canvas.width = window.innerWidth;
+                this.canvas.height =  700;//window.innerHeight -= 117;
                 this.context = this.canvas.getContext("2d");
                 document.body.insertBefore(this.canvas, document.body.childNodes[0]);
                 this.frameNo = 0;
                 this.interval = setInterval(updateGameArea, 20);
-                },
+                window.addEventListener('keydown', function (e) {
+                        myGameArea.key = e.keyCode;
+                    })
+                window.addEventListener('keyup', function (e) {
+                        myGameArea.key = false;
+                    })
+            },
             
             clear : function() {
                 this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
             },
             stop : function() {
                 clearInterval(this.interval);
+                window.open("gameResult.html", target="_self");
             }
         }
        
         function component(width, height, color, x, y, type) {
             this.type = type;
-            if (type == "image") {
+            if (type == "image" || type == "background") {
                 this.image = new Image();
                 this.image.src = color;
             }
@@ -119,13 +120,18 @@ canvas {
             this.y = y;    
             this.update = function() {
                 ctx = myGameArea.context;
-                if (type == "image") {
-                    ctx.drawImage(this.image,
-                    this.x,
+                if (type == "image" || type == "background") {
+                    ctx.drawImage(this.image, 
+                    this.x, 
                     this.y,
                     this.width, this.height);
-                } else if 
-                    (this.type == "text") {
+                if (type == "background") {
+                    ctx.drawImage(this.image, 
+                    this.x,  
+                    this.y + this.height,
+                    this.width, this.height);
+                } 
+                }else if (this.type == "text") {
                     ctx.font = this.width + " " + this.height;
                     ctx.fillStyle = color;
                     ctx.fillText(this.text, this.x, this.y);
@@ -136,7 +142,12 @@ canvas {
             }
             this.newPos = function() {
                 this.x += this.speedX;
-                this.y += this.speedY;        
+                this.y += this.speedY;
+                if (this.type == "background") {
+                    if (this.y == -(this.height)) {
+                        this.y = 0;
+                    }
+                }        
             }
             this.crashWith = function(otherobj) {
                 var myleft = this.x;
@@ -156,6 +167,10 @@ canvas {
         }
 
         function updateGameArea() {
+
+            this.canvas.width = window.innerWidth;
+            this.canvas.height =  window.innerHeight;
+
             var x, height, gap, minHeight, maxHeight, minGap, maxGap;
             for (i = 0; i < myObstacles.length; i += 1) {
                 if (myGamePiece.crashWith(myObstacles[i])) {
@@ -164,7 +179,13 @@ canvas {
                 } 
             }
             myGameArea.clear();
-            myBackground.speedY = -1;
+            myGamePiece.speedX = 0;
+            myGamePiece.speedY = 0;    
+            if (myGameArea.key && myGameArea.key == 37) {myGamePiece.speedX = -1; }
+            if (myGameArea.key && myGameArea.key == 39) {myGamePiece.speedX = 1; }
+            if (myGameArea.key && myGameArea.key == 38) {myGamePiece.speedY = -1; }
+            if (myGameArea.key && myGameArea.key == 40) {myGamePiece.speedY = 1; }
+            myBackground.speedY = -5; //代裝備變數 -速度
             myBackground.newPos();
             myBackground.update();
             myGameArea.frameNo += 1;
@@ -196,11 +217,11 @@ canvas {
         }
 
         function moveup() {
-            myGamePiece.speedY = -1; 
+            myGamePiece.speedY = -1; //代裝備變數
         }
 
         function movedown() {
-            myGamePiece.speedY = 1; 
+            myGamePiece.speedY = 1; //代裝備變數
         }
 
         function moveleft() {
