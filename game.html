@@ -74,7 +74,7 @@ canvas {
 
         function startGame() {
             myGamePiece = new component(30, 30, "red", 10, 120);
-            myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+            myScore = new component("30px", "Consolas", "black", 15, 45, "text");
             myBackground = new component(1920, 3000, "./img/game/gameBackground.jpg", 0, 0, "background");
             myGameArea.start();
         }
@@ -133,8 +133,8 @@ canvas {
                 } 
                 }else if (this.type == "text") {
                     ctx.font = this.width + " " + this.height;
-                    ctx.fillStyle = color;
-                    ctx.fillText(this.text, this.x, this.y);
+                    ctx.fillStyle = "#FEFEFE";
+                    ctx.fillText(this.text, (window.innerWidth - 280), this.y);
                 } else {
                     ctx.fillStyle = color;
                     ctx.fillRect(this.x, this.y, this.width, this.height);
@@ -205,7 +205,7 @@ canvas {
                 myObstacles[i].newPos();
                 myObstacles[i].update();
             }
-            myScore.text="SCORE: " + myGameArea.frameNo;
+            myScore.text="生存分數:" + (myGameArea.frameNo * 0.01);
             myScore.update();
             myGamePiece.newPos();    
             myGamePiece.update();
