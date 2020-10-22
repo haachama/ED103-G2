@@ -18,7 +18,7 @@ h2 {
 
 h2::before{
   content: "";
-  background: url('../../img/h2bubble@2x.png') no-repeat;
+  background: url('../img/h2bubble@2x.png') no-repeat;
   background-size: contain;
   position: absolute;
   display: inline-block;
@@ -37,3 +37,15 @@ h3 {
 a{
   text-decoration: none;
 }
+
+// #water-canvas{
+//   height: 100%;
+//   width: 100%;
+//   margin: 0;
+//   padding: 0;
+//   overflow: hidden;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   z-index: -1;
+// }

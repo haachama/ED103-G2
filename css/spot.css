@@ -1,0 +1,1668 @@
+@charset "UTF-8";
+/*========潛點頁面樣式開始 coco 10.17=======*/
+.spotheader {
+  position: fixed;
+  width: 100vw;
+  margin: 0 auto;
+  z-index: 99999;
+}
+
+.spotMain {
+  color: #fefefe;
+  width: 100vw;
+}
+
+.spotMain section {
+  width: 100vw;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.spotMain .spotBannerTab {
+  background-image: url("../img/spot/spotBanner_1-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.spotContents {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.spotContents .spotarea {
+  width: 100%;
+  padding-top: 90px;
+  margin: 0 auto;
+  margin-top: 80px;
+  font-size: 0;
+  display: none;
+}
+
+.spotContents .spotBlock {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.spotContents .spotRight {
+  width: 31.5vw;
+  padding-top: 20px;
+}
+
+.spotContents .spotRight > h5 {
+  font-size: 16px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  color: rgba(254, 254, 254, 0.75);
+}
+
+.spotContents .spotRight .spotRightblock {
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.spotContents .spotRight .spotRightblock ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: baseline;
+}
+
+.spotContents .spotRight .spotRightblock ul li {
+  display: inline-block;
+}
+
+.spotContents .spotRight .spotWeather {
+  border-radius: 50px;
+  background-color: rgba(254, 254, 254, 0.377);
+  padding: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.spotContents .spotRight .spotWeather ul {
+  font-size: 6px;
+}
+
+.spotContents .spotRight .spotWeather ul li {
+  padding: 0 2px;
+}
+
+.spotContents .spotRight .spotWeather ul li .fas {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.spotContents .spotRight .spotData ul li {
+  font-size: 6px;
+  display: inline-block;
+  padding: 0 10px 0 2px;
+  color: rgba(254, 254, 254, 0.75);
+}
+
+.spotContents .spotRight .spotData ul .spotDataNum {
+  font-size: 26px;
+  padding-right: 0;
+  color: #fefefe;
+}
+
+.spotContents .spotRight .spotHere {
+  color: rgba(254, 254, 254, 0.75);
+}
+
+.spotContents .spotRight .spotHere ul {
+  height: 40px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.spotContents .spotRight .spotHere ul li {
+  width: 40px;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.spotContents .spotRight .spotHere ul li img {
+  display: inline-block;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.spotContents .spotRight .spotHere p {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 40px;
+}
+
+.spotContents .spotRight .spotMain {
+  border: 0;
+  display: block;
+  width: 100%;
+}
+
+.spotContents .spotRight .spotMain p {
+  display: inline-block;
+  color: #fefefe;
+  width: 100%;
+  line-height: 30px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.spotContents .spotRight .spotBtn.bubbleBtn {
+  padding: 40px 0;
+}
+
+.spotContents .spotLeft {
+  width: 56.7vw;
+  padding: 10px, 30px;
+}
+
+.spotContents .spotLeft .spotLeftTopA a:first-child {
+  width: 65%;
+}
+
+.spotContents .spotLeft .spotLeftTopA a:first-child img {
+  width: 100%;
+}
+
+.spotContents .spotLeft .spotLeftTopA a:last-child {
+  width: 35%;
+}
+
+.spotContents .spotLeft .spotLeftTopA a:last-child img {
+  width: 100%;
+}
+
+.spotContents .spotLeft .spotLeftTop a {
+  width: 50%;
+}
+
+.spotContents .spotLeft .spotLeftTop a img {
+  width: 100%;
+}
+
+.spotContents .spotLeft .spotLeftBottomA a:first-child {
+  width: 35%;
+  height: auto;
+}
+
+.spotContents .spotLeft .spotLeftBottomA a:first-child img {
+  width: 100%;
+}
+
+.spotContents .spotLeft .spotLeftBottomA a:last-child {
+  width: 65%;
+}
+
+.spotContents .spotLeft .spotLeftBottomA a:last-child img {
+  width: 100%;
+}
+
+.spotContents .spotLeft .spotLeftBottom a {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.spotContents .spotLeft .spotLeftBottom a img {
+  width: 100%;
+}
+
+.spotContents .spotLeft .spotLeftImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 56.7vw;
+}
+
+.spotContents .spotLeft .spotLeftImage a {
+  display: block;
+  width: 50%;
+  margin: 5px 5px 0 0;
+  overflow: hidden;
+  font-size: 0;
+}
+
+.spotContents .spotLeft .spotLeftImage a .spotLeftImageAd {
+  font-size: 0;
+  width: 100%;
+  position: relative;
+}
+
+.spotContents .spotLeft .spotLeftImage a .spotLeftImageAd span {
+  background-color: #073977;
+  border-radius: 0 0 10px 0;
+  font-size: 11px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  color: rgba(254, 254, 254, 0.75);
+}
+
+.spotContents .spotLeft .spotLeftImage a .slider_container {
+  width: 100%;
+  font-size: 0;
+  margin: auto;
+  position: relative;
+}
+
+.spotContents .spotLeft .spotLeftImage a .slider_container .sw img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.spotContents .spotLeft .spotLeftImage a:hover .slider_container .sw {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  -webkit-animation-name: gradient;
+          animation-name: gradient;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.spotContents .spotLeft .spotLeftImage a:hover span {
+  color: #fefefe;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  20% {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    opacity: 0;
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  95% {
+    opacity: 0;
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  20% {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    opacity: 0;
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  95% {
+    opacity: 0;
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.spotContents .spotLeft .spotLeftImage a .slider_container .sw:first-child {
+  -webkit-animation-delay: -0.75s;
+          animation-delay: -0.75s;
+}
+
+.spotContents .spotLeft .spotLeftImage a .slider_container .sw:nth-child(2) {
+  -webkit-animation-delay: -3.75s;
+          animation-delay: -3.75s;
+}
+
+.spotContents .spotLeft .spotLeftImage a .slider_container .sw:nth-child(3) {
+  -webkit-animation-delay: -2.75s;
+          animation-delay: -2.75s;
+}
+
+.spotContents .spotLeft .spotLeftImage a .slider_container .sw:last-child {
+  -webkit-animation-delay: -1.75s;
+          animation-delay: -1.75s;
+}
+
+.spotContents .spotLeft .spotLeftImage a .slider_container .sw:nth-child(2),
+.spotContents .spotLeft .spotLeftImage a .slider_container .sw:nth-child(3),
+.spotContents .spotLeft .spotLeftImage a .slider_container .sw:last-child {
+  opacity: 1;
+  height: 0;
+}
+
+.spotContents .spotLeft .spotLeftImage a img {
+  width: 100%;
+}
+
+.spotListBlock .spotList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 auto;
+}
+
+.spotListBlock .spotList li {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  border-top: 0;
+  text-align: center;
+}
+
+.spotListBlock .spotList li a {
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #a5a5a5;
+  padding: 50px 10px 40px 10px;
+}
+
+.spotListBlock .spotList li a:hover {
+  color: #fefefe;
+}
+
+.spotListBlock .spotList li:first-child {
+  border-left: 0;
+}
+
+.spotarea.-iAmHere {
+  display: block;
+  margin: 0 auto;
+}
+
+.spotList li {
+  border-top: 0;
+}
+
+.spotList li a.-iAmHere {
+  color: #fefefe;
+  border-bottom: 2px solid rgba(254, 254, 254, 0.75);
+}
+
+.pushBlock {
+  padding: 50px 30px;
+}
+
+.pushBlock .spotPushBlock {
+  width: 90vw;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.pushBlock .spotPushBlock:first-child {
+  text-align: center;
+}
+
+.pushBlock .spotPushBlock h2 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.pushBlock .spotPushBlock .spotPush {
+  width: 350px;
+  max-width: 350px;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+.pushBlock .spotPushBlock .spotNewbtn {
+  margin: 0 auto;
+  display: block;
+}
+
+.spotPush a .imgContent {
+  width: 100%;
+  position: relative;
+}
+
+.spotPush a .imgContent .imgSolid {
+  width: 100%;
+}
+
+.spotPush a .imgContent .imgSolid img {
+  vertical-align: top;
+}
+
+.spotPush a .imgContent .diaryTitleA {
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 15px;
+}
+
+.spotPush a .imgContent .diaryTitleA .diaryTitleFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.spotPush a .imgContent .diaryTitleA .diaryTitleFlex .userLogo {
+  width: 42px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #fefefe;
+}
+
+.spotPush a .imgContent .diaryTitleA .diaryTitleFlex .userLogo img {
+  vertical-align: top;
+}
+
+.spotPush a .imgContent .diaryTitleA .diaryTitleFlex .userName {
+  padding-left: 10px;
+  color: #fefefe;
+}
+
+.spotPush a .imgContent .diaryTitleA .userText {
+  color: #fefefe;
+}
+
+.spotPush a .imgContent .diaryTitleB {
+  position: absolute;
+  bottom: 0;
+}
+
+.spotPush a .imgContent .diaryTitleB .diaryTitleText {
+  padding: 0px 15px 15px 15px;
+  color: #fefefe;
+}
+
+.spotPush a .imgContent .diaryTitleB .diaryTitleDate {
+  padding: 0px 15px 15px 15px;
+  color: #fefefe;
+}
+
+.spotPush .lineSolid {
+  background-color: #16181D;
+  width: 100%;
+  height: 70px;
+  color: #fefefe;
+}
+
+.spotPush .diaryText {
+  width: 100%;
+  padding: 10px;
+  background-color: #fefefe;
+}
+
+.spotPush .diaryText .diaryTextData {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.spotPush .diaryText .diaryTextData div:first-child p:nth-child(2) span:nth-child(1) {
+  color: #467500;
+  font-size: 32px;
+}
+
+.spotPush .diaryText .diaryTextData div p:nth-child(1) {
+  color: #073977;
+  font-size: 10px;
+  text-align: center;
+  padding: 15px 0px 5px 0px;
+}
+
+.spotPush .diaryText .diaryTextData div p:nth-child(2) {
+  color: #073977;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.spotPush .diaryText .diaryTextData div p:nth-child(2) span:nth-child(1) {
+  font-size: 32px;
+  color: #073977;
+}
+
+.spotPush .diaryText .diaryTextData div p:nth-child(2) span:nth-child(2) {
+  font-size: 16px;
+  color: #073977;
+}
+
+.spotPush .diaryTextP {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.spotPush .diaryTextP .diaryTextPP {
+  padding: 10px 0px 10px 10px;
+  width: 100%;
+  overflow: hidden;
+  color: #073977;
+}
+
+.spotPush .diaryTextP i {
+  color: #073977;
+}
+
+.spotPush a {
+  color: #073977;
+  text-align: left;
+}
+
+.spotPush a .spotPushTital {
+  background-image: url("../img/spot/spotGiLittle-02.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.spotPush a .spotPushTital > h4 {
+  padding: 10px;
+  color: #fefefe;
+}
+
+.spotPush a .spotPushMain {
+  background-color: #fefefe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.spotPush a .spotPushMain .spotPushListText {
+  width: 100%;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.spotPush a .spotPushMain .spotPushListText h4 {
+  line-height: 30px;
+}
+
+.spotPush a .spotPushMain .spotPushListText h5 {
+  font-size: 6px;
+}
+
+.spotPush a .spotPushMain:last-child {
+  text-align: center;
+  padding: 10px;
+}
+
+.spotPush a .spotPushMain:last-child img {
+  width: 80px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/*========潛點頁面樣式結束 cooc 10.17=======*/
+/*========潛點內頁樣式開始 cooc 10.18=======*/
+.spotRefre_Main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.spotRefre_left {
+  width: 60%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-right: 0;
+}
+
+.spotRefre_here .spotRefre_Contain {
+  display: block;
+  width: 100%;
+}
+
+.spotRefre_here .spotRefre_Contain h2 {
+  color: #fefefe;
+  padding: 30px;
+}
+
+.spotRefre_here .spotRefre_Contain h3 {
+  display: none;
+}
+
+.spotRefre_here .spotRefre_Contain .spotRefreImg {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.spotRefre_here .spotRefre_Contain .spotRefreImg img {
+  width: 100%;
+}
+
+.spotRefre_here .spotRefre_Contain h4 {
+  color: #fefefe;
+  padding: 30px;
+}
+
+.spotRefre_here h3 {
+  color: #fefefe;
+  padding: 30px;
+}
+
+.spotRefre_here .spotRefre_left_Block {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.spotRefre_here .spotRefre_left_Block .spotHereList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.spotRefre_here .spotRefre_left_Block .spotHereList .hereList {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.spotRefre_here .spotRefre_left_Block .spotHereList .hereList ul {
+  display: inline-block;
+}
+
+.spotRefre_here .spotRefre_left_Block .spotHereList .hereList ul li {
+  width: 72px;
+  display: inline-block;
+}
+
+.spotRefre_here .spotRefre_left_Block .spotHereList .hereList ul li img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.spotRefre_here .spotRefre_left_Block .spotHereList .hereList ul li:last-child {
+  position: relative;
+}
+
+.spotRefre_here .spotRefre_left_Block .spotHereList .hereList ul li:last-child::after {
+  content: "+6";
+  display: block;
+  position: absolute;
+  clear: both;
+  right: -20px;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 10px;
+  color: #221814;
+  background-color: #5d5c5a;
+}
+
+.spotRefre_here .spotRefre_left_Block .spotHereList .hereList ul li:last-child::after:hover {
+  background-color: #221814;
+  cursor: pointer;
+}
+
+.spotRefre_here .hereAddBtn {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #fefefe;
+  border-radius: 60%;
+  background-color: transparent;
+  padding: 20px;
+  text-align: center;
+  color: #fefefe;
+}
+
+.spotRefre_here .hereAddBtn:hover {
+  background-color: #221814;
+  border: 1px solid #221814;
+  cursor: pointer;
+}
+
+.spotRefre_right {
+  padding: 100px 30px;
+  width: 40%;
+  margin: 0 auto;
+  margin-left: 0;
+}
+
+.spotRefreIntor {
+  width: 100%;
+  color: #fefefe;
+  padding: 10px;
+}
+
+.spotRefreIntor h3 {
+  padding-bottom: 10px;
+}
+
+.spotRefreIntor p {
+  line-height: 30px;
+  padding: 10px 0;
+  margin-bottom: 60px;
+  font-weight: lighter;
+}
+
+.spotRefreTab_rwd {
+  display: block;
+  width: 100%;
+}
+
+.spotRefreTab_rwd ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.spotRefreTab_rwd ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border: 0.5px solid rgba(254, 254, 254, 0.75);
+}
+
+.spotRefreTab_rwd ul li a {
+  padding: 30px 0;
+  width: 100%;
+  color: #fefefe;
+  font-size: 16px;
+}
+
+.spotRefreTab_rwd ul li a.spotShow {
+  background-color: rgba(254, 254, 254, 0.75);
+  color: #073977;
+}
+
+.spotRefre_Contain_Tital_rwd {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.spotRefre_Contain_Tital_rwd h2 {
+  color: #fefefe;
+  line-height: 60px;
+}
+
+.spotRefre_Contain_Tital_rwd h3 {
+  color: #fefefe;
+  line-height: 60px;
+}
+
+.spotRefre_Contain_Tital_rwd .spotRefreImg {
+  width: 100%;
+  display: block;
+}
+
+.spotRefre_Contain_Tital_rwd {
+  display: none;
+}
+
+.spotRefre_weather {
+  display: none;
+}
+
+.spotRefreTab_rwd {
+  display: none;
+}
+
+.spotWeatherTab {
+  color: #fefefe;
+}
+
+.spotWeatherTab .weather_list {
+  font-size: 0;
+  text-align: left;
+}
+
+.spotWeatherTab .weather_list .Weather {
+  display: inline-block;
+  border: 1px solid rgba(254, 254, 254, 0.75);
+  overflow: hidden;
+  margin: 0 3px 5px 0;
+}
+
+.spotWeatherTab .weather_list .Weather a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fefefe;
+}
+
+.spotWeatherTab .weather_list .Weather a.-clickNow {
+  background-color: rgba(254, 254, 254, 0.75);
+  color: #073977;
+  border: rgba(254, 254, 254, 0.75);
+}
+
+.spotWeatherTab .weather_list .Weather a:hover {
+  background-color: rgba(254, 254, 254, 0.75);
+  color: #073977;
+}
+
+.spotWeatherTab .-clickNow {
+  display: inline-block;
+}
+
+.weather_block {
+  border: 1px solid #fefefe;
+  display: none;
+  width: 100%;
+  max-width: 450px;
+}
+
+.weather_block .weather_block_inside {
+  font-size: 16px;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.spotWeather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 10px;
+}
+
+.spotWeatherText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.spotWeatherText:first-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.spotWeatherText:first-child h5 {
+  margin-top: 20px;
+}
+
+.spotWeatherText:last-child {
+  width: 75%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 15px;
+}
+
+.spotWeatherText:last-child > div {
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.weather_main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0 0 10px 0;
+}
+
+.weather_main > h6 {
+  color: #fefefe;
+  font-weight: lighter;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.spotWeatherfuture {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.spotWeatherfuture ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  border-bottom: 0.5px solid #221814;
+}
+
+.spotWeatherfuture ul:last-child {
+  border-bottom: 0;
+}
+
+.spotWeatherfuture li {
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding: 10px 0;
+}
+
+.spotWeatherfuture li .fas {
+  padding: 0 10px;
+}
+
+.weatherDataFrom {
+  text-align: left;
+  color: rgba(254, 254, 254, 0.75);
+  font-size: 11px;
+}
+
+.weatherDataFrom a {
+  text-decoration: underline;
+  color: rgba(254, 254, 254, 0.75);
+}
+
+.weatherDataFrom p {
+  padding-left: 20px;
+}
+
+.spotRefre_Animal {
+  padding-bottom: 50px;
+  width: 100%;
+  background: linear-gradient(to bottom, transparent 52%, #16181D 30px);
+}
+
+.spotRefre_Animal h3 {
+  text-align: center;
+  padding: 50px 0;
+  color: #fefefe;
+}
+
+.spotRefre_Animal .spotAnimal {
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.spotRefre_Animal .spotAnimal > img {
+  width: 25%;
+}
+
+.spotRefre_Animal .spotAnimal:last-child {
+  width: 81vw;
+}
+
+.spotRefre_Msg {
+  width: 100%;
+  color: #fefefe;
+  padding: 50px 60px;
+}
+
+.spotRefre_Msg h3 {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.spotRefre_Msg .spotMsgBlock {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.spotRefre_Msg .spotMsgBlock .spotMsg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 16px;
+  padding: 10px;
+  border-bottom: 1px solid #221814;
+}
+
+.spotRefre_Msg .spotMsgBlock .spotMsg img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.spotRefre_Msg .spotMsgBlock .spotMsg > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.spotRefre_Msg .spotMsgBlock .spotMsg > div .spotMsgText {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.spotRefre_Msg .spotMsgBlock .spotMsg > div .spotMsgText h5 {
+  font-size: 16px;
+  color: rgba(254, 254, 254, 0.75);
+  padding: 10px;
+}
+
+.spotRefre_Msg .spotMsgBlock .spotMsg > div .spotMsgText span {
+  font-size: 8px;
+  color: rgba(254, 254, 254, 0.75);
+}
+
+.spotRefre_Msg .spotMsgBlock .spotMsg > div:nth-child(2) {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.spotRefre_Msg .spotMsgBlock .spotMsg > div:nth-child(2) p {
+  display: inline-block;
+  text-align: right;
+  color: rgba(254, 254, 254, 0.75);
+  font-size: 16px;
+  padding-left: 10px;
+  margin: 0 auto;
+}
+
+.spotRefre_Msg .spotMsgBlock .spotMsg > div:nth-child(3) {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  text-align: right;
+  font-size: 16px;
+}
+
+.spotRefre_Msg .spotMsgBlock .spotMsg > div i {
+  color: rgba(254, 254, 254, 0.75);
+}
+
+.spotRefre_Msg .spotMsgBlock .spotMsg > div i:hover {
+  color: #fefefe;
+  cursor: pointer;
+}
+
+.spotRefre_Msg .spotMsgBlock .spotMsg > div:last-child {
+  font-size: 0;
+}
+
+.spotRefre_Msg .spotMsgBlock .spotMsg > div:last-child i {
+  font-size: 10px;
+}
+
+.spotRefre_Msg .spotMsgBlock .spotMsgMoreBtn {
+  margin: 20px;
+  text-align: center;
+}
+
+.spotRefre_Msg .reportMsg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(254, 254, 254, 0.75);
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.spotRefre_Msg .reportMsg.-sentRepor {
+  opacity: 1;
+  z-index: 1;
+}
+
+.spotRefre_Msg .reportMsg.-opacity-zero {
+  opacity: 0;
+}
+
+.spotRefre_Msg .reportMsg > article {
+  background-color: white;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px #ddd;
+          box-shadow: 0 0 10px #ddd;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 16px;
+}
+
+.spotRefre_Msg .reportMsg > article h3 {
+  font-size: 16px;
+  color: #073977;
+}
+
+.spotRefre_Msg .reportMsg > article form {
+  font-size: 16px;
+  text-align: center;
+  color: #073977;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.spotRefre_Msg .reportMsg > article form input {
+  border: 1px solid black;
+  text-align: left;
+  display: inline-block;
+}
+
+.spotRefre_Msg .reportMsg > article .reportMsgBtn {
+  margin: 0 auto;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.spotRefre_Msg .reportMsg > article .reportMsg_close {
+  display: block;
+  margin-right: 0;
+  margin-left: auto;
+  text-align: right;
+  border: none;
+}
+
+.spotRefre_Msg .spotMsgSend {
+  margin: 0 auto;
+  width: 80%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.spotRefre_Msg .spotMsgSend > img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.spotRefre_Msg .spotMsgSend .spotMsgSendText {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 90%;
+  margin: 0 auto;
+  margin-left: 20px;
+  padding: 10px 0;
+}
+
+.spotRefre_Msg .spotMsgSend .spotMsgSendText textarea {
+  border: 1px solid #fefefe;
+  border-radius: 5px;
+  width: 100%;
+  resize: none;
+  height: 50px;
+  font-size: 12.8px;
+}
+
+.spotRefre_Msg .spotMsgSend .spotMsgSendText .fa-location-arrow {
+  color: #a5a5a5;
+  position: absolute;
+  bottom: 30%;
+  right: 10px;
+  font-size: 16px;
+}
+
+.spotRefre_Msg .spotMsgSend .spotMsgSendText .fa-location-arrow:hover {
+  color: #073977;
+}
+
+@media all and (max-width: 1200px) {
+  .spotListBlock ul.spotList li a {
+    padding-top: 10px;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .spotContents .spotRight {
+    margin: 0;
+    padding: 10px;
+    width: 35%;
+  }
+  .spotContents .spotRight > h5 {
+    margin: 0;
+  }
+  .spotContents .spotRight .spotWeather .spotRightBlockList li i {
+    font-size: 6px;
+  }
+  .spotContents .spotRight .spotWeather .spotRightBlockList li:first-child {
+    display: none;
+  }
+  .spotContents .spotRight .spotData {
+    padding-left: 10px;
+  }
+  .spotContents .spotRight .spotHere {
+    padding: 0;
+  }
+  .spotContents .spotRight .spotHere p {
+    line-height: 20px;
+  }
+  .spotContents .spotRight .spotBtn.bubbleBtn {
+    padding: 10px 0;
+  }
+  .spotRefre_right {
+    padding-left: 0;
+    padding-right: 5px;
+  }
+  .spotRefre_right .spotRefreIntor p {
+    margin-bottom: 0;
+  }
+  .spotWeatherTab .weather_block {
+    width: 100%;
+  }
+  .spotWeatherTab .weather_block .weather_block_inside {
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: left;
+    overflow: auto;
+  }
+  .spotReferWeather {
+    width: 100%;
+    overflow: auto;
+  }
+  .spotReferWeather .spotWeatherText:first-child {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .spotReferWeather .spotWeatherText:first-child h5 {
+    margin-top: 20px;
+  }
+  .spotReferWeather .spotWeatherText:last-child {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 15px;
+  }
+  .spotReferWeather .spotWeatherText:last-child > div {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .spotReferWeather .spotWeatherText .weather_main {
+    padding-left: 5px;
+    display: block;
+    width: 80px;
+  }
+  .spotWeatherfuture > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    white-space: nowrap;
+  }
+  .spotWeatherfuture > ul > li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80px;
+    padding: 10px 30px;
+  }
+  .spotWeatherfuture > ul > li .fas {
+    padding: 0;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .spotContents {
+    text-align: center;
+  }
+  .spotContents .spotRight {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .spotContents h2 {
+    text-align: center;
+  }
+  .spotContents h5 {
+    text-align: center;
+  }
+  .spotContents p {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: block;
+  }
+  .spotContents .spotRightblock {
+    padding: 10px 0;
+    text-align: center;
+    margin: 20px auto;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  .spotContents .spotRightblock ul.spotRightBlockList {
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
+  .spotContents .spotWeather {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .spotContents .spotLeft {
+    margin: 5% auto;
+    width: 100%;
+  }
+  .spotContents .spotLeft .spotLeftImage {
+    width: 100%;
+  }
+  .spotContents .spotLeft .spotLeftImage a .spotLeftImageAd span {
+    font-size: 8px;
+    padding: 5px;
+  }
+  .spotRefre_right {
+    padding-bottom: 0;
+    width: 40%;
+    margin: 0;
+  }
+  .spotRefreIntor {
+    width: 100%;
+    color: #fefefe;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .spotRefreIntor h3 {
+    padding-bottom: 10px;
+  }
+  .spotRefreIntor p {
+    line-height: 24px;
+    font-weight: lighter;
+  }
+  .spotRefre_Msg {
+    padding: 50px 30px;
+  }
+  .spotRefre_Msg .spotMsgBlock {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .spotRefre_Msg .spotMsgBlock .spotMsg .spotMsgText > div h5 {
+    padding: 10px;
+  }
+  .spotRefre_Msg .spotMsgBlock .spotMsg .spotMsgText > div > span {
+    font-size: 3.2px;
+    color: rgba(254, 254, 254, 0.75);
+  }
+  .spotRefre_Msg .spotMsgBlock .spotMsg .spotMsgText:last-child {
+    font-size: 0;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .spotRefreTab_rwd {
+    display: block;
+  }
+  .spotRefre_weather {
+    display: block;
+  }
+  .spotRefre_Contain_Tital_rwd {
+    display: block;
+  }
+  .spotRefre_Main .spotRefre_here,
+  .spotRefre_Main .spotRefre_intor,
+  .spotRefre_Main .spotRefre_right,
+  .spotRefre_Main .spotRefre_Animal,
+  .spotRefre_Main .spotRefre_Msg {
+    display: none;
+  }
+  .spotRefre_Main .spotShow {
+    display: block;
+  }
+  .spotRefre_Main .spotRefre_here {
+    width: 100%;
+    padding: 10px;
+  }
+  .spotRefre_Main .spotRefre_here h3 {
+    text-align: center;
+  }
+  .spotRefre_Main .spotRefre_here .spotRefre_Contain_Tital {
+    display: none;
+  }
+  .spotRefre_Main .spotRefre_intor {
+    width: 100%;
+    padding: 10px;
+  }
+  .spotRefre_Main .spotRefre_intor > div {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .spotRefre_Main .spotRefre_intor > div h3 {
+    display: none;
+  }
+  .spotRefre_Main .spotRefre_intor .spotWeatherTab {
+    display: none;
+  }
+  .spotRefre_Main .spotRefre_weather {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  .spotRefre_Main .spotRefre_weather .spotWeatherTab {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .spotRefre_Main .spotRefre_weather .weatherDataFrom {
+    text-align: center;
+  }
+  .spotRefre_Main .spotRefre_Animal {
+    width: 100%;
+  }
+  .spotRefre_Main .spotRefre_Animal .spotAnimal {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .spotRefre_Main .spotRefre_Animal .spotAnimal img {
+    width: 50%;
+  }
+  .spotRefre_Main .spotRefre_Msg {
+    width: 100%;
+    padding: 10px 10px;
+  }
+  .spotRefre_Main .spotRefre_Msg .spotMsgBlock {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .spotRefre_Main .spotRefre_here {
+    width: 100%;
+  }
+  .spotRefre_Main .spotRefre_Animal {
+    width: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(70%, #16181D));
+    background: linear-gradient(to bottom, transparent 70%, #16181D 70%);
+  }
+  .spotRefre_Main .spotRefre_Animal h3 {
+    text-align: center;
+    padding: 50px 0;
+    color: #fefefe;
+    font-size: 24px;
+  }
+}
+/*# sourceMappingURL=spot.css.map */

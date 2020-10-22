@@ -1,0 +1,245 @@
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.asideMenu {
+  width: 18%;
+  text-align: center;
+}
+
+.asideMenu .title {
+  padding: 15px 10px;
+  color: #fefefe;
+  background-color: #16181D;
+  margin-bottom: 20px;
+}
+
+.asideMenu .title a {
+  color: #fefefe;
+}
+
+.profile img {
+  width: 100px;
+  margin: 20px 0;
+}
+
+.option {
+  background-color: rgba(254, 254, 254, 0.75);
+  padding: 20px;
+}
+
+.option p {
+  margin: 20px 0;
+}
+
+.option a {
+  display: inline-block;
+  text-decoration: none;
+  color: #16181D;
+  margin: 10px 0;
+}
+
+.incomingCourse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.incomingCourse img {
+  width: 300px;
+}
+
+.courseInfo {
+  color: #fefefe;
+  margin-left: 20px;
+}
+
+.courseInfo p {
+  margin: 40px 10px;
+}
+
+.info {
+  margin-left: 20px;
+}
+
+.info .rateStar {
+  margin-bottom: 20px;
+  background-color: rgba(254, 254, 254, 0.75);
+  padding: 20px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.info .preview {
+  display: inline-block;
+}
+
+.info .fiveStar {
+  margin: 10px 0 0;
+  color: #073977;
+}
+
+.info .num {
+  height: 110px;
+  line-height: 100px;
+  width: 110px;
+  text-align: center;
+  border-radius: 15px;
+  border: 1px solid #073977;
+  background-color: #073977;
+  color: #fefefe;
+  font-size: 32px;
+}
+
+.info .perStar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 20px;
+}
+
+.info .perStar li {
+  margin: 5px 0;
+  line-height: 20px;
+}
+
+.info .progressStar {
+  margin: 0 10px;
+}
+
+.info .progressStar li {
+  background-color: rgba(254, 254, 254, 0.75);
+  border-radius: 15px;
+}
+
+.info .progressStar div {
+  width: 350px;
+  height: 20px;
+  border-radius: 15px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#073977), to(#073977));
+  background-image: linear-gradient(#073977, #073977);
+  background-position: 0 0;
+  background-size: 0% 0%;
+  background-repeat: no-repeat;
+  border: 1px solid #073977;
+}
+
+.info .progressStar li:nth-child(1) div {
+  background-size: 80% 100%;
+}
+
+.info .progressStar li:nth-child(2) div {
+  background-size: 80% 100%;
+}
+
+.incomingTitle {
+  display: inline-block;
+  padding: 15px 10px;
+  color: #fefefe;
+  background-color: #16181D;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.incomingTitle::after {
+  content: '';
+  display: inline-block;
+  background-color: #16181D;
+  width: 300%;
+  height: 2px;
+  position: absolute;
+  right: -300%;
+  top: 50%;
+}
+
+@media all and (min-width: 992px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 991px) {
+  main {
+    display: block;
+  }
+  .asideMenu {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .asideMenu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .info {
+    width: 70%;
+    margin: 20px auto;
+  }
+  .info .progressStar div {
+    width: 250px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  body {
+    background-size: auto;
+  }
+  .asideMenu {
+    width: 80%;
+  }
+  .info {
+    width: 80%;
+  }
+  .info .progressStar div {
+    width: 150px;
+  }
+  .incomingTitle::after {
+    width: 200%;
+    right: -200%;
+  }
+  .incomingCourse {
+    display: block;
+  }
+  .incomingCourse img, .incomingCourse div {
+    vertical-align: top;
+  }
+  .courseInfo {
+    margin-left: 0;
+  }
+  .courseInfo p {
+    margin: 40px 0;
+  }
+}
+
+@media all and (max-width: 376px) {
+  .asideMenu {
+    width: 90%;
+  }
+  .info {
+    width: 90%;
+  }
+  .info .rateStar {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .incomingTitle::after {
+    width: 120%;
+    right: -120%;
+  }
+}
+/*# sourceMappingURL=trainerCenter.css.map */

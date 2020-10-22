@@ -4,51 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="Shortcut Icon" href="./img/favicon.ico" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="./css/hamburgers.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/fontawesome/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
+    
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>
-
+    
+    
     <title>海中日子</title>
 </head>
 
 <body>
-    <header>
+    <!-- <canvas id="water-canvas" width="1902" height="4212"></canvas> -->
+    <header class="courseHeader">
         <h1 class="logo">海中日子 Divein
-            <a href="javascript:;"><img src="./img/header/logo.png" alt="logo"></a>
+            <a href="./index.html"><img src="./img/header/logo.png" alt="logo"></a>
         </h1>
         <div class="nav">
             <ul>
                 <li class="recommend_nav">
-                    <a href="javascript:;">潛 點<br>&nbsp;&nbsp;推 薦</a>
+                    <a href="./spot.html">潛點推薦</a>
                 </li>
                 <li class="course_nav">
-                    <a href="javascript:;">潛 水<br>&nbsp;&nbsp;課 程</a>
+                    <a href="./course.html">潛水課程</a>
                 </li>
                 <li class="shop_nav">
-                    <a href="javascript:;">潛 水<br>&nbsp;&nbsp;商 城</a>
+                    <a href="./shop.html">潛水商城</a>
                 </li>
                 <li class="blog_nav">
-                    <a href="javascript:;">潛 水<br>&nbsp;&nbsp;日 誌</a>
+                    <a href="./diary.html">潛水日誌</a>
                 </li>
                 <li class="game_nav">
-                    <a href="javascript:;">下 潛<br>&nbsp;&nbsp;遊 戲</a>
+                    <a href="./gameIntro.html">下潛遊戲</a>
                 </li>
             </ul>
         </div>
         <div class="memCart">
             <ul>
-                <li><a href="javascript:;"><img src="./img/header/member.png"></a></li>
+                <li><a href="./memberLogin.html"><img src="./img/header/member.png"></a></li>
                 <li><a href="javascript:;"><img src="./img/header/cart.png"></a></li>
             </ul>
         </div>
+        <button class="hamburger hamburger--3dxy" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+        </button>  
     </header>
 
     <h3>今天我想來點自由配潛水</h3>
@@ -62,6 +74,7 @@
 
     <h2>潛點推薦</h2>
 
+<<<<<<< HEAD
     <div class="weather">
         
         <div class="bubbleCircle">
@@ -72,6 +85,10 @@
                 <i class="fas fa-temperature-high"> &nbsp;28℃</i>
             </div>
         </div>
+=======
+    <div class="bubb">   
+        <div class="bubbleCircle"></div>
+>>>>>>> dev
         <div class="firstBubble"></div>
         <div class="secondBubble"></div>
     </div>
@@ -96,6 +113,14 @@
             </div>
         </div>
     </div>
+
+    <div class="weatherNow">
+        <i class="fas fa-sun"> &nbsp;晴天</i>
+        <i class="fas fa-water"> &nbsp;小浪</i>
+        <i class="fas fa-wind"> &nbsp;南風</i>
+        <i class="fas fa-temperature-high"> &nbsp;28℃</i>
+    </div>
+
     <div class="spotBtn">
         <div class="bubbleBtn spot_detailBtn">
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
@@ -110,7 +135,7 @@
             </svg>
 
             <span class="button--bubble__container">
-                <a href="#campaign" class="button button--bubble">
+                <a href="./spot.html" class="button button--bubble">
                     潛點介紹
                 </a>
                 <span class="button--bubble__effect-container">
@@ -137,7 +162,7 @@
             </svg>
 
             <span class="button--bubble__container">
-                <a href="#campaign" class="button button--bubble">
+                <a href="./diaryInside.html" class="button button--bubble">
                     潛水日誌
                 </a>
                 <span class="button--bubble__effect-container">
@@ -152,6 +177,7 @@
             </span>
         </div>
     </div>
+<<<<<<< HEAD
     <!-- 魚魚開始 -->
     <!-- <div class="m6m6">
         <svg class="fish" id="fish">
@@ -191,12 +217,54 @@
         </svg>
     </div> -->
     <!-- 魚魚結束 -->
+=======
+    
+<!-- 魚魚 -->
+<div class="m6m6">
+    <svg class="fish" id="fish">
+        <path
+           id="fish2"
+           d="m 172.04828,20.913839 c 0.0489,-0.444179 -0.2178,-0.896934 -1.01784,-1.415715 -0.72801,-0.475049 -1.4826,-0.932948 -2.2149,-1.401138 -1.6035,-1.028129 -3.29018,-1.969653 -4.89798,-3.079244 -4.67074,-3.24131 -10.22127,-4.404923 -15.76322,-5.1509392 -2.27235,-0.286401 -4.81223,-0.168925 -6.72186,-1.574351 -1.48174,-1.081294 -4.04993,-4.828523 -6.86506,-6.456038 -0.4862,-0.290688 -2.77227,-1.44486897 -2.77227,-1.44486897 0,0 1.30939,3.55000597 1.60951,4.26429497 0.69542,1.644664 -0.38158,3.063809 -0.83262,4.642447 -0.29069,1.0418502 2.13772,0.8129002 2.26463,1.7827212 0.18179,1.432007 -4.15197,1.936211 -6.59152,2.417263 -3.65634,0.715146 -7.91635,2.082841 -11.56925,0.884071 -4.3046,-1.38313 -7.37269,-4.129669 -10.46566,-7.2354952 1.43801,6.7252892 5.4382,10.6028562 5.6157,11.4226162 0.18607,0.905509 -0.45961,1.091584 -1.04099,1.682394 -1.28967,1.265655 -6.91566,7.731125 -6.93366,9.781383 1.61379,-0.247815 3.56115,-1.660957 4.9803,-2.485862 1.58035,-0.905509 7.60593,-5.373029 9.29347,-6.065023 0.38587,-0.160351 5.0549,-1.531476 5.09434,-0.932949 0.0695,0.932949 -0.30784,1.137031 -0.18436,1.527189 0.22638,0.746016 1.44144,1.465449 2.02282,1.985088 1.50918,1.292237 3.21044,2.42841 4.27373,4.156252 1.49203,2.401827 1.55805,4.999163 1.98251,7.677102 0.99469,-0.111473 2.0091,-2.17545 2.55961,-2.992638 0.51278,-0.772598 2.38639,-4.07136 3.09725,-4.275442 0.67227,-0.204082 2.75511,0.958673 3.50284,1.180763 2.85973,0.848057 5.644,1.353976 8.56032,1.353976 3.50799,0.0094 12.726,0.258104 19.55505,-4.800226 0.75545,-0.567658 2.55703,-2.731104 2.55703,-2.731104 0,0 -0.37644,-0.577091 -1.04785,-0.790605 0.89779,-0.584808 1.8659,-1.211633 1.94993,-1.925922 z"
+           style="fill:#464d4d;fill-opacity:1"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccccccccccccccccccccccccccccccc" />
+        <path
+           sodipodi:nodetypes="cccccccccccccccccccccccccccccccc"
+           inkscape:connector-curvature="0"
+           style="fill:#464d4d;fill-opacity:1"
+           d="m 234.99441,42.953992 c 0.0489,-0.44418 -0.2178,-0.896934 -1.01784,-1.415715 -0.72801,-0.47505 -1.4826,-0.932949 -2.2149,-1.401138 -1.6035,-1.02813 -3.29018,-1.969653 -4.89798,-3.079245 -4.67074,-3.24131 -10.22127,-4.404923 -15.76322,-5.150939 -2.27235,-0.286401 -4.81223,-0.168925 -6.72186,-1.574351 -1.48174,-1.081294 -4.04993,-4.828523 -6.86506,-6.456038 -0.4862,-0.290688 -2.77227,-1.444869 -2.77227,-1.444869 0,0 1.30939,3.550006 1.60951,4.264295 0.69542,1.644664 -0.38158,3.063809 -0.83262,4.642447 -0.29069,1.04185 2.13772,0.8129 2.26463,1.782721 0.18179,1.432007 -4.15197,1.936211 -6.59152,2.417263 -3.65634,0.715146 -7.91635,2.082842 -11.56925,0.884072 -4.3046,-1.383131 -7.37269,-4.12967 -10.46566,-7.235496 1.43801,6.725289 5.4382,10.602857 5.6157,11.422617 0.18607,0.905508 -0.45961,1.091583 -1.04099,1.682394 -1.28967,1.265654 -6.91566,7.731125 -6.93366,9.781382 1.61379,-0.247815 3.56115,-1.660957 4.9803,-2.485862 1.58035,-0.905509 7.60593,-5.373029 9.29347,-6.065023 0.38587,-0.160351 5.0549,-1.531476 5.09434,-0.932948 0.0695,0.932948 -0.30784,1.137031 -0.18436,1.527188 0.22638,0.746016 1.44144,1.46545 2.02282,1.985088 1.50918,1.292237 3.21044,2.42841 4.27373,4.156252 1.49203,2.401827 1.55805,4.999163 1.98251,7.677102 0.99469,-0.111473 2.0091,-2.17545 2.55961,-2.992638 0.51278,-0.772598 2.38639,-4.071359 3.09725,-4.275442 0.67227,-0.204082 2.75511,0.958673 3.50284,1.180763 2.85973,0.848057 5.644,1.353976 8.56032,1.353976 3.50799,0.0094 12.726,0.258104 19.55505,-4.800226 0.75545,-0.567658 2.55703,-2.731104 2.55703,-2.731104 0,0 -0.37644,-0.57709 -1.04785,-0.790605 0.89779,-0.584808 1.8659,-1.211633 1.94993,-1.925921 z"
+           id="fish3" />
+        <path
+           id="fish6"
+           d="m 200.07076,80.737109 c 0.0489,-0.44418 -0.2178,-0.896934 -1.01784,-1.415715 -0.72801,-0.47505 -1.4826,-0.932949 -2.2149,-1.401138 -1.6035,-1.02813 -3.29018,-1.969653 -4.89798,-3.079245 -4.67074,-3.24131 -10.22127,-4.404923 -15.76322,-5.150939 -2.27235,-0.286401 -4.81223,-0.168925 -6.72186,-1.574351 -1.48174,-1.081294 -4.04993,-4.828523 -6.86506,-6.456038 -0.4862,-0.290688 -2.77227,-1.444869 -2.77227,-1.444869 0,0 1.30939,3.550006 1.60951,4.264295 0.69542,1.644664 -0.38158,3.063809 -0.83262,4.642447 -0.29069,1.04185 2.13772,0.8129 2.26463,1.782721 0.18179,1.432007 -4.15197,1.936211 -6.59152,2.417263 -3.65634,0.715146 -7.91635,2.082842 -11.56925,0.884072 -4.3046,-1.383131 -7.37269,-4.12967 -10.46566,-7.235496 1.43801,6.725289 5.4382,10.602857 5.6157,11.422617 0.18607,0.905508 -0.45961,1.091583 -1.04099,1.682394 -1.28967,1.265654 -6.91566,7.731125 -6.93366,9.781382 1.61379,-0.247815 3.56115,-1.660957 4.9803,-2.485862 1.58035,-0.905509 7.60593,-5.373029 9.29347,-6.065023 0.38587,-0.160351 5.0549,-1.531476 5.09434,-0.932948 0.0695,0.932948 -0.30784,1.137031 -0.18436,1.527188 0.22638,0.746016 1.44144,1.46545 2.02282,1.985088 1.50918,1.292237 3.21044,2.42841 4.27373,4.156252 1.49203,2.401827 1.55805,4.999163 1.98251,7.677102 0.99469,-0.111473 2.0091,-2.17545 2.55961,-2.992638 0.51278,-0.772598 2.38639,-4.071359 3.09725,-4.275442 0.67227,-0.204082 2.75511,0.958673 3.50284,1.180763 2.85973,0.848057 5.644,1.353976 8.56032,1.353976 3.50799,0.0094 12.726,0.258104 19.55505,-4.800226 0.75545,-0.567658 2.55703,-2.731104 2.55703,-2.731104 0,0 -0.37644,-0.57709 -1.04785,-0.790605 0.89779,-0.584808 1.8659,-1.211633 1.94993,-1.925921 z"
+           style="fill:#464d4d;fill-opacity:1"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccccccccccccccccccccccccccccccc" />
+        <path
+           sodipodi:nodetypes="cccccccccccccccccccccccccccccccc"
+           inkscape:connector-curvature="0"
+           style="fill:#464d4d;fill-opacity:1"
+           d="m 77.275623,89.018799 c 0.0489,-0.44418 -0.2178,-0.896934 -1.01784,-1.415715 -0.72801,-0.47505 -1.4826,-0.932949 -2.2149,-1.401138 -1.6035,-1.02813 -3.29018,-1.969653 -4.89798,-3.079245 -4.67074,-3.24131 -10.22127,-4.404923 -15.76322,-5.150939 -2.272347,-0.286401 -4.812227,-0.168925 -6.721857,-1.574351 -1.48174,-1.081294 -4.04993,-4.828523 -6.86506,-6.456038 -0.4862,-0.290688 -2.77227,-1.444869 -2.77227,-1.444869 0,0 1.30939,3.550006 1.60951,4.264295 0.69542,1.644664 -0.38158,3.063809 -0.83262,4.642447 -0.29069,1.04185 2.13772,0.8129 2.26463,1.782721 0.18179,1.432007 -4.15197,1.936211 -6.59152,2.417263 -3.65634,0.715146 -7.91635,2.082842 -11.56925,0.884072 -4.3046,-1.383131 -7.37269,-4.12967 -10.46566,-7.235496 1.43801,6.725289 5.4382,10.602857 5.6157,11.422617 0.18607,0.905508 -0.45961,1.091583 -1.04099,1.682394 -1.28967,1.265654 -6.9156603,7.731122 -6.9336603,9.781382 1.6137903,-0.24782 3.5611503,-1.66096 4.9803003,-2.48586 1.58035,-0.90551 7.60593,-5.37303 9.29347,-6.065025 0.38587,-0.160351 5.0549,-1.531476 5.09434,-0.932948 0.0695,0.932948 -0.30784,1.137031 -0.18436,1.527183 0.22638,0.74602 1.44144,1.46546 2.02282,1.98509 1.50918,1.29224 3.21044,2.42841 4.27373,4.15625 1.49203,2.40183 1.55805,4.999171 1.98251,7.677111 0.99469,-0.11148 2.0091,-2.17545 2.55961,-2.99264 0.51278,-0.7726 2.38639,-4.071361 3.09725,-4.275441 0.67227,-0.20408 2.75511,0.95867 3.50284,1.18076 2.85973,0.84806 5.644,1.35398 8.560317,1.35398 3.50799,0.009 12.726,0.2581 19.55505,-4.80023 0.75545,-0.56766 2.55703,-2.7311 2.55703,-2.7311 0,0 -0.37644,-0.57709 -1.04785,-0.79061 0.89779,-0.58481 1.8659,-1.211632 1.94993,-1.92592 z"
+           id="fish4" />
+        <path
+           id="fish5"
+           d="m 127.65312,60.900973 c 0.0489,-0.44418 -0.2178,-0.896934 -1.01784,-1.415715 -0.72801,-0.47505 -1.4826,-0.932949 -2.2149,-1.401138 -1.6035,-1.02813 -3.29018,-1.969653 -4.89799,-3.079245 -4.67074,-3.24131 -10.22127,-4.404923 -15.76322,-5.150939 -2.27235,-0.286401 -4.812228,-0.168925 -6.721858,-1.574351 -1.48174,-1.081294 -4.04993,-4.828523 -6.86506,-6.456038 -0.4862,-0.290688 -2.77227,-1.444869 -2.77227,-1.444869 0,0 1.30939,3.550006 1.60951,4.264295 0.69542,1.644664 -0.38158,3.063809 -0.83262,4.642447 -0.29069,1.04185 2.13772,0.8129 2.26463,1.782721 0.18179,1.432007 -4.15197,1.936211 -6.59152,2.417263 -3.65634,0.715146 -7.91635,2.082842 -11.56925,0.884072 -4.3046,-1.383131 -7.37269,-4.12967 -10.46566,-7.235496 1.43801,6.725289 5.4382,10.602857 5.6157,11.422617 0.18607,0.905508 -0.45961,1.091583 -1.04099,1.682394 -1.28967,1.265654 -6.91566,7.731125 -6.93366,9.781382 1.61379,-0.247815 3.56115,-1.660957 4.9803,-2.485862 1.58035,-0.905509 7.60593,-5.373029 9.29347,-6.065023 0.38587,-0.160351 5.0549,-1.531476 5.09434,-0.932948 0.0695,0.932948 -0.30784,1.137031 -0.18436,1.527188 0.22638,0.746016 1.44144,1.46545 2.02282,1.985088 1.50918,1.292237 3.21044,2.42841 4.27373,4.156252 1.49203,2.401827 1.55805,4.999163 1.98251,7.677102 0.99469,-0.111473 2.0091,-2.17545 2.55961,-2.992638 0.51278,-0.772598 2.38639,-4.071359 3.09725,-4.275442 0.67227,-0.204082 2.75511,0.958673 3.50284,1.180763 2.85973,0.848057 5.643998,1.353976 8.560318,1.353976 3.50799,0.0094 12.726,0.258104 19.55506,-4.800226 0.75545,-0.567658 2.55703,-2.731104 2.55703,-2.731104 0,0 -0.37644,-0.57709 -1.04785,-0.790605 0.89779,-0.584808 1.8659,-1.211633 1.94993,-1.925921 z"
+           style="fill:#464d4d;fill-opacity:1"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccccccccccccccccccccccccccccccc" />
+        <path
+            d="m 68.19699,20.522295 c 0.0489,-0.44418 -0.2178,-0.896934 -1.01784,-1.415715 -0.72801,-0.47505 -1.4826,-0.932949 -2.2149,-1.401138 -1.6035,-1.02813 -3.29018,-1.969653 -4.89798,-3.079245 C 55.39553,11.384887 49.845,10.221274 44.30305,9.4752582 42.0307,9.1888572 39.49082,9.3063332 37.58119,7.900907 36.09945,6.819613 33.53126,3.072384 30.71613,1.444869 30.22993,1.154181 27.94386,0 27.94386,0 c 0,0 1.30939,3.550006 1.60951,4.264295 0.69542,1.644664 -0.38158,3.063809 -0.83262,4.642447 -0.29069,1.0418502 2.13772,0.8129002 2.26463,1.782721 0.18179,1.432007 -4.15197,1.936211 -6.59152,2.417263 -3.65634,0.715146 -7.91635,2.082842 -11.56925,0.884072 C 8.52001,12.607667 5.45192,9.8611282 2.35895,6.755302 3.79696,13.480591 7.79715,17.358159 7.97465,18.177919 8.16072,19.083427 7.51504,19.269502 6.93366,19.860313 5.64399,21.125967 0.018,27.591438 0,29.641695 1.61379,29.39388 3.56115,27.980738 4.9803,27.155833 c 1.58035,-0.905509 7.60593,-5.373029 9.29347,-6.065023 0.38587,-0.160351 5.0549,-1.531476 5.09434,-0.932948 0.0695,0.932948 -0.30784,1.137031 -0.18436,1.527188 0.22638,0.746016 1.44144,1.46545 2.02282,1.985088 1.50918,1.292237 3.21044,2.42841 4.27373,4.156252 1.49203,2.401827 1.55805,4.999163 1.98251,7.677102 0.99469,-0.111473 2.0091,-2.17545 2.55961,-2.992638 0.51278,-0.772598 2.38639,-4.071359 3.09725,-4.275442 0.67227,-0.204082 2.75511,0.958673 3.50284,1.180763 2.85973,0.848057 5.644,1.353976 8.56032,1.353976 3.50799,0.0094 12.726,0.258104 19.55505,-4.800226 0.75545,-0.567658 2.55703,-2.731104 2.55703,-2.731104 0,0 -0.37644,-0.57709 -1.04785,-0.790605 0.89779,-0.584808 1.8659,-1.211633 1.94993,-1.925921 z"
+           id="fish1" />
+      </svg>
+</div>
+
+>>>>>>> dev
     <h2>潛水課程</h2>
 
     <div class="containerCourse">
         <div class="courseUp">
                 <div class="courseBox">
-                    <a class="animal" href="#">
+                    <a class="animal" href="./course.html">
                         <img class="windows" src="./img/index/window_new-01.png" alt="">
                         <img class="turtle" src="./img/index/fish_1018A.png" alt="">
                     </a>
@@ -205,7 +273,7 @@
                     </div>
                 </div>
                 <div class="courseBox">
-                    <a class="animal" href="#">
+                    <a class="animal" href="./course.html">
                         <img class="windows" src="./img/index/window_new-01.png" alt="">
                         <img class="turtle" src="./img/index/fish_1018B.png" alt="">
                     </a>
@@ -214,7 +282,7 @@
                     </div>
                 </div>
                 <div class="courseBox">
-                    <a class="animal" href="#">
+                    <a class="animal" href="./course.html">
                         <img class="windows" src="./img/index/window_new-01.png" alt="">
                         <img class="turtle" src="./img/index/fish_1018C.png" alt="">
                     </a>
@@ -223,7 +291,7 @@
                     </div>
                 </div>
                 <div class="courseBox">
-                    <a class="animal" href="#">
+                    <a class="animal" href="./course.html">
                         <img class="windows" src="./img/index/window_new-01.png" alt="">
                         <img class="turtle" src="./img/index/fish_1018D.png" alt="">
                     </a>
@@ -236,6 +304,7 @@
 
 
         <main class="courseDown">
+<<<<<<< HEAD
             <div class="mainLeft">
                 <div class="courseClass">                   
                     <div class="courseItem">
@@ -364,10 +433,37 @@
                         </div>
                     </div>
                     
+=======
+            <div class="coachCard">
+                <div class="card">
+                    <img src="./img/index/courseImage660x410.jpg" alt="">
+                    <div class="info">
+                        <h3>Billy</h3>
+                        <p>全程跟在旁邊細心指導，而且很帥，不會讓學生遭遇危險，而且又帥，回饋大好評!!</p>
+                        <a href="#" class="readMore">查看更多</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/index/hacha.jpg" alt="">
+                    <div class="info">
+                        <h3>Haachama</h3>
+                        <p>教練整天發瘋，號稱澳洲瘋女人，跟著他可能會瘋狂嗆水，無法好好欣賞海底世界</p>
+                        <a href="#" class="readMore">查看更多</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/index/coach01.jpg" alt="">
+                    <div class="info">
+                        <h3>Moona</h3>
+                        <p>30分鐘學會狗爬式，3小時學會潛水，菁英班的教育模式。</p>
+                        <a href="#" class="readMore">查看更多</a>
+                    </div>
+>>>>>>> dev
                 </div>
             </div>
         </main>
     </div>
+
 
 
 
@@ -379,25 +475,25 @@
         </div>
         <div class="itemList">
             <div class="mask item">
-                <a href="#">
+                <a href="./shop.html">
                     <img src="./img/index/maskBubble.png" alt="">
                 </a>
                 <span>面鏡</span>
             </div>
             <div class="watch item">
-                <a href="#">
+                <a href="./shop.html">
                     <img src="./img/index/watchBubble.png" alt="">
                 </a>
                 <span>潛水錶</span>
             </div>
             <div class="gloves item">
-                <a href="#">
+                <a href="./shop.html">
                     <img src="./img/index/glovesBubble.png" alt="">
                 </a>
                 <span>手套</span>
             </div>
             <div class="frogshoes item">
-                <a href="#">
+                <a href="./shop.html">
                     <img src="./img/index/frogshoesBubble.png" alt="">
                 </a>
                 <span>蛙鞋</span>
@@ -439,8 +535,12 @@
 
     <div class="diary">
         <div class="bigDiary">
+<<<<<<< HEAD
             <div class="diaryInsidePage">
                 <!-- 內頁上半部 -->
+=======
+            
+>>>>>>> dev
                 <div class="pageLeft"><!-- 左側 -->
                     <div class="pageLeftImg"><img src="./img/index/b1.png"></div>
                     <!-- <div class="pageLeftLine">這裡的呈現，佳惠還在想</div> -->
@@ -492,6 +592,7 @@
                     </div>
                     <hr>
         
+<<<<<<< HEAD
                     <div class="rightContent"><!-- 內文 -->
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime totam voluptas laboriosam? Reprehenderit magni similique eum nulla quia sed, velit quisquam sit molestiae aperiam? Tempora necessitatibus non nobis rem. Esse.</p>
                     </div>
@@ -499,9 +600,73 @@
             </div>
             <!-- <div class="diaryImg">
                 <img src="./img/index/b1.png" alt="">
-            </div>
-            <div class="diaryTxt">
+=======
+                </div>
+    
+        </div>
 
+        <div class="smallDiary">
+            <div class="diaryCenter">
+                <div class="diarySolid">
+                    <a href="./diaryInside.html">
+                        <div class="imgContent">
+                            <div class="imgSolid">
+                                <!-- 規範img -->
+                                <img src="./img/index/l1.png" class="image">
+                            </div>
+                            <div class="diaryTitleA">
+                                <div class="diaryTitleFlex">
+                                    <div class="userLogo"><img src="./img/index/haachama.png" class="image"></div>
+                                    <!-- 規範h4、h5 -->
+                                    <h5 class="userName">哈洽馬</h5>
+                                </div>
+                                <h4 class="userText">潛水體驗去</h4>
+                            </div>
+                            <div class="diaryTitleB">
+                                <h4 class="diaryTitleText">綠島-鋼鐵礁</h4><!-- 規範h4、h5 -->
+                                <p class="diaryTitleDate">2020-06-16 | 21:07</p>
+                            </div>
+                        </div>
+
+                        <div class="diaryText">
+                            <div class="diaryTextData">
+                                <div><p>日誌類型 </p><p><span>課程</span><span></span></p></div>
+                                <div><p>最大深度</p><p><span>33.2</span><span>米</span></p></div>
+                                <div><p>平均深度</p><p><span>23.2</span><span>米</span></p></div>
+                                <div><p>潛水時間</p><p><span>45</span><span>m</span></p></div>
+                            </div>
+                            <div class="diaryTextP">
+                                <p class="diaryTextPP">海風的味道，就像夏天的擁抱</p>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+>>>>>>> dev
+            </div>
+            <div class="diaryCenter">
+                <div class="diarySolid">
+                    <a href="./diaryInside.html">
+                        <div class="imgContent">
+                            <div class="imgSolid">
+                                <!-- 規範img -->
+                                <img src="./img/index/l2.png" class="image">
+                            </div>
+                            <div class="diaryTitleA">
+                                <div class="diaryTitleFlex">
+                                    <div class="userLogo"><img src="./img/index/haachama.png" class="image"></div>
+                                    <!-- 規範h4、h5 -->
+                                    <h5 class="userName">哈洽馬</h5>
+                                </div>
+                                <h4 class="userText">潛水體驗去</h4>
+                            </div>
+                            <div class="diaryTitleB">
+                                <h4 class="diaryTitleText">綠島-鋼鐵礁</h4><!-- 規範h4、h5 -->
+                                <p class="diaryTitleDate">2020-06-16 | 21:07</p>
+                            </div>
+                        </div>
+
+<<<<<<< HEAD
             </div> -->
         </div>
 
@@ -602,6 +767,45 @@
                             </div>
                         </div>
 
+=======
+                        <div class="diaryText">
+                            <div class="diaryTextData">
+                                <div><p>日誌類型 </p><p><span>課程</span><span></span></p></div>
+                                <div><p>最大深度</p><p><span>33.2</span><span>米</span></p></div>
+                                <div><p>平均深度</p><p><span>23.2</span><span>米</span></p></div>
+                                <div><p>潛水時間</p><p><span>45</span><span>m</span></p></div>
+                            </div>
+                            <div class="diaryTextP">
+                                <p class="diaryTextPP">海風的味道，就像夏天的擁抱</p>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="diaryCenter">
+                <div class="diarySolid">
+                    <a href="./diaryInside.html">
+                        <div class="imgContent">
+                            <div class="imgSolid">
+                                <!-- 規範img -->
+                                <img src="./img/index/l3.png" class="image">
+                            </div>
+                            <div class="diaryTitleA">
+                                <div class="diaryTitleFlex">
+                                    <div class="userLogo"><img src="./img/index/haachama.png" class="image"></div>
+                                    <!-- 規範h4、h5 -->
+                                    <h5 class="userName">哈洽馬</h5>
+                                </div>
+                                <h4 class="userText">潛水體驗去</h4>
+                            </div>
+                            <div class="diaryTitleB">
+                                <h4 class="diaryTitleText">綠島-鋼鐵礁</h4><!-- 規範h4、h5 -->
+                                <p class="diaryTitleDate">2020-06-16 | 21:07</p>
+                            </div>
+                        </div>
+
+>>>>>>> dev
                         <div class="diaryText">
                             <div class="diaryTextData">
                                 <div><p>日誌類型 </p><p><span>課程</span><span></span></p></div>
@@ -756,7 +960,11 @@
                 </svg>
         
                 <span class="button--bubble__container">
+<<<<<<< HEAD
                     <a href="#campaign" class="button button--bubble">
+=======
+                    <a href="./gameIntro.html" class="button button--bubble">
+>>>>>>> dev
                         進入遊戲
                     </a>
                     <span class="button--bubble__effect-container">
@@ -784,6 +992,11 @@
 
     <script src="./js/bubbleBtn.js"></script>
     <script src="./js/index.js"></script>
+<<<<<<< HEAD
+=======
+    <script src="./js/common.js"></script>
+    <!-- <script src="./js/newMouse.js"></script> -->
+>>>>>>> dev
     <script>
         $(".turtle").each(function(index,item){
             // var imgLength=$(".page").length;
@@ -799,5 +1012,4 @@
         });
     </script>
 </body>
-
 </html>

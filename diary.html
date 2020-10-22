@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="Shortcut Icon" href="./img/favicon.ico" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="./css/hamburgers.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/diary.css">
+    <link href="./vendors/fontawesome/css/all.css" rel="stylesheet"> <!-- icon -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>
+
+    <title>海中日子</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">海中日子 Divein
+            <a href="./index.html"><img src="./img/header/logo.png" alt="logo"></a>
+        </h1>
+        <div class="nav">
+            <ul>
+                <li class="recommend_nav">
+                    <a href="./spot.html">潛點推薦</a>
+                </li>
+                <li class="course_nav">
+                    <a href="./course.html">潛水課程</a>
+                </li>
+                <li class="shop_nav">
+                    <a href="./shop.html">潛水商城</a>
+                </li>
+                <li class="blog_nav">
+                    <a href="./diary.html">潛水日誌</a>
+                </li>
+                <li class="game_nav">
+                    <a href="./gameIntro.html">下潛遊戲</a>
+                </li>
+            </ul>
+        </div>
+        <div class="memCart">
+            <ul>
+                <li><a href="./memberLogin.html"><img src="./img/header/member.png" ></a></li>
+                <li><a href="javascript:;"><img src="./img/header/cart.png"></a></li>
+            </ul>
+        </div>
+        <button class="hamburger hamburger--3dxy" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+        </button>  
+    </header>
+
+
+    <!-- 所有日誌 Title -->
+    <div class="diary_diaryTitleH3">
+        <!-- 規範h3 -->
+        <h3>所有日誌</h3>
+        <!-- 規範btn -->
+        <div class="controlBtn">
+            <div class="bubbleBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                result="goo" />
+                            <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                    </defs>
+                </svg>
+                <span class="button--bubble__container">
+                    <a href="./diaryAdd.html" class="button button--bubble">
+                        我想新增日誌
+                    </a>
+                    <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="button effect-button"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- 篩選 -->
+    <div class="diary_formSelect">
+        <form action="">
+            <!-- <div class="diarySelect">日誌篩選
+                <label><input type="radio" name="diaryType" value="0">旅遊潛水</label>
+                <label><input type="radio" name="diaryType" value="1">課程潛水</label>
+            </div> -->
+
+            <div class="diarySelect">日誌篩選
+                <select id="diarySelect">
+                    <option>旅遊潛水</option>
+                    <option>課程潛水</option>
+                </select>
+            </div>
+
+            <div class="diveAreaSelect">潛域篩選
+                <!-- 下拉選潛域 -->
+                <!-- https://ithelp.ithome.com.tw/questions/10194355 -->
+                <select id="diveArea">
+                    <option>選擇潛域</option>
+                    <option>東北角</option> <!-- a 不會到sql -->
+                    <option>墾丁</option> <!-- b -->
+                    <option>小琉球</option> <!-- c -->
+                    <option>綠島</option> <!-- d -->
+                    <option>蘭嶼</option> <!-- e -->
+                </select>
+
+                <!-- a -->
+                <p id="northeastCorner">
+                    <label><input type="checkbox" name="a1" value="a1">和美</label>
+                    <label><input type="checkbox" name="a2" value="a2">龍洞</label>
+                    <label><input type="checkbox" name="a3" value="a3">潮境公園</label>
+                    <label><input type="checkbox" name="a4" value="a4">鼻頭角</label>
+                </p>
+                <!-- b -->
+                <p id="kenting">
+                    <label><input type="checkbox" name="b1" value="b1">後壁湖</label>
+                    <label><input type="checkbox" name="b2" value="b2">出水口</label>
+                    <label><input type="checkbox" name="b3" value="b3">雙峰藍洞</label>
+                    <label><input type="checkbox" name="b4" value="b4">北岸花園</label>
+                </p>
+                <!-- c -->
+                <p id="xiaoliuqiu">
+                    <label><input type="checkbox" name="c1" value="c1">花瓶岩</label>
+                    <label><input type="checkbox" name="c2" value="c2">美人洞</label>
+                    <label><input type="checkbox" name="c3" value="c3">衫福沈船</label>
+                    <label><input type="checkbox" name="c4" value="c4">鎮海艦</label>
+                    <label><input type="checkbox" name="c5" value="c5">厚石礁群</label>
+                </p>
+                <!-- d -->
+                <p id="greenIsland">
+                    <label><input type="checkbox" name="d1" value="d1">海底教堂</label>
+                    <label><input type="checkbox" name="d2" value="d2">鋼鐵礁</label>
+                    <label><input type="checkbox" name="d3" value="d3">石朗大香菇</label>
+                    <label><input type="checkbox" name="d4" value="d4">海底大峽谷</label>
+                    <label><input type="checkbox" name="d5" value="d5">雞仔礁</label>
+                </p>
+                <!-- e -->
+                <p id="lanyu">
+                    <label><input type="checkbox" name="e1" value="e1">母雞岩</label>
+                    <label><input type="checkbox" name="e2" value="e2">八代灣沉船</label>
+                    <label><input type="checkbox" name="e3" value="e3">椰油斷層</label>
+                    <label><input type="checkbox" name="e4" value="e4">野銀小峽谷</label>
+                    <label><input type="checkbox" name="e5" value="e5">四條溝</label>
+                </p>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- 日誌卡片 -->
+    <div class="diaryCenter">
+        <!-- 1 -->
+        <div class="diarySolid">
+            <a href="./diaryInside.html">
+                <div class="imgContent">
+                    <div class="imgSolid">
+                        <!-- 規範img -->
+                        <img src="./img/diary/spotGiLittle-04.png" class="image">
+                    </div>
+                    <div class="diaryTitleA">
+                        <div class="diaryTitleFlex">
+                            <div class="userLogo"><img src="./img/diary/user.png" class="image"></div>
+                            <!-- 規範h4、h5 -->
+                            <h5 class="userName">diver</h5>
+                        </div>
+                        <h4 class="userText">潛水體驗去</h4>
+                    </div>
+                    <div class="diaryTitleB">
+                        <h4 class="diaryTitleText">綠島-鋼鐵礁</h4><!-- 規範h4、h5 -->
+                        <p class="diaryTitleDate">2020-06-16 | 21:07</p>
+                    </div>
+                </div>
+                <div class="lineSolid">
+                    這裡的呈現，佳惠還在想
+                </div>
+                <div class="diaryText">
+                    <div class="diaryTextData">
+                        <div><p>日誌類型 </p><p><span>課程</span><span></span></p></div>
+                        <div><p>最大深度</p><p><span>33.2</span><span>米</span></p></div>
+                        <div><p>平均深度</p><p><span>23.2</span><span>米</span></p></div>
+                        <div><p>潛水時間</p><p><span>45</span><span>m</span></p></div>
+                    </div>
+                    <div class="diaryTextP">
+                        <p class="diaryTextPP">海風的味道，就像夏天的擁抱</p>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- 2 -->
+        <div class="diarySolid">
+            <a href="./diaryInside.html">
+                <div class="imgContent">
+                    <div class="imgSolid">
+                        <!-- 規範img -->
+                        <img src="./img/diary/spotLyLittle-01.png" class="image">
+                    </div>
+                    <div class="diaryTitleA">
+                        <div class="diaryTitleFlex">
+                            <div class="userLogo"><img src="./img/diary/user.png" class="image"></div>
+                            <!-- 規範h4、h5 -->
+                            <h5 class="userName">diver</h5>
+                        </div>
+                        <h4 class="userText">潛水體驗去</h4>
+                    </div>
+                    <div class="diaryTitleB">
+                        <h4 class="diaryTitleText">綠島-鋼鐵礁</h4><!-- 規範h4、h5 -->
+                        <p class="diaryTitleDate">2020-06-16 | 21:07</p>
+                    </div>
+                </div>
+                <div class="lineSolid">
+                    這裡的呈現，佳惠還在想
+                </div>
+                <div class="diaryText">
+                    <div class="diaryTextData">
+                        <div><p>日誌類型 </p><p><span>課程</span><span></span></p></div>
+                        <div><p>最大深度</p><p><span>33.2</span><span>米</span></p></div>
+                        <div><p>平均深度</p><p><span>23.2</span><span>米</span></p></div>
+                        <div><p>潛水時間</p><p><span>45</span><span>m</span></p></div>
+                    </div>
+                    <div class="diaryTextP">
+                        <p class="diaryTextPP">海風的味道，就像夏天的擁抱</p>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- 3 -->
+        <div class="diarySolid">
+            <a href="./diaryInside.html">
+                <div class="imgContent">
+                    <div class="imgSolid">
+                        <!-- 規範img -->
+                        <img src="./img/diary/spotEncLittle-04.png" class="image">
+                    </div>
+                    <div class="diaryTitleA">
+                        <div class="diaryTitleFlex">
+                            <div class="userLogo"><img src="./img/diary/user.png" class="image"></div>
+                            <!-- 規範h4、h5 -->
+                            <h5 class="userName">diver</h5>
+                        </div>
+                        <h4 class="userText">潛水體驗去</h4>
+                    </div>
+                    <div class="diaryTitleB">
+                        <h4 class="diaryTitleText">綠島-鋼鐵礁</h4><!-- 規範h4、h5 -->
+                        <p class="diaryTitleDate">2020-06-16 | 21:07</p>
+                    </div>
+                </div>
+                <div class="lineSolid">
+                    這裡的呈現，佳惠還在想
+                </div>
+                <div class="diaryText">
+                    <div class="diaryTextData">
+                        <div><p>日誌類型 </p><p><span>課程</span><span></span></p></div>
+                        <div><p>最大深度</p><p><span>33.2</span><span>米</span></p></div>
+                        <div><p>平均深度</p><p><span>23.2</span><span>米</span></p></div>
+                        <div><p>潛水時間</p><p><span>45</span><span>m</span></p></div>
+                    </div>
+                    <div class="diaryTextP">
+                        <p class="diaryTextPP">海風的味道，就像夏天的擁抱</p>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            Copyright © 2020 Divein | 海中日子 All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        function doFirst() {
+            //先跟HTML畫面產生關聯，再建事件聆聽功能
+            document.getElementById('diveArea').onchange = chkbox;
+            chkbox();
+        }
+    
+        function chkbox() {
+            let diveAreas = ['northeastCorner', 'kenting', 'xiaoliuqiu', 'greenIsland', 'lanyu'];
+            let mapping = ['東北角','墾丁','小琉球','綠島','蘭嶼'];
+            let selected = document.getElementById("diveArea").options[document.getElementById("diveArea").selectedIndex].text;
+    
+            for (let i = 0; i < diveAreas.length; i++) {
+    
+                let yourSelect = document.getElementById(diveAreas[i]);
+                if (selected == mapping[i]) {
+                    yourSelect.style.display = 'inline-block';
+                } else {
+                    yourSelect.style.display = 'none';
+                }
+            }
+        }
+        window.addEventListener('load', doFirst);
+    </script>
+
+    <script src="./js/bubbleBtn.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+</html>

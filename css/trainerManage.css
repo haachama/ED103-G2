@@ -1,0 +1,308 @@
+@charset "UTF-8";
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+  min-height: 100vh;
+}
+
+.asideMenu {
+  width: 18%;
+  text-align: center;
+}
+
+.asideMenu .title {
+  padding: 15px 10px;
+  color: #fefefe;
+  background-color: #16181D;
+  margin-bottom: 20px;
+}
+
+.asideMenu .title a {
+  color: #fefefe;
+}
+
+.profile img {
+  width: 100px;
+  margin: 20px 0;
+}
+
+.option {
+  background-color: rgba(254, 254, 254, 0.75);
+  padding: 20px;
+}
+
+.option p {
+  margin: 20px 0;
+}
+
+.option a {
+  display: inline-block;
+  text-decoration: none;
+  color: #16181D;
+  margin: 10px 0;
+}
+
+.option a:hover {
+  color: #073977;
+}
+
+.option li:nth-child(3) a {
+  color: #073977;
+}
+
+.info {
+  margin-left: 20px;
+}
+
+.info .month {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fefefe;
+  font-size: 20px;
+}
+
+/* 頁籤區塊 */
+.tab_list_block, .tab_contents {
+  vertical-align: top;
+}
+
+/* 頁籤列表 */
+.tab_list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tab_list li {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}
+
+.tab_list li a {
+  width: 100%;
+  height: 40px;
+  padding: 10px 25px;
+  display: inline-block;
+  border: 1px solid #fefefe;
+  cursor: pointer;
+  color: #fefefe;
+  font-size: 18px;
+  position: relative;
+  top: 1px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.tab_list li a:hover {
+  color: #073977;
+  background-color: #fefefe;
+}
+
+.tab_list li a.-on {
+  color: #073977;
+  background-color: #fefefe;
+}
+
+/* 頁籤內容區塊 */
+.tab_contents div.tab {
+  display: none;
+}
+
+.tab_contents div.tab.-on {
+  display: block;
+}
+
+.course {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.course .imgContainer {
+  display: inline-block;
+  width: 250px;
+  position: relative;
+}
+
+.course img {
+  width: 100%;
+}
+
+.course.full .imgContainer::before {
+  content: '已額滿';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  line-height: 168px;
+  text-align: center;
+  color: rgba(254, 254, 254, 0.75);
+}
+
+.course::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #fefefe;
+  position: absolute;
+  top: -10px;
+}
+
+.courseInfo p {
+  color: #fefefe;
+  margin: 20px 10px;
+}
+
+ul.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fefefe;
+  font-size: 18px;
+}
+
+ul.pagination li {
+  border: 1px solid #fefefe;
+  margin: 20px 10px;
+  padding: 10px 15px;
+}
+
+ul.pagination li:hover {
+  color: #073977;
+  background-color: #fefefe;
+  border: 1px solid #073977;
+  cursor: pointer;
+}
+
+ul.pagination li:first-child {
+  color: #073977;
+  background-color: #fefefe;
+  border: 1px solid #073977;
+}
+
+.tab_container {
+  position: relative;
+}
+
+.nameList {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  padding: 20px;
+  background-color: #fefefe;
+  z-index: 2;
+  display: none;
+}
+
+.nameList .courseInfo p {
+  color: #16181D;
+}
+
+.nameList .avatar table {
+  margin: 0 auto;
+}
+
+.nameList .avatar td {
+  padding: 20px;
+  vertical-align: middle;
+}
+
+.nameList .avatar img {
+  width: 70px;
+}
+
+.nameList .closeBtn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.nameList.on {
+  display: inline-block;
+}
+
+@media all and (max-width: 991px) {
+  body {
+    background-size: auto;
+  }
+  main {
+    display: block;
+  }
+  .asideMenu {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .asideMenu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .info {
+    width: 70%;
+    margin: 20px auto;
+  }
+  .info .progressStar div {
+    width: 250px;
+  }
+  .bubbleBtn {
+    margin: 20px auto 0;
+  }
+  .course {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .course .imgContainer {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .asideMenu {
+    width: 90%;
+  }
+  .info {
+    width: 90%;
+  }
+  .info .rateStar {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .course.full .imgContainer::before {
+    line-height: 290px;
+  }
+}
+
+@media all and (max-width: 376px) {
+  .tab_list li a {
+    padding: 10px 15px;
+  }
+}
+/*# sourceMappingURL=trainerManage.css.map */

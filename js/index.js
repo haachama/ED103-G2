@@ -19,6 +19,19 @@ var fishNemo = document.getElementsByClassName("fishNemo")[0];
 fishNemo.style.left = "450px"
 fishNemo.style.top = "200px"
 
+window.addEventListener('resize', function(){
+    var pixel = document.body.clientWidth;
+    
+    if (pixel < 991) {
+        $('.fishNemo').css({
+            display: 'none',
+        })
+    }else{
+        $('.fishNemo').css({
+            display: 'inline-block',
+        })
+    }
+});
 //蝦蝦
 var diaryCenters = document.getElementsByClassName("diaryCenter")
 for (let i = 0; i < diaryCenters.length; i++){
