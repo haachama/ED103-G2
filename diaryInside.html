@@ -16,6 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
     <title>海中日子</title>
 </head>
 
@@ -51,7 +52,7 @@
         </div>
         <button class="hamburger hamburger--3dxy" type="button">
             <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
+            <span class="hamburger-inner"></span>
             </span>
         </button>  
     </header>
@@ -62,7 +63,7 @@
         <!-- 內頁上半部 -->
         <div class="pageLeft"><!-- 左側 -->
             <div class="pageLeftImg"><img src="./img/diary/clownfish.jpg" class="image"></div>
-            <div class="pageLeftLine">這裡的呈現，佳惠還在想</div>
+            <div class="pageLeftLine"><canvas id="buyers"  ></canvas></div>
         </div>
         <div class="pageRight"><!-- 右側 -->
             <div class="share"><!-- 分享 -->
@@ -384,7 +385,28 @@
     </div>
 
 
-
+    <script>
+        Chart.defaults.global.responsive = true; 
+        //Chart.js 預設為非響應式。將responsive 設true轉化為響應式圖表。設定全域性值。
+        // line chart data 折線圖數據
+        var buyerData = {
+            labels : ["時間1","時間2","時間3","時間4","時間5"],
+            datasets : [
+            {
+                fillColor : "rgba(172,194,132,0.4)", //透明綠
+                strokeColor : "#ACC26D", //綠
+                pointColor : "#fff", //白
+                pointStrokeColor : "#9DB86D", //綠
+                data : [203,156,99,251,305]
+            }
+        ]
+        }
+        // get line chart canvas 獲取
+        var buyers = document.getElementById('buyers').getContext('2d');
+        // draw line chart 繪製
+        new Chart(buyers).Line(buyerData);
+        
+    </script>
 
 
 
