@@ -1,0 +1,399 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 60px;
+}
+
+.divelogobg {
+  position: absolute;
+  left: 45%;
+  top: 10%;
+}
+
+.divelogobg > img {
+  width: 50%;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -10%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.frontBubble p {
+  position: absolute;
+  left: 22%;
+  top: 37%;
+}
+
+.backBubble p {
+  position: absolute;
+  right: 22%;
+  top: 37%;
+}
+
+.frontBubble:hover .FBubble,
+.backBubble:hover .FBubble{
+  /* border-radius: 50%;
+  border: 4px solid rgb(247, 233, 165);
+  filter: blur(5px); */
+  animation-name: BIG;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes BIG{
+  0%{
+    transform: scale(1.2);
+  }
+  50%{
+    transform: scale(1.3);
+  }
+  100%{
+    transform: scale(1.2);
+  }
+}
+
+/*.backBubble > a > img:hover, 
+  .frontBubble > a > img:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+} */
+
+
+.frontBubble > a > img,
+.backBubble > a > img {
+  width: 250px;
+  /* -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s; */
+
+  animation-name: bigsmall;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes bigsmall{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.frontBase {
+  font-size: 60px;
+  top: 0;
+  position: absolute;
+  left: 5%;
+  color: #FEFEFE;
+}
+
+.backBase {
+  font-size: 60px;
+  top: 0;
+  position: absolute;
+  left: 8%;
+  color: #FEFEFE;
+}
+
+#parallax {
+  background: url(../img/layer/undership.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.layer1 {
+  position: absolute;
+  bottom: 0;
+  background: url(../img/layer/la01.png) no-repeat;
+  width: 100%;
+  height: 23.125rem;
+}
+
+.layer2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url(../img/layer/la02.png) no-repeat;
+  width: 100%;
+  height: 23.75rem;
+}
+
+.layer3 {
+  position: absolute;
+  bottom: 0;
+  background: url(../img/layer/la03.png) no-repeat;
+  width: 100%;
+  height: 26.875rem;
+}
+
+.layer4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url(../img/layer/la04.png) no-repeat;
+  width: 100%;
+  height: 34.875rem;
+}
+
+.layer5 {
+  position: absolute;
+  bottom: 0;
+  background: url(../img/layer/la05.png) no-repeat;
+  width: 100%;
+  height: 16.75rem;
+}
+
+.layer6 {
+  position: absolute;
+  bottom: 0;
+  background: url(../img/layer/la06.png) no-repeat;
+  width: 100%;
+  height: 28.125rem;
+}
+
+.layer7 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url(../img/layer/la07.png) no-repeat;
+  width: 100%;
+  height: 13.875rem;
+}
+
+.layer8 {
+  position: absolute;
+  bottom: 0;
+  background: url(../img/layer/la08.png) no-repeat;
+  width: 100%;
+  height: 21.875rem;
+}
+
+.layer9 {
+  position: absolute;
+  bottom: 0;
+  background: url(../img/layer/la09.png) no-repeat;
+  width: 100%;
+  height: 15.625rem;
+}
+
+.speed1 {
+  animation: sea 15s linear infinite;
+  -webkit-animation: sea 15s linear infinite;
+  -moz-animation: sea 15s linear infinite;
+  -o-animation: sea 15s linear infinite;
+}
+
+.speed2 {
+  animation: sea 40s linear infinite;
+  -webkit-animation: sea 40s linear infinite;
+  -moz-animation: sea 40s linear infinite;
+  -o-animation: sea 40s linear infinite;
+}
+
+.speed3 {
+  animation: opposite 23s cubic-bezier(0.41, 0.49, 0.6, 0.61) infinite;
+  -webkit-animation: opposite 23s cubic-bezier(0.41, 0.49, 0.6, 0.61) infinite;
+  -moz-animation: opposite 23s cubic-bezier(0.41, 0.49, 0.6, 0.61) infinite;
+  -o-animation: opposite 23s cubic-bezier(0.41, 0.49, 0.6, 0.61) infinite;
+}
+
+.speed4 {
+  animation: sea 39s cubic-bezier(0.27, 0.34, 0.92, 0.54) infinite;
+  -webkit-animation: sea 39s cubic-bezier(0.27, 0.34, 0.92, 0.54) infinite;
+  -moz-animation: sea 39s cubic-bezier(0.27, 0.34, 0.92, 0.54) infinite;
+  -o-animation: sea 39s cubic-bezier(0.27, 0.34, 0.92, 0.54) infinite;
+}
+
+.speed5 {
+  animation: opposite 50s linear infinite;
+  -webkit-animation: opposite 50s linear infinite;
+  -moz-animation: opposite 50s linear infinite;
+  -o-animation: opposite 50s linear infinite;
+}
+
+@keyframes sea {
+  0% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100%, 0);
+    -webkit-transform: translate(100%, 0);
+    -moz-transform: translate(100%, 0);
+    -o-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+  }
+}
+
+@-webkit-keyframes sea {
+  0% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100%, 0);
+    -webkit-transform: translate(100%, 0);
+    -moz-transform: translate(100%, 0);
+    -o-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+  }
+}
+
+@keyframes opposite {
+  0% {
+    transform: translate(100%, 0);
+    -webkit-transform: translate(100%, 0);
+    -moz-transform: translate(100%, 0);
+    -o-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+  }
+}
+
+@-webkit-keyframes opposite {
+  0% {
+    transform: translate(100%, 0);
+    -webkit-transform: translate(100%, 0);
+    -moz-transform: translate(100%, 0);
+    -o-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .frontBubble p {
+    left: 17%;
+    top: 37%;
+  }
+  .backBubble p {
+    position: absolute;
+    right: 20%;
+    top: 37%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .frontBubble p {
+    left: 17%;
+    top: 37%;
+  }
+  .backBubble p {
+    position: absolute;
+    right: 17%;
+    top: 37%;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .divelogobg {
+    left: 36%;
+    top: 5%;
+  }
+  .divelogobg > img {
+    width: 40%;
+  }
+  .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  a {
+    font-size: 40px;
+  }
+  .frontBubble {
+    margin-bottom: 30px;
+  }
+  .frontBubble p {
+    left: 43%;
+    top: 31%;
+  }
+  .frontBubble > a > img {
+    width: 150px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+  }
+  .frontBubble > a > img:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .backBubble p {
+    right: 43%;
+    top: 53%;
+  }
+  .backBubble > a > img {
+    width: 150px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+  }
+  .backBubble > a > img:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+
+@media all and (max-width: 375px) {
+  p {
+    left: 40%;
+    top: 32%;
+  }
+  .backBubble p {
+    right: 39%;
+    top: 52%;
+  }
+}
