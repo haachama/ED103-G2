@@ -6,43 +6,67 @@ body {
     height: auto;
 }
 
-h3 {
-    margin-top: 100px;
-    text-align: center;
-    font-size: 18px;
-}
 
-.waves {
-    z-index: -1;
-    // border: 1px solid #fff;
-    position: relative;
-    top: 0px;
-
-    img {
-        width: 100%;
-    }
-
-    .biglogo {
-        position: absolute;
-        top: 40%;
-        left: 8%;
-    }
-
-    .biglogo img {
-        height: 250px;
-        padding: 5px;
-        width: auto;
-    }
-}
 
 h2 {
     margin-top: 200px;
     margin-left: 150px;
 }
 
+//海豚
+@keyframes dolphinMove{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top left;
+        opacity: 0;
+    }
+    20%{
+        transform: rotate(72deg);
+        transform-origin: top left;
+        opacity: 0;
+    }
+    40%{
+        transform: rotate(144deg);
+        transform-origin: top left;
+        opacity: 0.6;
+    }
+    60%{
+        transform: rotate(216deg);
+        transform-origin: top left;
+        opacity: 0.8;
+    }
+    80%{
+        transform: rotate(288deg);
+        transform-origin: top left;
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(360deg);
+        transform-origin: top left;
+        opacity: 0;
+    }
+}
+
+.bubble::before{
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/index/dolphin2.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 90px;
+    left: 30%;
+    animation-name: dolphinMove;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
 //潛點推薦
-
-
 .bubb {
     position: relative;
 
@@ -229,101 +253,204 @@ h2 {
     }
 
     .courseDown {
-        .coachCard {
-            margin: auto;
-            display: flex;
-            flex-direction: row;
-            width: 70%;
-            justify-content: space-around;
-        }
-
-        .card {
-            width: 280px;
-            height: 360px;
-            padding: 2rem 1rem;
-            background: #fff;
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        width: 70%;
+        
+        .post-module {
             position: relative;
-            display: flex;
-            align-items: flex-end;
-            box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-            transition: 0.5s ease-in-out;
-        }
-
-        .card:hover {
-            transform: translateY(20px);
-        }
-
-        .card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
+            z-index: 1;
             display: block;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to bottom, rgba(117, 104, 189, 0.5), rgb(18, 19, 17));
-            z-index: 2;
-            transition: 0.5s all;
-            opacity: 0;
+            background: #FFFFFF;
+            min-width: 270px;
+            height: 470px;
+            width: 330px;
+            transition: all 0.3s linear 0s;
         }
-
-        .card:hover::before {
-            opacity: 1;
+        
+        .post-module:hover .thumbnail img{
+            transform: scale(1.1);
+            opacity: 0.6;
         }
-
-        .card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        
+        .post-module .thumbnail {
+            background: #000000;
+            height: 400px;
+            overflow: hidden;
+        }
+        
+        .post-module .thumbnail .date {
             position: absolute;
-            top: 0;
+            top: 20px;
+            right: 20px;
+            z-index: 1;
+            background: #E6AE2C;
+            width: 55px;
+            height: 55px;
+            padding: 7px 0;
+            border-radius: 100%;
+            color: #FFFFFF;
+            font-weight: 700;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        
+        .post-module .thumbnail .date .day {
+            font-size: 18px;
+        }
+        
+        .post-module .thumbnail .date .month {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        
+        .post-module .thumbnail img {
+            display: block;
+            width: 120%;
+            transition: all 0.3s linear 0s;
+        }
+        
+        .post-module .post-content {
+            position: absolute;
+            bottom: 0;
+            background: #FFFFFF;
+            width: 100%;
+            padding: 30px;
+            box-sizing: border-box;
+            transition: all 0.3s linear 0s;
+            /* transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s; */
+        
+        }
+        
+        .post-module .post-content .category {
+            position: absolute;
+            top: -38px;
             left: 0;
-        }
-
-        .card .info {
-            position: relative;
-            z-index: 3;
-            color: #fff;
-            opacity: 0;
-            transform: translateY(30px);
-            transition: 0.5s all;
-        }
-
-        .card:hover .info {
-            opacity: 1;
-            transform: translateY(0px);
-        }
-
-        .card .info h3 {
-            margin: 0;
-        }
-
-        .card .info p {
-            text-align: justify;
-            font-size: 16px;
-            margin-top: 8px;
-            margin-bottom: 20px;
-        }
-
-        .card .info .readMore {
-            position: absolute;
-            right: 1%;
-            top: 97%;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            background-color: #fff;
-            color: #000;
+            background: #E6AE2C;
+            padding: 10px 15px;
+            color: #FFFFFF;
             font-size: 14px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.4s ease-in-out;
+            font-weight: 600;
         }
-
-        .card .info .readMore:hover {
-            box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+        
+        .post-module .post-content .title {
+            margin: 0;
+            padding: 0 0 10px;
+            color: #333333;
+            font-size: 26px;
         }
+        
+        .post-module .post-content .sub_title {
+            margin: 0;
+            padding: 0 0 10px;
+            color: #E6AE2C;
+            font-size: 20px;
+        }
+        
+        .post-module .post-content .description {
+            display: none;
+            color: #666666;
+            font-size: 14px;
+            line-height: 1.8em;
+        }
+        
     }
 }
+        //     .coachCard {
+        //         margin: auto;
+        //         display: flex;
+        //         flex-direction: row;
+        //         width: 70%;
+        //         justify-content: space-around;
+        //     }
+    
+        //     .card {
+        //         width: 280px;
+        //         height: 360px;
+        //         padding: 2rem 1rem;
+        //         background: #fff;
+        //         position: relative;
+        //         display: flex;
+        //         align-items: flex-end;
+        //         box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+        //         transition: 0.5s ease-in-out;
+        //     }
+    
+        //     .card:hover {
+        //         transform: translateY(20px);
+        //     }
+    
+        //     .card::before {
+        //         content: '';
+        //         position: absolute;
+        //         top: 0;
+        //         left: 0;
+        //         display: block;
+        //         width: 100%;
+        //         height: 100%;
+        //         background: linear-gradient(to bottom, rgba(117, 104, 189, 0.5), rgb(18, 19, 17));
+        //         z-index: 2;
+        //         transition: 0.5s all;
+        //         opacity: 0;
+        //     }
+    
+        //     .card:hover::before {
+        //         opacity: 1;
+        //     }
+    
+        //     .card img {
+        //         width: 100%;
+        //         height: 100%;
+        //         object-fit: cover;
+        //         position: absolute;
+        //         top: 0;
+        //         left: 0;
+        //     }
+    
+        //     .card .info {
+        //         position: relative;
+        //         z-index: 3;
+        //         color: #fff;
+        //         opacity: 0;
+        //         transform: translateY(30px);
+        //         transition: 0.5s all;
+        //     }
+    
+        //     .card:hover .info {
+        //         opacity: 1;
+        //         transform: translateY(0px);
+        //     }
+    
+        //     .card .info h3 {
+        //         margin: 0;
+        //     }
+    
+        //     .card .info p {
+        //         text-align: justify;
+        //         font-size: 16px;
+        //         margin-top: 8px;
+        //         margin-bottom: 20px;
+        //     }
+    
+        //     .card .info .readMore {
+        //         position: absolute;
+        //         right: 1%;
+        //         top: 97%;
+        //         text-decoration: none;
+        //         padding: 0.5rem 1rem;
+        //         background-color: #fff;
+        //         color: #000;
+        //         font-size: 14px;
+        //         font-weight: bold;
+        //         cursor: pointer;
+        //         transition: 0.4s ease-in-out;
+        //     }
+    
+        //     .card .info .readMore:hover {
+        //         box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+        //     }
+        // }
 
 .courseTxt::before{
     content: '';
@@ -349,7 +476,7 @@ h2 {
 
 
 .courseBox:hover .turtle {
-    animation: curved 3s ease-in-out 1;
+    animation: curved 2s ease-in-out 1;
 
 }
 
@@ -440,244 +567,120 @@ h2 {
     margin: 50px auto;
 }
 
-.bigDiary {
-    display: flex;
-    justify-content: center;
-    // max-width: 850px;
-    margin: 0 0 20px 0;
-
-    .pageLeft {
-        width: 50%;
-
-        .pageLeftImg {
-            font-size: 0;
-
-            img {
-                border-radius: 5px 0 0 5px;
-            }
-        }
-
-        .pageLeftLine {
-            border: 1px solid black;
-            height: 150px; //先設假的
+.bigDiary{
+    margin: auto;
+    .cardContainer{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto;
+    }
+    
+    .imgContainer{
+        width: 425px;
+        height: 425px;
+    
+        img{
+            // width: auto;
+            height: 100%;
+            // max-width: 100%;
+            // min-width: 100%;
+            vertical-align: bottom;
         }
     }
-
-    .pageRight {
-        // border: 1px solid purple;
-        padding: 10px;
-        // flex: 50%;
-        border-radius: 0 5px 5px 0;
-        background-color: $keyBlack;
-
-        hr {
-            border: 0;
-            background-color: $transparentWhite;
-            height: 1px;
+    
+    
+    
+    .blogContent{
+    
+        width: 425px;
+        padding-left: 20px;
+        background-color: #16181d;
+        color: #fefefe;
+        height: 425px;
+    
+        p{
+            display: inline-block;
+            text-align: center;
+            margin: 10px 20px;
         }
-
-        // 分享
-        .share {
-            // border: 1px solid orange;
-            width: 100%;
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
-            padding-right: 5px;
-            padding-bottom: 10px;
-
-            p:nth-child(1) a:nth-child(1) {
-                //檢舉
-                // border: 1px solid red;
-                color: $keyWhite;
-                font-size: 14px;
-            }
-
-            p {
-                // border: 1px solid blue;
-                padding: 5px;
-
-                a {
-                    // border: 1px solid green;
-                    color: $keyWhite;
-                    font-size: 20px;
-                }
-            }
+    
+        span{
+            display: block;
+            margin-top: 2px;
         }
-
-        // user
-        .rightTitle {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-
-            .rightNameImg {
-                display: flex;
-                align-items: center;
-
-                .rightImg img {
-                    border-radius: 50%;
-                    width: 52px;
-                    border: 1px solid $keyWhite;
-                }
-
-                .rightName {
-                    padding-left: 10px;
-
-                    p:nth-child(1) {
-                        margin-bottom: 10px;
-                        font-size: 1.125*$baseFz;
-                    }
-
-                    p {
-                        color: $keyWhite;
-                    }
-                }
-            }
-
-            .rightNameText {
-                p:nth-child(1) {
-                    font-size: 1.125*$baseFz;
-                    margin-bottom: 10px;
-                }
-
-                p {
-                    color: $keyWhite;
-                    text-align: right;
-                }
-            }
+    
+        div{
+            margin: 10px 0;
         }
-
-        // 潛點資訊
-        .rightInformation {
-            // border: 1px solid blue;
-            width: 100%;
-            margin: 20px 0;
-            display: flex;
-            justify-content: space-around;
-
-            div {
-
-                // border: 1px solid orange;
-                p:nth-child(2) {
-                    font-size: 24px;
-                    padding: 10px 0px;
-                }
-
-                p {
-                    // border: 1px solid orange;
-                    text-align: center;
-                    color: $keyWhite;
-                }
-            }
+    
+    
+    
+    }
+    
+    .profile{
+        img{
+            border-radius: 50%;
+            border: 1px solid $keyWhite;
         }
-
-        // 資料
-        .rightData {
-            // border: 1px solid black;
-            position: relative;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 0px;
-
-            .rightDataA {
-                // border: 1px solid $keyWhite;
-                flex: 50%;
-                display: flex;
-                margin: 0 5px;
-                justify-content: space-between;
-
-                div {
-
-                    // border: 1px solid gray;
-                    p:nth-child(2) {
-                        font-size: 1.2*$baseFz;
-                        padding: 5px 0px;
-                    }
-
-                    p {
-                        // border: 1px solid rgb(51, 141, 153);
-                        color: $keyWhite;
-                        text-align: center;
-                        font-size: 14px;
-                    }
-
-                    span:nth-child(2) {
-                        font-size: 16px;
-                    }
-                }
-
-            }
-
-            .rightDataB {
-                flex: 50%;
-                display: flex;
-                margin: 0 5px;
-                justify-content: space-around;
-
-                div {
-
-                    // border: 1px solid gray;
-                    p:nth-child(2) {
-                        font-size: 1.2*$baseFz;
-                        padding: 5px 0px;
-                    }
-
-                    p {
-                        // border: 1px solid rgb(51, 141, 153);
-                        color: $keyWhite;
-                        text-align: center;
-
-                        span:nth-child(2) {
-                            font-size: 16px;
-                        }
-
-                        i {
-                            font-size: 20px;
-                            // border: 1px solid gray;
-                        }
-                    }
-
-                    span:nth-child(2) {
-                        font-size: 16px;
-                    }
-                }
-            }
+        img,.nameDate{
+            display: inline-block;
+            vertical-align: middle;
         }
-
-        // 圖鑑
-        .biological {
-            // border: 1px solid blue;
-            color: $keyWhite;
-            width: 100%;
-            padding: 10px 0px;
+        p{
+            display:block ;
         }
-
-        .rightPicture {
-            // border: 1px solid blue;
-            display: flex;
-
-            div {
-                margin: 0 30px;
-            }
+    }
+    
+    .blogWeather{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .sublife{
+        img{
+            margin: 5px 8px;
         }
-
-        // 日誌
-        .rightContent {
-            // border: 1px solid black;
-            width: 100%;
-            padding: 10px;
-
-            p {
-                // border: 1px solid rgb(226, 119, 119);
-                color: $keyWhite;
+        p{
+            display:block ;
+        }
+    }
+    
+    
+    @media screen and (max-width: 768px){
+        
+        .bigContent{
+            width: 425px;
+            padding-left: 0px;
+        }
+    }
+    @media screen and (max-width: 576px){
+     
+        .cardContainer{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .imgContainer{
+            width: 375px;
+            height: 375px;
+            overflow-x: hidden;
+        }
+    
+        .blogContent{
+            width: 375px;
+    
+            p{
+                margin: 10px 0px;
+                margin-left: 10px;
             }
         }
     }
-
+    
+    @media screen and (max-width: 375px) {
+    
+    }
 }
 
 
@@ -955,7 +958,7 @@ h2 {
     margin-top: 30px;
     margin: auto;
     padding: 5px;
-
+    
     .gameH3 {
         margin-top: 50px;
     }
@@ -975,8 +978,8 @@ h2 {
     }
 }
 
-
 .bottomSunhoo {
+    position: relative;
     width: 100%;
     background-image: url(../img/index/homeBg.png);
     background-position: center;
@@ -984,28 +987,18 @@ h2 {
     background-size: cover;
 }
 
-
-
-
-
-@media screen and (min-width:1500px) {
-    .waves {
-        top: 80px;
-    }
+.RK{
+    position: absolute;
+    top: 17%;
+    right: 2%;
+    width: 300px;
 }
 
-@media screen and (min-width:1200px) {
-    .waves {
-        // top: 100px;
-    }
-}
+
+
 
 @media screen and (max-width:991px) {
-    .waves {
-        .biglogo img {
-            height: 150px;
-        }
-    }
+
 
     .weather {
 

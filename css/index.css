@@ -4,37 +4,121 @@ body {
   height: auto;
 }
 
-h3 {
-  margin-top: 100px;
-  text-align: center;
-  font-size: 18px;
-}
-
-.waves {
-  z-index: -1;
-  position: relative;
-  top: 0px;
-}
-
-.waves img {
-  width: 100%;
-}
-
-.waves .biglogo {
-  position: absolute;
-  top: 40%;
-  left: 8%;
-}
-
-.waves .biglogo img {
-  height: 250px;
-  padding: 5px;
-  width: auto;
-}
-
 h2 {
   margin-top: 200px;
   margin-left: 150px;
+}
+
+@-webkit-keyframes dolphinMove {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    opacity: 0;
+  }
+  20% {
+    -webkit-transform: rotate(72deg);
+            transform: rotate(72deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: rotate(144deg);
+            transform: rotate(144deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    opacity: 0.6;
+  }
+  60% {
+    -webkit-transform: rotate(216deg);
+            transform: rotate(216deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    opacity: 0.8;
+  }
+  80% {
+    -webkit-transform: rotate(288deg);
+            transform: rotate(288deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    opacity: 0;
+  }
+}
+
+@keyframes dolphinMove {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    opacity: 0;
+  }
+  20% {
+    -webkit-transform: rotate(72deg);
+            transform: rotate(72deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: rotate(144deg);
+            transform: rotate(144deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    opacity: 0.6;
+  }
+  60% {
+    -webkit-transform: rotate(216deg);
+            transform: rotate(216deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    opacity: 0.8;
+  }
+  80% {
+    -webkit-transform: rotate(288deg);
+            transform: rotate(288deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    opacity: 0;
+  }
+}
+
+.bubble::before {
+  content: '';
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-image: url("../img/index/dolphin2.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 90px;
+  left: 30%;
+  -webkit-animation-name: dolphinMove;
+          animation-name: dolphinMove;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 .bubb {
@@ -225,119 +309,116 @@ h2 {
   border: 9px solid #3f4645;
 }
 
-.containerCourse .courseDown .coachCard {
-  margin: auto;
+.containerCourse .courseDown {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 70%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin: auto;
+  width: 70%;
 }
 
-.containerCourse .courseDown .card {
-  width: 280px;
-  height: 360px;
-  padding: 2rem 1rem;
-  background: #fff;
+.containerCourse .courseDown .post-module {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-.containerCourse .courseDown .card:hover {
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-}
-
-.containerCourse .courseDown .card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
+  z-index: 1;
   display: block;
-  width: 100%;
-  height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(117, 104, 189, 0.5)), to(#121311));
-  background: linear-gradient(to bottom, rgba(117, 104, 189, 0.5), #121311);
-  z-index: 2;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-  opacity: 0;
+  background: #FFFFFF;
+  min-width: 270px;
+  height: 470px;
+  width: 330px;
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
 }
 
-.containerCourse .courseDown .card:hover::before {
-  opacity: 1;
+.containerCourse .courseDown .post-module:hover .thumbnail img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.6;
 }
 
-.containerCourse .courseDown .card img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.containerCourse .courseDown .post-module .thumbnail {
+  background: #000000;
+  height: 400px;
+  overflow: hidden;
+}
+
+.containerCourse .courseDown .post-module .thumbnail .date {
   position: absolute;
-  top: 0;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  background: #E6AE2C;
+  width: 55px;
+  height: 55px;
+  padding: 7px 0;
+  border-radius: 100%;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.containerCourse .courseDown .post-module .thumbnail .date .day {
+  font-size: 18px;
+}
+
+.containerCourse .courseDown .post-module .thumbnail .date .month {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.containerCourse .courseDown .post-module .thumbnail img {
+  display: block;
+  width: 120%;
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+
+.containerCourse .courseDown .post-module .post-content {
+  position: absolute;
+  bottom: 0;
+  background: #FFFFFF;
+  width: 100%;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+  /* transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s; */
+}
+
+.containerCourse .courseDown .post-module .post-content .category {
+  position: absolute;
+  top: -38px;
   left: 0;
-}
-
-.containerCourse .courseDown .card .info {
-  position: relative;
-  z-index: 3;
-  color: #fff;
-  opacity: 0;
-  -webkit-transform: translateY(30px);
-          transform: translateY(30px);
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-.containerCourse .courseDown .card:hover .info {
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-}
-
-.containerCourse .courseDown .card .info h3 {
-  margin: 0;
-}
-
-.containerCourse .courseDown .card .info p {
-  text-align: justify;
-  font-size: 16px;
-  margin-top: 8px;
-  margin-bottom: 20px;
-}
-
-.containerCourse .courseDown .card .info .readMore {
-  position: absolute;
-  right: 1%;
-  top: 97%;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  background-color: #fff;
-  color: #000;
+  background: #E6AE2C;
+  padding: 10px 15px;
+  color: #FFFFFF;
   font-size: 14px;
-  font-weight: bold;
-  cursor: pointer;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
+  font-weight: 600;
 }
 
-.containerCourse .courseDown .card .info .readMore:hover {
-  -webkit-box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+.containerCourse .courseDown .post-module .post-content .title {
+  margin: 0;
+  padding: 0 0 10px;
+  color: #333333;
+  font-size: 26px;
+}
+
+.containerCourse .courseDown .post-module .post-content .sub_title {
+  margin: 0;
+  padding: 0 0 10px;
+  color: #E6AE2C;
+  font-size: 20px;
+}
+
+.containerCourse .courseDown .post-module .post-content .description {
+  display: none;
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.8em;
 }
 
 .courseTxt::before {
@@ -363,8 +444,8 @@ h2 {
 }
 
 .courseBox:hover .turtle {
-  -webkit-animation: curved 3s ease-in-out 1;
-          animation: curved 3s ease-in-out 1;
+  -webkit-animation: curved 2s ease-in-out 1;
+          animation: curved 2s ease-in-out 1;
 }
 
 @-webkit-keyframes curved {
@@ -491,127 +572,73 @@ h2 {
 }
 
 .bigDiary {
+  margin: auto;
+}
+
+.bigDiary .cardContainer {
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 0 20px 0;
-}
-
-.bigDiary .pageLeft {
-  width: 50%;
-}
-
-.bigDiary .pageLeft .pageLeftImg {
-  font-size: 0;
-}
-
-.bigDiary .pageLeft .pageLeftImg img {
-  border-radius: 5px 0 0 5px;
-}
-
-.bigDiary .pageLeft .pageLeftLine {
-  border: 1px solid black;
-  height: 150px;
-}
-
-.bigDiary .pageRight {
-  padding: 10px;
-  border-radius: 0 5px 5px 0;
-  background-color: #16181D;
-}
-
-.bigDiary .pageRight hr {
-  border: 0;
-  background-color: rgba(254, 254, 254, 0.75);
-  height: 1px;
-}
-
-.bigDiary .pageRight .share {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-right: 5px;
-  padding-bottom: 10px;
-}
-
-.bigDiary .pageRight .share p:nth-child(1) a:nth-child(1) {
-  color: #fefefe;
-  font-size: 14px;
-}
-
-.bigDiary .pageRight .share p {
-  padding: 5px;
-}
-
-.bigDiary .pageRight .share p a {
-  color: #fefefe;
-  font-size: 20px;
-}
-
-.bigDiary .pageRight .rightTitle {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.bigDiary .pageRight .rightTitle .rightNameImg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 50px auto;
 }
 
-.bigDiary .pageRight .rightTitle .rightNameImg .rightImg img {
+.bigDiary .imgContainer {
+  width: 425px;
+  height: 425px;
+}
+
+.bigDiary .imgContainer img {
+  height: 100%;
+  vertical-align: bottom;
+}
+
+.bigDiary .blogContent {
+  width: 425px;
+  padding-left: 20px;
+  background-color: #16181d;
+  color: #fefefe;
+  height: 425px;
+}
+
+.bigDiary .blogContent p {
+  display: inline-block;
+  text-align: center;
+  margin: 10px 20px;
+}
+
+.bigDiary .blogContent span {
+  display: block;
+  margin-top: 2px;
+}
+
+.bigDiary .blogContent div {
+  margin: 10px 0;
+}
+
+.bigDiary .profile img {
   border-radius: 50%;
-  width: 52px;
   border: 1px solid #fefefe;
 }
 
-.bigDiary .pageRight .rightTitle .rightNameImg .rightName {
-  padding-left: 10px;
+.bigDiary .profile img, .bigDiary .profile .nameDate {
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.bigDiary .pageRight .rightTitle .rightNameImg .rightName p:nth-child(1) {
-  margin-bottom: 10px;
-  font-size: 18px;
+.bigDiary .profile p {
+  display: block;
 }
 
-.bigDiary .pageRight .rightTitle .rightNameImg .rightName p {
-  color: #fefefe;
-}
-
-.bigDiary .pageRight .rightTitle .rightNameText p:nth-child(1) {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.bigDiary .pageRight .rightTitle .rightNameText p {
-  color: #fefefe;
-  text-align: right;
-}
-
-.bigDiary .pageRight .rightInformation {
-  width: 100%;
-  margin: 20px 0;
+.bigDiary .blogWeather {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -619,116 +646,38 @@ h2 {
       justify-content: space-around;
 }
 
-.bigDiary .pageRight .rightInformation div p:nth-child(2) {
-  font-size: 24px;
-  padding: 10px 0px;
+.bigDiary .sublife img {
+  margin: 5px 8px;
 }
 
-.bigDiary .pageRight .rightInformation div p {
-  text-align: center;
-  color: #fefefe;
+.bigDiary .sublife p {
+  display: block;
 }
 
-.bigDiary .pageRight .rightData {
-  position: relative;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 10px 0px;
+@media screen and (max-width: 768px) {
+  .bigDiary .bigContent {
+    width: 425px;
+    padding-left: 0px;
+  }
 }
 
-.bigDiary .pageRight .rightData .rightDataA {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 5px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.bigDiary .pageRight .rightData .rightDataA div p:nth-child(2) {
-  font-size: 19.2px;
-  padding: 5px 0px;
-}
-
-.bigDiary .pageRight .rightData .rightDataA div p {
-  color: #fefefe;
-  text-align: center;
-  font-size: 14px;
-}
-
-.bigDiary .pageRight .rightData .rightDataA div span:nth-child(2) {
-  font-size: 16px;
-}
-
-.bigDiary .pageRight .rightData .rightDataB {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 5px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.bigDiary .pageRight .rightData .rightDataB div p:nth-child(2) {
-  font-size: 19.2px;
-  padding: 5px 0px;
-}
-
-.bigDiary .pageRight .rightData .rightDataB div p {
-  color: #fefefe;
-  text-align: center;
-}
-
-.bigDiary .pageRight .rightData .rightDataB div p span:nth-child(2) {
-  font-size: 16px;
-}
-
-.bigDiary .pageRight .rightData .rightDataB div p i {
-  font-size: 20px;
-}
-
-.bigDiary .pageRight .rightData .rightDataB div span:nth-child(2) {
-  font-size: 16px;
-}
-
-.bigDiary .pageRight .biological {
-  color: #fefefe;
-  width: 100%;
-  padding: 10px 0px;
-}
-
-.bigDiary .pageRight .rightPicture {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.bigDiary .pageRight .rightPicture div {
-  margin: 0 30px;
-}
-
-.bigDiary .pageRight .rightContent {
-  width: 100%;
-  padding: 10px;
-}
-
-.bigDiary .pageRight .rightContent p {
-  color: #fefefe;
+@media screen and (max-width: 576px) {
+  .bigDiary .cardContainer {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .bigDiary .imgContainer {
+    width: 375px;
+    height: 375px;
+    overflow-x: hidden;
+  }
+  .bigDiary .blogContent {
+    width: 375px;
+  }
+  .bigDiary .blogContent p {
+    margin: 10px 0px;
+    margin-left: 10px;
+  }
 }
 
 .smallDiary {
@@ -938,6 +887,7 @@ h2 {
 }
 
 .bottomSunhoo {
+  position: relative;
   width: 100%;
   background-image: url(../img/index/homeBg.png);
   background-position: center;
@@ -945,16 +895,14 @@ h2 {
   background-size: cover;
 }
 
-@media screen and (min-width: 1500px) {
-  .waves {
-    top: 80px;
-  }
+.RK {
+  position: absolute;
+  top: 17%;
+  right: 2%;
+  width: 300px;
 }
 
 @media screen and (max-width: 991px) {
-  .waves .biglogo img {
-    height: 150px;
-  }
   .weather .firstBubble,
   .weather .secondBubble {
     display: none;

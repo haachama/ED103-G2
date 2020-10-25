@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/hamburgers.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/waves.css">
     <link rel="stylesheet" href="./css/fontawesome/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     
@@ -63,12 +64,27 @@
         </button>  
     </header>
 
-    <h3>今天我想來點自由配潛水</h3>
 
-    <div class="waves">
-        <img src="./img/index/water_waves.png" alt="">
-        <div class="biglogo">
-            <a href="javascript:;"><img src="./img/index/diveinlogo_big.png" alt="logo"></a>
+    <div id="waterWaveBubble" class="waterWaveBubble">
+        <div class="row index1 water-animate">
+            <div class="logo shake shake-hard_12 logo-position"></div>
+            <div class="water_cloud"></div>
+            <div class="water_island shake shake-vertical_13"></div>
+            <div class="water_waves shake shake-hard_15 shake-vertical_12">
+                <div class="bubble">
+                    <div class="bubble4 rand_big_small"></div>
+                    <div class="bubble2 rand_big_small"></div>
+                    <div class="bubble3 rand_big_small_3"></div>
+                    <div class="b1-bubble"></div>
+                    <div class="b2-bubble"></div>
+                    <div class="b3-bubble"></div>
+                    <div class="b4-bubble"></div>
+                    <div class="b5-bubble"></div>
+                </div>
+            </div>
+            <div class="water_boat shake shake-vertical_13"></div>
+            <div class="water_person shake shake-hard_10 shake-vertical_14"></div>
+            <div class="water_sunlight"></div>
         </div>
     </div>
 
@@ -249,35 +265,96 @@
 
 
         <main class="courseDown">
-            <div class="coachCard">
-                <div class="card">
-                    <img src="./img/index/courseImage660x410.jpg" alt="">
-                    <div class="info">
-                        <h3>Billy</h3>
-                        <p>全程跟在旁邊細心指導，而且很帥，不會讓學生遭遇危險，而且又帥，回饋大好評!!</p>
-                        <a href="#" class="readMore">查看更多</a>
+            <div class="column">
+                <div class="post-module">
+                    <div class="thumbnail">
+                        <div class="date">
+                            <div class="day">09</div>
+                            <div class="month">Sep</div>
+                        </div>
+                        <img src="./img/index/coach01.jpg" />
                     </div>
-                </div>
-                <div class="card">
-                    <img src="./img/index/hacha.jpg" alt="">
-                    <div class="info">
-                        <h3>Haachama</h3>
-                        <p>教練整天發瘋，號稱澳洲瘋女人，跟著他可能會瘋狂嗆水，無法好好欣賞海底世界</p>
-                        <a href="#" class="readMore">查看更多</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./img/index/coach01.jpg" alt="">
-                    <div class="info">
-                        <h3>Moona</h3>
-                        <p>30分鐘學會狗爬式，3小時學會潛水，菁英班的教育模式。</p>
-                        <a href="#" class="readMore">查看更多</a>
+                    <!-- Post Content-->
+                    <div class="post-content">
+                        <div class="category">綠島</div>
+                        <span class="title">OW考照班</span>
+                        <p class="sub_title">進入水下世界第一張證照</p>
+                        <p class="description">
+                            <span>探索海洋從這開始，潛移默化讓你身心溶入水中，熟練水中技巧，享受無重力的樂趣。</span>
+                        </p>
                     </div>
                 </div>
             </div>
+            <div class="column">
+                <div class="post-module">
+                    <div class="thumbnail">
+                        <div class="date">
+                            <div class="day">29</div>
+                            <div class="month">Nov</div>
+                        </div>
+                        <img src="./img/index/coach01.jpg" />
+                    </div>
+                    <!-- Post Content-->
+                    <div class="post-content">
+                        <div class="category">墾丁</div>
+                        <span class="title">OW考照班</span>
+                        <p class="sub_title">進入水下世界第一張證照</p>
+                        <p class="description">
+                            <span>探索海洋從這開始，潛移默化讓你身心溶入水中，熟練水中技巧，享受無重力的樂趣。</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="post-module">
+                    <div class="thumbnail">
+                        <div class="date">
+                            <div class="day">15</div>
+                            <div class="month">Feb</div>
+                        </div>
+                        <img src="./img/index/coach01.jpg" />
+                    </div>
+                    <!-- Post Content-->
+                    <div class="post-content">
+                        <div class="category">蘭嶼</div>
+                        <span class="title">OW考照班</span>
+                        <p class="sub_title">進入水下世界第一張證照</p>
+                        <p class="description">
+                            <span>探索海洋從這開始，潛移默化讓你身心溶入水中，熟練水中技巧，享受無重力的樂趣。</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
         </main>
     </div>
-
+    
+    <!-- <div class="coachCard">
+        <div class="card">
+            <img src="./img/index/courseImage660x410.jpg" alt="">
+            <div class="info">
+                <h3>Billy</h3>
+                <p>全程跟在旁邊細心指導，而且很帥，不會讓學生遭遇危險，而且又帥，回饋大好評!!</p>
+                <a href="#" class="readMore">查看更多</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/index/hacha.jpg" alt="">
+            <div class="info">
+                <h3>Haachama</h3>
+                <p>教練整天發瘋，號稱澳洲瘋女人，跟著他可能會瘋狂嗆水，無法好好欣賞海底世界</p>
+                <a href="#" class="readMore">查看更多</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/index/coach01.jpg" alt="">
+            <div class="info">
+                <h3>Moona</h3>
+                <p>30分鐘學會狗爬式，3小時學會潛水，菁英班的教育模式。</p>
+                <a href="#" class="readMore">查看更多</a>
+            </div>
+        </div>
+    </div> -->
 
 
 
@@ -349,59 +426,54 @@
 
     <div class="diary">
         <div class="bigDiary">
-            
-                <div class="pageLeft"><!-- 左側 -->
-                    <div class="pageLeftImg"><img src="./img/index/b1.png"></div>
-                    <!-- <div class="pageLeftLine">這裡的呈現，佳惠還在想</div> -->
+            <div class="cardContainer">
+                <div class="imgContainer">
+                    <img src="./img/index/b1.png">
                 </div>
-                <div class="pageRight"><!-- 右側 -->
-        
-                    <div class="rightTitle"><!-- 人名及日誌名稱 -->
-                        <div class="rightNameImg">
-                            <div class="rightImg"><img src="./img/index/haachamaBig.png"></div>
-                            <div class="rightName">
-                                <p>哈洽馬</p>
-                                <p><span>發佈日期</span><span>2020-6-16 | 21:07</span></p>
-                            </div>
-                        </div>
-                        <div class="rightNameText">
-                            <p>初見墾丁出海口</p>
-                            <p><span>下水日期</span><span>2020-01-01</span></p>
+                <div class="blogContent">
+                    <div class="profile">
+                        <img src="./img/index/haachama.png" alt="">
+                        <div class="nameDate">
+                            <p class="name">哈洽馬</p>
+                            <p class="publishDate">2020/06/16 21:07</p>
                         </div>
                     </div>
-                    <hr>
-        
-                    <div class="rightInformation"><!-- 日誌類型 -->
-                        <div><p>日誌類型</p><p>旅潛</p></div>
-                        <div><p>潛水區域</p><p>墾丁</p></div>
-                        <div><p>潛水地點</p><p>出海口</p></div>
-                    </div>
-                    <hr>
-        
-                    <div class="rightData"><!-- 日誌資料 -->
-                        <div class="rightDataA">
-                            <div><p>最大深度</p><p><span>33.2</span><span>米</span></p></div>
-                            <div><p>平均深度</p><p><span>23.2</span><span>米</span></p></div>
-                            <div><p>潛水時間</p><p><span>45</span><span>分</span></p></div>
+                    <div class="blogSpot">
+                        <p>日誌類型<span>旅潛</span></p>
+                        <p>潛水區域<span>墾丁</span></p>
+                        <p>潛水地點<span>出海口</span></p>
+                    
+                        <p>最大深度<span>33.2米</span></p>
+                        <p>平均深度<span>23米</span></p>
+                        <p>潛水時間<span>45分</span></p>
+                        <div class="blogWeather">
+                            <p>
+                                <i class="fas fa-sun"></i>
+                                <span>晴</span>
+                             </p>
+                             <p>
+                                <i class="fas fa-eye"></i>
+                                <span>33.2米</span>
+                             </p>
+                             <p>
+                                <i class="fas fa-temperature-high"></i>
+                                <span>23度</span>
+                             </p>
+                             <p>
+                                <i class="fas fa-temperature-low"></i>
+                                <span>45度</span>
+                             </p>
                         </div>
-                        <div class="rightDataB">
-                                <div><p><i class="fas fa-sun"></i></p><p><span>晴</span><span></span></p></div>
-                                <div><p><i class="fas fa-eye"></i></p><p><span>33.2</span><span>米</span></p></div>
-                                <div><p><i class="fas fa-temperature-high"></i></p><p><span>23.2</span><span>度</span></p></div>
-                                <div><p><i class="fas fa-temperature-low"></i></p><p><span>45</span><span>度</span></p></div>
-                        </div>
+                     
                     </div>
-                    <hr>
-        
-                    <p class="biological">海洋生物</p>
-                    <div class="rightPicture"><!-- 生物圖鑑 -->
-                        <div><img src="./img/index/ocean1.png" class="image"></div>
-                        <div><img src="./img/index/ocean2.png" class="image"></div>
-                        <div><img src="./img/index/ocean3.png" class="image"></div>
+                    <div class="sublife">
+                        <p>海洋生物</p>
+                        <img src="./img/index/blog01.png">
+                        <img src="./img/index/blog02.png">
+                        <img src="./img/index/blog03.png">
                     </div>
-                    <hr>
-        
                 </div>
+            </div>
     
         </div>
 
@@ -662,10 +734,8 @@
                     <span class="button--bubble__effect-container">
                         <span class="circle top-left"></span>
                         <span class="circle top-left"></span>
-                        <span class="circle top-left"></span>
-        
-                        <span class="button effect-button"></span>
-        
+                        <span class="circle top-left"></span> 
+                        <span class="button effect-button"></span> 
                         <span class="circle bottom-right"></span>
                         <span class="circle bottom-right"></span>
                         <span class="circle bottom-right"></span>
@@ -673,6 +743,7 @@
                 </span>
             </div>
         </div>
+        <img class="RK" src="./img/index/rankBar.png" alt="">
     </div>
 
     <footer>
@@ -698,6 +769,16 @@
             $(item).css({
                 "transform":"rotateY(0deg) translateZ(700px)","background-color":
                 backgroundColor});
+        });
+    </script>
+    <script>
+        $(window).on('load', function () {
+            $('.post-module').hover(function () {
+                $(this).find('.description').stop().animate({
+                    height: "toggle",
+                    opacity: "toggle"
+                }, 100);
+            });
         });
     </script>
 </body>
