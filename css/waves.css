@@ -1,16 +1,7 @@
 .waterWaveBubble{
     overflow: hidden;
 }
-.water_background_sunlight {
-    width: 100%;
-    background: #41a8be url('../../images/jungle/water_background_sunlight.png');
-    background-position: center 290px;
-    background-size: cover;
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    opacity: 0;
-}
+
 
 .waterWaveBubble .index1 {
     position: relative;
@@ -40,7 +31,7 @@
     background-image: url('../img/index/waves/water_waves.png');
     z-index: 14;
     /* left: -10%; */
-    top: 30%;
+    top: 25%;
 }
 
 .waterWaveBubble .index1 .water_waves .bubble {
@@ -97,80 +88,6 @@
     height: 142px;
     top: 105px;
     z-index: 19;
-}
-
-.waterWaveBubble .index1 .water_shadow {
-    position: absolute;
-    width: 100%;
-    height: 451px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url('../../images/jungle/water_shadow.png');
-    z-index: 11;
-    left: -10%;
-    top: 168px;
-}
-
-
-.waterWaveBubble .index1 .water_sunlight {
-    position: absolute;
-    width: 60%;
-    height: 421px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('../../images/jungle/water_sunlight.png');
-    z-index: 12;
-    right: 0;
-}
-
-.waterWaveBubble .index1 .water_cloud {
-    position: absolute;
-    width: 100%;
-    height: 290px;
-    background-repeat: no-repeat;
-    background-image: url('../../images/jungle/water_cloud.png');
-    z-index: 11;
-    right: 0;
-    background-position: center;
-}
-
-.waterWaveBubble .index1 .water_island {
-    position: absolute;
-    width: 100%;
-    height: 90%;
-    max-height: 850px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('../../images/jungle/water_island.png');
-    z-index: 10;
-    top: -15px;
-    background-position: center bottom;
-}
-
-.waterWaveBubble .index1 .water_person {
-    position: absolute;
-    width: 40%;
-    height: 401px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url('../../images/jungle/water_person2.png');
-    z-index: 12;
-    left: 120px;
-    top: 620px;
-}
-
-.waterWaveBubble .index1 .water_boat {
-    position: absolute;
-    width: 70%;
-    max-width: 1344px;
-    height: 100%;
-    max-height: 531px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url('../../images/jungle/water_boat.png');
-    z-index: 13;
-    left: 9%;
-    top: 10px;
 }
 
 .rand_big_small {
@@ -418,8 +335,8 @@
     }
 
     20% {
-        transform: translate3d(5px, 140px, 0) opacity:0.4;
-        rotate(45deg);
+        transform: translate3d(5px, 140px, 0)rotate(45deg);
+        opacity:0.4;
         width: 17.5px;
         height: 10.5px;
     }
@@ -437,9 +354,8 @@
     }
 
     54% {
-        transform: translate3d(3px, 70px, 0);
+        transform: translate3d(3px, 70px, 0) rotate(30deg);
         opacity: 1;
-        rotate(30deg);
     }
 
     60% {
@@ -497,8 +413,7 @@
     }
 
     56% {
-        transform: translate3d(5px, 110px, 0);
-        rotate(45deg);
+        transform: translate3d(5px, 110px, 0) rotate(45deg);
     }
 
     61% {
@@ -508,8 +423,7 @@
     }
 
     70% {
-        transform: translate3d(8px, 65px, 0);
-        rotate(25deg);
+        transform: translate3d(8px, 65px, 0) rotate(25deg);
         opacity: 0.6;
         width: 25px;
         height: 15px;
@@ -536,8 +450,7 @@
     }
 
     13% {
-        transform: translate3d(2px, 120px, 0);
-        rotage(90deg);
+        transform: translate3d(2px, 120px, 0) rotate(90deg);
         opacity: 0.2;
         width: 12.4px;
         height: 8.4px;
@@ -551,7 +464,7 @@
     }
 
     31% {
-        transform: translate3d(1px, 90px, 0) rotage(45deg);
+        transform: translate3d(1px, 90px, 0) rotate(45deg);
         opacity: 0.6;
     }
 
@@ -598,8 +511,7 @@
     }
 
     13% {
-        transform: translate3d(2px, 70px, 0);
-        rotage(90deg);
+        transform: translate3d(2px, 70px, 0) rotate(90deg);
         opacity: 0.4;
         width: 16.4px;
         height: 11.6px;
@@ -611,7 +523,7 @@
     }
 
     30% {
-        transform: translate3d(1px, 40px, 0) rotage(45deg);
+        transform: translate3d(1px, 40px, 0) rotate(45deg);
         opacity: 0.8;
         width: 46px;
         height: 29px;
@@ -655,8 +567,7 @@
     }
 
     13% {
-        transform: translate3d(2px, 70px, 0);
-        rotage(75deg);
+        transform: translate3d(2px, 70px, 0) rotate(75deg);
         opacity: 0.6;
         width: 27.5px;
         height: 18px;
@@ -668,12 +579,12 @@
     }
 
     33% {
-        transform: translate3d(1px, 60px, 0) opacity:1;
+        transform: translate3d(1px, 60px, 0);
+        opacity:1;
     }
 
     40% {
-        transform: translate3d(8px, 50px, 0);
-        rotage(15deg);
+        transform: translate3d(8px, 50px, 0) rotate(15deg);
         width: 55px;
         height: 36px;
     }
@@ -923,3 +834,53 @@
         opacity: 0.1;
     }
 }
+
+@media screen and (max-width: 1500px){
+    .waterWaveBubble .index1 .water_waves{
+        top: 25%;
+    }
+    .waterWaveBubble .index1 .water_waves .bubble .bubble4{
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .waterWaveBubble .index1 .water_waves{
+        top: 20%;
+    }
+
+}
+
+@media screen and (max-width: 1300px){
+    .waterWaveBubble .index1 .water_waves{
+        top: 18%;
+    }
+    .waterWaveBubble .index1 .water_waves .bubble .bubble4{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1200px){
+    .waterWaveBubble .index1 .water_waves{
+        top: 15%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .waterWaveBubble .index1 .logo{
+        width: 150px;
+    }
+   
+    .waterWaveBubble .index1{
+        height: 610px;
+    }
+    
+}
+
+
+
+
+
+
+
