@@ -54,7 +54,7 @@
         </div>
         <button class="hamburger hamburger--3dxy" type="button">
             <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
+                <span class="hamburger-inner"></span>
             </span>
         </button>  
     </header>
@@ -100,7 +100,7 @@
     <!-- 篩選 -->
     <div class="diaryAdd_formAddAll">
         <form action="" class="formf">
-            <div class="diaryAddA"> <!-- 區塊A -->
+            <div class="diaryAddA"> <!-- 區塊A_日誌-->
                 <!-- 日誌名稱 -->
                 <div class="diaryAddName">
                     <p>日誌名稱<span> *</span></p>
@@ -185,12 +185,12 @@
                 </div>
             </div>
             
-            <div class="climate"> <!-- 區塊B -->
+            <div class="climate"> <!-- 區塊B_氣候條件 -->
                 <p class="climateP">氣候條件</p>
                 <div class="climateflex">
                     <div class="climateA">
                         <div>
-                            <p><i class="fas fa-sun"></i>當日天氣</p>
+                            <p><i class="fas fa-sun"></i>當日天氣&nbsp;</p>
                             <select name="" id="">
                                 <option value="no">選擇天氣</option>
                                 <option value="sunny">晴</option>
@@ -199,7 +199,7 @@
                             </select>
                         </div>
                         <div>
-                            <p><i class="fas fa-eye"></i>能&nbsp;見&nbsp;度&nbsp;</p>
+                            <p><i class="fas fa-eye"></i>能&nbsp;見&nbsp;度</p>
                             <input type="number" placeholder="1.0" step="0.5" min="0"><!-- 允許小數1位 -->
                         </div>
                     </div>
@@ -216,27 +216,76 @@
                 </div>
             </div>
 
-            <div class="biological"> <!-- 區塊C -->
+            <div class="biological"> <!-- 區塊C_遇見生物 -->
                 <p class="biologicalP">遇見生物</p>
                 <p class="filp"><i class="fas fa-book"></i><span>選擇圖鑑</span></p>
-                <div class="panel"></div>
+                <div class="panel">
+                    <div class="demo-mainBtn">
+                        <div class="bubbleBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                                <defs>
+                                    <filter id="goo">
+                                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                            result="goo" />
+                                        <feComposite in="SourceGraphic" in2="goo" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                    
+                            <span class="button--bubble__container">
+                                <a href="#campaign" class="button button--bubble">
+                                        這是網站主要按鈕
+                                </a>
+                                <span class="button--bubble__effect-container">
+                                    <span class="circle top-left"></span>
+                                    <span class="circle top-left"></span>
+                                    <span class="circle top-left"></span>
+                    
+                                    <span class="button effect-button"></span>
+                    
+                                    <span class="circle bottom-right"></span>
+                                    <span class="circle bottom-right"></span>
+                                    <span class="circle bottom-right"></span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="lightbox-block">
+                        <div class="lightbox">
+                            <div class="button_closeBox">
+                                <button type="button" class="btn_modal_close">✖</button>
+                            </div>
+                            <h3>你學會如何呼叫函示了嗎？</h3>
+                            <form action="" class="inlightbox-form">
+                                <ul>
+                                    <li><input type="checkbox">還沒有</li>
+                                    <li><input type="checkbox">我懂了</li>
+                                    <li><input type="checkbox">這絕對是一片蛋糕</li>
+                                    <li><input type="submitbtn" value="送出"></li>
+                                </ul>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="process"> <!-- 區塊D -->
+            <div class="process"> <!-- 區塊D_潛水過程 -->
                 <p class="processP">潛水過程</p>
                 <div>
                     idea誰想的，快來切
                 </div>
             </div>
 
-            <div class="diaryAddImg"> <!-- 區塊E -->
+            <div class="diaryAddImg"> <!-- 區塊E_潛水照片 -->
                 <p class="diaryAddImgP">潛水照片</p>
                 <div>
                     <p><i class="fas fa-camera-retro"></i><button>選擇照片</button></p>
                 </div>
             </div>
 
-            <div class="diaryAddContent"> <!-- 區塊F -->
+            <div class="diaryAddContent"> <!-- 區塊F_內容撰寫 -->
                 <p class="diaryAddContentP">內容撰寫</p>
                 <div class="diaryAddText">
                     <textarea name="" id="" cols="30" rows="10"></textarea>

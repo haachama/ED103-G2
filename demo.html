@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>demo</title>
+</head>
+<style>
+    body{
+        
+        color: white;
+    }
+    h2{
+        margin: 0px auto;
+        padding: 20px 0;
+    }
+    section{
+     margin: 60px 30px;
+     /* border: 1px solid blue; */
+    };
+    p{
+        font-size: 24px;
+        color: wheat;   
+    }
+    .ex{
+        color: orange;
+    }
+    ul{
+        font-size: 24px;
+    }
+    li{
+        font-size: 24px;
+        padding: 10px 0;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="javascript:;"><img src="./img/header/logo.png" alt="logo"></a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="recommend_nav">
+                    <a href="javascript:;">潛 點<br>&nbsp;&nbsp;推 薦</a>
+                </li>
+                <li class="course_nav">
+                    <a href="javascript:;">潛 水<br>&nbsp;&nbsp;課 程</a>
+                </li>
+                <li class="shop_nav">
+                    <a href="javascript:;">潛 水<br>&nbsp;&nbsp;商 城</a>
+                </li>
+                <li class="blog_nav">
+                    <a href="javascript:;">潛 水<br>&nbsp;&nbsp;日 誌</a>
+                </li>
+                <li class="game_nav">
+                    <a href="javascript:;">下 潛<br>&nbsp;&nbsp;遊 戲</a>
+                </li>
+            </ul>
+        </div>
+        <div class="memCart">
+            <ul>
+                <li><a href="javascript:;"><img src="./img/header/member.png" ></a></li>
+                <li><a href="javascript:;"><img src="./img/header/cart.png"></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+        <h2>----1.這些是主要顏色變數---</h2>
+        <br>
+        <div class="demo-color">
+            <ul>
+                <li class="demo-color1">$keyWhite:#fefefe;</li>
+                <li class="demo-color2">$keyYellow:#E6AE2C;</li>
+                <li class="demo-color3">$keyBlue:#073977;</li>
+                <li class="demo-color4">$keyBlack:#16181D;</li>
+                <li class="demo-color5">$keyGray:#221814;</li>
+                <li class="demo-color6">$transparentWhite:rgba(254,254,254,0.75);</li>
+            </ul>
+        </div>
+   </section>
+   <hr>
+   <section>
+        <h2>------2.這些是文字------</h2> 
+        <br>
+        <h2>這是h2---40px font-size: 2.5*$baseFz; color:$keywhite;---</h2> 
+        <br>
+        <h3>這是h3---32px font-size: 2*$baseFz;---</h3>
+        <br>
+        <h4>這是h4---24px font-size: 1.5*$baseFz;------</h4> 
+        <br>
+    </section>
+    <hr>
+    <section>
+        <h3>當你讀到這邊的時候！表示你明白『變數 就是 一個英文單字前面有一個＄字號』
+            開始往下看前，請先在此區停留1分鐘耐心看完所有中文 ：）
+        </h3>
+        <hr>
+        <ul class="ex">
+            <li>1.接下來的東西 很重要 請務必依照引用</li>
+            <li>2.以下若想要長成這樣，90%只需打上＠include XXX; 即可 </li>
+            <li>3.使用方法有兩種形式</li>
+            <li> 甲. @include XXX;</li>
+            <li> 乙. @include XXX(某阿拉伯數字＋單位,某阿拉伯數字＋單位);</li>
+        </ul>
+        <br>
+        <p>沒錯！變數出現了 括號內的東西 請依照順序填入你想要的值。 當然你如果不想填，也是可以拉！！  基本上都設好預設值(就是括號內的數值)了，可安心服用！！！
+        <br>
+        <ul class="ex">
+            <li>->請由上而下照順序在.class名稱（寫入括弧內變數）</li>
+            <li>->二擇一 都不寫/寫好寫滿， 一個蘿菠一個坑。</li>
+            <li>->都不寫表示直接默認冒號後面是預設值</li>
+        </ul>
+        舉例3.頁籤樣式來說：
+        <br>
+        <p class="ex" >
+        你可這樣寫～～～～     .demo-tab1{  @include tab();} 
+        <br>
+        你也可這樣寫～～～～     .demo-tab1{  @include tab(4px,5px);}<p>
+        <p>-----------------------------------------------------</p>
+        <p>
+        .demo-tab1--------   是你自己設給這東東的class名稱<br>
+            @include -------    是內建函數  <br>
+            tab      -------    是函式名稱一定要用這個才能呼叫出他的所有規格<br>
+            ($w,$h)  -------    是你可以自己套入能符合你的模板變數名數值，但是～~但是但是還是希望你盡可能不要修改，畢進這些是文采辛苦規範出來的東東呀！！<br>
+        </p>
+        <br>
+        <p>但是～若呼叫出來的樣式都滿足不了你的需求，那就繼續在下面的大括號寫你想的樣式吧！！</p>
+        <p class="ex">
+        像是這這樣<br>
+        .demo-tab1{  @include tab(4px,5px); display:block;........}</p>
+        <br>
+        <p>-----------------------------------------------------</p>
+        那麼我們就開始引用吧！<br>
+    </section>
+    <section>
+        <h2>------3.頁籤樣式------</h2>
+        <div class="demo-tabone" style="display: flex; flex-direction: column;">
+            <p style="color:red;">
+                ****請注意 請務必確認有增加這個特定class名稱才會預設白底狀況***
+            </p><br>
+            請在你要先預設顯示的頁籤加上這個特定的class
+            <p style="color:red;">
+                一定要這個特定class名稱  class="-iAmHere"
+            </p>
+            <ul style="display: flex;">
+                <li class="demo-tab1">第一種</li>
+                <li class="demo-tab1 -iAmHere">第二種＋-iAmHere</li>
+            </ul>
+            <p>引用方式<br>
+            .你自己的class名稱{@include tab($w:195px,$h:60px);}</p>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <h2>------4.次要按鈕------</h2>
+        <button class="demo-btn">確認</button>
+        <p>原則上這是給較具有功能意義的在用<br>
+        引用方式<br>
+        .你自己的class名稱{@include other-button($w:50px,$h:30px,$padding-y:2px,$padding-x:2px);}</p>
+        <p>記得如果你要改裡面的變數值，請全部都要照括號內的順序寫好<br>
+        ex:
+            .demo-btn{@include other-button(100px,30px,5px,5px);}
+        </p>
+    </section>
+    <hr>
+    <section>
+        <h2>------５.燈箱樣式 點擊主要按鈕產生燈箱------</h2>
+        <div class="demo-mainBtn">
+            <div class="bubbleBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                result="goo" />
+                            <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                    </defs>
+                </svg>
+        
+                <span class="button--bubble__container">
+                    <a href="#campaign" class="button button--bubble">
+                            這是網站主要按鈕
+                    </a>
+                    <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+        
+                        <span class="button effect-button"></span>
+        
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                    </span>
+                </span>
+            </div>
+        </div>
+        <div class="lightbox-block">
+            <div class="lightbox">
+                <div class="button_closeBox">
+                    <button type="button" class="btn_modal_close">✖</button>
+                </div>
+                <h3>你學會如何呼叫函示了嗎？</h3>
+                <form action="" class="inlightbox-form">
+                    <ul>
+                        <li><input type="checkbox">還沒有</li>
+                        <li><input type="checkbox">我懂了</li>
+                        <li><input type="checkbox">這絕對是一片蛋糕</li>
+                        <li><input type="submitbtn" value="送出"></li>
+                    </ul>
+                    
+                </form>
+            </div>
+        </div>
+        <div>
+            <p>
+                請依序最外層設
+                <br>
+                .lightbox-block{
+                    @include lightbox-block();
+                }
+                <br>
+                .lightbox{
+                    @include lightbox();
+                }
+                <br>
+                .button_closeBox{
+                    @include button_closeBox;
+                }
+                <br>
+                .inlightbox-form{
+                    @include inlightbox-form;
+                }
+            </p>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <h2>------6.輸入框相關 input------</h2>
+        <div>
+            <input class="demo-input1" type="text"> <br>
+            <p>6-1 當輸入type="text" 引用 @include input-text($w:150px,$h:30px);</p>
+            <p>-----------------------------------------------------</p>
+            <input class="demo-input2" type="radio"><br>
+            <p>6-2 當輸入 type="radio" 引用 @include input-radio;</p>
+            <p>-----------------------------------------------------</p>
+            <input class="demo-input3" type="checkbox"><br>
+            <p>6-3 當輸入 type="checkbox" 引用 @include input-checkbox($w:25px,$h:30px);</p>
+            <p>-----------------------------------------------------</p>
+            <input class="demo-input4" type="submit" value="送出"><br>
+            <p>6-4 當輸入type="submit"引用 @include input-submit($w:150px,$h:30px);</p>
+            <p>-----------------------------------------------------</p>
+            <input class="demo-input5" type="password"><br>
+            <p>6-5 當輸入type="password"引用 @include input-password($w:150px,$h:30px);</p>
+            <p>-----------------------------------------------------</p>
+            <input class="demo-input6" type="number"><br>
+            <p>6-6 當輸入type="number"引用 @include input-number($w:150px,$h:30px);</p>
+            <p>-----------------------------------------------------</p>
+            <input class="demo-input7" type="date"><br>
+            <p>6-7 當輸入 type="date"引用 @include input-date($w:150px,$h:30px);</p>
+        </div>
+    </section>
+    <section>
+        <h2>------7.卡片間的距離------</h2>
+        <div style="display: inline-block;">
+            <div class="demo-cards">卡片之間的距離</div>
+            <div class="demo-cards">卡片之間的距離</div>
+            <p>//公式@mixin cards($w:300px)  //預設卡片本身的寬300px<br>
+                .你自己的class名稱{ @include cards($w:300px);}</p>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <h2>------８.輸入框相關 select ------</h2>
+        <div>
+            <select class="demo-select" name="" id="">
+                <option value="">你好</option>
+                <option value="">我好</option>
+                <option value="">都不好</option>
+            </select>
+            <p>引用 @include select($w:150px, $h:30px)</p>
+
+        </div>
+    </section>
+    <hr>
+    <section>
+        <h2>------９.輸入框相關（很少用到） textarea ------</h2>
+        <div>
+            <textarea class="demo-textarea" name="" id="" cols="100" rows="4"></textarea>
+        </div>
+        <p>引用 @include textarea($w:300px,$h:25px);</p>
+
+    </section>
+    <hr>
+    <section>
+        <h2>------10.關於rwd ------</h2>
+        <p>請於command/_rwd／裡面有提到如何填寫</p>
+        
+    </section>
+    <h3>以上 </h3>
+<footer>
+    <div class="copyright">
+        Copyright © 2020 Divein | 海中日子 All Rights Reserved.
+    </div>
+</footer>
+<script src="./js/bubbleBtn.js"></script>
+<script>
+    $(function(){
+    
+        // 開啟 Modal 彈跳視窗
+        $(".demo-mainBtn").on("click", function(){
+            $(".lightbox-block").addClass("-openbox");
+        });
+    
+        // 關閉 Modal
+        $(".btn_modal_close").on("click", function(){
+            $(".lightbox-block").addClass("-opacity-zero");
+            // 設定隔一秒後，移除相關 class
+                setTimeout(function(){
+                $(".lightbox-block").removeClass("-openbox -opacity-zero");
+                }, 1000);
+            });
+        $(".submitbtn").on("click", function(){
+            $(".lightbox-block").addClass("-opacity-zero");
+            // 設定隔一秒後，移除相關 class
+            setTimeout(function(){
+            $(".lightbox-block").removeClass("-openbox -opacity-zero");
+            }, 1000);
+        });
+    
+    });
+</script>
+</body>
+</html>
