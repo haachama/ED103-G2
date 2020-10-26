@@ -64,13 +64,8 @@
 }
 
 .spotContents .spotRight .spotRightblock ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   justify-items: baseline;
 }
 
@@ -125,9 +120,7 @@
 .spotContents .spotRight .spotHere ul li {
   width: 40px;
   display: inline-block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .spotContents .spotRight .spotHere ul li img {
@@ -137,12 +130,8 @@
 }
 
 .spotContents .spotRight .spotHere p {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   line-height: 40px;
 }
 
@@ -212,9 +201,7 @@
 }
 
 .spotContents .spotLeft .spotLeftBottom a {
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
+  flex: 3;
 }
 
 .spotContents .spotLeft .spotLeftBottom a img {
@@ -222,8 +209,6 @@
 }
 
 .spotContents .spotLeft .spotLeftImage {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 56.7vw;
 }
@@ -269,114 +254,58 @@
   position: absolute;
   width: 100%;
   opacity: 0;
-  -webkit-animation-name: gradient;
-          animation-name: gradient;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: gradient;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .spotContents .spotLeft .spotLeftImage a:hover span {
   color: #fefefe;
 }
 
-@-webkit-keyframes gradient {
-  0% {
-    opacity: 1;
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  20% {
-    opacity: 1;
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  25% {
-    opacity: 0;
-    -webkit-filter: blur(10px);
-            filter: blur(10px);
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  95% {
-    opacity: 0;
-    -webkit-filter: blur(10px);
-            filter: blur(10px);
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  100% {
-    opacity: 1;
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
 @keyframes gradient {
   0% {
     opacity: 1;
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    filter: blur(0px);
+    transform: scale(1);
   }
   20% {
     opacity: 1;
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    filter: blur(0px);
+    transform: scale(1);
   }
   25% {
     opacity: 0;
-    -webkit-filter: blur(10px);
-            filter: blur(10px);
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    filter: blur(10px);
+    transform: scale(1.1);
   }
   95% {
     opacity: 0;
-    -webkit-filter: blur(10px);
-            filter: blur(10px);
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    filter: blur(10px);
+    transform: scale(0.9);
   }
   100% {
     opacity: 1;
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    filter: blur(0px);
+    transform: scale(1);
   }
 }
 
 .spotContents .spotLeft .spotLeftImage a .slider_container .sw:first-child {
-  -webkit-animation-delay: -0.75s;
-          animation-delay: -0.75s;
+  animation-delay: -0.75s;
 }
 
 .spotContents .spotLeft .spotLeftImage a .slider_container .sw:nth-child(2) {
-  -webkit-animation-delay: -3.75s;
-          animation-delay: -3.75s;
+  animation-delay: -3.75s;
 }
 
 .spotContents .spotLeft .spotLeftImage a .slider_container .sw:nth-child(3) {
-  -webkit-animation-delay: -2.75s;
-          animation-delay: -2.75s;
+  animation-delay: -2.75s;
 }
 
 .spotContents .spotLeft .spotLeftImage a .slider_container .sw:last-child {
-  -webkit-animation-delay: -1.75s;
-          animation-delay: -1.75s;
+  animation-delay: -1.75s;
 }
 
 .spotContents .spotLeft .spotLeftImage a .slider_container .sw:nth-child(2),
@@ -391,20 +320,13 @@
 }
 
 .spotListBlock .spotList {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   margin: 0 auto;
 }
 
 .spotListBlock .spotList li {
-  -webkit-box-flex: 5;
-      -ms-flex: 5;
-          flex: 5;
+  flex: 5;
   border-top: 0;
   text-align: center;
 }
@@ -446,21 +368,11 @@
 .pushBlock .spotPushBlock {
   width: 90vw;
   max-width: 1200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
   padding: 10px;
   text-align: center;
@@ -503,26 +415,16 @@
 .spotPush a .imgContent .diaryTitleA {
   position: absolute;
   top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 15px 15px;
 }
 
 .spotPush a .imgContent .diaryTitleA .diaryTitleFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .spotPush a .imgContent .diaryTitleA .diaryTitleFlex .userLogo {
@@ -575,12 +477,8 @@
 
 .spotPush .diaryText .diaryTextData {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .spotPush .diaryText .diaryTextData div:first-child p:nth-child(2) span:nth-child(1) {
@@ -613,15 +511,9 @@
 
 .spotPush .diaryTextP {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .spotPush .diaryTextP .diaryTextPP {
@@ -655,29 +547,17 @@
 
 .spotPush a .spotPushMain {
   background-color: #fefefe;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   width: 100%;
 }
 
 .spotPush a .spotPushMain .spotPushListText {
   width: 100%;
   text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .spotPush a .spotPushMain .spotPushListText h4 {
@@ -702,11 +582,8 @@
 /*========潛點頁面樣式結束 cooc 10.17=======*/
 /*========潛點內頁樣式開始 cooc 10.18=======*/
 .spotRefre_Main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100vw;
   margin: 0 auto;
 }
@@ -757,22 +634,13 @@
 }
 
 .spotRefre_here .spotRefre_left_Block .spotHereList {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .spotRefre_here .spotRefre_left_Block .spotHereList .hereList {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 
 .spotRefre_here .spotRefre_left_Block .spotHereList .hereList ul {
@@ -860,29 +728,16 @@
 }
 
 .spotRefreTab_rwd ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   margin: 0 auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .spotRefreTab_rwd ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 5;
-      -ms-flex: 5;
-          flex: 5;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex: 5;
+  justify-content: center;
   text-align: center;
   border: 0.5px solid rgba(254, 254, 254, 0.75);
 }
@@ -984,30 +839,18 @@
 }
 
 .spotWeather {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   padding-bottom: 10px;
 }
 
 .spotWeatherText {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 
 .spotWeatherText:first-child {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   padding: 10px 0;
   text-align: center;
 }
@@ -1018,30 +861,19 @@
 
 .spotWeatherText:last-child {
   width: 75%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-top: 15px;
 }
 
 .spotWeatherText:last-child > div {
   width: 100%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-direction: row;
   display: flex;
 }
 
 .weather_main {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex: 1;
+  flex-direction: row;
   padding: 0 0 10px 0;
 }
 
@@ -1059,13 +891,8 @@
 }
 
 .spotWeatherfuture ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   width: 100%;
   border-bottom: 0.5px solid #221814;
 }
@@ -1075,11 +902,8 @@
 }
 
 .spotWeatherfuture li {
-  -webkit-box-flex: 8;
-      -ms-flex: 8;
-          flex: 8;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  flex: 8;
+  justify-self: center;
   padding: 10px 0;
 }
 
@@ -1144,13 +968,8 @@
 }
 
 .spotRefre_Msg .spotMsgBlock .spotMsg {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   font-size: 16px;
   padding: 10px;
   border-bottom: 1px solid #221814;
@@ -1164,29 +983,16 @@
 }
 
 .spotRefre_Msg .spotMsgBlock .spotMsg > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
 }
 
 .spotRefre_Msg .spotMsgBlock .spotMsg > div .spotMsgText {
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  flex-direction: row;
+  align-content: center;
 }
 
 .spotRefre_Msg .spotMsgBlock .spotMsg > div .spotMsgText h5 {
@@ -1202,8 +1008,6 @@
 
 .spotRefre_Msg .spotMsgBlock .spotMsg > div:nth-child(2) {
   width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 10px;
 }
@@ -1218,9 +1022,7 @@
 }
 
 .spotRefre_Msg .spotMsgBlock .spotMsg > div:nth-child(3) {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  flex: 2;
   text-align: right;
   font-size: 16px;
 }
@@ -1256,7 +1058,6 @@
   background-color: rgba(254, 254, 254, 0.75);
   opacity: 0;
   z-index: -1;
-  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
@@ -1274,14 +1075,12 @@
   width: 80%;
   max-width: 400px;
   border-radius: 10px;
-  -webkit-box-shadow: 0 0 10px #ddd;
-          box-shadow: 0 0 10px #ddd;
+  box-shadow: 0 0 10px #ddd;
   padding: 10px;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 16px;
 }
 
@@ -1295,8 +1094,6 @@
   text-align: center;
   color: #073977;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1324,8 +1121,6 @@
   margin: 0 auto;
   width: 80%;
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1420,9 +1215,7 @@
     overflow: auto;
   }
   .spotReferWeather .spotWeatherText:first-child {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    flex: 1;
     padding: 10px 0;
     text-align: center;
   }
@@ -1431,22 +1224,13 @@
   }
   .spotReferWeather .spotWeatherText:last-child {
     width: 100%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding-top: 15px;
   }
   .spotReferWeather .spotWeatherText:last-child > div {
     width: 100%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    flex-direction: row;
     display: flex;
   }
   .spotReferWeather .spotWeatherText .weather_main {
@@ -1455,18 +1239,11 @@
     width: 80px;
   }
   .spotWeatherfuture > ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     white-space: nowrap;
   }
   .spotWeatherfuture > ul > li {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 80px;
     padding: 10px 30px;
@@ -1481,18 +1258,10 @@
     text-align: center;
   }
   .spotContents .spotRight {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     width: 100%;
   }
   .spotContents h2 {
@@ -1502,18 +1271,14 @@
     text-align: center;
   }
   .spotContents p {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     display: block;
   }
   .spotContents .spotRightblock {
     padding: 10px 0;
     text-align: center;
     margin: 20px auto;
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
+    flex: none;
   }
   .spotContents .spotRightblock ul.spotRightBlockList {
     text-align: center;
@@ -1655,7 +1420,6 @@
   }
   .spotRefre_Main .spotRefre_Animal {
     width: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(70%, #16181D));
     background: linear-gradient(to bottom, transparent 70%, #16181D 70%);
   }
   .spotRefre_Main .spotRefre_Animal h3 {

@@ -67,8 +67,7 @@ table {
 body {
   font-size: 16px;
   font-family: "Tahoma", sans-serif, "微軟正黑體", sans-serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body .container {
@@ -141,14 +140,9 @@ body {
 
 header {
   background-color: rgba(254, 254, 254, 0.15);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .logo img {
@@ -228,7 +222,6 @@ header {
 }
 
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -245,16 +238,12 @@ div {
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   letter-spacing: 1px;
   color: #fefefe;
   padding: 10px 30px;
   border-radius: 8px;
   text-transform: uppercase;
-  -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
 }
 
@@ -264,7 +253,6 @@ div {
 }
 
 .button:active {
-  -webkit-transform: scale(0.95);
   transform: scale(0.95);
 }
 
@@ -288,7 +276,6 @@ div {
 }
 
 .button--bubble:active + .button--bubble__effect-container {
-  -webkit-transform: scale(0.95);
   transform: scale(0.95);
 }
 
@@ -304,10 +291,8 @@ div {
   top: 50%;
   left: 25%;
   z-index: 1;
-  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   background: #E6AE2C;
-  -webkit-transition: background 0.1s ease-out;
   transition: background 0.1s ease-out;
 }
 
@@ -318,9 +303,7 @@ div {
   height: 400%;
   top: -150%;
   left: -50%;
-  -webkit-filter: url("#goo");
   filter: url("#goo");
-  -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
   pointer-events: none;
 }
@@ -331,7 +314,6 @@ div {
   height: 25px;
   border-radius: 15px;
   background: #E6AE2C;
-  -webkit-transition: background 0.1s ease-out;
   transition: background 0.1s ease-out;
 }
 
@@ -357,30 +339,13 @@ div {
   margin-top: -25px;
 }
 
-@-webkit-keyframes hue-rotate {
-  from {
-    -webkit-filter: hue-rotate(0);
-    -moz-filter: hue-rotate(0);
-    -ms-filter: hue-rotate(0);
-    filter: hue-rotate(0);
-  }
-  to {
-    -webkit-filter: hue-rotate(360deg);
-    -moz-filter: hue-rotate(360deg);
-    -ms-filter: hue-rotate(360deg);
-    filter: hue-rotate(360deg);
-  }
-}
-
 @keyframes hue-rotate {
   from {
-    -webkit-filter: hue-rotate(0);
     -moz-filter: hue-rotate(0);
     -ms-filter: hue-rotate(0);
     filter: hue-rotate(0);
   }
   to {
-    -webkit-filter: hue-rotate(360deg);
     -moz-filter: hue-rotate(360deg);
     -ms-filter: hue-rotate(360deg);
     filter: hue-rotate(360deg);
@@ -471,7 +436,6 @@ div {
   background-color: #176587;
   border: 1px solid #176587;
   border-radius: 5px;
-  -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   cursor: pointer;
   outline: 0 none;
@@ -503,7 +467,6 @@ div {
   background-color: rgba(2, 2, 2, 0.7);
   opacity: 0;
   z-index: -1;
-  -webkit-transition: opcity 1s;
   transition: opcity 1s;
 }
 
@@ -527,8 +490,7 @@ div {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .lightbox-block .button_closeBox {
@@ -554,13 +516,8 @@ div {
 }
 
 .lightbox-block .inlightbox-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
   margin: 0 auto;
   padding: 20px;
@@ -601,7 +558,6 @@ div {
   background-color: #176587;
   border: 1px solid #176587;
   border-radius: 5px;
-  -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   cursor: pointer;
   outline: 0 none;
@@ -611,8 +567,7 @@ div {
   width: 150px;
   height: 30px;
   border: none;
-  -webkit-box-shadow: 3px 3px 7px #221814;
-          box-shadow: 3px 3px 7px #221814;
+  box-shadow: 3px 3px 7px #221814;
 }
 
 .lightbox-block .inlightbox-form ul li:last-child input:hover {
@@ -642,8 +597,7 @@ div {
 
 .lightbox-block .inlightbox-form ul li:last-child input:active {
   border-color: #221814;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border: none;
   outline: 0 none;
 }
@@ -670,8 +624,7 @@ div {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .button_closeBox {
@@ -697,13 +650,8 @@ div {
 }
 
 .inlightbox-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
   margin: 0 auto;
   padding: 20px;
@@ -744,7 +692,6 @@ div {
   background-color: #176587;
   border: 1px solid #176587;
   border-radius: 5px;
-  -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   cursor: pointer;
   outline: 0 none;
@@ -754,8 +701,7 @@ div {
   width: 150px;
   height: 30px;
   border: none;
-  -webkit-box-shadow: 3px 3px 7px #221814;
-          box-shadow: 3px 3px 7px #221814;
+  box-shadow: 3px 3px 7px #221814;
 }
 
 .inlightbox-form ul li:last-child input:hover {
@@ -785,8 +731,7 @@ div {
 
 .inlightbox-form ul li:last-child input:active {
   border-color: #221814;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border: none;
   outline: 0 none;
 }
@@ -842,7 +787,6 @@ input {
   background-color: #176587;
   border: 1px solid #176587;
   border-radius: 5px;
-  -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   cursor: pointer;
   outline: 0 none;
@@ -852,8 +796,7 @@ input {
   width: 150px;
   height: 30px;
   border: none;
-  -webkit-box-shadow: 3px 3px 7px #221814;
-          box-shadow: 3px 3px 7px #221814;
+  box-shadow: 3px 3px 7px #221814;
 }
 
 .demo-input4:hover {
@@ -883,8 +826,7 @@ input {
 
 .demo-input4:active {
   border-color: #221814;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border: none;
   outline: 0 none;
 }
@@ -930,8 +872,7 @@ input {
   width: 300px;
   margin: 30px 20px;
   padding: 20px 20px;
-  -webkit-box-shadow: 7px, 7px, 7px rgba(254, 254, 254, 0.75);
-          box-shadow: 7px, 7px, 7px rgba(254, 254, 254, 0.75);
+  box-shadow: 7px, 7px, 7px rgba(254, 254, 254, 0.75);
   border: 1px solid #fefefe;
 }
 

@@ -1,15 +1,21 @@
 @import "../common/variables";
 @import"../style.scss";
-@import"../demo";
+// @import"../demo";
 
 img {
     width: 100%;
 }
 
+//  test
+// .diaryBGimg{ 
+//     position: fixed;
+// }
+
 // 日誌篇幅 - diary.html
 
 .diaryAmount {
-
+    border: 1px solid red;
+    height: 90%;
     .cursor,
     .cursor2,
     .cursor3 {
@@ -97,7 +103,7 @@ img {
         margin-top: 10px;
         margin-bottom: 10px;
         font-family: 'Poppins', sans-serif;
-        font-size: 4vh;
+        font-size: 5vh;
         font-weight: 800;
         line-height: 1.15;
         letter-spacing: 3px;
@@ -183,6 +189,7 @@ img {
     }
 
     .case-study-images li.show .img-hero-background {
+        // border: 1px solid red;
         opacity: 1;
         -webkit-transform: translateY(0);
         transform: translateY(0);
@@ -274,6 +281,7 @@ img {
     }
 
     .case-study-images li .img-hero-background div img {
+        // border: 1px solid red;
         width: 100%;
         height: auto;
         display: block;
@@ -292,129 +300,148 @@ img {
         position: absolute;
         width: 20%;
         top: 12%;
-        left: 25%;
+        left: 8%;
         display: block;
     }
 
     .case-study-images li:nth-child(1) .img-hero-background div:nth-child(2) {
+        // border: 1px solid red;
         width: 23%;
         top: 22%;
-        left: 55%;
+        left: 60%;
     }
 
     .case-study-images li:nth-child(1) .img-hero-background div:nth-child(3) {
+        // border: 1px solid red;
         width: 18%;
         top: 55%;
         left: 75%;
     }
 
     .case-study-images li:nth-child(1) .img-hero-background div:nth-child(4) {
+        // border: 1px solid red;
         width: 16%;
         top: 44%;
-        left: 15%;
+        left: 25%;
     }
 
     .case-study-images li:nth-child(2) .img-hero-background div {
+        // border: 1px solid red;
         position: absolute;
         width: 18%;
         top: 7%;
-        left: 15%;
+        left: 8%;
         display: block;
     }
 
     .case-study-images li:nth-child(2) .img-hero-background div:nth-child(2) {
+        // border: 1px solid red;
         width: 19%;
-        top: 55%;
-        left: 29%;
+        top: 38%;
+        left: 27%;
     }
 
     .case-study-images li:nth-child(2) .img-hero-background div:nth-child(3) {
+        // border: 1px solid red;
         width: 16%;
         top: 17%;
         left: 72%;
     }
 
     .case-study-images li:nth-child(2) .img-hero-background div:nth-child(4) {
-        width: 18%;
+        // border: 1px solid red;
+        width: 20%;
         top: 54%;
-        left: 67%;
+        left: 57%;
     }
 
     .case-study-images li:nth-child(3) .img-hero-background div {
+        // border: 1px solid red;
         position: absolute;
         width: 16%;
         top: 9%;
-        left: 18%;
+        left: 8%;
         display: block;
     }
 
     .case-study-images li:nth-child(3) .img-hero-background div:nth-child(2) {
+        // border: 1px solid red;
         width: 16%;
-        top: 55%;
+        top: 40%;
         left: 29%;
     }
 
     .case-study-images li:nth-child(3) .img-hero-background div:nth-child(3) {
+        // border: 1px solid red;
         width: 17%;
         top: 11%;
-        left: 62%;
+        left: 59%;
     }
 
     .case-study-images li:nth-child(3) .img-hero-background div:nth-child(4) {
+        // border: 1px solid red;
         width: 18%;
-        top: 54%;
+        top: 34%;
         left: 75%;
     }
 
     .case-study-images li:nth-child(4) .img-hero-background div {
+        // border: 1px solid red;
         position: absolute;
         width: 20%;
         top: 12%;
-        left: 25%;
+        left: 8%;
         display: block;
     }
 
     .case-study-images li:nth-child(4) .img-hero-background div:nth-child(2) {
+        // border: 1px solid red;
         width: 17%;
         top: 22%;
-        left: 55%;
+        left: 60%;
     }
 
     .case-study-images li:nth-child(4) .img-hero-background div:nth-child(3) {
-        width: 18%;
+        // border: 1px solid red;
+        width: 20%;
         top: 58%;
         left: 75%;
     }
 
     .case-study-images li:nth-child(4) .img-hero-background div:nth-child(4) {
+        // border: 1px solid red;
         width: 18%;
-        top: 59%;
-        left: 20%;
+        top: 34%;
+        left: 27%;
     }
 
     .case-study-images li:nth-child(5) .img-hero-background div {
+        // border: 1px solid red;
         position: absolute;
         width: 18%;
         top: 7%;
-        left: 15%;
+        left: 8%;
         display: block;
     }
 
     .case-study-images li:nth-child(5) .img-hero-background div:nth-child(2) {
+        // border: 1px solid red;
         width: 19%;
-        top: 55%;
-        left: 29%;
+        top: 30%;
+        left: 27%;
     }
 
     .case-study-images li:nth-child(5) .img-hero-background div:nth-child(3) {
+        // border: 1px solid red;
         width: 20%;
-        top: 17%;
+        top: 10%;
         left: 72%;
     }
 
     .case-study-images li:nth-child(5) .img-hero-background div:nth-child(4) {
+        // border: 1px solid red;
         width: 20%;
-        top: 54%;
+        top: 34%;
         left: 67%;
     }
 
@@ -2538,33 +2565,17 @@ img {
                 color: $keyWhite;
                 padding: 10px;
             }
-
-            .filp {
-                color: $keyWhite;
-
-                // border: 1px solid green;
-                i {
-                    // border: 1px solid orangered;
-                    font-size: 20px;
-                    padding-right: 5px;
-                }
-            }
-
             .panel {  //lightbox
                 border: 1px solid green;
                 height: 120px;
-                display: none;
-                .lightbox-block{
-                    @include lightbox-block();
-                }
-                .lightbox{
-                    @include lightbox();
-                }
-                .button_closeBox{
-                    @include button_closeBox;
-                }
-                .inlightbox-form{
-                    @include inlightbox-form;
+                // display: none;
+                .diaryAddBiological{
+                    // border: 1px solid orangered;
+                    i {
+                        // border: 1px solid orangered;
+                        font-size: 20px;
+                        padding-right: 5px;
+                    }
                 }
             }
         }
@@ -2686,8 +2697,7 @@ img {
 
 @media all and (max-width: 991px) {}
 
-@media all and (max-width: 768px) {
-}
+@media all and (max-width: 768px) {}
 
 @media all and (max-width: 576px) {}
 

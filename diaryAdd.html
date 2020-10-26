@@ -218,45 +218,17 @@
 
             <div class="biological"> <!-- 區塊C_遇見生物 -->
                 <p class="biologicalP">遇見生物</p>
-                <p class="filp"><i class="fas fa-book"></i><span>選擇圖鑑</span></p>
                 <div class="panel">
-                    <div class="demo-mainBtn">
-                        <div class="bubbleBtn">
-                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
-                                <defs>
-                                    <filter id="goo">
-                                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-                                            result="goo" />
-                                        <feComposite in="SourceGraphic" in2="goo" />
-                                    </filter>
-                                </defs>
-                            </svg>
-                    
-                            <span class="button--bubble__container">
-                                <a href="#campaign" class="button button--bubble">
-                                        這是網站主要按鈕
-                                </a>
-                                <span class="button--bubble__effect-container">
-                                    <span class="circle top-left"></span>
-                                    <span class="circle top-left"></span>
-                                    <span class="circle top-left"></span>
-                    
-                                    <span class="button effect-button"></span>
-                    
-                                    <span class="circle bottom-right"></span>
-                                    <span class="circle bottom-right"></span>
-                                    <span class="circle bottom-right"></span>
-                                </span>
-                            </span>
-                        </div>
+                    <div class="diaryAddBiological">
+                        <i class="fas fa-book"></i>
+                        <button class="diaryAddBiological-btn">確認</button>
                     </div>
                     <div class="lightbox-block">
                         <div class="lightbox">
                             <div class="button_closeBox">
                                 <button type="button" class="btn_modal_close">✖</button>
                             </div>
-                            <h3>你學會如何呼叫函示了嗎？</h3>
+                            <!-- <h3>你學會如何呼叫函示了嗎？</h3>
                             <form action="" class="inlightbox-form">
                                 <ul>
                                     <li><input type="checkbox">還沒有</li>
@@ -264,8 +236,7 @@
                                     <li><input type="checkbox">這絕對是一片蛋糕</li>
                                     <li><input type="submitbtn" value="送出"></li>
                                 </ul>
-                                
-                            </form>
+                            </form> -->
                         </div>
                     </div>
                 </div>
@@ -310,26 +281,26 @@
     <script src="./js/jquery.ripples.js"></script>
     <script src="./js/common.js"></script>
     <script>
-        function doFirst() {
-            //先跟HTML畫面產生關聯，再建事件聆聽功能
-            document.getElementById('diveArea').onchange = chkbox;
-            chkbox();
-        }
-        function chkbox() {
-            let diveAreas = ['northeastCorner', 'kenting', 'xiaoliuqiu', 'greenIsland', 'lanyu'];
-            let mapping = ['東北角','墾丁','小琉球','綠島','蘭嶼'];
-            let selected = document.getElementById("diveArea").options[document.getElementById("diveArea").selectedIndex].text;
+        // function doFirst() {
+        //     //先跟HTML畫面產生關聯，再建事件聆聽功能
+        //     document.getElementById('diveArea').onchange = chkbox;
+        //     chkbox();
+        // }
+        // function chkbox() {
+        //     let diveAreas = ['northeastCorner', 'kenting', 'xiaoliuqiu', 'greenIsland', 'lanyu'];
+        //     let mapping = ['東北角','墾丁','小琉球','綠島','蘭嶼'];
+        //     let selected = document.getElementById("diveArea").options[document.getElementById("diveArea").selectedIndex].text;
     
-            for (let i = 0; i < diveAreas.length; i++) {
-                let yourSelect = document.getElementById(diveAreas[i]);
-                if (selected == mapping[i]) {
-                    yourSelect.style.display = 'inline-block';
-                } else {
-                    yourSelect.style.display = 'none';
-                }
-            }
-        }
-        window.addEventListener('load', doFirst);
+        //     for (let i = 0; i < diveAreas.length; i++) {
+        //         let yourSelect = document.getElementById(diveAreas[i]);
+        //         if (selected == mapping[i]) {
+        //             yourSelect.style.display = 'inline-block';
+        //         } else {
+        //             yourSelect.style.display = 'none';
+        //         }
+        //     }
+        // }
+        // window.addEventListener('load', doFirst);
 
 
         $('body').ripples({

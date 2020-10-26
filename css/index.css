@@ -85,8 +85,7 @@ h2 {
   position: absolute;
   top: 18px;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  transform: translate(-50%);
   color: #fefefe;
   font-size: 24px;
 }
@@ -111,8 +110,7 @@ h2 {
   background-position: center center;
   background-repeat: no-repeat;
   position: absolute;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .container::before {
@@ -142,12 +140,8 @@ h2 {
 }
 
 .spotBtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .spotBtn .bubbleBtn {
@@ -156,33 +150,20 @@ h2 {
 
 .containerCourse {
   margin: 0 auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .containerCourse .courseUp {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 50px auto;
 }
 
 .containerCourse .courseUp .courseBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 30px;
 }
 
@@ -205,10 +186,8 @@ h2 {
   left: 12%;
   top: 20%;
   z-index: -1;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transform: perspective(500px);
-          transform: perspective(500px);
+  transform-style: preserve-3d;
+  transform: perspective(500px);
 }
 
 .containerCourse .courseUp .courseBox .courseTxt {
@@ -227,16 +206,10 @@ h2 {
 
 .containerCourse .courseDown .coachCard {
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   width: 70%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .containerCourse .courseDown .card {
@@ -245,21 +218,14 @@ h2 {
   padding: 2rem 1rem;
   background: #fff;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-  -webkit-transition: 0.5s ease-in-out;
+  align-items: flex-end;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
   transition: 0.5s ease-in-out;
 }
 
 .containerCourse .courseDown .card:hover {
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
+  transform: translateY(20px);
 }
 
 .containerCourse .courseDown .card::before {
@@ -270,10 +236,8 @@ h2 {
   display: block;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(117, 104, 189, 0.5)), to(#121311));
   background: linear-gradient(to bottom, rgba(117, 104, 189, 0.5), #121311);
   z-index: 2;
-  -webkit-transition: 0.5s all;
   transition: 0.5s all;
   opacity: 0;
 }
@@ -285,8 +249,7 @@ h2 {
 .containerCourse .courseDown .card img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -297,16 +260,13 @@ h2 {
   z-index: 3;
   color: #fff;
   opacity: 0;
-  -webkit-transform: translateY(30px);
-          transform: translateY(30px);
-  -webkit-transition: 0.5s all;
+  transform: translateY(30px);
   transition: 0.5s all;
 }
 
 .containerCourse .courseDown .card:hover .info {
   opacity: 1;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+  transform: translateY(0px);
 }
 
 .containerCourse .courseDown .card .info h3 {
@@ -331,13 +291,11 @@ h2 {
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
-  -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
 
 .containerCourse .courseDown .card .info .readMore:hover {
-  -webkit-box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
 }
 
 .courseTxt::before {
@@ -347,8 +305,7 @@ h2 {
   left: 9%;
   border-top: 2px solid  #3f4645;
   width: 65px;
-  -webkit-transform: rotateZ(-200deg);
-          transform: rotateZ(-200deg);
+  transform: rotateZ(-200deg);
 }
 
 .courseTxt::after {
@@ -358,58 +315,28 @@ h2 {
   right: 9%;
   border-bottom: 2px solid #3f4645;
   width: 65px;
-  -webkit-transform: rotateZ(-160deg);
-          transform: rotateZ(-160deg);
+  transform: rotateZ(-160deg);
 }
 
 .courseBox:hover .turtle {
-  -webkit-animation: curved 3s ease-in-out 1;
-          animation: curved 3s ease-in-out 1;
-}
-
-@-webkit-keyframes curved {
-  0% {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
-  25% {
-    -webkit-transform: rotateX(180deg), rotateY(27deg);
-            transform: rotateX(180deg), rotateY(27deg);
-  }
-  50% {
-    -webkit-transform: rotateX(270deg), rotateY(180deg);
-            transform: rotateX(270deg), rotateY(180deg);
-  }
-  75% {
-    -webkit-transform: rotateX(90deg), rotateY(90deg);
-            transform: rotateX(90deg), rotateY(90deg);
-  }
-  100% {
-    -webkit-transform: rotateX(0deg), rotateY(0deg);
-            transform: rotateX(0deg), rotateY(0deg);
-  }
+  animation: curved 3s ease-in-out 1;
 }
 
 @keyframes curved {
   0% {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
+    transform: rotateY(360deg);
   }
   25% {
-    -webkit-transform: rotateX(180deg), rotateY(27deg);
-            transform: rotateX(180deg), rotateY(27deg);
+    transform: rotateX(180deg), rotateY(27deg);
   }
   50% {
-    -webkit-transform: rotateX(270deg), rotateY(180deg);
-            transform: rotateX(270deg), rotateY(180deg);
+    transform: rotateX(270deg), rotateY(180deg);
   }
   75% {
-    -webkit-transform: rotateX(90deg), rotateY(90deg);
-            transform: rotateX(90deg), rotateY(90deg);
+    transform: rotateX(90deg), rotateY(90deg);
   }
   100% {
-    -webkit-transform: rotateX(0deg), rotateY(0deg);
-            transform: rotateX(0deg), rotateY(0deg);
+    transform: rotateX(0deg), rotateY(0deg);
   }
 }
 
@@ -417,15 +344,11 @@ h2 {
   max-width: 1000px;
   margin: auto;
   margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .shop .demoman {
-  -webkit-box-flex: 10;
-      -ms-flex: 10;
-          flex: 10;
+  flex: 10;
 }
 
 .shop .demoman img {
@@ -434,16 +357,9 @@ h2 {
 }
 
 .shop .itemList {
-  -webkit-box-flex: 9;
-      -ms-flex: 9;
-          flex: 9;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 9;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .shop .itemList div {
@@ -457,12 +373,8 @@ h2 {
 }
 
 .shop .itemList .item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .shop .itemList .item a {
@@ -491,12 +403,8 @@ h2 {
 }
 
 .bigDiary {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: 0 0 20px 0;
 }
 
@@ -531,15 +439,9 @@ h2 {
 
 .bigDiary .pageRight .share {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: flex-end;
+  align-items: flex-end;
   padding-right: 5px;
   padding-bottom: 10px;
 }
@@ -560,24 +462,14 @@ h2 {
 
 .bigDiary .pageRight .rightTitle {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .bigDiary .pageRight .rightTitle .rightNameImg {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .bigDiary .pageRight .rightTitle .rightNameImg .rightImg img {
@@ -612,11 +504,8 @@ h2 {
 .bigDiary .pageRight .rightInformation {
   width: 100%;
   margin: 20px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .bigDiary .pageRight .rightInformation div p:nth-child(2) {
@@ -632,29 +521,17 @@ h2 {
 .bigDiary .pageRight .rightData {
   position: relative;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px 0px;
 }
 
 .bigDiary .pageRight .rightData .rightDataA {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 50%;
   display: flex;
   margin: 0 5px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .bigDiary .pageRight .rightData .rightDataA div p:nth-child(2) {
@@ -673,15 +550,10 @@ h2 {
 }
 
 .bigDiary .pageRight .rightData .rightDataB {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 50%;
   display: flex;
   margin: 0 5px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .bigDiary .pageRight .rightData .rightDataB div p:nth-child(2) {
@@ -713,8 +585,6 @@ h2 {
 }
 
 .bigDiary .pageRight .rightPicture {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -732,12 +602,8 @@ h2 {
 }
 
 .smallDiary {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .smallDiary .diarySolid {
@@ -762,26 +628,16 @@ h2 {
 .smallDiary .diarySolid a .imgContent .diaryTitleA {
   position: absolute;
   top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 15px 15px;
 }
 
 .smallDiary .diarySolid a .imgContent .diaryTitleA .diaryTitleFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .smallDiary .diarySolid a .imgContent .diaryTitleA .diaryTitleFlex .userLogo {
@@ -827,12 +683,8 @@ h2 {
 
 .smallDiary .diarySolid .diaryText .diaryTextData {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .smallDiary .diarySolid .diaryText .diaryTextData div:first-child p:nth-child(2) span:nth-child(1) {
@@ -865,15 +717,9 @@ h2 {
 
 .smallDiary .diarySolid .diaryTextP {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .smallDiary .diarySolid .diaryTextP .diaryTextPP {
@@ -904,8 +750,7 @@ h2 {
   position: absolute;
   left: 50%;
   bottom: -24.5%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .diaryCenter:hover::after {
@@ -966,17 +811,10 @@ h2 {
     position: static;
   }
   .weather .bubbleCircle .txt {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-evenly;
     height: 100px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .container {
     width: 400px;
@@ -995,42 +833,30 @@ h2 {
     width: 60px;
   }
   .containerCourse .courseUp {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .containerCourse .courseDown {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .containerCourse .courseDown .mainLeft .bubbleBtn {
     margin: 50px;
   }
   .shop .demoman {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    flex: 1;
   }
   .shop .demoman img {
     width: 150px;
   }
   .shop .itemList {
-    -webkit-box-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
+    flex: 2;
   }
   .bigDiary {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .bigDiary .pageRight .rightData {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .bigDiary .pageRight .rightData .rightDataB {
     margin: 20px 5px;
@@ -1053,17 +879,13 @@ h2 {
 
 @media screen and (max-width: 768px) {
   .shop {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .shop .demoman {
     display: none;
   }
   .shop .itemList {
-    -webkit-box-flex: 0;
-        -ms-flex: 0;
-            flex: 0;
+    flex: 0;
   }
   .shop .itemList .mask,
   .shop .itemList .watch,
@@ -1080,8 +902,7 @@ h2 {
     margin: 0px;
   }
   .containerCourse .courseDown .mainLeft .courseItem {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 
@@ -1098,18 +919,6 @@ h2 {
 
 .m6m6 svg.fish {
   overflow: visible;
-}
-
-@-webkit-keyframes swim {
-  0% {
-    margin-left: 50%;
-  }
-  90% {
-    margin-left: 50%;
-  }
-  100% {
-    margin-left: 50%;
-  }
 }
 
 @keyframes swim {
@@ -1144,7 +953,6 @@ h2 {
 .m6m6 svg #fish5,
 .m6m6 svg #fish6 {
   fill: #464d4d;
-  -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
 
@@ -1173,36 +981,16 @@ h2 {
   -webkit-animation-delay: 0.3s;
 }
 
-@-webkit-keyframes bounce {
-  0%,
-  50%,
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  25% {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-  }
-  75% {
-    -webkit-transform: translateY(-3px);
-    transform: translateY(-3px);
-  }
-}
-
 @keyframes bounce {
   0%,
   50%,
   100% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
   25% {
-    -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
   }
   75% {
-    -webkit-transform: translateY(-3px);
     transform: translateY(-3px);
   }
 }

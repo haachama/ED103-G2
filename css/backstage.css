@@ -45,8 +45,7 @@ table {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -62,19 +61,12 @@ img {
 /* ==================== header 區域 ==================== */
 .header {
   width: 100%;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header img[alt=logo] {
@@ -151,8 +143,7 @@ img {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 /* 最上面那條線的樣式 */
@@ -172,13 +163,11 @@ img {
 }
 
 .btn_hamburger.inner span.-hr.-top {
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
+  transform-origin: top left;
   top: 4px;
   left: 7px;
   width: 102%;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 /* 中間的線 */
@@ -188,13 +177,11 @@ img {
 
 /* 下方的線 */
 .btn_hamburger.inner span.-hr.-bottom {
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
+  transform-origin: top left;
   bottom: 5px;
   left: 6px;
   width: 102%;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   top: auto;
 }
 
@@ -209,7 +196,6 @@ img {
   display: inline-block;
   width: 80%;
   padding: 20px;
-  -webkit-transition: all .3s;
   transition: all .3s;
   position: relative;
 }
@@ -239,7 +225,6 @@ img {
   width: calc(100% - 200px);
   padding: 20px;
   min-height: calc(100vh - 80px);
-  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
@@ -325,7 +310,6 @@ input[type=password] {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
   transition: .4s;
 }
 
@@ -337,7 +321,6 @@ input[type=password] {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
   transition: .4s;
 }
 
@@ -346,12 +329,10 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  -webkit-box-shadow: 0 0 1px #2ecc71;
-          box-shadow: 0 0 1px #2ecc71;
+  box-shadow: 0 0 1px #2ecc71;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
   transform: translateX(26px);
 }
 
@@ -368,12 +349,10 @@ input:checked + .slider:before {
   .aside {
     top: 0;
     height: 100%;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
   }
   .aside.-on {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%);
   }
   .header .btn_hamburger,
   .aside .btn_hamburger {

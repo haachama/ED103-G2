@@ -1,7 +1,6 @@
 @charset "UTF-8";
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -88,14 +87,10 @@ body {
 }
 
 .ms--images.ms-container--horizontal .ms-slide {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
 .ms--images .ms-track {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   white-space: nowrap;
@@ -105,18 +100,11 @@ body {
 }
 
 .ms--images .ms-slide {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 700px;
   height: 400px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 .ms--images {
@@ -171,14 +159,10 @@ body {
 }
 
 .ms--numbers.ms-container--horizontal .ms-slide {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
 .ms--numbers .ms-track {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   white-space: nowrap;
@@ -188,18 +172,11 @@ body {
 }
 
 .ms--numbers .ms-slide {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 240px;
   height: 240px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 .ms--numbers {
@@ -228,31 +205,21 @@ body {
 }
 
 .ms--titles.ms-container--vertical .ms-track {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   top: calc(50% - 85px);
 }
 
 .ms--titles.ms-container--vertical.ms-container--reverse .ms-track {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  flex-direction: column-reverse;
   top: auto;
   bottom: calc(50% - 85px);
 }
 
 .ms--titles.ms-container--vertical .ms-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .ms--titles .ms-track {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   white-space: nowrap;
@@ -262,18 +229,11 @@ body {
 }
 
 .ms--titles .ms-slide {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 400px;
   height: 170px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 .ms--titles {
@@ -316,22 +276,15 @@ body {
 }
 
 .ms--links.ms-container--vertical .ms-track {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   top: calc(50% - 30px);
 }
 
 .ms--links.ms-container--vertical .ms-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .ms--links .ms-track {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   white-space: nowrap;
@@ -341,18 +294,11 @@ body {
 }
 
 .ms--links .ms-slide {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 120px;
   height: 60px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 .ms--links {
@@ -374,8 +320,6 @@ body {
 }
 
 .pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   left: calc(50% - 420px);
@@ -402,8 +346,7 @@ body {
   left: 0;
   top: calc(50% - 1px);
   width: 100%;
-  -webkit-box-shadow: 0 1px 0 #0B0D14;
-          box-shadow: 0 1px 0 #0B0D14;
+  box-shadow: 0 1px 0 #0B0D14;
 }
 
 .pagination__button:before {
@@ -415,7 +358,6 @@ body {
   height: 3px;
   background-color: #6495ED;
   opacity: 0;
-  -webkit-transition: 0.5s opacity;
   transition: 0.5s opacity;
 }
 
@@ -439,8 +381,7 @@ body {
   .pagination {
     left: 50%;
     top: calc(100% - 10px);
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
 
@@ -452,16 +393,14 @@ body {
 
 @media screen and (max-width: 400px) {
   .ms--titles .ms-slide {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    transform: scale(0.8);
   }
 }
 
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -477,13 +416,8 @@ a {
 
 .courseContainer {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-color: rgba(0, 0, 0, 0.1);
   overflow: hidden;
   padding-top: 17%;
@@ -498,25 +432,16 @@ a {
   width: 300%;
   height: 100%;
   background-color: #101113;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   z-index: -1;
 }
 
 .sliders-container {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
 }
 
 @media screen and (max-width: 860px) {
@@ -624,14 +549,9 @@ a {
 }
 
 .courseCa {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .courseItem_02 {
@@ -669,13 +589,9 @@ a {
 .courseLesson {
   margin: 0 auto;
   margin-top: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-around;
   width: 65%;
 }
 
@@ -725,12 +641,8 @@ a {
 }
 
 ul.coursePagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   color: #fefefe;
   font-size: 18px;
 }
@@ -771,12 +683,8 @@ ul.coursePagination .-on {
   background-color: #16181D;
   vertical-align: top;
   padding: 100px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
 }
 
 .courseContentLeft {
@@ -987,14 +895,9 @@ ul.coursePagination .-on {
 
 .courseDiaryCenter {
   width: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0 auto 50px auto;
 }
 
@@ -1018,26 +921,16 @@ ul.coursePagination .-on {
 .courseDiarySolid a .courseImgContent .courseDiaryTitleA {
   position: absolute;
   top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 15px 15px;
 }
 
 .courseDiarySolid a .courseImgContent .courseDiaryTitleA .courseDiaryTitleFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .courseDiarySolid a .courseImgContent .courseDiaryTitleA .courseDiaryTitleFlex .courseUserLogo {
@@ -1083,12 +976,8 @@ ul.coursePagination .-on {
 
 .courseDiarySolid .courseDiaryText .courseDiaryTextData {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .courseDiarySolid .courseDiaryText .courseDiaryTextData div:first-child p:nth-child(2) span:nth-child(1) {
@@ -1121,15 +1010,9 @@ ul.coursePagination .-on {
 
 .courseDiarySolid .courseDiaryTextP {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .courseDiarySolid .courseDiaryTextP .courseDiaryTextPP {
@@ -1154,8 +1037,6 @@ ul.coursePagination .-on {
   margin: 250px auto 50px auto;
   width: 70%;
   vertical-align: top;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1278,8 +1159,7 @@ ul.coursePagination .-on {
   position: fixed;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: #eee;
   display: none;
   z-index: 1500;
@@ -1332,9 +1212,7 @@ ul.coursePagination .-on {
   }
   /*------------------------------------02--------------*/
   .courseSmallDiary {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   /*------------------------------------03--------------*/
   .courseOrder {
@@ -1403,8 +1281,7 @@ ul.coursePagination .-on {
     width: 140px;
   }
   .courseCa {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
   /*---------------------------------------02------------------*/
   .coursePp01 {
@@ -1429,16 +1306,13 @@ ul.coursePagination .-on {
     width: 80%;
   }
   .courseContent {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .coursePright {
     margin-left: 50px;
   }
   .courseDiaryCenter {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   /*-----------------------------------03-------------*/
   .courseButton01 {
@@ -1497,8 +1371,7 @@ ul.coursePagination .-on {
     margin: 0 auto;
   }
   .courseCa {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .courseouter {
     width: 80%;
@@ -1521,16 +1394,12 @@ ul.coursePagination .-on {
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
     display: -webkit-box;
   }
   /*--------------------------------03-----------------------*/
   .courseOrder {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .courseOrderLeft {
     width: 80%;
