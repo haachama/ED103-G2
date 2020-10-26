@@ -181,31 +181,30 @@ canvas {
             myGameArea.clear();
             myGamePiece.speedX = 0;
             myGamePiece.speedY = 0;    
-            if (myGameArea.key && myGameArea.key == 37) {myGamePiece.speedX = -1; }
-            if (myGameArea.key && myGameArea.key == 39) {myGamePiece.speedX = 1; }
-            if (myGameArea.key && myGameArea.key == 38) {myGamePiece.speedY = -1; }
-            if (myGameArea.key && myGameArea.key == 40) {myGamePiece.speedY = 1; }
+            if (myGameArea.key && myGameArea.key == 37) {myGamePiece.speedX = -50; } //【←】
+            if (myGameArea.key && myGameArea.key == 39) {myGamePiece.speedX = 50; }  //【→】
+
+            if (myGameArea.key && myGameArea.key == 65) {myGamePiece.speedX = -50; } //【A】
+            if (myGameArea.key && myGameArea.key == 68) {myGamePiece.speedX = 50; }  //【D】
             myBackground.speedY = -5; //代裝備變數 -速度
             myBackground.newPos();
             myBackground.update();
             myGameArea.frameNo += 1;
-            if (myGameArea.frameNo == 1 || everyinterval(150)) {
+            if (myGameArea.frameNo == 1 || everyinterval(50)) {
                 x = myGameArea.canvas.width;
-                minHeight = 20;
-                maxHeight = 200;
-                height = Math.floor(Math.random()*(maxHeight-minHeight+1)+minHeight);
+                y = myGameArea.canvas.height;
                 minGap = 50;
                 maxGap = 200;
                 gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
-                myObstacles.push(new component(10, height, "green", x, 0));
-                myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
+                myObstacles.push(new component(100, 80, "./img/game/rock.png", 200, y, "image"));
+                myObstacles.push(new component(100, 80, "./img/game/rock.png", 200, y, "image"));
             }
             for (i = 0; i < myObstacles.length; i += 1) {
-                myObstacles[i].speedX = -1;
+                myObstacles[i].speedY = -10;//代裝備變數
                 myObstacles[i].newPos();
                 myObstacles[i].update();
             }
-            myScore.text="生存分數:" + (myGameArea.frameNo * 0.01);
+            myScore.text="生存分數:" + parseInt(myGameArea.frameNo * 0.01);
             myScore.update();
             myGamePiece.newPos();    
             myGamePiece.update();
@@ -214,22 +213,6 @@ canvas {
         function everyinterval(n) {
             if ((myGameArea.frameNo / n) % 1 == 0) {return true;}
             return false;
-        }
-
-        function moveup() {
-            myGamePiece.speedY = -1; //代裝備變數
-        }
-
-        function movedown() {
-            myGamePiece.speedY = 1; //代裝備變數
-        }
-
-        function moveleft() {
-            myGamePiece.speedX = -1; 
-        }
-
-        function moveright() {
-            myGamePiece.speedX = 1; 
         }
 
         function clearmove() {
