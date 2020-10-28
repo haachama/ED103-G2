@@ -90,12 +90,12 @@ canvas {
                 this.frameNo = 0;
                 this.interval = setInterval(updateGameArea, 20);
 
-                window.addEventListener('keyup', function (e) {
-                        myGameArea.key = e.keyCode;
-                    })
                 window.addEventListener('keydown', function (e) {
+                        myGameArea.key = e.keyCode;
+                    });
+                window.addEventListener('keyup', function (e) {
                         myGameArea.key = false;
-                    })
+                    });
             },
             
             clear : function() {
@@ -197,8 +197,8 @@ canvas {
                 minGap = 50;
                 maxGap = 200;
                 gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
-                myObstacles.push(new component(100, 80, "./img/game/rock.png", 200, y, "image"));
-                myObstacles.push(new component(100, 80, "./img/game/rock.png", 200, y, "image"));
+                myObstacles.push(new component(100, 80, "./img/game/rock.png", (x/2 - 200), y, "image"));
+                myObstacles.push(new component(100, 80, "./img/game/rock.png", (x/2 + 100), y, "image"));
             }
             for (i = 0; i < myObstacles.length; i += 1) {
                 myObstacles[i].speedY = -10;//代裝備變數
