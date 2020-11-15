@@ -191,7 +191,7 @@ canvas {
             myBackground.newPos();
             myBackground.update();
             myGameArea.frameNo += 1;
-            if (myGameArea.frameNo == 1 || everyinterval(50)) {
+            if (myGameArea.frameNo == 1 || everyinterval(45)) {
                 x = myGameArea.canvas.width;
                 y = myGameArea.canvas.height;
                 minGap = 50;
@@ -201,11 +201,11 @@ canvas {
                 myObstacles.push(new component(100, 80, "./img/game/rock.png", (x/2 + 100), y, "image"));
             }
             for (i = 0; i < myObstacles.length; i += 1) {
-                myObstacles[i].speedY = -10;//代裝備變數
+                myObstacles[i].speedY = -7; //代裝備變數
                 myObstacles[i].newPos();
                 myObstacles[i].update();
             }
-            myScore.text="生存分數:" + parseInt(myGameArea.frameNo * 0.01);
+            myScore.text="生存分數:" + parseInt(myGameArea.frameNo * 0.05);
             myScore.update();
             myGamePiece.newPos();    
             myGamePiece.update();
